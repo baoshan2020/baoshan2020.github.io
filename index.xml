@@ -29,7 +29,7 @@
       
       <guid>mabaoshan.top/post/git/</guid>
       
-        <description>工作区 暂存区 git rm &amp;ndash;cached 对象区 git stuts 查看状态 git add . 添加所有文件到本地仓库 git commit 上传所有文件到本地仓库 git commit -m ‘备注名称’ .gitignore 需要忽略的文件 git remote 查看需要上传</description>
+        <description>工作区 unstage 暂存区 stage git rm &amp;ndash;cached 提交 commited git stuts 查看状态 git add . 添加所有文件到本地仓库 git commit 上传所有文件到本地仓库 git commit -m ‘备注名称’ .gitignore 需要忽略的文件 git remote 查看需要</description>
       
     </item>
     
@@ -73,7 +73,7 @@
       
       <guid>mabaoshan.top/github%E5%BB%BA%E7%AB%8B/</guid>
       
-        <description></description>
+        <description>2 在仓库里添加CNAME文件并在文件中填写绑定的域名</description>
       
     </item>
     
