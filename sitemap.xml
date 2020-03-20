@@ -1,52 +1,52 @@
-<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="http://mabaoshan.top/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>mabaoshan.top/about/</loc>
+    <loc>http://mabaoshan.top/about/</loc>
     <lastmod>2020-03-18T21:41:52+08:00</lastmod>
   </url>
   
   <url>
-    <loc>mabaoshan.top/post/git/</loc>
+    <loc>http://mabaoshan.top/post/git/</loc>
     <lastmod>2020-03-18T21:41:52+08:00</lastmod>
   </url>
   
   <url>
-    <loc>mabaoshan.top/post/hugo/</loc>
+    <loc>http://mabaoshan.top/post/hugo/</loc>
     <lastmod>2020-03-18T21:41:52+08:00</lastmod>
   </url>
   
   <url>
-    <loc>mabaoshan.top/post/hugo%E5%91%BD%E4%BB%A4/</loc>
+    <loc>http://mabaoshan.top/post/hugo%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2020-03-18T21:41:52+08:00</lastmod>
   </url>
   
   <url>
-    <loc>mabaoshan.top/post/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</loc>
+    <loc>http://mabaoshan.top/post/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</loc>
     <lastmod>2020-03-18T21:41:52+08:00</lastmod>
   </url>
   
   <url>
-    <loc>mabaoshan.top/github%E5%BB%BA%E7%AB%8B/</loc>
+    <loc>http://mabaoshan.top/github%E5%BB%BA%E7%AB%8B/</loc>
     <lastmod>2020-03-20T14:33:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>mabaoshan.top/</loc>
+    <loc>http://mabaoshan.top/</loc>
     <lastmod>2020-03-20T14:33:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>mabaoshan.top/post/</loc>
+    <loc>http://mabaoshan.top/post/</loc>
     <lastmod>2020-03-18T21:41:52+08:00</lastmod>
   </url>
   
   <url>
-    <loc>mabaoshan.top/categories/</loc>
+    <loc>http://mabaoshan.top/categories/</loc>
   </url>
   
   <url>
-    <loc>mabaoshan.top/tags/</loc>
+    <loc>http://mabaoshan.top/tags/</loc>
   </url>
   
 </urlset>
