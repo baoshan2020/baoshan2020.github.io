@@ -39,6 +39,15 @@
     </item>
     
     <item>
+      <title>Git Push免输用户名和密码</title>
+      <link>http://mabaoshan.top/post/Git-Push%E5%85%8D%E8%BE%93%E7%94%A8%E6%88%B7%E5%90%8D%E5%92%8C%E5%AF%86%E7%A0%81/</link>
+      <pubDate>Sun, 22 Mar 2020 21:33:46 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/post/Git-Push%E5%85%8D%E8%BE%93%E7%94%A8%E6%88%B7%E5%90%8D%E5%92%8C%E5%AF%86%E7%A0%81/</guid>
+      <description>Git Push 免输 用户名和密码 前言 在大家使用github的过程中，一定会碰到这样一种情况，就是每次要push 和pull时总是要输入github的账号和</description>
+    </item>
+    
+    <item>
       <title>Hugo评论系统</title>
       <link>http://mabaoshan.top/post/hugo%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Sun, 22 Mar 2020 21:33:46 +0800</pubDate>
