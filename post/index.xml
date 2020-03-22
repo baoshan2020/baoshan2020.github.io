@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 马保山</title>
-    <link>http://mabaoshan.top/post/</link>
-    <description>Recent content in Posts on 马保山</description>
+    <title>Posts on 马保山的笔记</title>
+    <link>mabaoshan.top/post/</link>
+    <description>Recent content in Posts on 马保山的笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 18 Mar 2020 21:38:52 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 20 Mar 2020 14:33:40 +0800</lastBuildDate>
     
-	<atom:link href="http://mabaoshan.top/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="mabaoshan.top/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>git命令</title>
-      <link>http://mabaoshan.top/post/git/</link>
+      <link>mabaoshan.top/post/git/</link>
       <pubDate>Wed, 18 Mar 2020 21:38:52 +0800</pubDate>
       
-      <guid>http://mabaoshan.top/post/git/</guid>
+      <guid>mabaoshan.top/post/git/</guid>
       <description>工作区 unstage 暂存区 stage git rm &amp;ndash;cached 提交 commited vi 命令 shift ZZ 提出 ：set number 设置行号 git stuts 查看状态 git add . 添加所有文件到本地仓库 git commit 上传所有文件到本地仓库 git commit -m ‘备注名</description>
     </item>
     
     <item>
       <title>hugo命令</title>
-      <link>http://mabaoshan.top/post/hugo/</link>
+      <link>mabaoshan.top/post/hugo%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Wed, 18 Mar 2020 21:38:52 +0800</pubDate>
       
-      <guid>http://mabaoshan.top/post/hugo/</guid>
-      <description>hugo server &amp;ndash;buildDrafts hugo &amp;ndash;theme=jane &amp;ndash;baseUrl=&amp;quot;https://github.com/baoshan2020/puma.git&amp;rdquo;</description>
-    </item>
-    
-    <item>
-      <title>hugo命令</title>
-      <link>http://mabaoshan.top/post/hugo%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Wed, 18 Mar 2020 21:38:52 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/post/hugo%E5%91%BD%E4%BB%A4/</guid>
+      <guid>mabaoshan.top/post/hugo%E5%91%BD%E4%BB%A4/</guid>
       <description>&amp;mdash;启动服务 hugo server &amp;ndash;buildDrafts &amp;mdash;上传到github hugo &amp;ndash;theme=jane &amp;ndash;baseUrl=&amp;quot;mabaoshan.top&amp;rdquo; 模板（Archetypes） 模板（Archetypes）是指放在arche</description>
     </item>
     
     <item>
       <title>软件下载</title>
-      <link>http://mabaoshan.top/post/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</link>
+      <link>mabaoshan.top/post/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</link>
       <pubDate>Wed, 18 Mar 2020 21:38:52 +0800</pubDate>
       
-      <guid>http://mabaoshan.top/post/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</guid>
+      <guid>mabaoshan.top/post/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</guid>
       <description>软件下载 系统软件 名称 地址 操作说明 操作系统 https://msdn.itellyou.cn/ office pdf 7-zip 公司软件 名称 地址 操作说明 k3cloud OA 263</description>
+    </item>
+    
+    <item>
+      <title>Github建立</title>
+      <link>mabaoshan.top/post/github%E5%BB%BA%E7%AB%8B/</link>
+      <pubDate>Fri, 20 Mar 2020 14:33:40 +0800</pubDate>
+      
+      <guid>mabaoshan.top/post/github%E5%BB%BA%E7%AB%8B/</guid>
+      <description>2 在仓库里添加CNAME文件并在文件中填写绑定的域名</description>
     </item>
     
   </channel>
