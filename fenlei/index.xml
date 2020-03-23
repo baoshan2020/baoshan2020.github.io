@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fenleis on 马保山的笔记</title>
+    <link>http://mabaoshan.top/fenlei/</link>
+    <description>Recent content in Fenleis on 马保山的笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 22 Mar 2020 21:38:52 +0800</lastBuildDate>
+    
+	<atom:link href="http://mabaoshan.top/fenlei/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>sql</title>
+      <link>http://mabaoshan.top/fenlei/sql/sql/</link>
+      <pubDate>Sun, 22 Mar 2020 21:38:52 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/fenlei/sql/sql/</guid>
+      <description>2020年3月23日 sql</description>
+    </item>
+    
+  </channel>
+</rss>
