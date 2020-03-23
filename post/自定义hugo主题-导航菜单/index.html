@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="zh-cn" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>自定义hugo主题--导航菜单 - 马保山的笔记</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="马保山" />
+  <meta name="description" content="自定义hugo主题&amp;ndash;导航菜单 2019-11-13 约 1055 字 预计阅读 3 分钟 文章目录 设置导航菜单的位置添加主导航菜单和页脚导航菜单定义多级菜单导航菜单常用" />
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.67.1" />
+
+
+<link rel="canonical" href="http://mabaoshan.top/post/%E8%87%AA%E5%AE%9A%E4%B9%89hugo%E4%B8%BB%E9%A2%98-%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95/" />
+
+
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.fa3d941d1d0e0ddc985804227feabffea55c89883eb0af34e0532a7ae9135151.css" integrity="sha256-&#43;j2UHR0ODdyYWAQif&#43;q//qVciYg&#43;sK804FMqeukTUVE=" media="screen" crossorigin="anonymous">
+
+
+
+
+
+<meta property="og:title" content="自定义hugo主题--导航菜单" />
+<meta property="og:description" content="自定义hugo主题&ndash;导航菜单 2019-11-13 约 1055 字 预计阅读 3 分钟 文章目录 设置导航菜单的位置添加主导航菜单和页脚导航菜单定义多级菜单导航菜单常用" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://mabaoshan.top/post/%E8%87%AA%E5%AE%9A%E4%B9%89hugo%E4%B8%BB%E9%A2%98-%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95/" />
+<meta property="article:published_time" content="2020-03-22T21:38:52+08:00" />
+<meta property="article:modified_time" content="2020-03-22T21:41:52+08:00" />
+<meta itemprop="name" content="自定义hugo主题--导航菜单">
+<meta itemprop="description" content="自定义hugo主题&ndash;导航菜单 2019-11-13 约 1055 字 预计阅读 3 分钟 文章目录 设置导航菜单的位置添加主导航菜单和页脚导航菜单定义多级菜单导航菜单常用">
+<meta itemprop="datePublished" content="2020-03-22T21:38:52&#43;08:00" />
+<meta itemprop="dateModified" content="2020-03-22T21:41:52&#43;08:00" />
+<meta itemprop="wordCount" content="1007">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="自定义hugo主题--导航菜单"/>
+<meta name="twitter:description" content="自定义hugo主题&ndash;导航菜单 2019-11-13 约 1055 字 预计阅读 3 分钟 文章目录 设置导航菜单的位置添加主导航菜单和页脚导航菜单定义多级菜单导航菜单常用"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">马保山的笔记</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://mabaoshan.top/">主页</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://mabaoshan.top/post/">档案</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://mabaoshan.top/tags/">标签</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://mabaoshan.top/categories/">类别</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://mabaoshan.top/about/">About</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <div class="mobile-menu-parent">
+            <span class="mobile-submenu-open"></span>
+            <a href="http://mabaoshan.top">
+              分类
+            </a>
+          </div>
+          <ul class="mobile-submenu-list">
+            
+              <li>
+                <a href="http://mabaoshan.top">sql</a>
+              </li>
+            
+              <li>
+                <a href="http://mabaoshan.top">k3cloud</a>
+              </li>
+            
+              <li>
+                <a href="http://mabaoshan.top">oa</a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+
+    
+  </ul>
+</nav>
+
+
+  
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      马保山的笔记
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://mabaoshan.top/">主页</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://mabaoshan.top/post/">档案</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://mabaoshan.top/tags/">标签</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://mabaoshan.top/categories/">类别</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="http://mabaoshan.top/about/">About</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          <a class="menu-item-link menu-parent" href="http://mabaoshan.top">分类</a>
+          <ul class="submenu">
+            
+              <li>
+                <a href="http://mabaoshan.top">sql</a>
+              </li>
+            
+              <li>
+                <a href="http://mabaoshan.top">k3cloud</a>
+              </li>
+            
+              <li>
+                <a href="http://mabaoshan.top">oa</a>
+              </li>
+            
+          </ul>
+
+        
+
+      </li>
+    
+
+    
+    
+
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">自定义hugo主题--导航菜单</h1>
+      
+      <div class="post-meta">
+        <time datetime="2020-03-22" class="post-time">
+          2020-03-22
+        </time>
+        
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      <h1 id="自定义hugo主题--导航菜单">自定义hugo主题&ndash;导航菜单</h1>
+<p>2019-11-13 约 1055 字 预计阅读 3 分钟</p>
+<h2 id="文章目录">文章目录</h2>
+<p><a href="https://hugo.aiaide.com/post/%E8%87%AA%E5%AE%9A%E4%B9%89hugo%E4%B8%BB%E9%A2%98-%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95/#%E8%AE%BE%E7%BD%AE%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95%E7%9A%84%E4%BD%8D%E7%BD%AE">设置导航菜单的位置</a><a href="https://hugo.aiaide.com/post/%E8%87%AA%E5%AE%9A%E4%B9%89hugo%E4%B8%BB%E9%A2%98-%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95/#%E6%B7%BB%E5%8A%A0%E4%B8%BB%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95%E5%92%8C%E9%A1%B5%E8%84%9A%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95">添加主导航菜单和页脚导航菜单</a><a href="https://hugo.aiaide.com/post/%E8%87%AA%E5%AE%9A%E4%B9%89hugo%E4%B8%BB%E9%A2%98-%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95/#%E5%AE%9A%E4%B9%89%E5%A4%9A%E7%BA%A7%E8%8F%9C%E5%8D%95">定义多级菜单</a><a href="https://hugo.aiaide.com/post/%E8%87%AA%E5%AE%9A%E4%B9%89hugo%E4%B8%BB%E9%A2%98-%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95/#%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B1%9E%E6%80%A7">导航菜单常用的属性</a><a href="https://hugo.aiaide.com/post/%E8%87%AA%E5%AE%9A%E4%B9%89hugo%E4%B8%BB%E9%A2%98-%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95/#%E5%BD%93%E8%A1%8C%E8%8F%9C%E5%8D%95%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95">当行菜单常用的方法</a></p>
+<h2 id="设置导航菜单的位置">设置导航菜单的位置</h2>
+<p>在根目录下的 config.toml 文件中配置导航菜单, config 文件支持三种文件格式: toml, yaml, json, 可以使用自己熟悉的格式. 使用对应的格式需要修改对应的扩展名. 不推荐使用 JSON 格式, 因为 json 不支持注释, 在配置文件中添加注释是非常有必要的.</p>
+<p>通过.Site.Menus 变量获取到设置的菜单信息, 下面以 toml 格式为例展示导航菜单的使用.</p>
+<h2 id="添加主导航菜单和页脚导航菜单">添加主导航菜单和页脚导航菜单</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><code># 主导航菜单 name=&quot;首页&quot; url=&quot;/&quot; weight=&quot;1&quot; [[menu.main]] name=&quot;博文&quot; url=&quot;/post&quot; weight=&quot;2&quot; [[menu.main]] name=&quot;新闻&quot; url=&quot;/news&quot; weight=&quot;3&quot; [[menu.main]] name=&quot;关于&quot; url=&quot;/about&quot; weight=&quot;4&quot; # 页脚导航菜单 [[menu.foot]] name=&quot;网站首页&quot; url=&quot;/&quot; weight=&quot;4&quot; [[menu.foot]] name=&quot;博文集合&quot; url=&quot;/post&quot; weight=&quot;3&quot; [[menu.foot]] name=&quot;新闻列表&quot; url=&quot;/news&quot; weight=&quot;2&quot; [[menu.foot]] name=&quot;关于我们&quot; url=&quot;/about&quot; weight=&quot;1&quot;</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>获取菜单的代码如下”</p>
+<p><code>主导航菜单   {{ range .Site.Menus.main }}  [{{.Name}}]({{.URL}})  {{ end }}  页脚导航菜单   {{ range .Site.Menus.foot }}   [{{.Name}}]({{.URL}})  {{ end }} </code></p>
+<p><code>.Site.Menus</code>后面接的是在 config.toml 中定义的表名</p>
+<h2 id="定义多级菜单">定义多级菜单</h2>
+<table>
+<thead>
+<tr>
+<th align="center">[[menu.main]] name=&quot;首页&rdquo; url=&rdquo;/&rdquo; weight=&quot;1&rdquo; [[menu.main]] name=&quot;博文&rdquo; url=&rdquo;/post&rdquo; weight=&quot;2&rdquo; [[menu.main]] name=&quot;新闻&rdquo; url=&rdquo;/news&rdquo; weight=&quot;3&rdquo; [[menu.main]] name=&quot;关于&rdquo; url=&rdquo;/about&rdquo; weight=&quot;4&rdquo; [[menu.main]] name=&quot;子菜单&rdquo; weight=&quot;5&rdquo; [[menu.main]] parent=&quot;子菜单&rdquo; name=&quot;子菜单1&rdquo; weight=&quot;2&rdquo; [[menu.main]] parent=&quot;子菜单&rdquo; name=&quot;子菜单2&rdquo; weight=&quot;1&quot;` |</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p>获取菜单的代码如下:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><code>主导航菜单   {{ range .Site.Menus.main }}   {{if .HasChildren}}  {{.Name}}      {{ range .Children }}          [{{ .Name }}]({{ .URL }})        {{ end }}    {{ else }}  [{{.Name}}]({{.URL}})  {{end}} {{ end }} </code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>子菜单项比普通的菜单项多了一个属性<code>parent</code>, 用于设置父菜单的ID, 这里用的是Name的值, 如果name的值不重复, 一旦重复就会产生意想不到的效果. 正确的做法是使用Identifier的值.</p>
+<h2 id="导航菜单常用的属性">导航菜单常用的属性</h2>
+<ul>
+<li><code>.Name</code>: 菜单想的名称, 如果Name的值重复了, 要想使其生效, 需要为其设置Identifier属性</li>
+<li><code>.Identifier</code>: 菜单想的唯一标识, 值不能重复.</li>
+<li><code>.Weight</code>: 用于设置菜单项的排序, 值越小排名越靠前.</li>
+<li><code>.Parent</code>: 设置父菜单的ID.</li>
+<li><code>.URL</code>: 设置菜单项直向的URL地址.</li>
+</ul>
+<h2 id="当行菜单常用的方法">当行菜单常用的方法</h2>
+<ul>
+<li><code>.HasChildren</code>: 判断是否包含子菜单. 如果有子菜单则返回true</li>
+</ul>
+
+    </div>
+
+    
+    
+
+
+    
+    
+
+    <footer class="post-footer">
+      
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/git/">
+            <span class="next-text nav-default">git命令</span>
+            <span class="prev-text nav-mobile">Next</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="icon-links">
+  
+
+
+<a href="http://mabaoshan.top/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+   
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+       -
+    2020
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        马保山
+        
+      </span></span>
+
+  
+  
+
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
