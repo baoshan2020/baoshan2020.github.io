@@ -61,4 +61,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: http://mabaoshan.top/sitemap.xml
+Sitemap: http://mabaoshan.top/en/sitemap.xml
