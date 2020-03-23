@@ -1,114 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>马保山的笔记</title>
-    <link>http://mabaoshan.top/</link>
-    <description>Recent content on 马保山的笔记</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Wed, 18 Mar 2020 21:38:52 +0800</lastBuildDate>
-    
-        <atom:link href="http://mabaoshan.top/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>sql</title>
-      <link>http://mabaoshan.top/fenlei/sql/</link>
-      <pubDate>Sun, 22 Mar 2020 21:38:52 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/fenlei/sql/</guid>
-      
-        <description>2020年3月23日 sql</description>
-      
-    </item>
-    
-    <item>
-      <title>自定义hugo主题--导航菜单</title>
-      <link>http://mabaoshan.top/post/%E8%87%AA%E5%AE%9A%E4%B9%89hugo%E4%B8%BB%E9%A2%98-%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95/</link>
-      <pubDate>Sun, 22 Mar 2020 21:38:52 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/post/%E8%87%AA%E5%AE%9A%E4%B9%89hugo%E4%B8%BB%E9%A2%98-%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95/</guid>
-      
-        <description>设置导航菜单的位置 在根目录下的 config.toml 文件中配置导航菜单, config 文件支持三种文件格式: toml, yaml, json, 可以使用自己熟悉的格式. 使用对应的格式需要修改对应的扩展名</description>
-      
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://mabaoshan.top/about/</link>
-      <pubDate>Wed, 18 Mar 2020 21:38:52 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/about/</guid>
-      
-        <description>最近在做的事情 考勤数据分析 网页发布软件 1 2 3 4 5 6 7 ​``` gantt dateFormat YYYY-MM-DD title 考勤数据分析 section 初期阶段 明确需求:2020-03-23 ,10d ​```</description>
-      
-    </item>
-    
-    <item>
-      <title>git命令</title>
-      <link>http://mabaoshan.top/post/git/</link>
-      <pubDate>Wed, 18 Mar 2020 21:38:52 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/post/git/</guid>
-      
-        <description>工作区 unstage 暂存区 stage git rm &amp;ndash;cached 提交 commited vi 命令 shift ZZ 提出 ：set number 设置行号 git stuts 查看状态 git add . 添加所有文件到本地仓库 git commit 上传所有文件到本地仓库 git commit -m ‘备注名</description>
-      
-    </item>
-    
-    <item>
-      <title>hugo命令</title>
-      <link>http://mabaoshan.top/post/hugo%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Wed, 18 Mar 2020 21:38:52 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/post/hugo%E5%91%BD%E4%BB%A4/</guid>
-      
-        <description>&amp;mdash;启动服务 hugo server &amp;ndash;buildDrafts &amp;mdash;上传到github hugo &amp;ndash;theme=jane &amp;ndash;baseUrl=&amp;quot;mabaoshan.top&amp;rdquo; hugo &amp;ndash;baseUrl=&amp;quot;mabaoshan.top&amp;rdquo; 模板（Archetypes） 模板（Archetypes）是指放在arc</description>
-      
-    </item>
-    
-    <item>
-      <title>软件下载</title>
-      <link>http://mabaoshan.top/post/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</link>
-      <pubDate>Wed, 18 Mar 2020 21:38:52 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/post/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</guid>
-      
-        <description>软件下载 系统软件 名称 地址 操作说明 操作系统 https://msdn.itellyou.cn/ MediaCreatioTool(创建启动盘) office pdf 7-zip 公司软件 名称 地址 操作说明 k3cloud OA 263</description>
-      
-    </item>
-    
-    <item>
-      <title>Git Push免输用户名和密码</title>
-      <link>http://mabaoshan.top/post/Git-Push%E5%85%8D%E8%BE%93%E7%94%A8%E6%88%B7%E5%90%8D%E5%92%8C%E5%AF%86%E7%A0%81/</link>
-      <pubDate>Sun, 22 Mar 2020 21:33:46 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/post/Git-Push%E5%85%8D%E8%BE%93%E7%94%A8%E6%88%B7%E5%90%8D%E5%92%8C%E5%AF%86%E7%A0%81/</guid>
-      
-        <description>Git Push 免输 用户名和密码 前言 在大家使用github的过程中，一定会碰到这样一种情况，就是每次要push 和pull时总是要输入github的账号和</description>
-      
-    </item>
-    
-    <item>
-      <title>Hugo评论系统</title>
-      <link>http://mabaoshan.top/post/hugo%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</link>
-      <pubDate>Sun, 22 Mar 2020 21:33:46 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/post/hugo%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</guid>
-      
-        <description>参考网站 https://shen.bioinit.com/topic/life/2019-12-24-fl1z7t/</description>
-      
-    </item>
-    
-    <item>
-      <title>Github建立</title>
-      <link>http://mabaoshan.top/post/github%E5%BB%BA%E7%AB%8B/</link>
-      <pubDate>Fri, 20 Mar 2020 14:33:40 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/post/github%E5%BB%BA%E7%AB%8B/</guid>
-      
-        <description>2 在仓库里添加CNAME文件并在文件中填写绑定的域名</description>
-      
-    </item>
-    
-  </channel>
+    <channel>
+        <title>LoveIt | LoveIt</title>
+        <link>https://example.com/</link>
+        <description>LoveIt | LoveIt</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 18 Mar 2020 21:38:52 &#43;0800</lastBuildDate><atom:link href="https://example.com/" rel="self" type="application/rss+xml" /><item>
+                <title>About</title>
+                <link>https://example.com/about/</link>
+                <pubDate>Wed, 18 Mar 2020 21:38:52 &#43;0800</pubDate><guid>https://example.com/about/</guid>
+                <description>&lt;p&gt;最近在做的事情&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt;考勤数据分析&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt;网页发布软件&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;​```
+gantt
+dateFormat YYYY-MM-DD
+title 考勤数据分析
+section  初期阶段
+明确需求:2020-03-23 ,10d
+​```
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+            </item><item>
+                <title>Fenleis</title>
+                <link>https://example.com/fenlei/</link>
+                <pubDate>Sun, 22 Mar 2020 21:38:52 &#43;0800</pubDate><guid>https://example.com/fenlei/</guid>
+                <description></description>
+            </item><item>
+                <title>Posts</title>
+                <link>https://example.com/post/</link>
+                <pubDate>Sun, 22 Mar 2020 21:38:52 &#43;0800</pubDate><guid>https://example.com/post/</guid>
+                <description></description>
+            </item></channel>
 </rss>

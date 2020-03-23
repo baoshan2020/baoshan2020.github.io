@@ -1,77 +1,116 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 马保山的笔记</title>
-    <link>http://mabaoshan.top/post/</link>
-    <description>Recent content in Posts on 马保山的笔记</description>
+    <title>Posts on LoveIt</title>
+    <link>https://example.com/post/</link>
+    <description>Recent content in Posts on LoveIt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>en</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Sun, 22 Mar 2020 21:38:52 +0800</lastBuildDate>
     
-	<atom:link href="http://mabaoshan.top/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>自定义hugo主题--导航菜单</title>
-      <link>http://mabaoshan.top/post/%E8%87%AA%E5%AE%9A%E4%B9%89hugo%E4%B8%BB%E9%A2%98-%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95/</link>
+      <link>https://example.com/post/%E8%87%AA%E5%AE%9A%E4%B9%89hugo%E4%B8%BB%E9%A2%98-%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95/</link>
       <pubDate>Sun, 22 Mar 2020 21:38:52 +0800</pubDate>
       
-      <guid>http://mabaoshan.top/post/%E8%87%AA%E5%AE%9A%E4%B9%89hugo%E4%B8%BB%E9%A2%98-%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95/</guid>
-      <description>设置导航菜单的位置 在根目录下的 config.toml 文件中配置导航菜单, config 文件支持三种文件格式: toml, yaml, json, 可以使用自己熟悉的格式. 使用对应的格式需要修改对应的扩展名</description>
+      <guid>https://example.com/post/%E8%87%AA%E5%AE%9A%E4%B9%89hugo%E4%B8%BB%E9%A2%98-%E5%AF%BC%E8%88%AA%E8%8F%9C%E5%8D%95/</guid>
+      <description>设置导航菜单的位置 在根目录下的 config.toml 文件中配置导航菜单, config 文件支持三种文件格式: toml, yaml, json, 可以使用自己熟悉的格式. 使用对应的格式需要修改对应的扩展名. 不推荐使用 JSON 格式, 因为 json 不支持注释, 在配置文件中添加注释是非常有必要的.
+通过.Site.Menus 变量获取到设置的菜单信息, 下面以 toml 格式为例展示导航菜单的使用.
+添加主导航菜单和页脚导航菜单 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34  # 主导航菜单 name=&amp;#34;首页&amp;#34;url=&amp;#34;/&amp;#34;weight=&amp;#34;1&amp;#34;[[menu.main]]name=&amp;#34;博文&amp;#34;url=&amp;#34;/post&amp;#34;weight=&amp;#34;2&amp;#34;[[menu.main]]name=&amp;#34;新闻&amp;#34;url=&amp;#34;/news&amp;#34;weight=&amp;#34;3&amp;#34;[[menu.</description>
     </item>
     
     <item>
       <title>git命令</title>
-      <link>http://mabaoshan.top/post/git/</link>
+      <link>https://example.com/post/git/</link>
       <pubDate>Wed, 18 Mar 2020 21:38:52 +0800</pubDate>
       
-      <guid>http://mabaoshan.top/post/git/</guid>
-      <description>工作区 unstage 暂存区 stage git rm &amp;ndash;cached 提交 commited vi 命令 shift ZZ 提出 ：set number 设置行号 git stuts 查看状态 git add . 添加所有文件到本地仓库 git commit 上传所有文件到本地仓库 git commit -m ‘备注名</description>
+      <guid>https://example.com/post/git/</guid>
+      <description>工作区 unstage
+暂存区 stage git rm &amp;ndash;cached
+提交 commited
+vi 命令
+shift ZZ 提出
+：set number 设置行号
+git stuts 查看状态
+git add . 添加所有文件到本地仓库
+git commit 上传所有文件到本地仓库
+git commit -m ‘备注名称’
+.gitignore 需要忽略的文件
+git remote 查看需要上传的
+&amp;mdash;分支建立
+git branch login 创建分支
+git checkout login 切换分支
+git checkout login
+1 2  git remote add origin https://github.com/baoshan2020/baoshan2020.github.io.gitgit push -u origin master  …or create a new repository on the command line ​</description>
     </item>
     
     <item>
       <title>hugo命令</title>
-      <link>http://mabaoshan.top/post/hugo%E5%91%BD%E4%BB%A4/</link>
+      <link>https://example.com/post/hugo%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Wed, 18 Mar 2020 21:38:52 +0800</pubDate>
       
-      <guid>http://mabaoshan.top/post/hugo%E5%91%BD%E4%BB%A4/</guid>
-      <description>&amp;mdash;启动服务 hugo server &amp;ndash;buildDrafts &amp;mdash;上传到github hugo &amp;ndash;theme=jane &amp;ndash;baseUrl=&amp;quot;mabaoshan.top&amp;rdquo; hugo &amp;ndash;baseUrl=&amp;quot;mabaoshan.top&amp;rdquo; 模板（Archetypes） 模板（Archetypes）是指放在arc</description>
+      <guid>https://example.com/post/hugo%E5%91%BD%E4%BB%A4/</guid>
+      <description>&amp;mdash;启动服务
+hugo server &amp;ndash;buildDrafts
+&amp;mdash;上传到github
+hugo &amp;ndash;theme=jane &amp;ndash;baseUrl=&amp;quot;mabaoshan.top&amp;rdquo;
+hugo &amp;ndash;baseUrl=&amp;quot;mabaoshan.top&amp;rdquo;
+模板（Archetypes） 模板（Archetypes）是指放在archetypes文件夹里的文件，里面可以预定义一些元信息，也可以提前写好一些内容生成逻辑，或其他什么内容。当执行hugo new命令来生成内容文件的时候，就会调用对应内容类型的模板文件来帮你自动生成一些内容。 假如以posts作为内容类型，生成posts文件时模板的查找路径依次是：
+ archetypes/posts.md archetypes/default.md themes/my-theme/archetypes/posts.md themes/my-theme/archetypes/default.md  分类体系（Taxonomies） 分类体系（Taxonomies）表示作者对内容的一套或多套分类。比如标签（tags）、类目（categories）、归档（archives）等。分类体系需在项目根路径下配置文件中定义，例如在config.toml文件中加入：
+我们在hugo-cxy-theme文件夹里的archetypes里创建post.md
+1 2 3 4 5 6 7 8 9 10 11  ---title: &amp;#34;{{ with slicestr .Name 10 }}{{replace . &amp;#34;-&amp;#34; &amp;#34; &amp;#34; | strings.TrimLeft &amp;#34; &amp;#34; | title }}{{end}}&amp;#34;subtitle: &amp;#34;&amp;#34;description: &amp;#34;&amp;#34;date: {{ slicestr .Name 0 10 }}author: &amp;#34;&amp;#34;image: &amp;#34;&amp;#34;tags: [&amp;#34;tag1&amp;#34;, &amp;#34;tag2&amp;#34;]categories: [&amp;#34;Tech&amp;#34;]archives: &amp;#34;{{ slicestr .</description>
     </item>
     
     <item>
       <title>软件下载</title>
-      <link>http://mabaoshan.top/post/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</link>
+      <link>https://example.com/post/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</link>
       <pubDate>Wed, 18 Mar 2020 21:38:52 +0800</pubDate>
       
-      <guid>http://mabaoshan.top/post/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</guid>
-      <description>软件下载 系统软件 名称 地址 操作说明 操作系统 https://msdn.itellyou.cn/ MediaCreatioTool(创建启动盘) office pdf 7-zip 公司软件 名称 地址 操作说明 k3cloud OA 263</description>
+      <guid>https://example.com/post/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</guid>
+      <description>软件下载 系统软件
+   名称 地址 操作说明     操作系统 https://msdn.itellyou.cn/ MediaCreatioTool(创建启动盘)   office     pdf     7-zip           公司软件
+   名称 地址 操作说明     k3cloud     OA     263                                    </description>
     </item>
     
     <item>
       <title>Git Push免输用户名和密码</title>
-      <link>http://mabaoshan.top/post/Git-Push%E5%85%8D%E8%BE%93%E7%94%A8%E6%88%B7%E5%90%8D%E5%92%8C%E5%AF%86%E7%A0%81/</link>
+      <link>https://example.com/post/git-push%E5%85%8D%E8%BE%93%E7%94%A8%E6%88%B7%E5%90%8D%E5%92%8C%E5%AF%86%E7%A0%81/</link>
       <pubDate>Sun, 22 Mar 2020 21:33:46 +0800</pubDate>
       
-      <guid>http://mabaoshan.top/post/Git-Push%E5%85%8D%E8%BE%93%E7%94%A8%E6%88%B7%E5%90%8D%E5%92%8C%E5%AF%86%E7%A0%81/</guid>
-      <description>Git Push 免输 用户名和密码 前言 在大家使用github的过程中，一定会碰到这样一种情况，就是每次要push 和pull时总是要输入github的账号和</description>
+      <guid>https://example.com/post/git-push%E5%85%8D%E8%BE%93%E7%94%A8%E6%88%B7%E5%90%8D%E5%92%8C%E5%AF%86%E7%A0%81/</guid>
+      <description>Git Push 免输 用户名和密码 前言
+在大家使用github的过程中，一定会碰到这样一种情况，就是每次要push 和pull时总是要输入github的账号和密码，这样不仅浪费了大量的时间且降低了工作效率。在此背景下，本文在网上找了两种方法来避免这种状况，这些成果也是先人提出来的，在此只是做个总结。
+1.方法一 1.1 创建文件存储GIT用户名和密码
+在%HOME%目录中，一般为C:\users\Administrator，也可以是你自己创建的系统用户名目录，反正都在C:\users\中。文件名为.git-credentials,由于在Window中不允许直接创建以&amp;rdquo;.&amp;ldquo;开头的文件，所以需要借助git bash进行，打开git bash客户端，进行%HOME%目录，然后用touch创建文件 .git-credentials, 用vim编辑此文件，输入内容格式：
+ 1 2  touch .git-credentials vim .git-credentials    1  `https://{username}:{password}@github.com`   1.2 添加Git Config 内容
+进入git bash终端， 输入如下命令：
+ 1  git config --global credential.helper store    执行完后查看%HOME%目录下的.gitconfig文件，会多了一项：
+ 1  [credential]    1  helper=store   重新开启git bash会发现git push时不用再输入用户名和密码
+2.方法二 2.1 添加环境变量
+在windows中添加一个HOME环境变量，变量名:HOME,变量值：%USERPROFILE%</description>
     </item>
     
     <item>
       <title>Hugo评论系统</title>
-      <link>http://mabaoshan.top/post/hugo%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</link>
+      <link>https://example.com/post/hugo%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Sun, 22 Mar 2020 21:33:46 +0800</pubDate>
       
-      <guid>http://mabaoshan.top/post/hugo%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</guid>
-      <description>参考网站 https://shen.bioinit.com/topic/life/2019-12-24-fl1z7t/</description>
+      <guid>https://example.com/post/hugo%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/</guid>
+      <description>参考网站
+https://shen.bioinit.com/topic/life/2019-12-24-fl1z7t/</description>
     </item>
     
     <item>
       <title>Github建立</title>
-      <link>http://mabaoshan.top/post/github%E5%BB%BA%E7%AB%8B/</link>
+      <link>https://example.com/post/github%E5%BB%BA%E7%AB%8B/</link>
       <pubDate>Fri, 20 Mar 2020 14:33:40 +0800</pubDate>
       
-      <guid>http://mabaoshan.top/post/github%E5%BB%BA%E7%AB%8B/</guid>
-      <description>2 在仓库里添加CNAME文件并在文件中填写绑定的域名</description>
+      <guid>https://example.com/post/github%E5%BB%BA%E7%AB%8B/</guid>
+      <description>2 在仓库里添加CNAME文件并在文件中填写绑定的域名 </description>
     </item>
     
   </channel>
