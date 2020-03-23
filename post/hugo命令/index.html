@@ -68,7 +68,7 @@
 <meta itemprop="description" content="&mdash;启动服务 hugo server &ndash;buildDrafts &mdash;上传到github hugo &ndash;theme=jane &ndash;baseUrl=&quot;mabaoshan.top&rdquo; hugo &ndash;baseUrl=&quot;mabaoshan.top&rdquo; 模板（Archetypes） 模板（Archetypes）是指放在arc">
 <meta itemprop="datePublished" content="2020-03-18T21:38:52&#43;08:00" />
 <meta itemprop="dateModified" content="2020-03-18T21:41:52&#43;08:00" />
-<meta itemprop="wordCount" content="429">
+<meta itemprop="wordCount" content="440">
 
 
 
@@ -121,13 +121,6 @@
           
           
             <a class="menu-item-link" href="http://mabaoshan.top/tags/">标签</a>
-          
-        
-      </li><li class="mobile-menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="http://mabaoshan.top/categories/">类别</a>
           
         
       </li><li class="mobile-menu-item">
@@ -226,17 +219,6 @@
         
           
           
-            <a class="menu-item-link" href="http://mabaoshan.top/categories/">类别</a>
-          
-
-        
-
-      </li>
-    
-        <li class="menu-item">
-        
-          
-          
             <a class="menu-item-link" href="http://mabaoshan.top/about/">About</a>
           
 
@@ -324,18 +306,35 @@
 <h3 id="分类体系taxonomies">分类体系（Taxonomies）</h3>
 <p>分类体系（<a href="https://links.jianshu.com/go?to=https%3A%2F%2Fgohugo.io%2Fcontent-management%2Ftaxonomies%2F">Taxonomies</a>）表示作者对内容的一套或多套分类。比如标签（<code>tags</code>）、类目（<code>categories</code>）、归档（<code>archives</code>）等。分类体系需在项目根路径下配置文件中定义，例如在<code>config.toml</code>文件中加入：</p>
 <p>我们在<code>hugo-cxy-theme</code>文件夹里的<code>archetypes</code>里创建<code>post.md</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">---
-title:       <span style="color:#e6db74">&#34;{{ with slicestr .Name 10 }}{{replace . &#34;</span>-<span style="color:#e6db74">&#34; &#34;</span> <span style="color:#e6db74">&#34;  | strings.TrimLeft &#34;</span> <span style="color:#e6db74">&#34; | title }}{{end}}&#34;</span>
-subtitle:    <span style="color:#e6db74">&#34;&#34;</span>
-description: <span style="color:#e6db74">&#34;&#34;</span>
-date:        <span style="color:#f92672">{{</span> slicestr .Name <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">}}</span>
-author:      <span style="color:#e6db74">&#34;&#34;</span>
-image:       <span style="color:#e6db74">&#34;&#34;</span>
-tags:        <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;tag1&#34;</span>, <span style="color:#e6db74">&#34;tag2&#34;</span><span style="color:#f92672">]</span>
-categories:  <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;Tech&#34;</span><span style="color:#f92672">]</span>
-archives:    <span style="color:#e6db74">&#34;{{ slicestr .Name 0 4 }}&#34;</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">---
+title:       <span class="s2">&#34;{{ with slicestr .Name 10 }}{{replace . &#34;</span>-<span class="s2">&#34; &#34;</span> <span class="s2">&#34;  | strings.TrimLeft &#34;</span> <span class="s2">&#34; | title }}{{end}}&#34;</span>
+subtitle:    <span class="s2">&#34;&#34;</span>
+description: <span class="s2">&#34;&#34;</span>
+date:        <span class="o">{{</span> slicestr .Name <span class="m">0</span> <span class="m">10</span> <span class="o">}}</span>
+author:      <span class="s2">&#34;&#34;</span>
+image:       <span class="s2">&#34;&#34;</span>
+tags:        <span class="o">[</span><span class="s2">&#34;tag1&#34;</span>, <span class="s2">&#34;tag2&#34;</span><span class="o">]</span>
+categories:  <span class="o">[</span><span class="s2">&#34;Tech&#34;</span><span class="o">]</span>
+archives:    <span class="s2">&#34;{{ slicestr .Name 0 4 }}&#34;</span>
 ---
-</code></pre></div>
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     
@@ -362,12 +361,12 @@ archives:    <span style="color:#e6db74">&#34;{{ slicestr .Name 0 4 }}&#34;</spa
 
             </i>
             <span class="prev-text nav-default">git命令</span>
-            <span class="prev-text nav-mobile">Prev</span>
+            <span class="prev-text nav-mobile">上一篇</span>
           </a>
         
           <a class="next" href="/post/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/">
             <span class="next-text nav-default">软件下载</span>
-            <span class="prev-text nav-mobile">Next</span>
+            <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">
               <svg class="icon" viewBox="0 0 1024 1024" version="1.1"

@@ -68,7 +68,7 @@
 <meta itemprop="description" content="设置导航菜单的位置 在根目录下的 config.toml 文件中配置导航菜单, config 文件支持三种文件格式: toml, yaml, json, 可以使用自己熟悉的格式. 使用对应的格式需要修改对应的扩展名">
 <meta itemprop="datePublished" content="2020-03-22T21:38:52&#43;08:00" />
 <meta itemprop="dateModified" content="2020-03-22T21:41:52&#43;08:00" />
-<meta itemprop="wordCount" content="957">
+<meta itemprop="wordCount" content="1047">
 
 
 
@@ -121,13 +121,6 @@
           
           
             <a class="menu-item-link" href="http://mabaoshan.top/tags/">标签</a>
-          
-        
-      </li><li class="mobile-menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="http://mabaoshan.top/categories/">类别</a>
           
         
       </li><li class="mobile-menu-item">
@@ -226,17 +219,6 @@
         
           
           
-            <a class="menu-item-link" href="http://mabaoshan.top/categories/">类别</a>
-          
-
-        
-
-      </li>
-    
-        <li class="menu-item">
-        
-          
-          
             <a class="menu-item-link" href="http://mabaoshan.top/about/">About</a>
           
 
@@ -311,101 +293,215 @@
 <p>在根目录下的 config.toml 文件中配置导航菜单, config 文件支持三种文件格式: toml, yaml, json, 可以使用自己熟悉的格式. 使用对应的格式需要修改对应的扩展名. 不推荐使用 JSON 格式, 因为 json 不支持注释, 在配置文件中添加注释是非常有必要的.</p>
 <p>通过.Site.Menus 变量获取到设置的菜单信息, 下面以 toml 格式为例展示导航菜单的使用.</p>
 <h2 id="添加主导航菜单和页脚导航菜单">添加主导航菜单和页脚导航菜单</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#75715e"># 主导航菜单</span>
-<span style="color:#a6e22e">name</span>=<span style="color:#e6db74">&#34;首页&#34;</span>
-<span style="color:#a6e22e">url</span>=<span style="color:#e6db74">&#34;/&#34;</span>
-<span style="color:#a6e22e">weight</span>=<span style="color:#e6db74">&#34;1&#34;</span>
-[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
-<span style="color:#a6e22e">name</span>=<span style="color:#e6db74">&#34;博文&#34;</span>
-<span style="color:#a6e22e">url</span>=<span style="color:#e6db74">&#34;/post&#34;</span>
-<span style="color:#a6e22e">weight</span>=<span style="color:#e6db74">&#34;2&#34;</span>
-[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
-<span style="color:#a6e22e">name</span>=<span style="color:#e6db74">&#34;新闻&#34;</span>
-<span style="color:#a6e22e">url</span>=<span style="color:#e6db74">&#34;/news&#34;</span>
-<span style="color:#a6e22e">weight</span>=<span style="color:#e6db74">&#34;3&#34;</span>
-[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
-<span style="color:#a6e22e">name</span>=<span style="color:#e6db74">&#34;关于&#34;</span>
-<span style="color:#a6e22e">url</span>=<span style="color:#e6db74">&#34;/about&#34;</span>
-<span style="color:#a6e22e">weight</span>=<span style="color:#e6db74">&#34;4&#34;</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-toml" data-lang="toml"><span class="c"># 主导航菜单</span>
+<span class="nx">name</span><span class="p">=</span><span class="s2">&#34;首页&#34;</span>
+<span class="nx">url</span><span class="p">=</span><span class="s2">&#34;/&#34;</span>
+<span class="nx">weight</span><span class="p">=</span><span class="s2">&#34;1&#34;</span>
+<span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+<span class="nx">name</span><span class="p">=</span><span class="s2">&#34;博文&#34;</span>
+<span class="nx">url</span><span class="p">=</span><span class="s2">&#34;/post&#34;</span>
+<span class="nx">weight</span><span class="p">=</span><span class="s2">&#34;2&#34;</span>
+<span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+<span class="nx">name</span><span class="p">=</span><span class="s2">&#34;新闻&#34;</span>
+<span class="nx">url</span><span class="p">=</span><span class="s2">&#34;/news&#34;</span>
+<span class="nx">weight</span><span class="p">=</span><span class="s2">&#34;3&#34;</span>
+<span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+<span class="nx">name</span><span class="p">=</span><span class="s2">&#34;关于&#34;</span>
+<span class="nx">url</span><span class="p">=</span><span class="s2">&#34;/about&#34;</span>
+<span class="nx">weight</span><span class="p">=</span><span class="s2">&#34;4&#34;</span>
 
-<span style="color:#75715e"># 页脚导航菜单</span>
-[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">foot</span>]]
-<span style="color:#a6e22e">name</span>=<span style="color:#e6db74">&#34;网站首页&#34;</span>
-<span style="color:#a6e22e">url</span>=<span style="color:#e6db74">&#34;/&#34;</span>
-<span style="color:#a6e22e">weight</span>=<span style="color:#e6db74">&#34;4&#34;</span>
-[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">foot</span>]]
-<span style="color:#a6e22e">name</span>=<span style="color:#e6db74">&#34;博文集合&#34;</span>
-<span style="color:#a6e22e">url</span>=<span style="color:#e6db74">&#34;/post&#34;</span>
-<span style="color:#a6e22e">weight</span>=<span style="color:#e6db74">&#34;3&#34;</span>
-[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">foot</span>]]
-<span style="color:#a6e22e">name</span>=<span style="color:#e6db74">&#34;新闻列表&#34;</span>
-<span style="color:#a6e22e">url</span>=<span style="color:#e6db74">&#34;/news&#34;</span>
-<span style="color:#a6e22e">weight</span>=<span style="color:#e6db74">&#34;2&#34;</span>
-[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">foot</span>]]
-<span style="color:#a6e22e">name</span>=<span style="color:#e6db74">&#34;关于我们&#34;</span>
-<span style="color:#a6e22e">url</span>=<span style="color:#e6db74">&#34;/about&#34;</span>
-<span style="color:#a6e22e">weight</span>=<span style="color:#e6db74">&#34;1&#34;</span>
-</code></pre></div><p>获取菜单的代码如下”</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">h2</span>&gt;主导航菜单&lt;/<span style="color:#f92672">h2</span>&gt;
-&lt;<span style="color:#f92672">ul</span>&gt;
+<span class="c"># 页脚导航菜单</span>
+<span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">foot</span><span class="p">]]</span>
+<span class="nx">name</span><span class="p">=</span><span class="s2">&#34;网站首页&#34;</span>
+<span class="nx">url</span><span class="p">=</span><span class="s2">&#34;/&#34;</span>
+<span class="nx">weight</span><span class="p">=</span><span class="s2">&#34;4&#34;</span>
+<span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">foot</span><span class="p">]]</span>
+<span class="nx">name</span><span class="p">=</span><span class="s2">&#34;博文集合&#34;</span>
+<span class="nx">url</span><span class="p">=</span><span class="s2">&#34;/post&#34;</span>
+<span class="nx">weight</span><span class="p">=</span><span class="s2">&#34;3&#34;</span>
+<span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">foot</span><span class="p">]]</span>
+<span class="nx">name</span><span class="p">=</span><span class="s2">&#34;新闻列表&#34;</span>
+<span class="nx">url</span><span class="p">=</span><span class="s2">&#34;/news&#34;</span>
+<span class="nx">weight</span><span class="p">=</span><span class="s2">&#34;2&#34;</span>
+<span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">foot</span><span class="p">]]</span>
+<span class="nx">name</span><span class="p">=</span><span class="s2">&#34;关于我们&#34;</span>
+<span class="nx">url</span><span class="p">=</span><span class="s2">&#34;/about&#34;</span>
+<span class="nx">weight</span><span class="p">=</span><span class="s2">&#34;1&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>获取菜单的代码如下”</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>主导航菜单<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
   {{ range .Site.Menus.main }}
-  &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{.URL}}&#34;</span>&gt;{{.Name}}&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{.URL}}&#34;</span><span class="p">&gt;</span>{{.Name}}<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
   {{ end }}
-&lt;/<span style="color:#f92672">ul</span>&gt;
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
 
-&lt;<span style="color:#f92672">h2</span>&gt;页脚导航菜单&lt;/<span style="color:#f92672">h2</span>&gt;
-&lt;<span style="color:#f92672">ul</span>&gt;
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>页脚导航菜单<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
   {{ range .Site.Menus.foot }}
-  &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{.URL}}&#34;</span>&gt;{{.Name}}&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{.URL}}&#34;</span><span class="p">&gt;</span>{{.Name}}<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
   {{ end }}
-&lt;/<span style="color:#f92672">ul</span>&gt;
-</code></pre></div><p><code>.Site.Menus</code>后面接的是在 config.toml 中定义的表名</p>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><code>.Site.Menus</code>后面接的是在 config.toml 中定义的表名</p>
 <h2 id="定义多级菜单">定义多级菜单</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
-<span style="color:#a6e22e">name</span>=<span style="color:#e6db74">&#34;首页&#34;</span>
-<span style="color:#a6e22e">url</span>=<span style="color:#e6db74">&#34;/&#34;</span>
-<span style="color:#a6e22e">weight</span>=<span style="color:#e6db74">&#34;1&#34;</span>
-[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
-<span style="color:#a6e22e">name</span>=<span style="color:#e6db74">&#34;博文&#34;</span>
-<span style="color:#a6e22e">url</span>=<span style="color:#e6db74">&#34;/post&#34;</span>
-<span style="color:#a6e22e">weight</span>=<span style="color:#e6db74">&#34;2&#34;</span>
-[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
-<span style="color:#a6e22e">name</span>=<span style="color:#e6db74">&#34;新闻&#34;</span>
-<span style="color:#a6e22e">url</span>=<span style="color:#e6db74">&#34;/news&#34;</span>
-<span style="color:#a6e22e">weight</span>=<span style="color:#e6db74">&#34;3&#34;</span>
-[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
-<span style="color:#a6e22e">name</span>=<span style="color:#e6db74">&#34;关于&#34;</span>
-<span style="color:#a6e22e">url</span>=<span style="color:#e6db74">&#34;/about&#34;</span>
-<span style="color:#a6e22e">weight</span>=<span style="color:#e6db74">&#34;4&#34;</span>
-[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
-<span style="color:#a6e22e">name</span>=<span style="color:#e6db74">&#34;子菜单&#34;</span>
-<span style="color:#a6e22e">weight</span>=<span style="color:#e6db74">&#34;5&#34;</span>
-[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
-<span style="color:#a6e22e">parent</span>=<span style="color:#e6db74">&#34;子菜单&#34;</span>
-<span style="color:#a6e22e">name</span>=<span style="color:#e6db74">&#34;子菜单1&#34;</span>
-<span style="color:#a6e22e">weight</span>=<span style="color:#e6db74">&#34;2&#34;</span>
-[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
-<span style="color:#a6e22e">parent</span>=<span style="color:#e6db74">&#34;子菜单&#34;</span>
-<span style="color:#a6e22e">name</span>=<span style="color:#e6db74">&#34;子菜单2&#34;</span>
-</code></pre></div><p>获取菜单的代码如下:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">h2</span>&gt;主导航菜单&lt;/<span style="color:#f92672">h2</span>&gt;
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+<span class="nx">name</span><span class="p">=</span><span class="s2">&#34;首页&#34;</span>
+<span class="nx">url</span><span class="p">=</span><span class="s2">&#34;/&#34;</span>
+<span class="nx">weight</span><span class="p">=</span><span class="s2">&#34;1&#34;</span>
+<span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+<span class="nx">name</span><span class="p">=</span><span class="s2">&#34;博文&#34;</span>
+<span class="nx">url</span><span class="p">=</span><span class="s2">&#34;/post&#34;</span>
+<span class="nx">weight</span><span class="p">=</span><span class="s2">&#34;2&#34;</span>
+<span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+<span class="nx">name</span><span class="p">=</span><span class="s2">&#34;新闻&#34;</span>
+<span class="nx">url</span><span class="p">=</span><span class="s2">&#34;/news&#34;</span>
+<span class="nx">weight</span><span class="p">=</span><span class="s2">&#34;3&#34;</span>
+<span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+<span class="nx">name</span><span class="p">=</span><span class="s2">&#34;关于&#34;</span>
+<span class="nx">url</span><span class="p">=</span><span class="s2">&#34;/about&#34;</span>
+<span class="nx">weight</span><span class="p">=</span><span class="s2">&#34;4&#34;</span>
+<span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+<span class="nx">name</span><span class="p">=</span><span class="s2">&#34;子菜单&#34;</span>
+<span class="nx">weight</span><span class="p">=</span><span class="s2">&#34;5&#34;</span>
+<span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+<span class="nx">parent</span><span class="p">=</span><span class="s2">&#34;子菜单&#34;</span>
+<span class="nx">name</span><span class="p">=</span><span class="s2">&#34;子菜单1&#34;</span>
+<span class="nx">weight</span><span class="p">=</span><span class="s2">&#34;2&#34;</span>
+<span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+<span class="nx">parent</span><span class="p">=</span><span class="s2">&#34;子菜单&#34;</span>
+<span class="nx">name</span><span class="p">=</span><span class="s2">&#34;子菜单2&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>获取菜单的代码如下:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>主导航菜单<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
 
-&lt;<span style="color:#f92672">ul</span>&gt;
+<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
   {{ range .Site.Menus.main }} 
   {{if .HasChildren}}
-  &lt;<span style="color:#f92672">li</span>&gt;{{.Name}}&lt;/<span style="color:#f92672">li</span>&gt;
-  &lt;<span style="color:#f92672">ul</span>&gt;
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>{{.Name}}<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
     {{ range .Children }}
-    &lt;<span style="color:#f92672">li</span>&gt;
-      &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .URL }}&#34;</span>&gt;{{ .Name }}&lt;/<span style="color:#f92672">a</span>&gt;
-    &lt;/<span style="color:#f92672">li</span>&gt;
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .URL }}&#34;</span><span class="p">&gt;</span>{{ .Name }}<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
     {{ end }}
-  &lt;/<span style="color:#f92672">ul</span>&gt;
+  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
   {{ else }}
-  &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{.URL}}&#34;</span>&gt;{{.Name}}&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{.URL}}&#34;</span><span class="p">&gt;</span>{{.Name}}<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
   {{end}} {{ end }}
-&lt;/<span style="color:#f92672">ul</span>&gt;
-</code></pre></div><p>子菜单项比普通的菜单项多了一个属性<code>parent</code>, 用于设置父菜单的ID, 这里用的是Name的值, 如果name的值不重复, 一旦重复就会产生意想不到的效果. 正确的做法是使用Identifier的值.</p>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>子菜单项比普通的菜单项多了一个属性<code>parent</code>, 用于设置父菜单的ID, 这里用的是Name的值, 如果name的值不重复, 一旦重复就会产生意想不到的效果. 正确的做法是使用Identifier的值.</p>
 <h2 id="导航菜单常用的属性">导航菜单常用的属性</h2>
 <ul>
 <li><code>.Name</code>: 菜单想的名称, 如果Name的值重复了, 要想使其生效, 需要为其设置Identifier属性</li>
@@ -437,7 +533,7 @@
         
           <a class="next" href="/post/git/">
             <span class="next-text nav-default">git命令</span>
-            <span class="prev-text nav-mobile">Next</span>
+            <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">
               <svg class="icon" viewBox="0 0 1024 1024" version="1.1"

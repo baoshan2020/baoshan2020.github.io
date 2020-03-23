@@ -68,7 +68,7 @@
 <meta itemprop="description" content="Git Push 免输 用户名和密码 前言 在大家使用github的过程中，一定会碰到这样一种情况，就是每次要push 和pull时总是要输入github的账号和">
 <meta itemprop="datePublished" content="2020-03-22T21:33:46&#43;08:00" />
 <meta itemprop="dateModified" content="2020-03-22T21:33:46&#43;08:00" />
-<meta itemprop="wordCount" content="676">
+<meta itemprop="wordCount" content="685">
 
 
 
@@ -121,13 +121,6 @@
           
           
             <a class="menu-item-link" href="http://mabaoshan.top/tags/">标签</a>
-          
-        
-      </li><li class="mobile-menu-item">
-        
-          
-          
-            <a class="menu-item-link" href="http://mabaoshan.top/categories/">类别</a>
           
         
       </li><li class="mobile-menu-item">
@@ -226,17 +219,6 @@
         
           
           
-            <a class="menu-item-link" href="http://mabaoshan.top/categories/">类别</a>
-          
-
-        
-
-      </li>
-    
-        <li class="menu-item">
-        
-          
-          
             <a class="menu-item-link" href="http://mabaoshan.top/about/">About</a>
           
 
@@ -314,31 +296,76 @@
 <p><strong>1.1 创建文件存储GIT用户名和密码</strong></p>
 <p>在%HOME%目录中，一般为C:\users\Administrator，也可以是你自己创建的系统用户名目录，反正都在C:\users\中。文件名为.git-credentials,由于在Window中不允许直接创建以&rdquo;.&ldquo;开头的文件，所以需要借助git bash进行，打开git bash客户端，进行%HOME%目录，然后用touch创建文件 .git-credentials,  用vim编辑此文件，输入内容格式：</p>
 <blockquote>
-<pre><code>touch .git-credentials
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">touch .git-credentials
 vim .git-credentials
-</code></pre></blockquote>
-<pre><code> `https://{username}:{password}@github.com`
-</code></pre><p><strong>1.2 添加Git Config 内容</strong></p>
+</code></pre></td></tr></table>
+</div>
+</div></blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback"> `https://{username}:{password}@github.com`
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>1.2 添加Git Config 内容</strong></p>
 <p>进入git bash终端， 输入如下命令：</p>
 <blockquote>
-<pre><code>git config --global credential.helper store
-</code></pre></blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git config --global credential.helper store
+</code></pre></td></tr></table>
+</div>
+</div></blockquote>
 <p>执行完后查看%HOME%目录下的.gitconfig文件，会多了一项：</p>
 <blockquote>
-<pre><code>[credential]
-</code></pre></blockquote>
-<pre><code>helper=store
-</code></pre><p>重新开启git bash会发现git push时不用再输入用户名和密码</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">[credential]
+</code></pre></td></tr></table>
+</div>
+</div></blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">helper=store
+</code></pre></td></tr></table>
+</div>
+</div><p>重新开启git bash会发现git push时不用再输入用户名和密码</p>
 <h4 id="2方法二">2.方法二</h4>
 <p><strong>2.1 添加环境变量</strong></p>
 <p>在windows中添加一个HOME环境变量，变量名:HOME,变量值：%USERPROFILE%</p>
 <p><a href="http://i.imgur.com/dG08KLU.jpg">img</a></p>
 <p><strong>2.2 创建git用户名和密码存储文件</strong></p>
 <p>进入%HOME%目录，新建一个名为&rdquo;_netrc&quot;的文件，文件中内容格式如下：</p>
-<pre><code>machine  github.com
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">machine  github.com
 login your-usernmae
 password your-password
-</code></pre><p>重新打开git bash即可，无需再输入用户名和密码</p>
+</code></pre></td></tr></table>
+</div>
+</div><p>重新打开git bash即可，无需再输入用户名和密码</p>
 <p><a href="https://www.cnblogs.com/ysk123/p/9951443.html">https://www.cnblogs.com/ysk123/p/9951443.html</a>（转）</p>
 
     </div>
@@ -367,12 +394,12 @@ password your-password
 
             </i>
             <span class="prev-text nav-default">软件下载</span>
-            <span class="prev-text nav-mobile">Prev</span>
+            <span class="prev-text nav-mobile">上一篇</span>
           </a>
         
           <a class="next" href="/post/hugo%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/">
             <span class="next-text nav-default">Hugo评论系统</span>
-            <span class="prev-text nav-mobile">Next</span>
+            <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">
               <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
