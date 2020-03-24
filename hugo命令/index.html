@@ -7,14 +7,30 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>hugo命令 | 马保山的学习笔记</title>
         <meta name="Description" content="马保山的学习笔记"><meta property="og:title" content="hugo命令" />
-<meta property="og:description" content="&mdash;启动服务 hugo server &ndash;buildDrafts &mdash;上传到github hugo &ndash;theme=jane &ndash;baseUrl=&quot;mabaoshan.top&rdquo; hugo &ndash;baseUrl=&quot;mabaoshan.top&rdquo; 模板（Archetypes） 模板（Archetypes ）是指放在arc" />
+<meta property="og:description" content="&mdash;启动服务
+hugo server &ndash;buildDrafts
+&mdash;上传到github
+hugo &ndash;theme=jane &ndash;baseUrl=&quot;mabaoshan.top&rdquo;
+hugo &ndash;baseUrl=&quot;mabaoshan.top&rdquo;
+模板（Archetypes） 模板（Archetypes）是指放在archetypes文件夹里的文件，里面可以预定义一些元信息，也可以提前写好一些内容生成逻辑，或其他什么内容。当执行hugo new命令来生成内容文件的时候，就会调用对应内容类型的模板文件来帮你自动生成一些内容。 假如以posts作为内容类型，生成posts文件时模板的查找路径依次是：
+ archetypes/posts.md archetypes/default.md themes/my-theme/archetypes/posts.md themes/my-theme/archetypes/default.md  分类体系（Taxonomies） 分类体系（Taxonomies）表示作者对内容的一套或多套分类。比如标签（tags）、类目（categories）、归档（archives）等。分类体系需在项目根路径下配置文件中定义，例如在config.toml文件中加入：
+我们在hugo-cxy-theme文件夹里的archetypes里创建post.md
+1 2 3 4 5 6 7 8 9 10 11  ---title: &#34;{{ with slicestr .Name 10 }}{{replace . &#34;-&#34; &#34; &#34; | strings.TrimLeft &#34; &#34; | title }}{{end}}&#34;subtitle: &#34;&#34;description: &#34;&#34;date: {{ slicestr .Name 0 10 }}author: &#34;&#34;image: &#34;&#34;tags: [&#34;tag1&#34;, &#34;tag2&#34;]categories: [&#34;Tech&#34;]archives: &#34;{{ slicestr ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://mabaoshan.top/hugo%E5%91%BD%E4%BB%A4/" />
 <meta property="article:published_time" content="2020-03-18T21:38:52+08:00" />
 <meta property="article:modified_time" content="2020-03-18T21:41:52+08:00" /><meta property="og:site_name" content="马保山的学习笔记" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="hugo命令"/>
-<meta name="twitter:description" content="&mdash;启动服务 hugo server &ndash;buildDrafts &mdash;上传到github hugo &ndash;theme=jane &ndash;baseUrl=&quot;mabaoshan.top&rdquo; hugo &ndash;baseUrl=&quot;mabaoshan.top&rdquo; 模板（Archetypes） 模板（Archetypes ）是指放在arc"/>
+<meta name="twitter:description" content="&mdash;启动服务
+hugo server &ndash;buildDrafts
+&mdash;上传到github
+hugo &ndash;theme=jane &ndash;baseUrl=&quot;mabaoshan.top&rdquo;
+hugo &ndash;baseUrl=&quot;mabaoshan.top&rdquo;
+模板（Archetypes） 模板（Archetypes）是指放在archetypes文件夹里的文件，里面可以预定义一些元信息，也可以提前写好一些内容生成逻辑，或其他什么内容。当执行hugo new命令来生成内容文件的时候，就会调用对应内容类型的模板文件来帮你自动生成一些内容。 假如以posts作为内容类型，生成posts文件时模板的查找路径依次是：
+ archetypes/posts.md archetypes/default.md themes/my-theme/archetypes/posts.md themes/my-theme/archetypes/default.md  分类体系（Taxonomies） 分类体系（Taxonomies）表示作者对内容的一套或多套分类。比如标签（tags）、类目（categories）、归档（archives）等。分类体系需在项目根路径下配置文件中定义，例如在config.toml文件中加入：
+我们在hugo-cxy-theme文件夹里的archetypes里创建post.md
+1 2 3 4 5 6 7 8 9 10 11  ---title: &#34;{{ with slicestr .Name 10 }}{{replace . &#34;-&#34; &#34; &#34; | strings.TrimLeft &#34; &#34; | title }}{{end}}&#34;subtitle: &#34;&#34;description: &#34;&#34;date: {{ slicestr .Name 0 10 }}author: &#34;&#34;image: &#34;&#34;tags: [&#34;tag1&#34;, &#34;tag2&#34;]categories: [&#34;Tech&#34;]archives: &#34;{{ slicestr ."/>
 <meta name="theme-color" content="#ffffff">
 <meta name="msapplication-TileColor" content="#da532c">
 <link rel="canonical" href="http://mabaoshan.top/hugo%E5%91%BD%E4%BB%A4/" />
@@ -37,7 +53,7 @@
                 "url": "http:\/\/mabaoshan.top\/cover.png",
                 "width":  800 ,
                 "height":  600 
-            },"genre": "posts","wordcount":  440 ,
+            },"genre": "posts","wordcount":  81 ,
         "url": "http:\/\/mabaoshan.top\/hugo%E5%91%BD%E4%BB%A4\/","datePublished": "2020-03-18","dateModified": "2020-03-18","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
                 "@type": "Organization",
                 "name": "xxxx",
@@ -66,9 +82,7 @@
         <div class="menu"><a class="menu-item" href="/posts/" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/categories/documentation/" rel="noopener noreffer">文档</a><a class="menu-item" href="/about/" title="About" rel="noopener noreffer">About</a><span class="menu-item">|</span>
             <a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
-            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
-                    <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/hugo%E5%91%BD%E4%BB%A4/" selected>简体中文</option></select>
-                </a></div>
+            </a></div>
     </div>
 </header><header class="mobile" id="header-mobile">
     <div class="header-wrapper">
@@ -82,9 +96,7 @@
         </div>
         <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/categories/documentation/" title="" rel="noopener noreffer">文档</a><a class="menu-item" href="/about/" title="About" rel="noopener noreffer">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
                 <i class="fas fa-adjust fa-fw"></i>
-            </a><a href="javascript:void(0);" class="menu-item" title="选择语言">简体中文<i class="fas fa-chevron-right fa-fw"></i>
-                    <select class="language-select" onchange="location = this.value;"><option value="/hugo%E5%91%BD%E4%BB%A4/" selected>简体中文</option></select>
-                </a></div>
+            </a></div>
     </div>
 </header>
 
@@ -97,7 +109,7 @@
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>马保山</a>
 </span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=18180-09-180>18180-09-180</time>&nbsp;
-                <i class="fas fa-pencil-alt fa-fw"></i>约 440 字&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 81 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>预计阅读 1 分钟&nbsp;<span id="/hugo%E5%91%BD%E4%BB%A4/" class="leancloud_visitors" data-flag-title="hugo命令">
                         <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
