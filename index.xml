@@ -3,7 +3,7 @@
         <title>马保山的学习笔记 | 马保山的学习笔记</title>
         <link>http://mabaoshan.top/</link>
         <description>马保山的学习笔记 | 马保山的学习笔记</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 18 Mar 2020 21:38:52 &#43;0800</lastBuildDate><atom:link href="http://mabaoshan.top/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 24 Mar 2020 13:43:25 &#43;0800</lastBuildDate><atom:link href="http://mabaoshan.top/" rel="self" type="application/rss+xml" /><item>
                 <title>About</title>
                 <link>http://mabaoshan.top/about/</link>
                 <pubDate>Wed, 18 Mar 2020 21:38:52 &#43;0800</pubDate><guid>http://mabaoshan.top/about/</guid>
@@ -38,9 +38,21 @@ section  初期阶段
 &lt;/div&gt;
 &lt;/div&gt;</description>
             </item><item>
+                <title>Word转md文件</title>
+                <link>http://mabaoshan.top/word%E8%BD%ACmd%E6%96%87%E4%BB%B6/</link>
+                <pubDate>Tue, 24 Mar 2020 13:43:25 &#43;0800</pubDate><guid>http://mabaoshan.top/word%E8%BD%ACmd%E6%96%87%E4%BB%B6/</guid>
+                <description>&lt;p&gt;下载插件&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.writage.com/#download&#34;&gt;http://www.writage.com/#download&lt;/a&gt;&lt;/p&gt;
+</description>
+            </item><item>
+                <title>Categories</title>
+                <link>http://mabaoshan.top/categories/</link>
+                <pubDate>Mon, 23 Mar 2020 21:40:32 &#43;0800</pubDate><guid>http://mabaoshan.top/categories/</guid>
+                <description></description>
+            </item><item>
                 <title>Posts</title>
                 <link>http://mabaoshan.top/posts/</link>
-                <pubDate>Sun, 22 Mar 2020 21:38:52 &#43;0800</pubDate><guid>http://mabaoshan.top/posts/</guid>
+                <pubDate>Mon, 23 Mar 2020 21:40:32 &#43;0800</pubDate><guid>http://mabaoshan.top/posts/</guid>
                 <description></description>
             </item></channel>
 </rss>
