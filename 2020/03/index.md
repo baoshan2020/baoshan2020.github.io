@@ -1,34 +1,17 @@
-# 软件下载
+# 金蝶k3cloud 查询待办工作
 
 
+金蝶 云之家查询待办工作
 
+1.打开云之家-\>云之家-\>全部应用
 
-#                          软件下载
+![](https://raw.githubusercontent.com/baoshan2020/img/master/img7a9a4c17ac8f11ee3c40b49d199f6485.jpg)
 
-系统软件
+2.应用公众号-\>业务审批
 
-| 名称     | 地址                                                         | 操作说明                     | 激活文件                                                     |
-| -------- | ------------------------------------------------------------ | ---------------------------- | ------------------------------------------------------------ |
-| 操作系统 | https://msdn.itellyou.cn/                                    | MediaCreatioTool(创建启动盘) |                                                              |
-| office   | [下载](https://pan.tusenergy.com/index.php/s/Kz2FapYmN6oCYxd/download) |                              | [激活1](https://pan.tusenergy.com/index.php/s/CKKFHkeJPjLwpNK/download) [激活2](https://pan.tusenergy.com/index.php/s/Kz2FapYmN6oCYxd/download) |
-| pdf      |                                                              |                              |                                                              |
-| 7-zip    |                                                              |                              |                                                              |
-|          |                                                              |                              |                                                              |
+![](https://raw.githubusercontent.com/baoshan2020/img/master/img61cdc40b71c5362517fa97cfc390071a.jpg)
 
+3.打开我的待办，查询需要办理的流程
 
-
-公司软件
-
-| 名称    | 地址 | 操作说明 |
-| ------- | ---- | -------- |
-| k3cloud |      |          |
-| OA      |      |          |
-| 263     |      |          |
-|         |      |          |
-|         |      |          |
-|         |      |          |
-|         |      |          |
-|         |      |          |
-|         |      |          |
-
+![](https://raw.githubusercontent.com/baoshan2020/img/master/img741c1e7278ecd511f520309de4b98412.jpg)
 
