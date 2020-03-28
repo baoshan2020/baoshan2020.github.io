@@ -45,7 +45,7 @@
             <a href="/">马保山的学习笔记</a>
         </div>
         <div class="menu"><a class="menu-item" href="/posts/" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/categories/documentation/" rel="noopener noreffer">文档</a><a class="menu-item" href="/daohang/" rel="noopener noreffer">网页导航</a><a class="menu-item" href="/about/" title="About" rel="noopener noreffer">About</a><span class="menu-item">|</span>
-            <a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+            <a href="javascript:void(0);" class="menu-item theme-switch" title="">
                 <i class="fas fa-adjust fa-fw"></i>
             </a></div>
     </div>
@@ -59,7 +59,7 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/categories/documentation/" title="" rel="noopener noreffer">文档</a><a class="menu-item" href="/daohang/" title="" rel="noopener noreffer">网页导航</a><a class="menu-item" href="/about/" title="About" rel="noopener noreffer">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/categories/documentation/" title="" rel="noopener noreffer">文档</a><a class="menu-item" href="/daohang/" title="" rel="noopener noreffer">网页导航</a><a class="menu-item" href="/about/" title="About" rel="noopener noreffer">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="">
                 <i class="fas fa-adjust fa-fw"></i>
             </a></div>
     </div>
@@ -79,7 +79,7 @@
         data-src=""
         alt="avatar"
         title="主页" /></a>
-        </div><h2 class="home-description"><div id="id-a5762f" class="typeit"></div></h2><div class="home-social-links"><a href="https://github.com/xxxx" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a>
+        </div><h2 class="home-description"><div id="id-965043" class="typeit"></div></h2><div class="home-social-links"><a href="https://github.com/xxxx" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a>
 <a href="https://twitter.com/xxxx" title="Twitter" target="_blank" rel="noopener noreffer me"><i class="fab fa-twitter fa-fw"></i></a>
 <a href="https://www.instagram.com/xxxx" title="Instagram" target="_blank" rel="noopener noreffer me"><i class="fab fa-instagram fa-fw"></i></a>
 <a href="https://weibo.com/xxxx" title="微博" target="_blank" rel="noopener noreffer me"><i class="fab fa-weibo fa-fw"></i></a>
@@ -90,42 +90,12 @@
 </div>
 </div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/git-push%E5%85%8D%E8%BE%93%E7%94%A8%E6%88%B7%E5%90%8D%E5%92%8C%E5%AF%86%E7%A0%81/">Git Push免输用户名和密码</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>马保山</a>
-</span>&nbsp;<span class="post-publish">
-            发布于&nbsp;<time datetime=22220-09-220>22220-09-220</time>
-        </span></div><div class="content">Git Push 免输 用户名和密码 前言
-在大家使用github的过程中，一定会碰到这样一种情况，就是每次要push 和pull时总是要输入github的账号和密码，这样不仅浪费了大量的时间且降低了工作效率。在此背景下，本文在网上找了两种方法来避免这种状况，这些成果也是先人提出来的，在此只是做个总结。
-1.方法一 1.1 创建文件存储GIT用户名和密码
-在%HOME%目录中，一般为C:\users\Administrator，也可以是你自己创建的系统用户名目录，反正都在C:\users\中。文件名为.git-credentials,由于在Window中不允许直接创建以&rdquo;.&ldquo;开头的文件，所以需要借助git bash进行，打开git bash客户端，进行%HOME%目录，然后用touch创建文件 .git-credentials, 用vim编辑此文件，输入内容格式：
- 1 2  touch .git-credentials vim .git-credentials    1  `https://{username}:{password}@github.com`   1.2 添加Git Config 内容
-进入git bash终端， 输入如下命令：
- 1  git config --global credential.helper store    执行完后查看%HOME%目录下的.gitconfig文件，会多了一项：
- 1  [credential]    1  helper=store   重新开启git bash会发现git push时不用再输入用户名和密码
-2.方法二 2.1 添加环境变量
-在windows中添加一个HOME环境变量，变量名:HOME,变量值：%USERPROFILE%</div><div class="post-footer">
-        <a href="/git-push%E5%85%8D%E8%BE%93%E7%94%A8%E6%88%B7%E5%90%8D%E5%92%8C%E5%AF%86%E7%A0%81/">阅读全文</a></div>
-</article>
-<article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/hugo%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/">Hugo评论系统</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>马保山</a>
-</span>&nbsp;<span class="post-publish">
-            发布于&nbsp;<time datetime=22220-09-220>22220-09-220</time>
-        </span>&nbsp;
-            <span class="post-category">收录于<a href="/categories/documentation">
-                        <i class="far fa-folder fa-fw"></i>Documentation
-                    </a></span></div><div class="content">参考网站
-https://shen.bioinit.com/topic/life/2019-12-24-fl1z7t/</div><div class="post-footer">
-        <a href="/hugo%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/">阅读全文</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/hugo">hugo</a></div></div>
-</article>
-<article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/github%E5%BB%BA%E7%AB%8B/">Github建立</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>马保山</a>
+        <a href="/2020/03/github%E5%BB%BA%E7%AB%8B/">Github建立</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="mabaoshan.top" title="Author" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>马保山</a>
 </span>&nbsp;<span class="post-publish">
             发布于&nbsp;<time datetime=20200-02-200>20200-02-200</time>
         </span></div><div class="content">2 在仓库里添加CNAME文件并在文件中填写绑定的域名 </div><div class="post-footer">
-        <a href="/github%E5%BB%BA%E7%AB%8B/">阅读全文</a></div>
+        <a href="/2020/03/github%E5%BB%BA%E7%AB%8B/">阅读全文</a></div>
 </article>
 <ul class="pagination"><li class="page-item ">
                     <span class="page-link">
@@ -141,10 +111,10 @@ https://shen.bioinit.com/topic/life/2019-12-24-fl1z7t/</div><div class="post-foo
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
-    <div class="copyright"><div class="copyright-line">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="external nofollow noopener noreffer"><i class="far fa-heart fa-fw"></i> LoveIt</a>
+    <div class="copyright"><div class="copyright-line">%!(EXTRA string=<a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a>) |  - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="external nofollow noopener noreffer"><i class="far fa-heart fa-fw"></i> LoveIt</a>
         </div>
 
-        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">马保山</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="mabaoshan.top" target="_blank">马保山</a></span></div>
     </div>
 </footer>
 </div><a href="#" class="dynamic-to-top animated faster" id="dynamic-to-top">
@@ -162,8 +132,8 @@ https://shen.bioinit.com/topic/life/2019-12-24-fl1z7t/</div><div class="post-foo
             });
         });
     </script><script>
-        window.typeitArr = [["id-a5762f"]];
+        window.typeitArr = [["id-965043"]];
     </script><script>
-        window.contentMap = {"id-a5762f":"面朝大海，春暖花开"};
+        window.contentMap = {"id-965043":"面朝大海，春暖花开"};
     </script><link rel="stylesheet" href="/lib/iconfont/iconfont.min.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/lib/typeit/typeit.min.js"></script><script src="/js/theme.min.js"></script></body>
 </html>

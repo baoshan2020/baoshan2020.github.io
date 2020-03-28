@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on 马保山的学习笔记</title>
+    <link>http://mabaoshan.top/tags/git/</link>
+    <description>Recent content in git on 马保山的学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Fri, 27 Mar 2020 15:58:26 +0800</lastBuildDate>
+    
+	<atom:link href="http://mabaoshan.top/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>git</title>
+      <link>http://mabaoshan.top/2020/03/git/</link>
+      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/03/git/</guid>
+      <description>一、git 命令 1.基本命令 工作区 unstage
+暂存区 stage git rm &amp;ndash;cached
+提交 commited
+vi 命令
+shift ZZ 提出
+：set number 设置行号
+git stuts 查看状态
+git add . 添加所有文件到本地仓库
+git commit 上传所有文件到本地仓库
+git commit -m ‘备注名称’
+.gitignore 需要忽略的文件
+git remote 查看需要上传的
+&amp;mdash;分支建立
+git branch login 创建分支
+git checkout login 切换分支
+git checkout login
+2.git 官网上传命令 1 2  git remote add origin https://github.com/baoshan2020/baoshan2020.github.io.gitgit push -u origin master  ​
+1 2 3 4 5 6  echo &amp;#34;# puma&amp;#34; &amp;gt;&amp;gt; README.</description>
+    </item>
+    
+  </channel>
+</rss>
