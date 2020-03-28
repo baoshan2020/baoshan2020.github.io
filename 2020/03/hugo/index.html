@@ -18,8 +18,8 @@ hugo &ndash;baseUrl=&quot;mabaoshan.top&rdquo;
 1 2 3 4 5 6 7 8 9 10 11  ---title: &#34;{{ with slicestr .Name 10 }}{{replace . &#34;-&#34; &#34; &#34; | strings.TrimLeft &#34; &#34; | title }}{{end}}&#34;subtitle: &#34;&#34;description: &#34;&#34;date: {{ slicestr .Name 0 10 }}author: &#34;&#34;image: &#34;&#34;tags: [&#34;tag1&#34;, &#34;tag2&#34;]categories: [&#34;Tech&#34;]archives: &#34;{{ slicestr ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://mabaoshan.top/2020/03/hugo/" />
-<meta property="article:published_time" content="2020-03-18T21:38:52+08:00" />
-<meta property="article:modified_time" content="2020-03-18T21:41:52+08:00" /><meta property="og:site_name" content="马保山的学习笔记" />
+<meta property="article:published_time" content="2020-03-27T15:58:26+08:00" />
+<meta property="article:modified_time" content="2020-03-27T15:58:26+08:00" /><meta property="og:site_name" content="马保山的学习笔记" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="hugo"/>
 <meta name="twitter:description" content="&mdash;启动服务
@@ -39,7 +39,7 @@ hugo &ndash;baseUrl=&quot;mabaoshan.top&rdquo;
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="prev" href="http://mabaoshan.top/2020/03/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/" /><link rel="next" href="http://mabaoshan.top/2020/03/git/" /><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/css/style.min.css"><script type="application/ld+json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="prev" href="http://mabaoshan.top/2020/03/markdown/" /><link rel="next" href="http://mabaoshan.top/2020/03/git/" /><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/css/style.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -53,8 +53,8 @@ hugo &ndash;baseUrl=&quot;mabaoshan.top&rdquo;
                 "url": "http:\/\/mabaoshan.top\/cover.png",
                 "width":  800 ,
                 "height":  600 
-            },"genre": "posts","wordcount":  352 ,
-        "url": "http:\/\/mabaoshan.top\/2020\/03\/hugo\/","datePublished": "2020-03-18","dateModified": "2020-03-18","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            },"genre": "posts","keywords": "hugo","wordcount":  352 ,
+        "url": "http:\/\/mabaoshan.top\/2020\/03\/hugo\/","datePublished": "2020-03-27","dateModified": "2020-03-27","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
                 "@type": "Organization",
                 "name": "马保山",
                 "logo": {
@@ -106,14 +106,45 @@ hugo &ndash;baseUrl=&quot;mabaoshan.top&rdquo;
 </script>
 <main class="main">
                 <div class="container"><article class="page single"><h1 class="single-title animated flipInX">hugo</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="mabaoshan.top" title="Author" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>马保山</a>
-</span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=18180-09-180>18180-09-180</time>&nbsp;
+            <div class="post-meta-line"><span class="post-author"><a href="http://mabaoshan.top" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>马保山</a>
+</span>&nbsp;
+                    <span class="post-category">收录于<a href="/categories/hugo">
+                                <i class="far fa-folder fa-fw"></i>Hugo
+                            </a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=27270-03-270>27270-03-270</time>&nbsp;
                 <i class="fas fa-pencil-alt fa-fw"></i>约 352 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>预计阅读 2 分钟&nbsp;<span id="/2020/03/hugo/" class="leancloud_visitors" data-flag-title="hugo">
                         <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
-        </div><div class="content" id="content"><p>&mdash;启动服务</p>
+        </div><div class="toc" id="toc-auto">
+                <h2 class="toc-title">目录</h2>
+                <div class="toc-content" id="toc-content-auto"></div>
+            </div>
+            <div class="toc" id="toc-static">
+                <details>
+                    <summary>
+                        <div class="toc-title">
+                            <span>目录</span>
+                            <span><i class="details icon fas fa-angle-down"></i></span>
+                        </div>
+                    </summary>
+                    <div class="toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#模板archetypes">模板（Archetypes）</a></li>
+        <li><a href="#分类体系taxonomies">分类体系（Taxonomies）</a></li>
+      </ul>
+    </li>
+    <li><a href="#设置导航菜单的位置">设置导航菜单的位置</a></li>
+    <li><a href="#添加主导航菜单和页脚导航菜单">添加主导航菜单和页脚导航菜单</a></li>
+    <li><a href="#定义多级菜单">定义多级菜单</a></li>
+    <li><a href="#导航菜单常用的属性">导航菜单常用的属性</a></li>
+    <li><a href="#当行菜单常用的方法">当行菜单常用的方法</a></li>
+  </ul>
+</nav></div>
+                </details>
+            </div><div class="content" id="content"><p>&mdash;启动服务</p>
 <p>hugo server  &ndash;buildDrafts</p>
 <p>&mdash;上传到github</p>
 <p>hugo &ndash;theme=jane &ndash;baseUrl=&quot;mabaoshan.top&rdquo;</p>
@@ -392,7 +423,7 @@ archives:    <span class="s2">&#34;{{ slicestr .Name 0 4 }}&#34;</span>
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>本文于 18180-09-180 更新</span>
+                <span>本文于 27270-03-270 更新</span>
             </div>
             <div class="post-info-license"></div>
         </div>
@@ -407,16 +438,26 @@ archives:    <span class="s2">&#34;{{ slicestr .Name 0 4 }}&#34;</span>
     </div>
 
     <div class="post-info-more">
-        <section></section>
+        <section><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/hugo">hugo</a></section>
         <section>
             <span><a href="javascript:window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/2020/03/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/" class="prev" rel="prev" title="软件下载"><i class="fas fa-angle-left fa-fw"></i>软件下载</a>
+    <div class="post-nav"><a href="/2020/03/markdown/" class="prev" rel="prev" title="markdown"><i class="fas fa-angle-left fa-fw"></i>markdown</a>
             <a href="/2020/03/git/" class="next" rel="next" title="git">git<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
-<div class="comment"></div>
+<div class="comment"><div id="valine"></div><script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                new Valine({
+                    el: '#valine',
+                    appId: 'QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI',
+                    appKey: 'WBmoGyJtbqUswvfLh6L8iEBr',placeholder: '你的评论 ...',verify: true,avatar: 'mp',pageSize: 10,lang: 'zh-cn',visitor: true,recordIP: true,});
+            });
+        </script>
+        <noscript>
+            Please enable JavaScript to view the <a href="https://valine.js.org/">comments powered by Valine.</a>
+        </noscript></div>
     </article></div>
             </main><footer class="footer">
     <div class="copyright"><div class="copyright-line">%!(EXTRA string=<a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer">Hugo</a>) |  - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="external nofollow noopener noreffer"><i class="far fa-heart fa-fw"></i> LoveIt</a>
@@ -439,5 +480,15 @@ archives:    <span class="s2">&#34;{{ slicestr .Name 0 4 }}&#34;</span>
                 thumbContHeight: 80,
             });
         });
-    </script><link rel="stylesheet" href="/lib/iconfont/iconfont.min.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/js/theme.min.js"></script></body>
+    </script><script>
+        document.addEventListener('DOMContentLoaded', function () {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    { left: '$$', right: '$$', display: true },
+                    { left: '\\[', right: '\\]', display: true },{ left: '$', right: '$', display: false },
+                    { left: '\\(', right: '\\)', display: false },],
+                strict: false,
+            });
+        });
+    </script><link rel="stylesheet" href="/lib/valine/valine.css"><link rel="stylesheet" href="/lib/iconfont/iconfont.min.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script src="/lib/valine/Valine.min.js"></script><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/lib/katex/katex.min.js"></script><script src="/lib/katex/auto-render.min.js"></script><script src="/lib/katex/copy-tex.min.js"></script><script src="/lib/katex/mhchem.min.js"></script><script src="/js/theme.min.js"></script></body>
 </html>

@@ -1,42 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 马保山的学习笔记</title>
-    <link>http://mabaoshan.top/posts/</link>
-    <description>Recent content in Posts on 马保山的学习笔记</description>
+    <title>hugo on 马保山的学习笔记</title>
+    <link>http://mabaoshan.top/tags/hugo/</link>
+    <description>Recent content in hugo on 马保山的学习笔记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Fri, 27 Mar 2020 15:58:26 +0800</lastBuildDate>
     
-	<atom:link href="http://mabaoshan.top/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://mabaoshan.top/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>git</title>
-      <link>http://mabaoshan.top/2020/03/git/</link>
-      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/03/git/</guid>
-      <description>一、git 命令 1.基本命令 工作区 unstage
-暂存区 stage git rm &amp;ndash;cached
-提交 commited
-vi 命令
-shift ZZ 提出
-：set number 设置行号
-git stuts 查看状态
-git add . 添加所有文件到本地仓库
-git commit 上传所有文件到本地仓库
-git commit -m ‘备注名称’
-.gitignore 需要忽略的文件
-git remote 查看需要上传的
-&amp;mdash;分支建立
-git branch login 创建分支
-git checkout login 切换分支
-git checkout login
-2.git 官网上传命令 1 2  git remote add origin https://github.com/baoshan2020/baoshan2020.github.io.gitgit push -u origin master  ​
-1 2 3 4 5 6  echo &amp;#34;# puma&amp;#34; &amp;gt;&amp;gt; README.</description>
-    </item>
     
     <item>
       <title>hugo</title>
@@ -53,27 +27,6 @@ hugo &amp;ndash;baseUrl=&amp;quot;mabaoshan.top&amp;rdquo;
  archetypes/posts.md archetypes/default.md themes/my-theme/archetypes/posts.md themes/my-theme/archetypes/default.md  分类体系（Taxonomies） 分类体系（Taxonomies）表示作者对内容的一套或多套分类。比如标签（tags）、类目（categories）、归档（archives）等。分类体系需在项目根路径下配置文件中定义，例如在config.toml文件中加入：
 我们在hugo-cxy-theme文件夹里的archetypes里创建post.md
 1 2 3 4 5 6 7 8 9 10 11  ---title: &amp;#34;{{ with slicestr .Name 10 }}{{replace . &amp;#34;-&amp;#34; &amp;#34; &amp;#34; | strings.TrimLeft &amp;#34; &amp;#34; | title }}{{end}}&amp;#34;subtitle: &amp;#34;&amp;#34;description: &amp;#34;&amp;#34;date: {{ slicestr .Name 0 10 }}author: &amp;#34;&amp;#34;image: &amp;#34;&amp;#34;tags: [&amp;#34;tag1&amp;#34;, &amp;#34;tag2&amp;#34;]categories: [&amp;#34;Tech&amp;#34;]archives: &amp;#34;{{ slicestr .</description>
-    </item>
-    
-    <item>
-      <title>markdown</title>
-      <link>http://mabaoshan.top/2020/03/markdown/</link>
-      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/03/markdown/</guid>
-      <description>下载插件
-http://www.writage.com/#download</description>
-    </item>
-    
-    <item>
-      <title>软件下载</title>
-      <link>http://mabaoshan.top/2020/03/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</link>
-      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/03/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</guid>
-      <description>软件下载 系统软件
-   名称 地址 操作说明 激活文件     操作系统 https://msdn.itellyou.cn/ MediaCreatioTool(创建启动盘)    office 下载  激活1激活2   pdf      7-zip             公司软件
-   名称 地址 操作说明     k3cloud     OA     263                                    </description>
     </item>
     
   </channel>
