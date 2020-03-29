@@ -3,41 +3,7 @@
         <title>马保山的学习笔记 | 马保山的学习笔记</title>
         <link>http://mabaoshan.top/</link>
         <description>马保山的学习笔记 | 马保山的学习笔记</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 18 Mar 2020 21:38:52 &#43;0800</lastBuildDate><atom:link href="http://mabaoshan.top/" rel="self" type="application/rss+xml" /><item>
-                <title>About</title>
-                <link>http://mabaoshan.top/about/</link>
-                <pubDate>Wed, 18 Mar 2020 21:38:52 &#43;0800</pubDate><guid>http://mabaoshan.top/about/</guid>
-                <description>&lt;p&gt;最近在做的事情&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt;考勤数据分析&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt;网页发布软件&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;​```
-gantt
-dateFormat YYYY-MM-DD
-title 考勤数据分析
-section  初期阶段
-明确需求:2020-03-23 ,10d
-​```
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-            </item><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 27 Mar 2020 15:58:26 &#43;0800</lastBuildDate><atom:link href="http://mabaoshan.top/" rel="self" type="application/rss+xml" /><item>
                 <title>Posts</title>
                 <link>http://mabaoshan.top/posts/</link>
                 <pubDate>Fri, 27 Mar 2020 15:58:26 &#43;0800</pubDate><guid>http://mabaoshan.top/posts/</guid>

@@ -5,27 +5,25 @@
 
 # 一、git 命令
 
-## 1.基本命令
+## 1.git的区
 
 工作区 unstage
 
 暂存区  stage      git  rm --cached
 
-提交  commited
+对象区  commited
 
-
-
-
-
-vi 命令
+## 2.vi 命令
 
 shift ZZ 提出
 
 ：set number  设置行号
 
+## 3.liunx 命令
 
+rm -rf * (删除所有文件不把括隐藏文件)
 
-
+## 4.git 基本命令
 
 git stuts  查看状态  
 
