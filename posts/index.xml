@@ -75,5 +75,30 @@ http://www.writage.com/#download</description>
    名称 地址 操作说明     k3cloud     OA     263                                    </description>
     </item>
     
+    <item>
+      <title>预防黑客的方法</title>
+      <link>http://mabaoshan.top/2020/03/%E9%A2%84%E9%98%B2%E9%BB%91%E5%AE%A2%E7%9A%84%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/03/%E9%A2%84%E9%98%B2%E9%BB%91%E5%AE%A2%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
+      <description>预防黑客的方法   服务器     数据库服务器去除dns不允许访问外网
+  web服务器只打开80端口
+  服务器设置复杂的密码并且加特殊字符如：（@(){}.[]])，并定期更换密码
+  定期备份数据
+   应急处理方案 1.发现某员工有非正常流量时，首先要在交换机或者ac上禁止上网。
+个人电脑 黑客攻击的方法  DDoS攻击 SQL注入 XSS跨站 网站程序0day 服务器漏洞 恶意扫描 恶意采集  </description>
+    </item>
+    
+    <item>
+      <title>网络制度</title>
+      <link>http://mabaoshan.top/2020/03/%E7%BD%91%E7%BB%9C%E5%88%B6%E5%BA%A6/</link>
+      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/03/%E7%BD%91%E7%BB%9C%E5%88%B6%E5%BA%A6/</guid>
+      <description>网络制度 系统软件
+   名称 地址 操作说明 激活文件     操作系统 https://msdn.itellyou.cn/ MediaCreatioTool(创建启动盘)    office 下载  激活1激活2   pdf      7-zip             公司软件
+   名称 地址 操作说明     k3cloud     OA     263                                    </description>
+    </item>
+    
   </channel>
 </rss>
