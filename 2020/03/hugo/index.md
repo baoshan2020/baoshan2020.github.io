@@ -220,3 +220,68 @@ name="子菜单2"
 参考网站
 
 https://shen.bioinit.com/topic/life/2019-12-24-fl1z7t/
+
+
+
+# 一键部署
+
+## 用bit 方式
+
+在hugo目录中新建一个文件夹命名为deploy.sh，文件内容如下
+
+\# hugo生成
+
+hugo --buildDrafts
+
+\# cd到构建输出的目录下
+
+cd public
+
+\# 初始化仓库
+
+git init
+
+\# 添加
+
+git add -A
+
+\# 提交
+
+git commit -m deploy
+
+\# 强制推送到coding仓库的 master 分支
+
+git push -f 
+
+\# 结束
+
+cd -
+
+
+
+
+
+## window bat方式
+
+@ echo on
+
+cd  /d d:/hugo/puma
+hugo --buildDrafts
+::不用添加上传主题和网站
+::hugo --theme=jane --baseUrl="mabaoshan.top"
+cd public
+git add .
+git commit -m "a"
+
+::git remote rm origin
+::添加上传的网站
+::git remote add origin https://github.com/baoshan2020/baoshan2020.github.io.git
+
+:: error: failed to push some refs to 'https://github.com/baoshan2020/baoshan2020.github.io.git'
+:: 出现此错误，添加-f 强制上传
+
+::git pull origin master    下载到本地库
+
+::git push -u origin master -f  第一次推送了，后续就不需要 直接 git push
+
+git push

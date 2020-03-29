@@ -53,7 +53,7 @@ hugo &ndash;baseUrl=&quot;mabaoshan.top&rdquo;
                 "url": "http:\/\/mabaoshan.top\/cover.png",
                 "width":  800 ,
                 "height":  600 
-            },"genre": "posts","keywords": "hugo","wordcount":  352 ,
+            },"genre": "posts","keywords": "hugo","wordcount":  452 ,
         "url": "http:\/\/mabaoshan.top\/2020\/03\/hugo\/","datePublished": "2020-03-27","dateModified": "2020-03-27","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
                 "@type": "Organization",
                 "name": "马保山",
@@ -112,8 +112,8 @@ hugo &ndash;baseUrl=&quot;mabaoshan.top&rdquo;
                                 <i class="far fa-folder fa-fw"></i>Hugo
                             </a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=27270-03-270>27270-03-270</time>&nbsp;
-                <i class="fas fa-pencil-alt fa-fw"></i>约 352 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>预计阅读 2 分钟&nbsp;<span id="/2020/03/hugo/" class="leancloud_visitors" data-flag-title="hugo">
+                <i class="fas fa-pencil-alt fa-fw"></i>约 452 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>预计阅读 3 分钟&nbsp;<span id="/2020/03/hugo/" class="leancloud_visitors" data-flag-title="hugo">
                         <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
         </div><div class="toc" id="toc-auto">
@@ -141,6 +141,11 @@ hugo &ndash;baseUrl=&quot;mabaoshan.top&rdquo;
     <li><a href="#定义多级菜单">定义多级菜单</a></li>
     <li><a href="#导航菜单常用的属性">导航菜单常用的属性</a></li>
     <li><a href="#当行菜单常用的方法">当行菜单常用的方法</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#用bit-方式">用bit 方式</a></li>
+    <li><a href="#window-bat方式">window bat方式</a></li>
   </ul>
 </nav></div>
                 </details>
@@ -419,6 +424,40 @@ archives:    <span class="s2">&#34;{{ slicestr .Name 0 4 }}&#34;</span>
 <h1 id="hugo-评论">hugo 评论</h1>
 <p>参考网站</p>
 <p><a href="https://shen.bioinit.com/topic/life/2019-12-24-fl1z7t/">https://shen.bioinit.com/topic/life/2019-12-24-fl1z7t/</a></p>
+<h1 id="一键部署">一键部署</h1>
+<h2 id="用bit-方式">用bit 方式</h2>
+<p>在hugo目录中新建一个文件夹命名为deploy.sh，文件内容如下</p>
+<p># hugo生成</p>
+<p>hugo &ndash;buildDrafts</p>
+<p># cd到构建输出的目录下</p>
+<p>cd public</p>
+<p># 初始化仓库</p>
+<p>git init</p>
+<p># 添加</p>
+<p>git add -A</p>
+<p># 提交</p>
+<p>git commit -m deploy</p>
+<p># 强制推送到coding仓库的 master 分支</p>
+<p>git push -f</p>
+<p># 结束</p>
+<p>cd -</p>
+<h2 id="window-bat方式">window bat方式</h2>
+<p>@ echo on</p>
+<p>cd  /d d:/hugo/puma
+hugo &ndash;buildDrafts
+::不用添加上传主题和网站
+::hugo &ndash;theme=jane &ndash;baseUrl=&quot;mabaoshan.top&rdquo;
+cd public
+git add .
+git commit -m &ldquo;a&rdquo;</p>
+<p>::git remote rm origin
+::添加上传的网站
+::git remote add origin <a href="https://github.com/baoshan2020/baoshan2020.github.io.git">https://github.com/baoshan2020/baoshan2020.github.io.git</a></p>
+<p>:: error: failed to push some refs to &lsquo;<a href="https://github.com/baoshan2020/baoshan2020.github.io.git'">https://github.com/baoshan2020/baoshan2020.github.io.git'</a>
+:: 出现此错误，添加-f 强制上传</p>
+<p>::git pull origin master    下载到本地库</p>
+<p>::git push -u origin master -f  第一次推送了，后续就不需要 直接 git push</p>
+<p>git push</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
