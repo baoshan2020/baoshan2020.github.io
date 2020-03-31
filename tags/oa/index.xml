@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>oa on 马保山的学习笔记</title>
+    <link>http://mabaoshan.top/tags/oa/</link>
+    <description>Recent content in oa on 马保山的学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 30 Mar 2020 15:58:26 +0800</lastBuildDate>
+    
+	<atom:link href="http://mabaoshan.top/tags/oa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>企业微信关闭提示</title>
+      <link>http://mabaoshan.top/categories/documentation/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E5%85%B3%E9%97%AD%E6%8F%90%E7%A4%BA/</link>
+      <pubDate>Mon, 30 Mar 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/categories/documentation/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E5%85%B3%E9%97%AD%E6%8F%90%E7%A4%BA/</guid>
+      <description>企业微信 -&amp;gt;我-&amp;gt;设置-&amp;gt;新消息通知-&amp;gt;仅在企业微信中接收消息-&amp;gt;关闭应用消息</description>
+    </item>
+    
+  </channel>
+</rss>
