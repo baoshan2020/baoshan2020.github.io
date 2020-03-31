@@ -9,7 +9,7 @@
 
 菜单-\>系统管理-\>用户管理
 
-![C:\\Users\\puma\\AppData\\Local\\Temp\\1545633625(https://raw.githubusercontent.com/baoshan2021/tc/master/eb2b16600444eb3803d2be4cdff3bd65.png).png](media/eb2b16600444eb3803d2be4cdff3bd65.png)
+![](https://raw.githubusercontent.com/baoshan2021/tc/master/eb2b16600444eb3803d2be4cdff3bd65.png)
 
 **要求:**
 
