@@ -16,16 +16,19 @@
 | ----------------- |
 | 网页发布软件      |
 | wordpress改成hugo |
+| wsus              |
+| panabit           |
+|                   |
 
 
 
 # 关于我
 
-|          |                                          |      |
-| -------- | ---------------------------------------- | ---- |
-| 机房建设 | 电话、网络                               |      |
-| 软件     | OA、金蝶k3cloud、sqlserver、liunx、exsi  |      |
-| 网页部署 | nextcloud、blog（wordpress、hugo、hexo） |      |
+|          |                                                  |      |
+| -------- | ------------------------------------------------ | ---- |
+| 机房建设 | 电话、网络                                       |      |
+| 软件     | OA、金蝶k3cloud、sqlserver、liunx、exsi、extmail |      |
+| 网页部署 | nextcloud、blog（wordpress、hugo、hexo）         |      |
 
 
 
