@@ -21,5 +21,28 @@
       <description>企业微信 -&amp;gt;我-&amp;gt;设置-&amp;gt;新消息通知-&amp;gt;仅在企业微信中接收消息-&amp;gt;关闭应用消息</description>
     </item>
     
+    <item>
+      <title>启迪清洁能源oa管理员操作指导书</title>
+      <link>http://mabaoshan.top/categories/documentation/%E5%90%AF%E8%BF%AA%E6%B8%85%E6%B4%81%E8%83%BD%E6%BA%90oa%E7%AE%A1%E7%90%86%E5%91%98%E6%93%8D%E4%BD%9C%E6%8C%87%E5%AF%BC%E4%B9%A6/</link>
+      <pubDate>Mon, 30 Mar 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/categories/documentation/%E5%90%AF%E8%BF%AA%E6%B8%85%E6%B4%81%E8%83%BD%E6%BA%90oa%E7%AE%A1%E7%90%86%E5%91%98%E6%93%8D%E4%BD%9C%E6%8C%87%E5%AF%BC%E4%B9%A6/</guid>
+      <description>启迪清能OA管理员操作指导书
+一、用户、部门管理
+1.添加用户
+菜单-&amp;gt;系统管理-&amp;gt;用户管理
+要求:
+  用户编号是6位（PS 312前3位代表公司 ，后3位是序号）
+  登录账号：如果遇到重名请用手机号码登录
+  如果是部门领导： 请在是否领导：是 担任职务：部长
+  初始化密码：每次手动改成Aa1122
+  2.兼职添加
+3.部门&amp;amp;分管领导管理
+菜单-&amp;gt;系统管理-&amp;gt;组织管理
+如果副总有多个需要修改如下图
+二、关联企业微信
+登录https://work.weixin.qq.com 用微信扫一扫</description>
+    </item>
+    
   </channel>
 </rss>
