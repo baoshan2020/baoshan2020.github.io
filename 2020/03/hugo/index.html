@@ -53,7 +53,7 @@ hugo &ndash;baseUrl=&quot;mabaoshan.top&rdquo;
                 "url": "http:\/\/mabaoshan.top\/cover.png",
                 "width":  800 ,
                 "height":  600 
-            },"genre": "posts","keywords": "hugo","wordcount":  452 ,
+            },"genre": "posts","keywords": "hugo","wordcount":  470 ,
         "url": "http:\/\/mabaoshan.top\/2020\/03\/hugo\/","datePublished": "2020-03-27","dateModified": "2020-03-27","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
                 "@type": "Organization",
                 "name": "马保山",
@@ -79,7 +79,7 @@ hugo &ndash;baseUrl=&quot;mabaoshan.top&rdquo;
         <div class="header-title">
             <a href="/">马保山的学习笔记</a>
         </div>
-        <div class="menu"><a class="menu-item" href="/posts/" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/categories/documentation/" rel="noopener noreffer">文档</a><a class="menu-item" href="/daohang/" rel="noopener noreffer">网页导航</a><a class="menu-item" href="/about/" title="About" rel="noopener noreffer">About</a><span class="menu-item">|</span>
+        <div class="menu"><a class="menu-item" href="/posts/" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/categories/documentation/" rel="noopener noreffer">文档</a><a class="menu-item" href="/daohang/" rel="noopener noreffer">网页导航</a><a class="menu-item" href="/photowall/" title="照片墙" rel="noopener noreffer">照片墙</a><a class="menu-item" href="/about/" title="About" rel="noopener noreffer">About</a><span class="menu-item">|</span>
             <a href="javascript:void(0);" class="menu-item theme-switch" title="">
                 <i class="fas fa-adjust fa-fw"></i>
             </a></div>
@@ -94,7 +94,7 @@ hugo &ndash;baseUrl=&quot;mabaoshan.top&rdquo;
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/categories/documentation/" title="" rel="noopener noreffer">文档</a><a class="menu-item" href="/daohang/" title="" rel="noopener noreffer">网页导航</a><a class="menu-item" href="/about/" title="About" rel="noopener noreffer">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/categories/documentation/" title="" rel="noopener noreffer">文档</a><a class="menu-item" href="/daohang/" title="" rel="noopener noreffer">网页导航</a><a class="menu-item" href="/photowall/" title="照片墙" rel="noopener noreffer">照片墙</a><a class="menu-item" href="/about/" title="About" rel="noopener noreffer">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="">
                 <i class="fas fa-adjust fa-fw"></i>
             </a></div>
     </div>
@@ -111,8 +111,8 @@ hugo &ndash;baseUrl=&quot;mabaoshan.top&rdquo;
                     <span class="post-category">收录于<a href="/categories/hugo">
                                 <i class="far fa-folder fa-fw"></i>Hugo
                             </a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=27270-03-270>27270-03-270</time>&nbsp;
-                <i class="fas fa-pencil-alt fa-fw"></i>约 452 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-03-27>2020-03-27</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 470 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>预计阅读 3 分钟&nbsp;<span id="/2020/03/hugo/" class="leancloud_visitors" data-flag-title="hugo">
                         <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -146,6 +146,15 @@ hugo &ndash;baseUrl=&quot;mabaoshan.top&rdquo;
   <ul>
     <li><a href="#用bit-方式">用bit 方式</a></li>
     <li><a href="#window-bat方式">window bat方式</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#1日期显示错误">1.日期显示错误</a>
+      <ul>
+        <li><a href="#问题">问题：</a></li>
+        <li><a href="#解决方法">解决方法</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
                 </details>
@@ -458,11 +467,28 @@ git commit -m &ldquo;a&rdquo;</p>
 <p>::git pull origin master    下载到本地库</p>
 <p>::git push -u origin master -f  第一次推送了，后续就不需要 直接 git push</p>
 <p>git push</p>
+<h1 id="错误问题解决">错误问题解决</h1>
+<h2 id="1日期显示错误">1.日期显示错误</h2>
+<h3 id="问题">问题：</h3>
+<p>日期乱了，如：27270-03-270</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.small.min.svg"
+        data-sizes="auto"
+        data-srcset="https://raw.githubusercontent.com/baoshan2021/tc/master/image-20200405210732338.png,  1.5x,  2x"
+        data-src=""
+        alt="image-20200405210732338"
+        title="image-20200405210732338" /></p>
+<h3 id="解决方法">解决方法</h3>
+<p>config.toml 日期格式错误</p>
+<p># 日期格式</p>
+<p>dateFormatToUse = &ldquo;2006-01-02&rdquo;  #正取的</p>
+<p># dateFormatToUse = &ldquo;2020-03-20&rdquo;  错吴的</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>本文于 27270-03-270 更新</span>
+                <span>本文于 2020-03-27 更新</span>
             </div>
             <div class="post-info-license"></div>
         </div>

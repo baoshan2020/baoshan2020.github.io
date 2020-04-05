@@ -285,3 +285,25 @@ git commit -m "a"
 ::git push -u origin master -f  第一次推送了，后续就不需要 直接 git push
 
 git push
+
+# 错误问题解决
+
+## 1.日期显示错误
+
+### 问题：
+
+日期乱了，如：27270-03-270 
+
+![image-20200405210732338](https://raw.githubusercontent.com/baoshan2021/tc/master/image-20200405210732338.png)
+
+  
+
+### 解决方法
+
+config.toml 日期格式错误
+
+\# 日期格式
+
+  dateFormatToUse = "2006-01-02"  #正取的
+
+  \# dateFormatToUse = "2020-03-20"  错吴的
