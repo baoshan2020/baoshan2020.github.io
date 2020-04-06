@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on 马保山的学习笔记</title>
+    <link>http://mabaoshan.top/categories/hugo/</link>
+    <description>Recent content in hugo on 马保山的学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Fri, 27 Mar 2020 15:58:26 +0800</lastBuildDate>
+    
+	<atom:link href="http://mabaoshan.top/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>hugo</title>
+      <link>http://mabaoshan.top/2020/03/hugo/</link>
+      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/03/hugo/</guid>
+      <description>&amp;mdash;启动服务
+hugo server &amp;ndash;buildDrafts
+&amp;mdash;上传到github
+hugo &amp;ndash;theme=jane &amp;ndash;baseUrl=&amp;quot;mabaoshan.top&amp;rdquo;
+hugo &amp;ndash;baseUrl=&amp;quot;mabaoshan.top&amp;rdquo;
+目录含义 1 2 3 4 5 6 7 8  ├── archetypes│ └── default.md├── config.toml├── content├── data├── layouts├── static└── themes  config.toml 是整个网站的配置文档
+archetypes：包括内容类型，在创建新内容时自动生成内容的配置。
+content：包括网站内容，全部使用 markdown 格式。
+layouts：包括了网站的模版，决定内容如何呈现，目录下模板优先级高于 /themes//layouts/，可以用来小规模的定制主题。
+static：包括了 css, js, fonts, media 等，决定网站的外观。
+文档系统里 markdown 文档路径和最后站点 url 的对应关系一般如下：
+1 2 3 4 5 6 7 8  └── content└── about| └── _index.</description>
+    </item>
+    
+  </channel>
+</rss>

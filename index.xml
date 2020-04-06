@@ -1,0 +1,106 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>马保山的学习笔记 | 马保山的学习笔记</title>
+        <link>http://mabaoshan.top/</link>
+        <description>马保山的学习笔记 | 马保山的学习笔记</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 29 Mar 2020 15:38:52 &#43;0800</lastBuildDate><atom:link href="http://mabaoshan.top/" rel="self" type="application/rss+xml" /><item>
+                <title>About</title>
+                <link>http://mabaoshan.top/about/</link>
+                <pubDate>Sun, 29 Mar 2020 15:38:52 &#43;0800</pubDate><guid>http://mabaoshan.top/about/</guid>
+                <description>&lt;h1 id=&#34;近期要完成的工作&#34;&gt;近期要完成的工作&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;项目名称&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;日期&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;考勤软件（完成oa迁移工作）&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;2020年4月&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;oa操作手册&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;2020年5月&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;k3cloud操作手册整合&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;2020年5月&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;软件下载页面&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;2020年5月&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;未来要实现的工作&#34;&gt;未来要实现的工作&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;网页发布软件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;wordpress改成hugo&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;wsus&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;panabit&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;关于我&#34;&gt;关于我&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;机房建设&lt;/td&gt;
+&lt;td&gt;电话、网络&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;软件&lt;/td&gt;
+&lt;td&gt;OA、金蝶k3cloud、sqlserver、liunx、exsi、extmail&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;网页部署&lt;/td&gt;
+&lt;td&gt;nextcloud、blog（wordpress、hugo、hexo）&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+            </item><item>
+                <title>Categories</title>
+                <link>http://mabaoshan.top/categories/</link>
+                <pubDate>Sun, 05 Apr 2020 15:58:26 &#43;0800</pubDate><guid>http://mabaoshan.top/categories/</guid>
+                <description></description>
+            </item><item>
+                <title>Posts</title>
+                <link>http://mabaoshan.top/posts/</link>
+                <pubDate>Sun, 05 Apr 2020 15:58:26 &#43;0800</pubDate><guid>http://mabaoshan.top/posts/</guid>
+                <description></description>
+            </item></channel>
+</rss>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3D照片墙</title>
+    <style>
+    *{
+        margin:0;padding:0;
+    }
+    body{
+        background:#000;
+    }
+    .wrapper{
+        width:200px;
+        height:200px;
+        margin:150px auto;
+        /* 视距，会产生透视 */
+        perspective:1200px;
+    }
+    .imgBox{
+        height:100%;
+        position:relative;
+        transform-style:preserve-3d;
+        transform:rotateX(-10deg);
+    }
+    .imgBox>img{
+        width:200px;
+        height:200px;
+        position:absolute;
+        left:0;
+        top:0;
+        /* 
+          x轴偏移
+          y轴偏移
+          阴影模糊的距离
+          阴影的大小
+          颜色
+         */
+        box-shadow:0 0 8px 0 #eee;
+        
+    }
+    .bottom{
+        width:1200px;
+        height:1200px;
+        background:radial-gradient(rgba(102,0,204,.3) 30%,rgba(255,255,255,0) 60%);
+        position:absolute;
+        left:50%;
+        top:200px;
+        transform:rotateX(90deg);
+        margin-top:-600px;
+        margin-left:-600px;
+        border-radius:50%;
+    }
+    </style>
+	<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/css/style.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "About",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/mabaoshan.top\/about\/"
+        },"image": {
+                "@type": "ImageObject",
+                "url": "http:\/\/mabaoshan.top\/cover.png",
+                "width":  800 ,
+                "height":  600 
+            },"genre": "page","wordcount":  23 ,
+        "url": "http:\/\/mabaoshan.top\/about\/","datePublished": "2020-03-29","dateModified": "2020-03-23","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+                "@type": "Organization",
+                "name": "马保山",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/mabaoshan.top\/logo.png",
+                "width":  127 ,
+                "height":  40 
+                }
+            },"author": {
+                "@type": "Person",
+                "name": "马保山"
+            },"description": ""
+    }
+    </script></head>
+    <body><script>
+            if (!window.localStorage || !window.localStorage.getItem('theme')) {window.isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;} else {
+                window.isDark = (window.localStorage && window.localStorage.getItem('theme')) === 'dark';
+            }
+            window.isDark && document.body.classList.add('dark-theme');
+        </script><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/">马保山的学习笔记</a>
+        </div>
+        <div class="menu"><a class="menu-item" href="/posts/" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/categories/documentation/" rel="noopener noreffer">文档</a><a class="menu-item" href="/daohang/" rel="noopener noreffer">网页导航</a><a class="menu-item" href="/photowall/" title="照片墙" rel="noopener noreffer">照片墙</a><a class="menu-item active" href="/about/" title="About" rel="noopener noreffer">About</a><a class="menu-item" href="/" rel="noopener noreffer">子菜单</a><span class="menu-item">|</span>
+            <a href="javascript:void(0);" class="menu-item theme-switch" title="">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-wrapper">
+        <div class="header-container">
+            <div class="header-title">
+                <a href="/">马保山的学习笔记</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/categories/documentation/" title="" rel="noopener noreffer">文档</a><a class="menu-item" href="/daohang/" title="" rel="noopener noreffer">网页导航</a><a class="menu-item" href="/photowall/" title="照片墙" rel="noopener noreffer">照片墙</a><a class="menu-item" href="/about/" title="About" rel="noopener noreffer">About</a><a class="menu-item" href="/" title="" rel="noopener noreffer">子菜单</a><a href="javascript:void(0);" class="menu-item theme-switch" title="">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="imgBox">
+            <img src="images/1.jpg" alt="">
+            <img src="images/2.jpg" alt="">
+            <img src="images/3.jpg" alt="">
+            <img src="images/4.jpg" alt="">
+            <img src="images/5.jpg" alt="">
+            <img src="images/6.jpg" alt="">
+            <img src="images/7.jpg" alt="">
+            <img src="images/8.jpg" alt="">
+            <img src="images/9.jpg" alt="">
+            <div class="bottom"></div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+<script>
+ window.onload=function(){
+     //效果1：发牌的效果，总后呈现的结果就是所有的图片绕成了一个圆，那每个图片应该旋转多少度？
+     /** 
+         索引：0-7，
+         第一张：7*0.2s   i=0     len-1-i
+         第二张：6*0.2s   i=2     len-1-i
+         第三张：5*0.2s    i=3    len-1-i 
+         ...
+         第八张：0*0.2     i=7    len-1-i  0s
+     **/
+     var Oimgs=document.querySelectorAll(".imgBox>img");
+     var imgBox=document.querySelector(".imgBox");
+     var len=Oimgs.length;
+     var itemDeg=360/len;
+     var num=0;
+     for(var i=0;i<len;i++){
+        //  绕成了一个圆
+        Oimgs[i].style.transform="rotateY("+itemDeg*i+"deg) translateZ(300px)";
+        //  延迟
+        Oimgs[i].style.transition="1s "+(len-1-i)*0.2+"s"
+     }
+     //效果2：旋转
+     setInterval(function(){
+         num++;
+         var num2=num*0.2
+         imgBox.style.transform="rotateX(-10deg) rotateY("+num2+"deg)";
+     },30)
+
+
+ }
+</script>

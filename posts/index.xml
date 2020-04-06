@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 马保山的学习笔记</title>
+    <link>http://mabaoshan.top/posts/</link>
+    <description>Recent content in Posts on 马保山的学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 05 Apr 2020 15:58:26 +0800</lastBuildDate>
+    
+	<atom:link href="http://mabaoshan.top/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>nextcloud</title>
+      <link>http://mabaoshan.top/2020/04/nextcloud/</link>
+      <pubDate>Sun, 05 Apr 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/04/nextcloud/</guid>
+      <description>https 域名过期了处理方式      nextcloud.enable-https lets-encrypt 并按照接下来的提示，输入解析到本机ip的域名和你的邮箱，即可完成ssl的申请并将证书安装到nextcloud。      直接访问域名
+$ sudo nextcloud.occ config:system:set overwritehost &amp;ndash;value=&amp;quot;example.com:81&amp;rdquo;
+vm下载 https://www.hanssonit.se/nextcloud-vm/</description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>http://mabaoshan.top/2020/03/git/</link>
+      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/03/git/</guid>
+      <description>一、git 命令 1.git的区 工作区 unstage
+暂存区 stage git rm &amp;ndash;cached
+对象区 commited
+2.vi 命令 shift ZZ 提出
+：set number 设置行号
+3.liunx 命令 rm -rf * (删除所有文件不把括隐藏文件)
+4.git 基本命令 git stuts 查看状态
+git add . 添加所有文件到本地仓库
+git commit 上传所有文件到本地仓库
+git commit -m ‘备注名称’
+.gitignore 需要忽略的文件
+git remote 查看需要上传的
+&amp;mdash;分支建立
+git branch login 创建分支
+git checkout login 切换分支
+git checkout login
+2.git 官网上传命令 1 2  git remote add origin https://github.com/baoshan2020/baoshan2020.github.io.gitgit push -u origin master  ​</description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>http://mabaoshan.top/2020/03/hugo/</link>
+      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/03/hugo/</guid>
+      <description>&amp;mdash;启动服务
+hugo server &amp;ndash;buildDrafts
+&amp;mdash;上传到github
+hugo &amp;ndash;theme=jane &amp;ndash;baseUrl=&amp;quot;mabaoshan.top&amp;rdquo;
+hugo &amp;ndash;baseUrl=&amp;quot;mabaoshan.top&amp;rdquo;
+目录含义 1 2 3 4 5 6 7 8  ├── archetypes│ └── default.md├── config.toml├── content├── data├── layouts├── static└── themes  config.toml 是整个网站的配置文档
+archetypes：包括内容类型，在创建新内容时自动生成内容的配置。
+content：包括网站内容，全部使用 markdown 格式。
+layouts：包括了网站的模版，决定内容如何呈现，目录下模板优先级高于 /themes//layouts/，可以用来小规模的定制主题。
+static：包括了 css, js, fonts, media 等，决定网站的外观。
+文档系统里 markdown 文档路径和最后站点 url 的对应关系一般如下：
+1 2 3 4 5 6 7 8  └── content└── about| └── _index.</description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>http://mabaoshan.top/2020/03/markdown/</link>
+      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/03/markdown/</guid>
+      <description>下载插件
+http://www.writage.com/#download</description>
+    </item>
+    
+    <item>
+      <title>软件下载</title>
+      <link>http://mabaoshan.top/2020/03/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</link>
+      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/03/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</guid>
+      <description>软件下载 装机必备软件    名称 地址 操作说明 激活文件     操作系统 https://msdn.itellyou.cn/ MediaCreatioTool(创建启动盘)    office 下载  激活1激活2   pdf      7-zip             公司软件    名称 地址 操作说明     k3cloud     OA     263          nextcloud      其他软件           向日葵远程控制8.</description>
+    </item>
+    
+    <item>
+      <title>前端知识学习</title>
+      <link>http://mabaoshan.top/2020/04/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Sun, 05 Apr 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/04/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0/</guid>
+      <description>前端知识学习图片
+1.基础知识 1.1 HTML（超文本标记语言 [ Hyper Text Markup Language]）
+ 语义化标签、属性 表单验证 data-* 属性 HTML多媒体  video(视频) audio(音频)   SVG Canvas HTML5 拖放 Web Worker 游览器缓存机制 H5存储 HTML5 离线缓存 HTML 渲染流程 重绘和回流 地图 websocket  1.2 CSS(指层叠样式表 [Cascading Style Sheets])
+ 选择器 盒模型 定位、浮动 BFC 动画 过渡 弹性布局 2D、3D转换 边框、圆角 背景、渐变 文本效果、字体 CSS3 多列 CSS 伪类 CSS HACK 媒体查询 CSS 预处理语言  1.3 JavaScript: 是一种具有函数优先的轻量级，解释型或即时编译型的编程语言。
+ 数据类型  基础类型 引用类型   流程控制语句 内置对象 变量、作用域 原型、原型链 函数 事件 this 指针 单线程与事件循环 DOM BOM 表单脚本 面向对象 正则 Ajax和跨站技术 ES6  let 和 const 命令 解构 Symbol Set 和 Map 数据结构 箭头函数 Proxy Promise Class 语法 module   错误处理及调试  错误处理 调试技术 常见的错误    1.</description>
+    </item>
+    
+    <item>
+      <title>sql</title>
+      <link>http://mabaoshan.top/2020/03/sql/</link>
+      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/03/sql/</guid>
+      <description>复制表结构
+select * into qidichuangxingongzhang &amp;ndash;new
+from ygyzspb2 &amp;ndash;old
+where 1=2
+快速转换成日期
+select convert(char,列名,111) ，convert(char(10),列名,120) from tablename
+常用的方法
+Select CONVERT(varchar(100), GETDATE(), 8): 10:57:46 Select CONVERT(varchar(100), GETDATE(), 24): 10:57:47 Select CONVERT(varchar(100), GETDATE(), 108): 10:57:49 Select CONVERT(varchar(100), GETDATE(), 12): 110516 Select CONVERT(varchar(100), GETDATE(), 23): 2011-05-16</description>
+    </item>
+    
+    <item>
+      <title>预防黑客的方法</title>
+      <link>http://mabaoshan.top/2020/03/mode/</link>
+      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/03/mode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>预防黑客的方法</title>
+      <link>http://mabaoshan.top/2020/03/%E9%A2%84%E9%98%B2%E9%BB%91%E5%AE%A2%E7%9A%84%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/03/%E9%A2%84%E9%98%B2%E9%BB%91%E5%AE%A2%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
+      <description>预防黑客的方法   服务器     数据库服务器去除dns不允许访问外网
+  web服务器只打开80端口
+  服务器设置复杂的密码并且加特殊字符如：（@(){}.[]])，并定期更换密码
+  定期备份数据
+   应急处理方案 1.发现某员工有非正常流量时，首先要在交换机或者ac上禁止上网。
+个人电脑 黑客攻击的方法  DDoS攻击 SQL注入 XSS跨站 网站程序0day 服务器漏洞 恶意扫描 恶意采集  </description>
+    </item>
+    
+    <item>
+      <title>网络制度</title>
+      <link>http://mabaoshan.top/2020/03/%E7%BD%91%E7%BB%9C%E5%88%B6%E5%BA%A6/</link>
+      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/03/%E7%BD%91%E7%BB%9C%E5%88%B6%E5%BA%A6/</guid>
+      <description>网络制度 系统软件
+   名称 地址 操作说明 激活文件     操作系统 https://msdn.itellyou.cn/ MediaCreatioTool(创建启动盘)    office 下载  激活1激活2   pdf      7-zip             公司软件
+   名称 地址 操作说明     k3cloud     OA     263                                    </description>
+    </item>
+    
+  </channel>
+</rss>
