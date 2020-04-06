@@ -1,33 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>hugo on 马保山的学习笔记</title>
-    <link>http://mabaoshan.top/categories/hugo/</link>
-    <description>Recent content in hugo on 马保山的学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 27 Mar 2020 15:58:26 +0800</lastBuildDate>
-    
-	<atom:link href="http://mabaoshan.top/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>hugo</title>
-      <link>http://mabaoshan.top/2020/03/hugo/</link>
-      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/03/hugo/</guid>
-      <description>&amp;mdash;启动服务
-hugo server &amp;ndash;buildDrafts
-&amp;mdash;上传到github
-hugo &amp;ndash;theme=jane &amp;ndash;baseUrl=&amp;quot;mabaoshan.top&amp;rdquo;
-hugo &amp;ndash;baseUrl=&amp;quot;mabaoshan.top&amp;rdquo;
-模板（Archetypes） 模板（Archetypes）是指放在archetypes文件夹里的文件，里面可以预定义一些元信息，也可以提前写好一些内容生成逻辑，或其他什么内容。当执行hugo new命令来生成内容文件的时候，就会调用对应内容类型的模板文件来帮你自动生成一些内容。 假如以posts作为内容类型，生成posts文件时模板的查找路径依次是：
- archetypes/posts.md archetypes/default.md themes/my-theme/archetypes/posts.md themes/my-theme/archetypes/default.md  分类体系（Taxonomies） 分类体系（Taxonomies）表示作者对内容的一套或多套分类。比如标签（tags）、类目（categories）、归档（archives）等。分类体系需在项目根路径下配置文件中定义，例如在config.toml文件中加入：
-我们在hugo-cxy-theme文件夹里的archetypes里创建post.md
-1 2 3 4 5 6 7 8 9 10 11  ---title: &amp;#34;{{ with slicestr .Name 10 }}{{replace . &amp;#34;-&amp;#34; &amp;#34; &amp;#34; | strings.TrimLeft &amp;#34; &amp;#34; | title }}{{end}}&amp;#34;subtitle: &amp;#34;&amp;#34;description: &amp;#34;&amp;#34;date: {{ slicestr .Name 0 10 }}author: &amp;#34;&amp;#34;image: &amp;#34;&amp;#34;tags: [&amp;#34;tag1&amp;#34;, &amp;#34;tag2&amp;#34;]categories: [&amp;#34;Tech&amp;#34;]archives: &amp;#34;{{ slicestr .</description>
-    </item>
-    
-  </channel>
-</rss>

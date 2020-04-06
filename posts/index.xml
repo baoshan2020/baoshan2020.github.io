@@ -1,118 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on 马保山的学习笔记</title>
-    <link>http://mabaoshan.top/posts/</link>
-    <description>Recent content in Posts on 马保山的学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 27 Mar 2020 15:58:26 +0800</lastBuildDate>
-    
-	<atom:link href="http://mabaoshan.top/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>git</title>
-      <link>http://mabaoshan.top/2020/03/git/</link>
-      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/03/git/</guid>
-      <description>一、git 命令 1.git的区 工作区 unstage
-暂存区 stage git rm &amp;ndash;cached
-对象区 commited
-2.vi 命令 shift ZZ 提出
-：set number 设置行号
-3.liunx 命令 rm -rf * (删除所有文件不把括隐藏文件)
-4.git 基本命令 git stuts 查看状态
-git add . 添加所有文件到本地仓库
-git commit 上传所有文件到本地仓库
-git commit -m ‘备注名称’
-.gitignore 需要忽略的文件
-git remote 查看需要上传的
-&amp;mdash;分支建立
-git branch login 创建分支
-git checkout login 切换分支
-git checkout login
-2.git 官网上传命令 1 2  git remote add origin https://github.com/baoshan2020/baoshan2020.github.io.gitgit push -u origin master  ​</description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>http://mabaoshan.top/2020/03/hugo/</link>
-      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/03/hugo/</guid>
-      <description>&amp;mdash;启动服务
-hugo server &amp;ndash;buildDrafts
-&amp;mdash;上传到github
-hugo &amp;ndash;theme=jane &amp;ndash;baseUrl=&amp;quot;mabaoshan.top&amp;rdquo;
-hugo &amp;ndash;baseUrl=&amp;quot;mabaoshan.top&amp;rdquo;
-模板（Archetypes） 模板（Archetypes）是指放在archetypes文件夹里的文件，里面可以预定义一些元信息，也可以提前写好一些内容生成逻辑，或其他什么内容。当执行hugo new命令来生成内容文件的时候，就会调用对应内容类型的模板文件来帮你自动生成一些内容。 假如以posts作为内容类型，生成posts文件时模板的查找路径依次是：
- archetypes/posts.md archetypes/default.md themes/my-theme/archetypes/posts.md themes/my-theme/archetypes/default.md  分类体系（Taxonomies） 分类体系（Taxonomies）表示作者对内容的一套或多套分类。比如标签（tags）、类目（categories）、归档（archives）等。分类体系需在项目根路径下配置文件中定义，例如在config.toml文件中加入：
-我们在hugo-cxy-theme文件夹里的archetypes里创建post.md
-1 2 3 4 5 6 7 8 9 10 11  ---title: &amp;#34;{{ with slicestr .Name 10 }}{{replace . &amp;#34;-&amp;#34; &amp;#34; &amp;#34; | strings.TrimLeft &amp;#34; &amp;#34; | title }}{{end}}&amp;#34;subtitle: &amp;#34;&amp;#34;description: &amp;#34;&amp;#34;date: {{ slicestr .Name 0 10 }}author: &amp;#34;&amp;#34;image: &amp;#34;&amp;#34;tags: [&amp;#34;tag1&amp;#34;, &amp;#34;tag2&amp;#34;]categories: [&amp;#34;Tech&amp;#34;]archives: &amp;#34;{{ slicestr .</description>
-    </item>
-    
-    <item>
-      <title>markdown</title>
-      <link>http://mabaoshan.top/2020/03/markdown/</link>
-      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/03/markdown/</guid>
-      <description>下载插件
-http://www.writage.com/#download</description>
-    </item>
-    
-    <item>
-      <title>软件下载</title>
-      <link>http://mabaoshan.top/2020/03/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</link>
-      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/03/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</guid>
-      <description>软件下载 装机必备软件    名称 地址 操作说明 激活文件     操作系统 https://msdn.itellyou.cn/ MediaCreatioTool(创建启动盘)    office 下载  激活1激活2   pdf      7-zip             公司软件    名称 地址 操作说明     k3cloud     OA     263          nextcloud      其他软件           向日葵远程控制8.</description>
-    </item>
-    
-    <item>
-      <title>sql</title>
-      <link>http://mabaoshan.top/2020/03/sql/</link>
-      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/03/sql/</guid>
-      <description>复制表结构
-select * into qidichuangxingongzhang &amp;ndash;new
-from ygyzspb2 &amp;ndash;old
-where 1=2
-快速转换成日期
-select convert(char,列名,111) ，convert(char(10),列名,120) from tablename
-常用的方法
-Select CONVERT(varchar(100), GETDATE(), 8): 10:57:46 Select CONVERT(varchar(100), GETDATE(), 24): 10:57:47 Select CONVERT(varchar(100), GETDATE(), 108): 10:57:49 Select CONVERT(varchar(100), GETDATE(), 12): 110516 Select CONVERT(varchar(100), GETDATE(), 23): 2011-05-16</description>
-    </item>
-    
-    <item>
-      <title>预防黑客的方法</title>
-      <link>http://mabaoshan.top/2020/03/%E9%A2%84%E9%98%B2%E9%BB%91%E5%AE%A2%E7%9A%84%E6%96%B9%E6%B3%95/</link>
-      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/03/%E9%A2%84%E9%98%B2%E9%BB%91%E5%AE%A2%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
-      <description>预防黑客的方法   服务器     数据库服务器去除dns不允许访问外网
-  web服务器只打开80端口
-  服务器设置复杂的密码并且加特殊字符如：（@(){}.[]])，并定期更换密码
-  定期备份数据
-   应急处理方案 1.发现某员工有非正常流量时，首先要在交换机或者ac上禁止上网。
-个人电脑 黑客攻击的方法  DDoS攻击 SQL注入 XSS跨站 网站程序0day 服务器漏洞 恶意扫描 恶意采集  </description>
-    </item>
-    
-    <item>
-      <title>网络制度</title>
-      <link>http://mabaoshan.top/2020/03/%E7%BD%91%E7%BB%9C%E5%88%B6%E5%BA%A6/</link>
-      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/03/%E7%BD%91%E7%BB%9C%E5%88%B6%E5%BA%A6/</guid>
-      <description>网络制度 系统软件
-   名称 地址 操作说明 激活文件     操作系统 https://msdn.itellyou.cn/ MediaCreatioTool(创建启动盘)    office 下载  激活1激活2   pdf      7-zip             公司软件
-   名称 地址 操作说明     k3cloud     OA     263                                    </description>
-    </item>
-    
-  </channel>
-</rss>
