@@ -24,3 +24,9 @@ Select CONVERT(varchar(100), GETDATE(), 8): 10:57:46
  Select CONVERT(varchar(100), GETDATE(), 108): 10:57:49
  Select CONVERT(varchar(100), GETDATE(), 12): 110516
  Select CONVERT(varchar(100), GETDATE(), 23): 2011-05-16
+
+
+
+查询60天之前的数据
+
+select dateadd(d,-60,getdate())
