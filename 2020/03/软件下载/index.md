@@ -7,9 +7,11 @@
 
 ## 装机必备软件
 
+ 企业版win10下载地址 ed2k://|file|cn_windows_10_enterprise_ltsc_2019_x64_dvd_9c09ff24.iso|4478906368|E7C526499308841A4A6D116C857DB669|/
+
 | 名称     | 地址                                                         | 操作说明                     | 激活文件                                                     |
 | -------- | ------------------------------------------------------------ | ---------------------------- | ------------------------------------------------------------ |
-| 操作系统 | https://msdn.itellyou.cn/                                    | MediaCreatioTool(创建启动盘) |                                                              |
+| 操作系统 | https://msdn.itellyou.cn/                                                                      https://next.itellyou.cn  邀请码：ITELLYOU666 |||
 | office   | [下载](https://pan.tusenergy.com/index.php/s/Kz2FapYmN6oCYxd/download) |                              | [激活1](https://pan.tusenergy.com/index.php/s/CKKFHkeJPjLwpNK/download) [激活2](https://pan.tusenergy.com/index.php/s/Kz2FapYmN6oCYxd/download) |
 | pdf      |                                                              |                              |                                                              |
 | 7-zip    |                                                              |                              |                                                              |
