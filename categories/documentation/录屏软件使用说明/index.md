@@ -7,7 +7,7 @@
 
 
 
-![1586486571(https://raw.githubusercontent.com/baoshan2021/tc/master/img20200410105011.png)](C:\Users\puma\Desktop\录屏软件\media\1586486571(1).png)
+![](https://raw.githubusercontent.com/baoshan2021/tc/master/img20200410105011.png)
 
 
 
@@ -20,6 +20,6 @@
 
 
 
-![1586486877(https://raw.githubusercontent.com/baoshan2021/tc/master/img20200410104823.png)](C:\Users\puma\Desktop\录屏软件\media\1586486877(1).png)
+![](https://raw.githubusercontent.com/baoshan2021/tc/master/img20200410104823.png)]
 
 ![](https://raw.githubusercontent.com/baoshan2021/tc/master/img20200410105038.png)
