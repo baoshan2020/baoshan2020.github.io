@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wordpress on 马保山的学习笔记</title>
+    <link>http://mabaoshan.top/tags/wordpress/</link>
+    <description>Recent content in wordpress on 马保山的学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Fri, 10 Apr 2020 08:58:26 +0800</lastBuildDate>
+    
+	<atom:link href="http://mabaoshan.top/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>wordpress</title>
+      <link>http://mabaoshan.top/2020/04/wordpress/</link>
+      <pubDate>Fri, 10 Apr 2020 08:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/04/wordpress/</guid>
+      <description>wordpress 升级5.4报错 因为我们不能复制一些文件，升级未被安装。这通常是因为存在不一致的文件权限。: xmlrpc.php, wp-load.php, wp-comments-post.php, index.php, wp-trackback.php, wp-activate.php, wp-settings.php, wp-mail.php, wp-blog-header.php, wp-signup.php, wp-links-opml.php
+解决方法：在wordpress目录下执行
+chmod -R 777 xmlrpc.php chmod -R 777 wp-load.php chmod -R 777 wp-comments-post.php chmod -R 777 index.php chmod -R 777 xmlrpc.php chmod -R 777 wp-trackback.php chmod -R 777 wp-activate.php chmod -R 777 wp-settings.php chmod -R 777 wp-mail.php chmod -R 777 wp-blog-header.php chmod -R 777 wp-signup.php chmod -R 777 wp-links-opml.php</description>
+    </item>
+    
+  </channel>
+</rss>

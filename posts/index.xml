@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 07 Apr 2020 15:58:26 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2020 08:58:26 +0800</lastBuildDate>
     
 	<atom:link href="http://mabaoshan.top/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -86,6 +86,17 @@ http://www.writage.com/#download</description>
       <guid>http://mabaoshan.top/2020/03/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</guid>
       <description>软件下载 装机必备软件 企业版win10下载地址 ed2k://|file|cn_windows_10_enterprise_ltsc_2019_x64_dvd_9c09ff24.iso|4478906368|E7C526499308841A4A6D116C857DB669|/
    名称 地址 操作说明 激活文件     操作系统 https://msdn.itellyou.cn/ https://next.itellyou.cn 邀请码：ITELLYOU666     office 下载  激活1激活2   pdf      7-zip             公司软件    名称 地址 操作说明     k3cloud     OA     263          nextcloud      其他软件           向日葵远程控制8.</description>
+    </item>
+    
+    <item>
+      <title>wordpress</title>
+      <link>http://mabaoshan.top/2020/04/wordpress/</link>
+      <pubDate>Fri, 10 Apr 2020 08:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/04/wordpress/</guid>
+      <description>wordpress 升级5.4报错 因为我们不能复制一些文件，升级未被安装。这通常是因为存在不一致的文件权限。: xmlrpc.php, wp-load.php, wp-comments-post.php, index.php, wp-trackback.php, wp-activate.php, wp-settings.php, wp-mail.php, wp-blog-header.php, wp-signup.php, wp-links-opml.php
+解决方法：在wordpress目录下执行
+chmod -R 777 xmlrpc.php chmod -R 777 wp-load.php chmod -R 777 wp-comments-post.php chmod -R 777 index.php chmod -R 777 xmlrpc.php chmod -R 777 wp-trackback.php chmod -R 777 wp-activate.php chmod -R 777 wp-settings.php chmod -R 777 wp-mail.php chmod -R 777 wp-blog-header.php chmod -R 777 wp-signup.php chmod -R 777 wp-links-opml.php</description>
     </item>
     
     <item>

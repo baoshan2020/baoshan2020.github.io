@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on 马保山的学习笔记</title>
+    <link>http://mabaoshan.top/categories/blog/</link>
+    <description>Recent content in blog on 马保山的学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Fri, 10 Apr 2020 08:58:26 +0800</lastBuildDate>
+    
+	<atom:link href="http://mabaoshan.top/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>git</title>
+      <link>http://mabaoshan.top/2020/03/git/</link>
+      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/03/git/</guid>
+      <description>一、git 命令 1.git的区 工作区 unstage
+暂存区 stage git rm &amp;ndash;cached
+对象区 commited
+2.vi 命令 shift ZZ 提出
+：set number 设置行号
+3.liunx 命令 rm -rf * (删除所有文件不把括隐藏文件)
+4.git 基本命令 git stuts 查看状态
+git add . 添加所有文件到本地仓库
+git commit 上传所有文件到本地仓库
+git commit -m ‘备注名称’
+.gitignore 需要忽略的文件
+git remote 查看需要上传的
+&amp;mdash;分支建立
+git branch login 创建分支
+git checkout login 切换分支
+git checkout login
+2.git 官网上传命令 1 2  git remote add origin https://github.com/baoshan2020/baoshan2020.github.io.gitgit push -u origin master  ​</description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>http://mabaoshan.top/2020/03/hugo/</link>
+      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/03/hugo/</guid>
+      <description>&amp;mdash;启动服务
+hugo server &amp;ndash;buildDrafts
+&amp;mdash;上传到github
+hugo &amp;ndash;theme=jane &amp;ndash;baseUrl=&amp;quot;mabaoshan.top&amp;rdquo;
+hugo &amp;ndash;baseUrl=&amp;quot;mabaoshan.top&amp;rdquo;
+目录含义 1 2 3 4 5 6 7 8  ├── archetypes│ └── default.md├── config.toml├── content├── data├── layouts├── static└── themes  config.toml 是整个网站的配置文档
+archetypes：包括内容类型，在创建新内容时自动生成内容的配置。
+content：包括网站内容，全部使用 markdown 格式。
+layouts：包括了网站的模版，决定内容如何呈现，目录下模板优先级高于 /themes//layouts/，可以用来小规模的定制主题。
+static：包括了 css, js, fonts, media 等，决定网站的外观。
+文档系统里 markdown 文档路径和最后站点 url 的对应关系一般如下：
+1 2 3 4 5 6 7 8  └── content└── about| └── _index.</description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>http://mabaoshan.top/2020/03/markdown/</link>
+      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/03/markdown/</guid>
+      <description>下载插件
+http://www.writage.com/#download</description>
+    </item>
+    
+    <item>
+      <title>wordpress</title>
+      <link>http://mabaoshan.top/2020/04/wordpress/</link>
+      <pubDate>Fri, 10 Apr 2020 08:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/04/wordpress/</guid>
+      <description>wordpress 升级5.4报错 因为我们不能复制一些文件，升级未被安装。这通常是因为存在不一致的文件权限。: xmlrpc.php, wp-load.php, wp-comments-post.php, index.php, wp-trackback.php, wp-activate.php, wp-settings.php, wp-mail.php, wp-blog-header.php, wp-signup.php, wp-links-opml.php
+解决方法：在wordpress目录下执行
+chmod -R 777 xmlrpc.php chmod -R 777 wp-load.php chmod -R 777 wp-comments-post.php chmod -R 777 index.php chmod -R 777 xmlrpc.php chmod -R 777 wp-trackback.php chmod -R 777 wp-activate.php chmod -R 777 wp-settings.php chmod -R 777 wp-mail.php chmod -R 777 wp-blog-header.php chmod -R 777 wp-signup.php chmod -R 777 wp-links-opml.php</description>
+    </item>
+    
+    <item>
+      <title>Typora自动上传到picgo图床&amp;排错</title>
+      <link>http://mabaoshan.top/2020/04/typora%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E5%88%B0picgo%E5%9B%BE%E5%BA%8A%E6%8E%92%E9%94%99/</link>
+      <pubDate>Wed, 01 Apr 2020 08:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/04/typora%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E5%88%B0picgo%E5%9B%BE%E5%BA%8A%E6%8E%92%E9%94%99/</guid>
+      <description>Typora自动上传到picgo图床&amp;amp;排错 安装 Typora和picgo
+配置 配置picgo  配置typora
+  设置插入图片时为【上传图片】
+  勾选【对本地位置的图片应用上述规则】
+  在上传服务中选择“PicGo(app)”
+  在路径中选择picgo安装目录PicGo.exe
+  点击下面的验证图片上传选项，上传成功！
+上传的方法也很简单，将图片复制进去typora就会自动帮你上传了，你也可以右键点击上传图片。
+自动上传 可以在【格式】-&amp;gt;【图像】-&amp;gt;【上传所有图片】
+3.错误排查 3.1错误一：Failed to fetch 这个错误一般是由端口设置错误造成的，至于我为什么知道，你看看log文件就懂了。打开picgo的log文件
+错误提示是端口繁忙。
+解决方法：打开picgo设置，点击设置Server选项，将端口改为36677端口，这是picgo推荐的默认端口号，然后保存，成功。
+不过有的时候，我们的老朋友Failed to fetch还是如约而至，打开端口设置一看，怎么变成了366771？？？？
+问题在于端口冲突，如果你打开了多个picgo程序，就会端口冲突，picgo自动帮你把36677端口改为366771端口，导致错误。log文件里也写得很清楚。
+解决方法：先把picgo中的端口设置改回36677，然后退出所有picgo程序，再使用typora上传功能（会自动启动picgo程序）
+3.2错误二：{&amp;ldquo;success&amp;rdquo;,false} 这个错误相信也有很多小伙伴遇到了，原因是文件名冲突了，如果你上传过一张image1.jpg的图片，再上传名称一样的图片就会失败，康康log文件(感谢日志！)里也写到了。
+办法也很简单，打开picgo设置，将**【时间戳重命名】打开**。如图所示：
+再次上传文件，上传成功~
+授人以鱼不如授人以渔，上面的三种情况解决方法教给大家了，但是错误总是千奇百怪层出不穷的，如果下次出现上传错误的提示，请大家找到picgo的log文件，自己查看问题的原因嗷</description>
+    </item>
+    
+  </channel>
+</rss>
