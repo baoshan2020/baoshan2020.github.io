@@ -5,13 +5,7 @@
 
 1.下载office tool
 
-[Office-Tool-Plus下载]
-
-[Office-Tool-Plus下载]: https://pan.tusenergy.com/index.php/s/Kz2FapYmN6oCYxd/download
-
-
-
-[Office-Tool-Plus下载] (http://mabaoshan.top/OfficeToolPlus.exe) 
+[Office-Tool-Plus下载](http://mabaoshan.top/OfficeToolPlus.exe) 
 
 2.部署
 
@@ -41,9 +35,7 @@
 
 # 三、备用激活
 
-[1.点击下载激活文件]
-
-[1.点击下载激活文件]:https://pan.tusenergy.com/index.php/s/CKKFHkeJPjLwpNK/download
+[1.点击下载激活文件](http://mabaoshan.top/microKMS.exe)
 
 2.右键，以管理员身份运行  单击激活office2010 -2019 ProPlus
 
