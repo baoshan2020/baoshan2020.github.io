@@ -2,6 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>http://mabaoshan.top/categories/documentation/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</loc><lastmod>2020-04-10T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://mabaoshan.top/2020/04/nextcloud/</loc><lastmod>2020-04-05T15:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://mabaoshan.top/about/</loc><lastmod>2020-03-23T19:59:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://mabaoshan.top/2020/03/git/</loc><lastmod>2020-03-27T15:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -23,14 +24,14 @@
             <loc>http://mabaoshan.top/posts/</loc><lastmod>2020-04-10T08:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://mabaoshan.top/tags/</loc><lastmod>2020-04-10T08:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://mabaoshan.top/tags/wordpress/</loc><lastmod>2020-04-10T08:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://mabaoshan.top/categories/documentation/</loc><lastmod>2020-04-10T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://mabaoshan.top/tags/pc/</loc><lastmod>2020-04-10T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://mabaoshan.top/tags/nextcloud/</loc><lastmod>2020-04-05T15:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://mabaoshan.top/categories/soft/</loc><lastmod>2020-04-05T15:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://mabaoshan.top/tags/typora%E5%92%8Cpicgo/</loc><lastmod>2020-04-01T08:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://mabaoshan.top/categories/documentation/</loc><lastmod>2020-03-30T15:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://mabaoshan.top/tags/k3cloud/</loc><lastmod>2020-03-30T15:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://mabaoshan.top/tags/oa/</loc><lastmod>2020-03-30T15:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://mabaoshan.top/categories/documentation/office%E5%AE%89%E8%A3%85/</loc><lastmod>2020-03-30T15:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://mabaoshan.top/tags/pc/</loc><lastmod>2020-03-30T15:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://mabaoshan.top/categories/documentation/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E5%85%B3%E9%97%AD%E6%8F%90%E7%A4%BA/</loc><lastmod>2020-03-30T15:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://mabaoshan.top/categories/documentation/%E5%88%9B%E6%96%B0%E5%A4%A7%E5%8E%A6b1001%E6%89%93%E5%8D%B0%E6%9C%BA%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85windows/</loc><lastmod>2020-03-30T15:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>http://mabaoshan.top/categories/documentation/%E5%90%AF%E8%BF%AA%E6%B8%85%E6%B4%81%E8%83%BD%E6%BA%90oa%E7%AE%A1%E7%90%86%E5%91%98%E6%93%8D%E4%BD%9C%E6%8C%87%E5%AF%BC%E4%B9%A6/</loc><lastmod>2020-03-30T15:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
