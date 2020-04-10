@@ -1,7 +1,7 @@
 # 录屏软件使用说明
 
 
- [下载录屏软件.zip](https://github.com/baoshan2020/baoshan2020.github.io/blob/master/录屏软件.zip)
+ [下载录屏软件.zip](http://mabaoshan.top/录屏软件.zip)
 
 解压录屏软件-\>双击 （FSCapture.exe ）打开录屏软件-\>点击屏幕录像机-\>录制-\>开始-> ctrl+10 保存录制的文件
 
