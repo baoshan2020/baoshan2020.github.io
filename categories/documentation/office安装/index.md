@@ -9,6 +9,10 @@
 
 [Office-Tool-Plus下载]: https://pan.tusenergy.com/index.php/s/Kz2FapYmN6oCYxd/download
 
+
+
+[Office-Tool-Plus下载] (http://mabaoshan.top/Office Too lPlus.exe) 
+
 2.部署
 
 ![](https://raw.githubusercontent.com/baoshan2021/tc/master/ce630173a54bb84ecb4c2ac99f5e4184.png)
