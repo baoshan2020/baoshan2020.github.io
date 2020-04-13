@@ -20,6 +20,6 @@
 
 
 
-![](https://raw.githubusercontent.com/baoshan2021/tc/master/img20200410104823.png)]
+![](https://raw.githubusercontent.com/baoshan2021/tc/master/img20200410104823.png)
 
 ![](https://raw.githubusercontent.com/baoshan2021/tc/master/img20200410105038.png)
