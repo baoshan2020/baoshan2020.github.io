@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 10 Apr 2020 08:58:26 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2020 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="http://mabaoshan.top/categories/blog/index.xml" rel="self" type="application/rss+xml" />
     
@@ -65,6 +65,20 @@ static：包括了 css, js, fonts, media 等，决定网站的外观。
       <guid>http://mabaoshan.top/2020/03/markdown/</guid>
       <description>下载插件
 http://www.writage.com/#download</description>
+    </item>
+    
+    <item>
+      <title>html&#43;css</title>
+      <link>http://mabaoshan.top/2020/04/html-css%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Mon, 13 Apr 2020 00:00:00 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/04/html-css%E5%85%A5%E9%97%A8/</guid>
+      <description>html ##一、基本设置
+Hypertext Markup Language 超文本标记语言
+  根标签 设置浏览器的   里面放的是思想，设置浏览器用的，是人看不到的  是展示给用户看的  认识万国码  连接css 文件  抬头显示  7、告诉搜索引擎爬虫，我们的网站是关于什么内容的 en 代表是英文，zh 是中文，德语是 de 竞价排名费 1-999 元/点击一次，但是有 IP 段锁定 例这样是告诉搜索引擎的
+8、
+段落标签，让内容成段展示9、标题标签，成段展示，独占一行，加粗字体，更改字体大小（从 1 到 6 依次减小）10、加粗 斜体
+11、 独占一行   容器不独占 div 和 span 这两个标签是为了成块展示，规格化，这两个就是容器，功能如下： 功能 1：分块明确，让整个页面更加结构化； 功能 2：捆绑操作的作用（搬书架） 12、html 编码格式是&amp;amp;；常用就以下三个 1） 空格文本，写多少个就空几格 2）&amp;lt;左尖角号，小于的意思，less than，html 编码是&amp;lt; 3）&amp;gt;右尖角号，大于的意思，great than，html 编码是&amp;gt;</description>
     </item>
     
     <item>
