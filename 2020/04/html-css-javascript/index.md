@@ -1,4 +1,4 @@
-# 预防黑客的方法
+# html css  javascript
 
 
 
@@ -37,9 +37,7 @@
 
 第一、二课笔记
 
-需要学习的网站
 
-https://www.bootcss.com/
 
 
 
@@ -153,13 +151,15 @@ https://www.bootcss.com/
 
 
 
-第三课笔记
+# css
 
-开始学习css
+### 1.颜色的写法
 
+red： #ff0000  或缩写 #f00  每2个16进制代表一个颜色
 
+REG：reg（255,0,0）或者 reg（100%，0%，0%）
 
-
+### 2.浏览器及内核
 
 浏览器内核 谷歌、火狐、
 
@@ -188,6 +188,8 @@ eage
 html   css   javascript
 
 结构   样式   行为
+
+
 
 
 
@@ -268,12 +270,6 @@ class|属性|伪类 10
 ​      
 
  IE 7.0   256进制
-
-
-
-
-
- 2020年4月12日
 
 
 
@@ -395,7 +391,7 @@ display：inline (可切换行间元素、块级元素)
 
 
 
-快速写代码2：div.box tab建
+
 
 
 
@@ -425,4 +421,44 @@ display：inline (可切换行间元素、块级元素)
 
 ​                          盒子内容：width+height 
 
-![](./img/盒子模型.png)
+![](http://q7sebe874.bkt.clouddn.com/20200414131120.png)
+
+#### 层次模型
+
+position 属性
+
+absolute 1.脱离原来的位置进行定位
+
+相对于最近的有定位的父级进行定位，如果没有相对于文章定位
+
+relative    2.保留原来位置进行定位
+
+相对自己原来的位置进行定位
+
+absolute 当做机架，用relative 定位
+
+fixed 3.以不变应万变
+
+居中固定写法  position：absolute ;
+
+​                         left:50%
+
+​                        top:50%
+
+
+
+
+
+# code 快速使用说明
+
+快速写代码2：div.box tab建
+
+div.wrapper>div.connter table 会生成多个div
+
+div.circle$*5  快速创建5个
+
+#### 其他
+
+网站：https://www.bootcss.com/
+
+https://www.w3school.com.cn/css/index.asp
