@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 14 Apr 2020 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2020 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="http://mabaoshan.top/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -20,7 +20,25 @@
       <guid>http://mabaoshan.top/2020/04/nextcloud/</guid>
       <description>https 域名过期了处理方式      nextcloud.enable-https lets-encrypt 并按照接下来的提示，输入解析到本机ip的域名和你的邮箱，即可完成ssl的申请并将证书安装到nextcloud。      直接访问域名
 $ sudo nextcloud.occ config:system:set overwritehost &amp;ndash;value=&amp;quot;example.com:81&amp;rdquo;
-vm下载 https://www.hanssonit.se/nextcloud-vm/</description>
+vm下载 https://www.hanssonit.se/nextcloud-vm/
+错误:Run pre-refresh hook of &amp;ldquo;nextcloud&amp;rdquo; snap if present
+首先查看一下正在进行的change
+snap change
+查询最近做的操作
+$ snap changes
+关于snap更多信息，查看man手册： $ man snap
+snap 版本 版本规定
+stable，稳定版；
+candidate，正式候选版；
+beta，测试版；
+edge，可能不稳定的尝鲜版。
+查看软件版本
+sudo snap info nextcloud
+切换标准版
+sudo snap refresh &amp;ndash;channel=latest/stable nextcloud
+切换最新测试版
+sudo snap refresh &amp;ndash;channel=18/edge nextcloud
+sudo apt-get install snapcraft 安装此应用打开下载速度会快</description>
     </item>
     
     <item>
@@ -89,6 +107,26 @@ http://www.writage.com/#download</description>
     </item>
     
     <item>
+      <title>五环</title>
+      <link>http://mabaoshan.top/2020/04/%E4%BA%94%E7%8E%AF/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/04/%E4%BA%94%E7%8E%AF/</guid>
+      <description>五环效果如下：
+源文件下载</description>
+    </item>
+    
+    <item>
+      <title>ubuntu</title>
+      <link>http://mabaoshan.top/2020/04/ubuntu/</link>
+      <pubDate>Sat, 18 Apr 2020 00:00:00 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/04/ubuntu/</guid>
+      <description>升级系统
+sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade</description>
+    </item>
+    
+    <item>
       <title>VISIO拓扑图标.vsd</title>
       <link>http://mabaoshan.top/2020/04/visio%E6%8B%93%E6%89%91%E5%9B%BE%E6%A0%87%E4%B8%8B%E8%BD%BD/</link>
       <pubDate>Tue, 14 Apr 2020 00:00:00 +0800</pubDate>
@@ -103,8 +141,7 @@ http://www.writage.com/#download</description>
       <pubDate>Mon, 13 Apr 2020 00:00:00 +0800</pubDate>
       
       <guid>http://mabaoshan.top/2020/04/html-css%E5%85%A5%E9%97%A8/</guid>
-      <description>html ##一、基本设置
-Hypertext Markup Language 超文本标记语言
+      <description>html 一、基本设置 Hypertext Markup Language 超文本标记语言
   根标签 设置浏览器的   里面放的是思想，设置浏览器用的，是人看不到的  是展示给用户看的  认识万国码  连接css 文件  抬头显示  7、告诉搜索引擎爬虫，我们的网站是关于什么内容的 en 代表是英文，zh 是中文，德语是 de 竞价排名费 1-999 元/点击一次，但是有 IP 段锁定 例这样是告诉搜索引擎的
 8、
 段落标签，让内容成段展示9、标题标签，成段展示，独占一行，加粗字体，更改字体大小（从 1 到 6 依次减小）10、加粗 斜体
@@ -229,6 +266,8 @@ chmod -R 777 xmlrpc.php chmod -R 777 wp-load.php chmod -R 777 wp-comments-post.p
 select * into qidichuangxingongzhang &amp;ndash;new
 from ygyzspb2 &amp;ndash;old
 where 1=2
+复制表数据
+insert into qidichuangxingongzhang select * from ygyzspb2
 快速转换成日期
 select convert(char,列名,111) ，convert(char(10),列名,120) from tablename
 常用的方法

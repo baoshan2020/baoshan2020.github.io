@@ -9,7 +9,9 @@
 
  where 1=2
 
+复制表数据
 
+insert into qidichuangxingongzhang  select * from  ygyzspb2
 
 
 

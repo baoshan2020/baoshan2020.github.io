@@ -22,6 +22,8 @@
 select * into qidichuangxingongzhang &amp;ndash;new
 from ygyzspb2 &amp;ndash;old
 where 1=2
+复制表数据
+insert into qidichuangxingongzhang select * from ygyzspb2
 快速转换成日期
 select convert(char,列名,111) ，convert(char(10),列名,120) from tablename
 常用的方法
