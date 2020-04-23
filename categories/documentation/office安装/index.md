@@ -5,7 +5,7 @@
 
 1.下载office tool
 
-[Office-Tool-Plus下载](http://mabaoshan.top/OfficeToolPlus.exe) 
+[Office-Tool-Plus下载](https://pan.tusenergy.com/index.php/s/ffpbodkbWMXHbZW/download) 
 
 2.部署
 
@@ -35,8 +35,22 @@
 
 # 三、备用激活
 
-[1.点击下载激活文件](http://mabaoshan.top/microKMS.exe)
+[1.点击下载激活文件](https://pan.tusenergy.com/index.php/s/L3HmqBHWKneEtF4/download)
 
 2.右键，以管理员身份运行  单击激活office2010 -2019 ProPlus
 
 ![](https://raw.githubusercontent.com/baoshan2021/tc/master/img/image-20200407200106775.png)
+
+
+
+
+
+## 四、office 所有工具下载
+
+[下载](https://pan.tusenergy.com/index.php/s/yMjiXLwJAjsAJ6X)
+
+Office软件完全卸载工具.rar
+
+Office插件相关工具.rar
+
+Office VOL-Retail互转工具-证书安装工具.zip
