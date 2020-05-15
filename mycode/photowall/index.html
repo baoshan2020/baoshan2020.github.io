@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3D照片墙</title>
+    <style>
+    *{
+        margin:0;padding:0;
+    }
+    body{
+        background:#000;
+    }
+    .wrapper{
+        width:200px;
+        height:200px;
+        margin:150px auto;
+        /* 视距，会产生透视 */
+        perspective:1200px;
+    }
+    .imgBox{
+        height:100%;
+        position:relative;
+        transform-style:preserve-3d;
+        transform:rotateX(-10deg);
+    }
+    .imgBox>img{
+        width:200px;
+        height:200px;
+        position:absolute;
+        left:0;
+        top:0;
+        /* 
+          x轴偏移
+          y轴偏移
+          阴影模糊的距离
+          阴影的大小
+          颜色
+         */
+        box-shadow:0 0 8px 0 #eee;
+        
+    }
+    .bottom{
+        width:3000px;
+        height:1200px;
+        background:radial-gradient(rgba(102,0,204,.3) 30%,rgba(255,255,255,0) 60%);
+        position:absolute;
+        left:50%;
+        top:200px;
+        transform:rotateX(90deg);
+        margin-top:-600px;
+        margin-left:-600px;
+        border-radius:50%;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="imgBox">
+            <img src="images/001梨花.jpg" alt="梨花">
+            <img src="images/002桃花.jpg" alt="桃花">
+            <img src="images/003丁香花.jpg" alt="丁香花">
+            <img src="images/004海棠花1.jpg" alt="海棠花">
+            <img src="images/004海棠花2.jpg" alt="海棠花">
+            <img src="images/004海棠花3.jpg" alt="海棠花">
+            <img src="images/005蝴蝶兰.jpg" alt="蝴蝶兰">
+            <img src="images/006红梅梅花.jpg" alt="红梅梅花">
+            <img src="images/007牡丹花.jpg" alt="牡丹花">
+            <img src="images/008迎春花.jpg" alt="迎春花">
+            <img src="images/009观赏苹果花.jpg" alt="观赏苹果花">
+            <img src="images/009观赏苹果花2.jpg" alt="观赏苹果花">
+            <img src="images/010玛格丽特.jpg" alt="玛格丽特">
+            <img src="images/010玛格丽特002.jpg" alt="玛格丽特">
+            <img src="images/010玛格丽特003.jpg" alt="玛格丽特">
+            <img src="images/011小皱菊花.jpg" alt="小皱菊花">
+            <div class="bottom"></div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+<script>
+ window.onload=function(){
+     //效果1：发牌的效果，总后呈现的结果就是所有的图片绕成了一个圆，那每个图片应该旋转多少度？
+     /** 
+         索引：0-7，
+         第一张：7*0.2s   i=0     len-1-i
+         第二张：6*0.2s   i=2     len-1-i
+         第三张：5*0.2s    i=3    len-1-i 
+         ...
+         第八张：0*0.2     i=7    len-1-i  0s
+     **/
+     var Oimgs=document.querySelectorAll(".imgBox>img");
+     var imgBox=document.querySelector(".imgBox");
+     var len=Oimgs.length;
+     var itemDeg=360/len;
+     var num=0;
+     for(var i=0;i<len;i++){
+        //  绕成了一个圆
+        Oimgs[i].style.transform="rotateY("+itemDeg*i+"deg) translateZ(300px)";
+        //  延迟
+        Oimgs[i].style.transition="1s "+(len-1-i)*0.2+"s"
+     }
+     //效果2：旋转
+     setInterval(function(){
+         num++;
+         var num2=num*0.2
+         imgBox.style.transform="rotateX(-10deg) rotateY("+num2+"deg)";
+     },30)
+
+
+ }
+</script>

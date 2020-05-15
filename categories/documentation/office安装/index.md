@@ -9,11 +9,11 @@
 
 2.部署
 
-![](https://raw.githubusercontent.com/baoshan2021/tc/master/ce630173a54bb84ecb4c2ac99f5e4184.png)
+![](http://it.tusenergy.com/media/ce630173a54bb84ecb4c2ac99f5e4184.png)
 
 3.参照图片选择 添加产品、语言、安装设置后，点击开始部署
 
-![](https://raw.githubusercontent.com/baoshan2021/tc/master/deafa7cb1311ea84e59d59cfd7bc086c.png)
+![](http://it.tusenergy.com/media/deafa7cb1311ea84e59d59cfd7bc086c.png)
 
 
 
@@ -31,7 +31,7 @@
 
 5.点击激活按钮
 
-![](https://raw.githubusercontent.com/baoshan2021/tc/master/img/001.png)![](https://raw.githubusercontent.com/baoshan2021/tc/master/img/clip_image002.png)
+![](http://it.tusenergy.com/media/001.png)![](http://it.tusenergy.com/media/img/clip_image002.png)
 
 # 三、备用激活
 
@@ -39,7 +39,7 @@
 
 2.右键，以管理员身份运行  单击激活office2010 -2019 ProPlus
 
-![](https://raw.githubusercontent.com/baoshan2021/tc/master/img/image-20200407200106775.png)
+![](http://it.tusenergy.com/media/image-20200407200106775.png)
 
 
 

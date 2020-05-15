@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 30 Mar 2020 15:58:26 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2020 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="http://mabaoshan.top/tags/k3cloud/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>k3cloud客户端登录</title>
+      <link>http://mabaoshan.top/categories/documentation/k3cloud%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%99%BB%E5%BD%95/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/categories/documentation/k3cloud%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%99%BB%E5%BD%95/</guid>
+      <description>1.下载安装文件2.设置服务器地址：http://cloud.tusenergy.com/K3Cloud
+3.输入用户名和密码登陆：
+4.win7 安装报错解决 。请下载.net 4.6解决</description>
+    </item>
+    
+    <item>
+      <title>k3cloud汇总.</title>
+      <link>http://mabaoshan.top/categories/documentation/k3cloud%E6%B1%87%E6%80%BB/</link>
+      <pubDate>Mon, 30 Mar 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/categories/documentation/k3cloud%E6%B1%87%E6%80%BB/</guid>
+      <description>1.登录 k3cloud登录的三种方式启迪清洁能源k3cloud新增公司2.费用报销 k3cloud执行预算3.基础资料 员工任岗明细维护4.日常操作 单据已绑定流程实例，不能进行提交操作5.移动审批 金蝶云之家查询待办工作</description>
+    </item>
     
     <item>
       <title>费用报销.</title>

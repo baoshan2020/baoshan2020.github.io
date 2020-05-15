@@ -11,7 +11,7 @@
 
 | 名称     | 地址                                                         | 操作说明                     | 激活文件                                                     |
 | -------- | ------------------------------------------------------------ | ---------------------------- | ------------------------------------------------------------ |
-| 操作系统 | https://msdn.itellyou.cn/                                                                      https://next.itellyou.cn  邀请码：ITELLYOU666 |||
+| 操作系统 | https://msdn.itellyou.cn/ |||
 | office   | [下载](https://pan.tusenergy.com/index.php/s/Kz2FapYmN6oCYxd/download) |                              | [激活1](https://pan.tusenergy.com/index.php/s/CKKFHkeJPjLwpNK/download) [激活2](https://pan.tusenergy.com/index.php/s/Kz2FapYmN6oCYxd/download) |
 | pdf      |                                                              |                              |                                                              |
 | 7-zip    |                                                              |                              |                                                              |
