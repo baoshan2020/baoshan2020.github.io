@@ -22,8 +22,11 @@
 }
 
 #mid .weixin{
-    background-color: darkslategrey;
+    background-image: url(../media/qrcode_258.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
 }
+
 
 #mid .logo{
     text-align:center;
