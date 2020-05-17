@@ -1,41 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>blog on 马保山的学习笔记</title>
-    <link>http://mabaoshan.top/tags/blog/</link>
-    <description>Recent content in blog on 马保山的学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 13 Apr 2020 00:00:00 +0800</lastBuildDate>
-    
-	<atom:link href="http://mabaoshan.top/tags/blog/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>html css  javascript</title>
-      <link>http://mabaoshan.top/2020/04/html-css-javascript/</link>
-      <pubDate>Mon, 13 Apr 2020 00:00:00 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/04/html-css-javascript/</guid>
-      <description>&amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; 11 第一、二课笔记
-段落标签
-1到6号标题 独占一行 加粗
-倾斜
-独占一行 容器 功能1.分文别类，功能2 绑定化操作
- 容器不独占一行。 
-&amp;lt;小于 &amp;gt;大于 空格
-
-换行
-水平线marvel速8返老还童了不起盖茨比苹果栗子&amp;lt;img src=&amp;rdquo;&amp;rdquo; style=&amp;quot;width: auto;&amp;rdquo; alt=&amp;quot;显示不出来提示&amp;mdash;图片占位&amp;rdquo; title=&amp;rdquo; 鼠标放上提示 图片提示&amp;quot;&amp;gt;
-文本框 password: &amp;gt;
-单选框单选框单选框css 1.颜色的写法 red： #ff0000 或缩写 #f00 每2个16进制代表一个颜色
-REG：reg（255,0,0）或者 reg（100%，0%，0%）
-2.浏览器及内核 浏览器内核 谷歌、火狐、
-​ shell 内核
-IE trident
-firefox Gecko</description>
-    </item>
-    
-  </channel>
-</rss>
