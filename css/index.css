@@ -1,9 +1,31 @@
-#top div {
-    margin-top: 0;
-}
-#link div{
-    margin-top: 100px;
+
+
+.link{
+    text-align: center;
     width: 300px;
     height: 300px;
     border: 1px solid black;
+    margin-right: 10px;
+
+}
+#mid{
+    margin-left: 50px;
+    text-align: center;
+}
+
+#mid .blog{
+    background-color: black;
+}
+
+#mid .code{ 
+    background-color: burlywood;
+}
+
+#mid .weixin{
+    background-color: darkslategrey;
+}
+
+#mid .logo{
+    text-align:center;
+    font-size: 30px;
 }

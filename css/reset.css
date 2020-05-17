@@ -14,3 +14,13 @@ float: left;
 .fr{
     float: right
 }
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+a{
+    text-decoration: none;
+    columns: #3c3c3c;   
+   }
