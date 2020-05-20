@@ -6,31 +6,35 @@
   height: 300px;
     /* border: 1px solid black; */
     margin-right: 10px;
-    font-size: 100px;
-    line-height: 300px;
+    /* font-size: 20px; */
+    /* line-height: 100px; */
 
 }
 #mid{
-    margin-left: 50px;
+    margin-left: 10px;
     text-align: center;
 }
 
 #mid .blog{
-    font-size: 100px;
-    line-height: 300px;
+    font-size: 50px;
+    line-height: 100px;
     /* margin-top: 0 auto; */
 }
 
 #mid .code{ 
+    font-size: 50px;
+    line-height: 100px;
   
 }
 
 #mid .weixin{
     background-image: url(../media/qrcode_258.png);
     background-repeat: no-repeat;
-    background-size: 300px;
+    background-size: 100px;
 }
 #mid .logo{
     text-align:center;
-    font-size:50px;
+    font-size:30px;
+    margin-bottom: 100px;
+    margin-top: 20px;
 }
