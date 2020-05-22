@@ -33,6 +33,19 @@
 
 ![](http://it.tusenergy.com/media/001.png)![](http://it.tusenergy.com/media/img/clip_image002.png)
 
+6.其他说明
+2019proplusvl mark 密钥
+TPCXN-J87D4-BPYVQ-3YWVC-BTFXQ
+
+2019visiopro retail 008 密钥
+XDQJB-HXNXG-8HBP3-CR879-P39H9 
+
+如果你在访问 Office Tool Plus 官方网站的时候出现了问题，可以尝试将 DNS 切换成阿里云的 DNS，具体原因正在调查中：
+阿里 AliDNS
+223.5.5.5
+223.6.6.6
+
+
 # 三、备用激活
 
 [1.点击下载激活文件](http://it.tusenergy.com/filedown/microKMS_v19.04.03.exe) 

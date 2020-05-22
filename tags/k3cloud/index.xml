@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 15 May 2020 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2020 15:58:26 +0800</lastBuildDate>
     
 	<atom:link href="http://mabaoshan.top/tags/k3cloud/index.xml" rel="self" type="application/rss+xml" />
     
@@ -24,18 +24,23 @@
     </item>
     
     <item>
-      <title>k3cloud汇总.</title>
-      <link>http://mabaoshan.top/categories/documentation/k3cloud%E6%B1%87%E6%80%BB/</link>
-      <pubDate>Mon, 30 Mar 2020 15:58:26 +0800</pubDate>
+      <title>k3cloud预算管理-新部门（添加预算组织、方案、规则）</title>
+      <link>http://mabaoshan.top/categories/documentation/k3cloud%E9%A2%84%E7%AE%97%E7%AE%A1%E7%90%86-%E6%96%B0%E9%83%A8%E9%97%A8%E6%B7%BB%E5%8A%A0%E9%A2%84%E7%AE%97%E7%BB%84%E7%BB%87%E6%96%B9%E6%A1%88%E8%A7%84%E5%88%99/</link>
+      <pubDate>Fri, 22 May 2020 15:58:26 +0800</pubDate>
       
-      <guid>http://mabaoshan.top/categories/documentation/k3cloud%E6%B1%87%E6%80%BB/</guid>
-      <description>1.登录 k3cloud登录的三种方式启迪清洁能源k3cloud新增公司2.费用报销 k3cloud执行预算3.基础资料 员工任岗明细维护4.日常操作 单据已绑定流程实例，不能进行提交操作5.移动审批 金蝶云之家查询待办工作</description>
+      <guid>http://mabaoshan.top/categories/documentation/k3cloud%E9%A2%84%E7%AE%97%E7%AE%A1%E7%90%86-%E6%96%B0%E9%83%A8%E9%97%A8%E6%B7%BB%E5%8A%A0%E9%A2%84%E7%AE%97%E7%BB%84%E7%BB%87%E6%96%B9%E6%A1%88%E8%A7%84%E5%88%99/</guid>
+      <description>1.添加预算组织架构
+预算组织-&amp;gt; 选择需要加入的部门 -&amp;gt;仅刷入当前组织
+2.分配预算方案
+预算方案-&amp;gt;选择要分发的模板-&amp;gt;分发
+3.规则分配
+预算控制台-&amp;gt;规则分配</description>
     </item>
     
     <item>
       <title>费用报销.</title>
       <link>http://mabaoshan.top/categories/documentation/k3cloud%E8%B4%B9%E7%94%A8%E6%8A%A5%E9%94%80/</link>
-      <pubDate>Mon, 30 Mar 2020 15:58:26 +0800</pubDate>
+      <pubDate>Fri, 22 May 2020 15:58:26 +0800</pubDate>
       
       <guid>http://mabaoshan.top/categories/documentation/k3cloud%E8%B4%B9%E7%94%A8%E6%8A%A5%E9%94%80/</guid>
       <description>第二章 财务管理借款与报销制度 第一条 差旅费的借款与报销
@@ -65,6 +70,15 @@
 因公境外出差人员的住宿费、伙食费、公杂费等（合并一起）按照区域不同在相应标准范围内凭实际消费的单据实报实销。
 区域上限标准如下（美元/天）：
 | 区域 | 总裁 | 副总裁 | 其他人员 | | | 首席科学家 | 高级副总裁 | | |&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;|&amp;mdash;&amp;mdash;&amp;mdash;-| | 北美、欧洲、澳洲 | 实报实销 | 230 | 200 | | 南美 | 实报实销 | 180 | 150 | | 日本、韩国、港澳台地区、新加坡 | 实报实销 | 210 | 180 | | 亚洲（除上行所列国家地区）、非洲 | 实报实销 | 180 | 150 |</description>
+    </item>
+    
+    <item>
+      <title>k3cloud汇总.</title>
+      <link>http://mabaoshan.top/categories/documentation/k3cloud%E6%B1%87%E6%80%BB/</link>
+      <pubDate>Mon, 30 Mar 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/categories/documentation/k3cloud%E6%B1%87%E6%80%BB/</guid>
+      <description>1.登录 k3cloud登录的三种方式启迪清洁能源k3cloud新增公司2.费用报销 k3cloud执行预算3.基础资料 员工任岗明细维护4.日常操作 单据已绑定流程实例，不能进行提交操作5.移动审批 金蝶云之家查询待办工作</description>
     </item>
     
   </channel>
