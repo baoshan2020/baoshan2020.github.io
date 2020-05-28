@@ -11,6 +11,10 @@
     margin: 0 auto;
 }
 
+#top ul li {
+    float: left;
+}
+
 #down {
     /* margin-top: 48px; */
     text-align: center;
@@ -18,10 +22,7 @@
     width: 1170px;
 }
 
-#down .left {}
-
 #down .left ul li {
-    float: none;
     width: 110px;
     height: 40px;
     line-height: 42px;
