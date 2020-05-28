@@ -5,14 +5,18 @@
 #top {
     height: 48px;
     width: 100%;
-    font-size: 18px;
     text-align: center;
-    width: 1170px;
+    width: 1280px;
     margin: 0 auto;
 }
 
 #top ul li {
     float: left;
+    line-height: 26px;
+}
+
+#top .iconfont {
+    font-size: 26px;
 }
 
 #down {
