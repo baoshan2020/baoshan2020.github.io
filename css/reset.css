@@ -69,3 +69,9 @@ a {
 .f40 {
     color: #F40;
 }
+
+.mi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

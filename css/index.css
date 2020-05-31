@@ -1,85 +1,102 @@
-#all {
-    border-top: 2px solid #fa7d3c;
-}
-
-#top {
-    height: 48px;
-    width: 100%;
-    text-align: center;
-    width: 1280px;
-    margin: 0 auto;
-}
-
-#top ul li {
-    float: left;
-    line-height: 26px;
-}
-
-#top .iconfont {
-    font-size: 26px;
-}
-
-#down {
-    /* margin-top: 48px; */
-    text-align: center;
-    margin: 0 auto;
-    width: 1170px;
-}
-
-#down .left ul li {
-    width: 110px;
-    height: 40px;
-    line-height: 42px;
-    font-size: 18px;
-}
-
-#down .left ul li a {
-    display: block;
-    color: #333;
-}
-
-#down .left ul li :hover {
-    background: linear-gradient(128deg, #fa2f2f 0%, #ff5b36 90%);
-    color: #fff;
-}
-
-#down .left ul li ::selection {
-    background: linear-gradient(128deg, #fa2f2f 0%, #ff5b36 90%);
-    color: #fff;
-}
-
-#down .center {
-    border: 1px solid black;
-    background: burlywood;
-}
-
-#down .right ul li {
-    float: none;
-}
-
-#down .weixin {
-    width: 100px;
-    height: 100px;
-    background-image: url(../img/qrcode_258.png);
-    background-repeat: no-repeat;
-    background-size: 100px;
-}
-
-#down .weixin_gongzhaonghao {
-    width: 100px;
-    height: 100px;
-    background-image: url(../img/weixin_gongzhonghao.jpg);
-    background-repeat: no-repeat;
-    background-size: 100px;
-}
-
-
-/* nav 内容 */
-
-#down .navcenter {
-    width: 660px;
-}
-
-#down #nav img {
-    height: 300px;
-}
+ html,
+ body {
+     /* width: 100%;
+     height: 100%; */
+     /*  background: #db4d6d;*/
+     /* display: flex; */
+     /* 垂直居中 */
+     /* justify-content: center;*/
+     /* 水平居中 */
+     /* align-items: center;*/
+     /* 
+     display: flex;
+     justify-content: center;
+     align-items: center; */
+ }
+ 
+ .all {}
+ 
+ body {
+     border-top: 2px solid #fa7d3c;
+ }
+ 
+ #top {
+     height: 48px;
+     text-align: center;
+     /* width: 1280px; */
+     /* width: 1170px; */
+     /* margin: 0 auto; */
+ }
+ 
+ #top ul li {
+     float: left;
+     line-height: 26px;
+     margin-left: 10px;
+ }
+ 
+ #top .iconfont {
+     font-size: 26px;
+ }
+ 
+ #down {
+     /* margin-top: 48px; */
+     text-align: center;
+     /* margin: 0 auto; */
+     /* width: 1170px; */
+ }
+ 
+ #down .left ul li {
+     width: 110px;
+     height: 40px;
+     line-height: 42px;
+     font-size: 18px;
+ }
+ 
+ #down .left ul li a {
+     display: block;
+     color: #333;
+ }
+ 
+ #down .left ul li :hover {
+     background: linear-gradient(128deg, #fa2f2f 0%, #ff5b36 90%);
+     color: #fff;
+ }
+ 
+ #down .left ul li ::selection {
+     background: linear-gradient(128deg, #fa2f2f 0%, #ff5b36 90%);
+     color: #fff;
+ }
+ 
+ #down .center {
+     border: 1px solid black;
+     background: burlywood;
+ }
+ 
+ #down .right ul li {
+     float: none;
+ }
+ 
+ #down .weixin {
+     width: 100px;
+     height: 100px;
+     background-image: url(../img/qrcode_258.png);
+     background-repeat: no-repeat;
+     background-size: 100px;
+ }
+ 
+ #down .weixin_gongzhaonghao {
+     width: 100px;
+     height: 100px;
+     background-image: url(../img/weixin_gongzhonghao.jpg);
+     background-repeat: no-repeat;
+     background-size: 100px;
+ }
+ /* nav 内容 */
+ 
+ #down .navcenter {
+     width: 660px;
+ }
+ 
+ #down #nav img {
+     height: 300px;
+ }
