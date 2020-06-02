@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5500/baidu/index.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<link rel="stylesheet" href="./Document_files/index.css"></head>
+
+<body>
+
+
+    <div class="warrper">
+        <div class="top">
+            <ul class="fl">
+                <li><a>新闻</a></li>
+                <li>hao123</li>
+                <li>地图</li>
+                <li>视频</li>
+                <li>贴吧</li>
+                <li>学术</li>
+                <li>更多</li>
+            </ul>
+            <ul class="fr">
+                <li class="red">抗击肺炎</li>
+                <li>设置</li>
+                <li class="loggin">登录</li>
+            </ul>
+        </div>
+        <div class="search">
+            <a href="http://127.0.0.1:5500/baidu/index.html#"><img src="./Document_files/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt=""></a>
+            <div>
+                <input type="text"><button>百度一下</button>
+            </div>
+        </div>
+        <div class="nva">
+            <div class="fl">
+                <ul>
+                    <li>百度热搜</li>
+                    <li>纽约市场回应女儿参加抗议被捕</li>
+                    <li>希拉里批准特朗普滥用总统权力</li>
+                    <li>武汉中心医院医生胡卫峰离世</li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li>换一换</li>
+                    <li>弗洛伊德独立尸检报告公布</li>
+                    <li>隐瞒病情回国的黎某被批准逮捕</li>
+                    <li>刚过爆发一轮埃博拉疫情</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

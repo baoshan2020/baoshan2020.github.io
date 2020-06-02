@@ -14,15 +14,19 @@
      align-items: center; */
  }
  
- .all {}
+ #all {
+     /* margin: 0px auto;
+     text-align: center; */
+ }
  
  body {
      border-top: 2px solid #fa7d3c;
  }
  
  #top {
+     position: relative;
      height: 48px;
-     text-align: center;
+     /* text-align: center; */
      /* width: 1280px; */
      /* width: 1170px; */
      /* margin: 0 auto; */
@@ -39,10 +43,12 @@
  }
  
  #down {
-     /* margin-top: 48px; */
-     text-align: center;
-     /* margin: 0 auto; */
-     /* width: 1170px; */
+     position: relative;
+     /* left: 50%;
+     margin-left: -585px; */
+     /* text-align: center; */
+     margin: 0 auto;
+     width: 1170px;
  }
  
  #down .left ul li {
@@ -94,7 +100,7 @@
  /* nav 内容 */
  
  #down .navcenter {
-     width: 660px;
+     /* width: 660px; */
  }
  
  #down #nav img {
