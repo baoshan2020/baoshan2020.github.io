@@ -1,4 +1,4 @@
 @ echo on
 git add .
 git commit -m "%date% "
-git push
+git push --all
