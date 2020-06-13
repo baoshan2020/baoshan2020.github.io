@@ -1,0 +1,7 @@
+添加coding 代码
+git remote -v //查看列表
+git remote add coding https://e.coding.net/mabaoshan/www.git
+git remote set-url origin https://e.coding.net/mabaoshan/www.git
+git push
+
+
