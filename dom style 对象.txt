@@ -1,0 +1,18 @@
+    <script>
+        // <!-- dom 对象 -->
+        var div = document.getElementsByTagName('div')[0];
+        div.style.width = "100px";
+        div.style.height = "100px";
+        div.style.background = "red";
+
+        var count = 0;
+        div.onclick = function() {
+            count++;
+            if (count % 2 == 1) {
+                this.style.backgroundColor = 'black';
+            } else {
+                this.style.backgroundColor = 'green';
+            }
+
+        }
+    </script>

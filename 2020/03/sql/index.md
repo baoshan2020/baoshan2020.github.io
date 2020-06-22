@@ -32,3 +32,10 @@ Select CONVERT(varchar(100), GETDATE(), 8): 10:57:46
 查询60天之前的数据
 
 select dateadd(d,-60,getdate())
+
+
+
+
+
+--统计单个表 占用空间的大小
+exec sp_spaceused 'CustomModule_2013117142926640'

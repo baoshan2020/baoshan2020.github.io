@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>html on 马保山的学习笔记</title>
+    <link>http://mabaoshan.top/tags/html/</link>
+    <description>Recent content in html on 马保山的学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 26 May 2020 00:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://mabaoshan.top/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>html代码mailto命令详解(cc&#43;bcc&#43;主题&#43;内容&#43;包含回车问号空格)</title>
+      <link>http://mabaoshan.top/2020/05/html%E4%BB%A3%E7%A0%81mailto%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3cc-bcc-%E4%B8%BB%E9%A2%98-%E5%86%85%E5%AE%B9-%E5%8C%85%E5%90%AB%E5%9B%9E%E8%BD%A6%E9%97%AE%E5%8F%B7%E7%A9%BA%E6%A0%BC/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/05/html%E4%BB%A3%E7%A0%81mailto%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3cc-bcc-%E4%B8%BB%E9%A2%98-%E5%86%85%E5%AE%B9-%E5%8C%85%E5%90%AB%E5%9B%9E%E8%BD%A6%E9%97%AE%E5%8F%B7%E7%A9%BA%E6%A0%BC/</guid>
+      <description>大家知道，mailto是网页设计制作中的一个非常实用的html标签，许多拥有个人网页的朋友都喜欢在网站的醒目位置处写上自己的电子邮件地址，这+样网页浏览者一旦用鼠标单击一下由mailto组成的超级连接后，就能自动打开当前计算机系统中默认的电子邮件客户端软件，例如OutLook+Express以及Foxmail等。当然有关mailto标签的使用，并不仅仅就象上面所说的那样简单，它还有其他方面的应用。为了能帮助各位用户对+mailto标签有一个全面的认识，笔者在此就对mailto标签的使用做一个详细的总结，希望能与大家共享交流！
+首先代码奉上，有码有真相对吧。
+mailto主题/CC/BCC/正文使用方法&amp;lt;A+HREF=&amp;quot;mailto:miyaxxx@yahoo.com?subject=Hello%20World主题&amp;amp;cc=aaa_ss@yahoo.com&amp;amp;bcc=bbb_X@yahoo.com&amp;amp;body=内容第一行%0D%0A内容第二行 你也可以回车，但是不会成功。%0D%0A内容第三行&amp;quot;&amp;gt;メール
+mailto代码中可以追加以下几个参数以实现想要的内容。
+suject是指出主题的位置。cc是指出抄送的mail地址。Bcc是秘密抄送mail地址。body位置指出mail的内容使用换行回车的话要加\n,&amp;lt;br/&amp;gt;,都是不好用的哦，这里要用专用的「%0D%0A」标记使用半角空格的时候，直接使用也是不好用的，要用「%20」代替。半角问号?使用「%3F」代替。 </description>
+    </item>
+    
+  </channel>
+</rss>

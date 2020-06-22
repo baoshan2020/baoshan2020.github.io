@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>html代码mailto命令详解(cc&#43;bcc&#43;主题&#43;内容&#43;包含回车问号空格) | 马保山的学习笔记</title>
+        <meta name="Description" content="马保山的学习笔记"><meta property="og:title" content="html代码mailto命令详解(cc&#43;bcc&#43;主题&#43;内容&#43;包含回车问号空格)" />
+<meta property="og:description" content="大家知道，mailto是网页设计制作中的一个非常实用的html标签，许多拥有个人网页的朋友都喜欢在网站的醒目位置处写上自己的电子邮件地址，这&#43;样网页浏览者一旦用鼠标单击一下由mailto组成的超级连接后，就能自动打开当前计算机系统中默认的电子邮件客户端软件，例如OutLook&#43;Express以及Foxmail等。当然有关mailto标签的使用，并不仅仅就象上面所说的那样简单，它还有其他方面的应用。为了能帮助各位用户对&#43;mailto标签有一个全面的认识，笔者在此就对mailto标签的使用做一个详细的总结，希望能与大家共享交流！
+首先代码奉上，有码有真相对吧。
+mailto主题/CC/BCC/正文使用方法&lt;A&#43;HREF=&quot;mailto:miyaxxx@yahoo.com?subject=Hello%20World主题&amp;cc=aaa_ss@yahoo.com&amp;bcc=bbb_X@yahoo.com&amp;body=内容第一行%0D%0A内容第二行 你也可以回车，但是不会成功。%0D%0A内容第三行&quot;&gt;メール
+mailto代码中可以追加以下几个参数以实现想要的内容。
+suject是指出主题的位置。cc是指出抄送的mail地址。Bcc是秘密抄送mail地址。body位置指出mail的内容使用换行回车的话要加\n,&lt;br/&gt;,都是不好用的哦，这里要用专用的「%0D%0A」标记使用半角空格的时候，直接使用也是不好用的，要用「%20」代替。半角问号?使用「%3F」代替。 " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://mabaoshan.top/2020/05/html%E4%BB%A3%E7%A0%81mailto%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3cc-bcc-%E4%B8%BB%E9%A2%98-%E5%86%85%E5%AE%B9-%E5%8C%85%E5%90%AB%E5%9B%9E%E8%BD%A6%E9%97%AE%E5%8F%B7%E7%A9%BA%E6%A0%BC/" />
+<meta property="article:published_time" content="2020-05-26T00:00:00+08:00" />
+<meta property="article:modified_time" content="2020-05-26T00:00:00+08:00" /><meta property="og:site_name" content="马保山的学习笔记" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="html代码mailto命令详解(cc&#43;bcc&#43;主题&#43;内容&#43;包含回车问号空格)"/>
+<meta name="twitter:description" content="大家知道，mailto是网页设计制作中的一个非常实用的html标签，许多拥有个人网页的朋友都喜欢在网站的醒目位置处写上自己的电子邮件地址，这&#43;样网页浏览者一旦用鼠标单击一下由mailto组成的超级连接后，就能自动打开当前计算机系统中默认的电子邮件客户端软件，例如OutLook&#43;Express以及Foxmail等。当然有关mailto标签的使用，并不仅仅就象上面所说的那样简单，它还有其他方面的应用。为了能帮助各位用户对&#43;mailto标签有一个全面的认识，笔者在此就对mailto标签的使用做一个详细的总结，希望能与大家共享交流！
+首先代码奉上，有码有真相对吧。
+mailto主题/CC/BCC/正文使用方法&lt;A&#43;HREF=&quot;mailto:miyaxxx@yahoo.com?subject=Hello%20World主题&amp;cc=aaa_ss@yahoo.com&amp;bcc=bbb_X@yahoo.com&amp;body=内容第一行%0D%0A内容第二行 你也可以回车，但是不会成功。%0D%0A内容第三行&quot;&gt;メール
+mailto代码中可以追加以下几个参数以实现想要的内容。
+suject是指出主题的位置。cc是指出抄送的mail地址。Bcc是秘密抄送mail地址。body位置指出mail的内容使用换行回车的话要加\n,&lt;br/&gt;,都是不好用的哦，这里要用专用的「%0D%0A」标记使用半角空格的时候，直接使用也是不好用的，要用「%20」代替。半角问号?使用「%3F」代替。 "/>
+<meta name="theme-color" content="#ffffff">
+<meta name="msapplication-TileColor" content="#da532c">
+<link rel="canonical" href="http://mabaoshan.top/2020/05/html%E4%BB%A3%E7%A0%81mailto%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3cc-bcc-%E4%B8%BB%E9%A2%98-%E5%86%85%E5%AE%B9-%E5%8C%85%E5%90%AB%E5%9B%9E%E8%BD%A6%E9%97%AE%E5%8F%B7%E7%A9%BA%E6%A0%BC/" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="prev" href="http://mabaoshan.top/2020/04/ubuntu/" /><link rel="next" href="http://mabaoshan.top/2020/06/coding/" /><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/css/style.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "html代码mailto命令详解(cc\x2bbcc\x2b主题\x2b内容\x2b包含回车问号空格)",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/mabaoshan.top\/2020\/05\/html%E4%BB%A3%E7%A0%81mailto%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3cc-bcc-%E4%B8%BB%E9%A2%98-%E5%86%85%E5%AE%B9-%E5%8C%85%E5%90%AB%E5%9B%9E%E8%BD%A6%E9%97%AE%E5%8F%B7%E7%A9%BA%E6%A0%BC\/"
+        },"image": {
+                "@type": "ImageObject",
+                "url": "http:\/\/mabaoshan.top\/cover.png",
+                "width":  800 ,
+                "height":  600 
+            },"genre": "posts","keywords": "html","wordcount":  13 ,
+        "url": "http:\/\/mabaoshan.top\/2020\/05\/html%E4%BB%A3%E7%A0%81mailto%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3cc-bcc-%E4%B8%BB%E9%A2%98-%E5%86%85%E5%AE%B9-%E5%8C%85%E5%90%AB%E5%9B%9E%E8%BD%A6%E9%97%AE%E5%8F%B7%E7%A9%BA%E6%A0%BC\/","datePublished": "2020-05-26","dateModified": "2020-05-26","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+                "@type": "Organization",
+                "name": "马保山",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/mabaoshan.top\/logo.png",
+                "width":  127 ,
+                "height":  40 
+                }
+            },"author": {
+                "@type": "Person",
+                "name": "马保山"
+            },"description": ""
+    }
+    </script></head>
+    <body><script>
+            if (!window.localStorage || !window.localStorage.getItem('theme')) {window.isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;} else {
+                window.isDark = (window.localStorage && window.localStorage.getItem('theme')) === 'dark';
+            }
+            window.isDark && document.body.classList.add('dark-theme');
+        </script><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/">马保山的学习笔记</a>
+        </div>
+        <div class="menu"><a class="menu-item" href="/posts/" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" rel="noopener noreffer">分类</a><a class="menu-item" href="/categories/documentation/" rel="noopener noreffer">文档</a><a class="menu-item" href="/about/" title="About" rel="noopener noreffer">About</a><span class="menu-item">|</span>
+            <a href="javascript:void(0);" class="menu-item theme-switch" title="">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-wrapper">
+        <div class="header-container">
+            <div class="header-title">
+                <a href="/">马保山的学习笔记</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="" rel="noopener noreffer">所有文章</a><a class="menu-item" href="/tags/" title="" rel="noopener noreffer">标签</a><a class="menu-item" href="/categories/" title="" rel="noopener noreffer">分类</a><a class="menu-item" href="/categories/documentation/" title="" rel="noopener noreffer">文档</a><a class="menu-item" href="/about/" title="About" rel="noopener noreffer">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+
+<script>
+    window.desktopHeaderMode = "fixed";
+    window.mobileHeaderMode = "auto";
+</script>
+<main class="main">
+                <div class="container"><article class="page single"><h1 class="single-title animated flipInX">html代码mailto命令详解(cc&#43;bcc&#43;主题&#43;内容&#43;包含回车问号空格)</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="http://mabaoshan.top" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>马保山</a>
+</span>&nbsp;
+                    <span class="post-category">收录于<a href="/categories/blog">
+                                <i class="far fa-folder fa-fw"></i>Blog
+                            </a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-05-26>2020-05-26</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 13 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>预计阅读 1 分钟&nbsp;<span id="/2020/05/html%E4%BB%A3%E7%A0%81mailto%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3cc-bcc-%E4%B8%BB%E9%A2%98-%E5%86%85%E5%AE%B9-%E5%8C%85%E5%90%AB%E5%9B%9E%E8%BD%A6%E9%97%AE%E5%8F%B7%E7%A9%BA%E6%A0%BC/" class="leancloud_visitors" data-flag-title="html代码mailto命令详解(cc&#43;bcc&#43;主题&#43;内容&#43;包含回车问号空格)">
+                        <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="toc" id="toc-auto">
+                <h2 class="toc-title">目录</h2>
+                <div class="toc-content" id="toc-content-auto"></div>
+            </div>
+            <div class="toc" id="toc-static">
+                <details>
+                    <summary>
+                        <div class="toc-title">
+                            <span>目录</span>
+                            <span><i class="details icon fas fa-angle-down"></i></span>
+                        </div>
+                    </summary>
+                    <div class="toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+                </details>
+            </div><div class="content" id="content"><p>大家知道，mailto是网页设计制作中的一个非常实用的html标签，许多拥有个人网页的朋友都喜欢在网站的醒目位置处写上自己的电子邮件地址，这+样网页浏览者一旦用鼠标单击一下由mailto组成的超级连接后，就能自动打开当前计算机系统中默认的电子邮件客户端软件，例如OutLook+Express以及Foxmail等。当然有关mailto标签的使用，并不仅仅就象上面所说的那样简单，它还有其他方面的应用。为了能帮助各位用户对+mailto标签有一个全面的认识，笔者在此就对mailto标签的使用做一个详细的总结，希望能与大家共享交流！</p>
+<p>首先代码奉上，有码有真相对吧。</p>
+<HTML>
+<HEAD>
+<TITLE>mailto主题/CC/BCC/正文使用方法</TITLE>
+</HEAD>
+<BODY>
+<p>&lt;A+HREF=&quot;mailto:miyaxxx@yahoo.com?subject=Hello%20World主题&amp;cc=aaa_<a href="mailto:ss@yahoo.com">ss@yahoo.com</a>&amp;bcc=bbb_<a href="mailto:X@yahoo.com">X@yahoo.com</a>&amp;body=内容第一行%0D%0A内容第二行
+你也可以回车，但是不会成功。%0D%0A内容第三行&quot;&gt;メール</A></p>
+</BODY>
+</HTML>
+<p>mailto代码中可以追加以下几个参数以实现想要的内容。</p>
+<pre><code>suject是指出主题的位置。
+
+cc是指出抄送的mail地址。
+
+Bcc是秘密抄送mail地址。
+
+body位置指出mail的内容
+
+使用换行回车的话要加\n,&lt;br/&gt;,都是不好用的哦，这里要用专用的「%0D%0A」标记
+
+使用半角空格的时候，直接使用也是不好用的，要用「%20」代替。
+
+半角问号?使用「%3F」代替。</code></pre>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>本文于 2020-05-26 更新</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2020/05/html%E4%BB%A3%E7%A0%81mailto%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3cc-bcc-%E4%B8%BB%E9%A2%98-%E5%86%85%E5%AE%B9-%E5%8C%85%E5%90%AB%E5%9B%9E%E8%BD%A6%E9%97%AE%E5%8F%B7%E7%A9%BA%E6%A0%BC/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://mabaoshan.top/2020/05/html%E4%BB%A3%E7%A0%81mailto%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3cc-bcc-%E4%B8%BB%E9%A2%98-%E5%86%85%E5%AE%B9-%E5%8C%85%E5%90%AB%E5%9B%9E%E8%BD%A6%E9%97%AE%E5%8F%B7%E7%A9%BA%E6%A0%BC/" data-title="html代码mailto命令详解(cc&#43;bcc&#43;主题&#43;内容&#43;包含回车问号空格)" data-ralateuid="xxxx"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 人人" data-sharer="renren" data-url="http://mabaoshan.top/2020/05/html%E4%BB%A3%E7%A0%81mailto%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3cc-bcc-%E4%B8%BB%E9%A2%98-%E5%86%85%E5%AE%B9-%E5%8C%85%E5%90%AB%E5%9B%9E%E8%BD%A6%E9%97%AE%E5%8F%B7%E7%A9%BA%E6%A0%BC/"><i class="fab fa-renren fa-fw"></i></a><a href="javascript:void(0);" title="分享到 百度" data-sharer="baidu" data-url="http://mabaoshan.top/2020/05/html%E4%BB%A3%E7%A0%81mailto%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3cc-bcc-%E4%B8%BB%E9%A2%98-%E5%86%85%E5%AE%B9-%E5%8C%85%E5%90%AB%E5%9B%9E%E8%BD%A6%E9%97%AE%E5%8F%B7%E7%A9%BA%E6%A0%BC/" data-title="html代码mailto命令详解(cc&#43;bcc&#43;主题&#43;内容&#43;包含回车问号空格)"><i class="loveit it-baidu-fill"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="http://mabaoshan.top/2020/05/html%E4%BB%A3%E7%A0%81mailto%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3cc-bcc-%E4%B8%BB%E9%A2%98-%E5%86%85%E5%AE%B9-%E5%8C%85%E5%90%AB%E5%9B%9E%E8%BD%A6%E9%97%AE%E5%8F%B7%E7%A9%BA%E6%A0%BC/" data-title="html代码mailto命令详解(cc&#43;bcc&#43;主题&#43;内容&#43;包含回车问号空格)"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/html">html</a></section>
+        <section>
+            <span><a href="javascript:window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2020/04/ubuntu/" class="prev" rel="prev" title="ubuntu"><i class="fas fa-angle-left fa-fw"></i>ubuntu</a>
+            <a href="/2020/06/coding/" class="next" rel="next" title="把代码同时同步到coding">把代码同时同步到coding<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div class="comment"><div id="valine"></div><script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                new Valine({
+                    el: '#valine',
+                    appId: 'QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI',
+                    appKey: 'WBmoGyJtbqUswvfLh6L8iEBr',placeholder: '你的评论 ...',verify: true,avatar: 'mp',pageSize: 10,lang: 'zh-cn',visitor: true,recordIP: true,});
+            });
+        </script>
+        <noscript>
+            Please enable JavaScript to view the <a href="https://valine.js.org/">comments powered by Valine.</a>
+        </noscript></div>
+    </article></div>
+            </main><footer class="footer">
+    <div class="copyright">
+
+        <div class="copyright-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="mabaoshan.top" target="_blank">马保山</a></span></div>
+    </div>
+</footer>
+</div><a href="#" class="dynamic-to-top animated faster" id="dynamic-to-top">
+            <i class="fas fa-chevron-up fa-fw"></i>
+        </a><script>
+        document.addEventListener('DOMContentLoaded', function () {
+            lightGallery(document.getElementById('content'), {
+                selector: '.lightgallery',
+                speed: 400,
+                hideBarsDelay: 2000,
+                thumbnail: true,
+                exThumbImage: 'data-thumbnail',
+                thumbWidth: 80,
+                thumbContHeight: 80,
+            });
+        });
+    </script><script>
+        document.addEventListener('DOMContentLoaded', function () {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    { left: '$$', right: '$$', display: true },
+                    { left: '\\[', right: '\\]', display: true },{ left: '$', right: '$', display: false },
+                    { left: '\\(', right: '\\)', display: false },],
+                strict: false,
+            });
+        });
+    </script><link rel="stylesheet" href="/lib/valine/valine.css"><link rel="stylesheet" href="/lib/iconfont/iconfont.min.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script src="/lib/valine/Valine.min.js"></script><script src="/lib/smooth-scroll/smooth-scroll.polyfills.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/lib/katex/katex.min.js"></script><script src="/lib/katex/auto-render.min.js"></script><script src="/lib/katex/copy-tex.min.js"></script><script src="/lib/katex/mhchem.min.js"></script><script src="/js/theme.min.js"></script></body>
+</html>
