@@ -13,11 +13,11 @@
 
 第二步：点击运行，输入 [\\\\192.168.2.99](file:///\\192.168.2.992)
 
-![img](http://it.tusenergy.com/wordpress/wp-content/uploads/2020/03/图片-1.png)
+![](http://it.tusenergy.com/wordpress/wp-content/uploads/2020/03/图片-1.png)
 
 用户名：guest 密码：空 并选择记住密码
 
-![](print-00.png)
+![](http://it.tusenergy.com/wordpress/media/print-00.png)
 
 第三步：进入安装界面后
 
@@ -25,7 +25,7 @@
 
 双击安装
 
-![C:\\Users\\ADMINI\~1\\AppData\\Local\\Temp\\2\\872bef4b-6313-4813-91ef-83cf323e8d89.tmp](http://it.tusenergy.com/wordpress/wp-content/uploads/2020/03/%E5%9B%BE%E7%89%87-2.png)
+![](http://it.tusenergy.com/wordpress/wp-content/uploads/2020/03/%E5%9B%BE%E7%89%87-2.png)
 
 1.  安装打印机
 
@@ -53,4 +53,4 @@
 
 5.  操作完成后，打印机上按“**登录**”键，退出个人登录。
 
-[苹果打印机驱动下载  pdf 版本](./fxmacprnstd2003am1010iml.dmg)
+[苹果打印机驱动下载pdf](http://it.tusenergy.com/wordpress/media/fxmacprnstd2003am1010iml.dmg)
