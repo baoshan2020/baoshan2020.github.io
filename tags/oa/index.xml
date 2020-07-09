@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 10 Apr 2020 15:58:26 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2020 15:58:26 +0800</lastBuildDate>
     
 	<atom:link href="http://mabaoshan.top/tags/oa/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OA常用sql表</title>
+      <link>http://mabaoshan.top/categories/documentation/oasql%E8%A1%A8/</link>
+      <pubDate>Mon, 06 Jul 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/categories/documentation/oasql%E8%A1%A8/</guid>
+      <description>files 文件表</description>
+    </item>
     
     <item>
       <title>启迪清洁能源OA操作指手册</title>

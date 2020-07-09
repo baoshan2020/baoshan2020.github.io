@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 30 Jun 2020 15:58:26 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2020 15:58:26 +0800</lastBuildDate>
     
 	<atom:link href="http://mabaoshan.top/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -50,6 +50,15 @@
       <description>价格查询
 select * from dbo.ModelPriceList &amp;ndash;物料价格 成本价
 select * from dbo.AgencyModelPriceList &amp;ndash;代理价格</description>
+    </item>
+    
+    <item>
+      <title>OA常用sql表</title>
+      <link>http://mabaoshan.top/categories/documentation/oasql%E8%A1%A8/</link>
+      <pubDate>Mon, 06 Jul 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/categories/documentation/oasql%E8%A1%A8/</guid>
+      <description>files 文件表</description>
     </item>
     
     <item>
