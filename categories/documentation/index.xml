@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 06 Jul 2020 15:58:26 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2020 15:58:26 +0800</lastBuildDate>
     
 	<atom:link href="http://mabaoshan.top/categories/documentation/index.xml" rel="self" type="application/rss+xml" />
     
@@ -39,6 +39,17 @@
       
       <guid>http://mabaoshan.top/categories/documentation/pdf%E6%96%87%E4%BB%B6%E6%B7%BB%E5%8A%A0%E7%BC%96%E8%BE%91%E5%AF%86%E7%A0%81/</guid>
       <description>pdf编辑器下载1.文件加密操作步骤</description>
+    </item>
+    
+    <item>
+      <title>新员工手册</title>
+      <link>http://mabaoshan.top/categories/documentation/%E6%96%B0%E5%91%98%E5%B7%A5%E6%89%8B%E5%86%8C/</link>
+      <pubDate>Thu, 09 Jul 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/categories/documentation/%E6%96%B0%E5%91%98%E5%B7%A5%E6%89%8B%E5%86%8C/</guid>
+      <description>1.OA登录 登录地址：http://oa.tusenergy.com 用户名：张三 默认密码：Aa1122 操作指导书:http://it.tusenergy.com/wordpress/?p=2772.k3cloud登录 用户名：张三 默认密码：888888 操作指导书:http://it.tusenergy.com/wordpress/?p=3923.企业微信 4.邮箱 登录地址：http://mail.tusenergy.com用户名：zhangsan 默认密码：Aa1122
+5.WIFI 用户名：tusenergy 密码：82151300
+6.打印机安装 http://it.tusenergy.com/wordpress/?p=374</description>
     </item>
     
     <item>

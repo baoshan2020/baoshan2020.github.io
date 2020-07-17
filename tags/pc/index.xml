@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 30 Jun 2020 15:58:26 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2020 15:58:26 +0800</lastBuildDate>
     
 	<atom:link href="http://mabaoshan.top/tags/pc/index.xml" rel="self" type="application/rss+xml" />
     
@@ -42,6 +42,17 @@
   定期备份数据
    应急处理方案 1.发现某员工有非正常流量时，首先要在交换机或者ac上禁止上网。
 个人电脑 黑客攻击的方法  DDoS攻击 SQL注入 XSS跨站 网站程序0day 服务器漏洞 恶意扫描 恶意采集  </description>
+    </item>
+    
+    <item>
+      <title>新员工手册</title>
+      <link>http://mabaoshan.top/categories/documentation/%E6%96%B0%E5%91%98%E5%B7%A5%E6%89%8B%E5%86%8C/</link>
+      <pubDate>Thu, 09 Jul 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/categories/documentation/%E6%96%B0%E5%91%98%E5%B7%A5%E6%89%8B%E5%86%8C/</guid>
+      <description>1.OA登录 登录地址：http://oa.tusenergy.com 用户名：张三 默认密码：Aa1122 操作指导书:http://it.tusenergy.com/wordpress/?p=2772.k3cloud登录 用户名：张三 默认密码：888888 操作指导书:http://it.tusenergy.com/wordpress/?p=3923.企业微信 4.邮箱 登录地址：http://mail.tusenergy.com用户名：zhangsan 默认密码：Aa1122
+5.WIFI 用户名：tusenergy 密码：82151300
+6.打印机安装 http://it.tusenergy.com/wordpress/?p=374</description>
     </item>
     
     <item>
