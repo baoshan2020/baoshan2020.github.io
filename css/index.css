@@ -111,11 +111,11 @@
      text-align: bottom;
      bottom: 0px;
      left: 50%;
+     color: #bbb;
   ;
     
  }
  #bottom div a{
     color: #bbb;
-    text-decoration: none
-   
+    text-decoration: none 
  }
