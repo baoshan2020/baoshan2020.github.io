@@ -105,6 +105,17 @@
  #down #nav img {
      height: 300px;
  }
- #bottom {
- color: #bbb;
+ #bottom div {
+     display: block;
+     position: fixed;
+     text-align: bottom;
+     bottom: 0px;
+     left: 50%;
+  ;
+    
+ }
+ #bottom div a{
+    color: #bbb;
+    text-decoration: none
+   
  }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <TABLE style="FONT-SIZE: 15px; WIDTH: 800px; BORDER-COLLAPSE: collapse; POSITION: absolute; LEFT: 55px; TOP: 64px" borderColor=#000000 border=1>
+        <TBODY>
+        <TR>
+        <TD colSpan=100 align=center>业务接待审批单</TD></TR>
+        <TR>
+        <TD width="10%">申请人</TD>
+        <TD><INPUT onmoveend=moveEnd() onmove=move() onresize=resize() onresizeend=resizeEnd() onresizestart=resizeStart() id=text0 style="HEIGHT: 20px; WIDTH: 160px; POSITION: static; LEFT: 75px; TOP: 15px" oncontrolselect=controlselect() onmovestart=moveStart() value=sys_getUserName() controltype="text" CanSelect="false" dataset="DsMain" china="申请人" field="shenqingren"></TD>
+        <TD>申请部门</TD>
+        <TD><INPUT onmoveend=moveEnd() onmove=move() onresize=resize() onresizeend=resizeEnd() onresizestart=resizeStart() id=txtdepartment style="HEIGHT: 20px; WIDTH: 160px; POSITION: static; LEFT: 75px; TOP: 39px" oncontrolselect=controlselect() onmovestart=moveStart() value=sys_getDeptName() controltype="text" CanSelect="false" dataset="DsMain" china="申请部门" field="department"></TD>
+        <TD>申请日期</TD>
+        <TD><INPUT onmoveend=moveEnd() onmove=move() onresize=resize() onresizeend=resizeEnd() onresizestart=resizeStart() id=txtriqi style="HEIGHT: 20px; WIDTH: 160px; POSITION: static; LEFT: 75px; TOP: 63px" oncontrolselect=controlselect() onmovestart=moveStart() controltype="text" CanSelect="false" dataset="DsMain" china="申请日期" field="riqi"></TD></TR>
+        <TR>
+        <TD>来访单位</TD>
+        <TD colSpan=100><INPUT onmoveend=moveEnd() onmove=move() onresize=resize() onresizeend=resizeEnd() onresizestart=resizeStart() id=txtlaifangdanwei style="HEIGHT: 20px; WIDTH: 751px; POSITION: static; LEFT: 75px; TOP: 87px" oncontrolselect=controlselect() onmovestart=moveStart() size=42 controltype="text" CanSelect="false" dataset="DsMain" china="来访单位" field="laifangdanwei"></TD></TR>
+        <TR>
+        <TD>事由</TD>
+        <TD colSpan=3><TEXTAREA onmoveend=moveEnd() onmove=move() onresize=resize() onresizeend=resizeEnd() onresizestart=resizeStart() id=txtshiyou style="FONT-SIZE: 12px; HEIGHT: 50px; WIDTH: 382px; POSITION: static; LEFT: -324px; TOP: 5px" oncontrolselect=controlselect() onmovestart=moveStart() cols=1 controltype="textarea" dataset="DsMain" china="事由" field="shiyou" induce="否"></TEXTAREA></TD>
+        <TD>预计费用</TD>
+        <TD></TD>
+        <TR>
+        <TD>来访人数</TD>
+        <TD><INPUT onmoveend=moveEnd() onmove=move() onresize=resize() onresizeend=resizeEnd() onresizestart=resizeStart() id=txtlaifangrenshu style="HEIGHT: 20px; WIDTH: 160px; POSITION: static; LEFT: 75px; TOP: 163px" oncontrolselect=controlselect() onmovestart=moveStart() controltype="text" CanSelect="false" dataset="DsMain" china="来访人数" field="laifangrenshu"></TD>
+        <TD>陪同人员姓名</TD>
+        <TD><INPUT onmoveend=moveEnd() onmove=move() onresize=resize() onresizeend=resizeEnd() onresizestart=resizeStart() id=txtpeitongrenyuanxingmi style="HEIGHT: 20px; WIDTH: 160px; POSITION: static; LEFT: 82px; TOP: 114px" oncontrolselect=controlselect() onmovestart=moveStart() controltype="text" CanSelect="false" dataset="DsMain" china="陪同人员姓名" field="peitongrenyuanxingmi"></TD>
+        <TD>总人数</TD>
+        <TD><INPUT onmoveend=moveEnd() onmove=move() onresize=resize() onresizeend=resizeEnd() onresizestart=resizeStart() id=txtzongrenshu style="HEIGHT: 20px; WIDTH: 160px; POSITION: static; LEFT: 118px; TOP: 184px" oncontrolselect=controlselect() onmovestart=moveStart() controltype="text" CanSelect="false" dataset="DsMain" china="总人数" field="zongrenshu"></TD></TR>
+        <TR>
+        <TD>接待事项</TD>
+        <TD colSpan=100>
+        <DIV onmoveend=moveEnd() onmove=move() onresize=resize() onresizeend=resizeEnd() onresizestart=resizeStart() id=chkcanfei style="HEIGHT: 20px; WIDTH: 160px; WHITE-SPACE: nowrap; POSITION: static; LEFT: 75px; TOP: 235px" oncontrolselect=controlselect() onmovestart=moveStart() value="否" NotBg="否" controltype="checkbox" dataset="DsMain" china="餐费" field="canfei" divtype="checkbox" truevalue="是" falsevalue="否"><INPUT oncontrolselect=controlselectcancel() type=checkbox><SPAN>餐费</SPAN></DIV>
+        <DIV onmoveend=moveEnd() onmove=move() onresize=resize() onresizeend=resizeEnd() onresizestart=resizeStart() id=chkzhusu style="HEIGHT: 20px; WIDTH: 160px; WHITE-SPACE: nowrap; POSITION: static; LEFT: 75px; TOP: 259px" oncontrolselect=controlselect() onmovestart=moveStart() value="否" NotBg="否" controltype="checkbox" dataset="DsMain" china="住宿" field="zhusu" divtype="checkbox" truevalue="是" falsevalue="否"><INPUT oncontrolselect=controlselectcancel() type=checkbox><SPAN>住宿</SPAN></DIV>
+        <DIV onmoveend=moveEnd() onmove=move() onresize=resize() onresizeend=resizeEnd() onresizestart=resizeStart() id=checkbox0 style="HEIGHT: 20px; WIDTH: 160px; WHITE-SPACE: nowrap; POSITION: static; LEFT: 75px; TOP: 283px" oncontrolselect=controlselect() onmovestart=moveStart() value="否" NotBg="否" controltype="checkbox" dataset="DsMain" china="车辆" field="cheliang" divtype="checkbox" truevalue="是" falsevalue="否"><INPUT oncontrolselect=controlselectcancel() type=checkbox><SPAN>车辆</SPAN></DIV><INPUT onmoveend=moveEnd() onmove=move() onresize=resize() onresizeend=resizeEnd() onresizestart=resizeStart() id=txtqita style="HEIGHT: 20px; WIDTH: 160px; POSITION: static; LEFT: 75px; TOP: 307px" oncontrolselect=controlselect() onmovestart=moveStart() controltype="text" CanSelect="false" dataset="DsMain" china="其他" field="qita"></TD></TR>
+        <TR>
+        <TD colSpan=100></TD></TR>
+        <TR>
+        <TD colSpan=100></TD></TR></TBODY></TABLE>
+</body>
+</html>
