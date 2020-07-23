@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 13 Jul 2020 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2020 15:58:26 +0800</lastBuildDate>
     
 	<atom:link href="http://mabaoshan.top/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -366,6 +366,22 @@ select dateadd(d,-60,getdate())
   定期备份数据
    应急处理方案 1.发现某员工有非正常流量时，首先要在交换机或者ac上禁止上网。
 个人电脑 黑客攻击的方法  DDoS攻击 SQL注入 XSS跨站 网站程序0day 服务器漏洞 恶意扫描 恶意采集  </description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>http://mabaoshan.top/2020/07/git/</link>
+      <pubDate>Fri, 17 Jul 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/07/git/</guid>
+      <description>通过git stash将工作区恢复到上次提交的内容，同时备份本地所做的修改，之后就可以正常git pull了，git pull完成后，执行git stash pop将之前本地做的修改应用到当前工作区。 git stash git pull git stash pop
+看到这里有些人就懵逼了，我也一样，使用SourceTree的对于git命令的就是白痴的，下面我就介绍一下这三行代码代表什么意思吧；
+git stash: 备份当前的工作区的内容，从最近的一次提交中读取相关内容，让工作区保证和上次提交的内容一致。同时，将当前的工作区内容保存到Git栈中。
+git pull:拉取服务器上的代码；
+git stash pop: 从Git栈中读取最近一次保存的内容，恢复工作区的相关内容。由于可能存在多个Stash的内容，所以用栈来管理，pop会从最近的一个stash中读取内容并恢复。
+git stash list: 显示Git栈内的所有备份，可以利用这个列表来决定从那个地方恢复。
+git stash clear: 清空Git栈。此时使用gitg等图形化工具会发现，原来stash的哪些节点都消失了。
+希望能帮到大家</description>
     </item>
     
     <item>

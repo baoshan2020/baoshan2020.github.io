@@ -22,7 +22,8 @@ toc: true
 autoCollapseToc: true
 math: true
 lightgallery: true
-linkToMarkdown: true
+#linkToMarkdown: true  指向文章的源文件连接
+linkToMarkdown: 
 share:
   enable: true
 comment: true

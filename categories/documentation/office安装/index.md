@@ -5,7 +5,7 @@
 
 1.下载office tool
 
-[Office-Tool-Plus下载](http://it.tusenergy.com/filedown/OfficeToolPlus.exe) 
+# [Office-Tool-Plus下载](http://it.tusenergy.com/filedown/OfficeToolPlus.exe) 
 
 2.部署
 
@@ -48,19 +48,21 @@ XDQJB-HXNXG-8HBP3-CR879-P39H9
 
 # 三、备用激活
 
-[1.点击下载激活文件](http://it.tusenergy.com/filedown/microKMS_v19.04.03.exe) 
+# [1.点击下载激活文件](http://it.tusenergy.com/filedown/microKMS_v19.04.03.exe) 
 
 2.右键，以管理员身份运行  单击激活office2010 -2019 ProPlus
 
 ![](http://it.tusenergy.com/media/image-20200407200106775.png)
 
+# [1.备用激活2](http://it.tusenergy.com/filedown/HEU_KMS_Activator_v19.6.3.exe) 
 
+![](http://it.tusenergy.com/media/66e1352213c8b7368ef4f01c1b9e995.png)
 
 
 
 ## 四、office 所有工具下载
 
-[下载](https://pan.tusenergy.com/index.php/s/yMjiXLwJAjsAJ6X)
+# [下载](https://pan.tusenergy.com/index.php/s/yMjiXLwJAjsAJ6X)
 
 Office软件完全卸载工具.rar
 
