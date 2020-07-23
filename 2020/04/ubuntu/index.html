@@ -8,7 +8,20 @@
         <title>ubuntu | 马保山的学习笔记</title>
         <meta name="Description" content="马保山的学习笔记"><meta property="og:title" content="ubuntu" />
 <meta property="og:description" content="升级系统
-sudo apt-get update &amp;&amp; sudo apt-get upgrade" />
+sudo apt-get update &amp;&amp; sudo apt-get upgrade
+或者
+sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade
+升级版本update-manager
+1.开始ssh服务
+sudo ps -e | grep ssh（查看ssh服务是否开启）
+sudo apt-get install openssh-client（安装ssh客户端程序）
+sudo apt-get install openssh-server（安装ssh服务端程序）
+sudo systemctl start ssh（打开服务）
+sudo systemctl enable ssh（设置服务的开机自启动）
+2.设置开机自动启动
+systemctl命令是系统服务管理器指令，它实际上将 service 和 chkconfig 这两个命令组合到一起。
+设置服务的开机自启动:sudo systemctl enable ssh
+打开服务:sudo systemctl start foobar 关闭服务:sudo systemctl stop foobar 重启服务:sudo systemctl restart foobar 不中断正常功能下重新加载服务:sudo systemctl reload foobar 设置服务的开机自启动:sudo systemctl enable foobar 关闭服务的开机自启动:sudo systemctl disable foobar 查看活跃的单元:systemctl list-units 查看某个服务的状态:systemctl status foobar 查看已启动的服务列表： systemctl list-unit-files|grep enabled 查看启动失败的服务列表：systemctl &ndash;failed" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://mabaoshan.top/2020/04/ubuntu/" />
 <meta property="article:published_time" content="2020-04-18T00:00:00+08:00" />
@@ -16,7 +29,20 @@ sudo apt-get update &amp;&amp; sudo apt-get upgrade" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="ubuntu"/>
 <meta name="twitter:description" content="升级系统
-sudo apt-get update &amp;&amp; sudo apt-get upgrade"/>
+sudo apt-get update &amp;&amp; sudo apt-get upgrade
+或者
+sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade
+升级版本update-manager
+1.开始ssh服务
+sudo ps -e | grep ssh（查看ssh服务是否开启）
+sudo apt-get install openssh-client（安装ssh客户端程序）
+sudo apt-get install openssh-server（安装ssh服务端程序）
+sudo systemctl start ssh（打开服务）
+sudo systemctl enable ssh（设置服务的开机自启动）
+2.设置开机自动启动
+systemctl命令是系统服务管理器指令，它实际上将 service 和 chkconfig 这两个命令组合到一起。
+设置服务的开机自启动:sudo systemctl enable ssh
+打开服务:sudo systemctl start foobar 关闭服务:sudo systemctl stop foobar 重启服务:sudo systemctl restart foobar 不中断正常功能下重新加载服务:sudo systemctl reload foobar 设置服务的开机自启动:sudo systemctl enable foobar 关闭服务的开机自启动:sudo systemctl disable foobar 查看活跃的单元:systemctl list-units 查看某个服务的状态:systemctl status foobar 查看已启动的服务列表： systemctl list-unit-files|grep enabled 查看启动失败的服务列表：systemctl &ndash;failed"/>
 <meta name="theme-color" content="#ffffff">
 <meta name="msapplication-TileColor" content="#da532c">
 <link rel="canonical" href="http://mabaoshan.top/2020/04/ubuntu/" />
@@ -39,7 +65,7 @@ sudo apt-get update &amp;&amp; sudo apt-get upgrade"/>
                 "url": "http:\/\/mabaoshan.top\/cover.png",
                 "width":  800 ,
                 "height":  600 
-            },"genre": "posts","wordcount":  8 ,
+            },"genre": "posts","wordcount":  210 ,
         "url": "http:\/\/mabaoshan.top\/2020\/04\/ubuntu\/","datePublished": "2020-04-18","dateModified": "2020-06-08","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
                 "@type": "Organization",
                 "name": "马保山",
@@ -95,7 +121,7 @@ sudo apt-get update &amp;&amp; sudo apt-get upgrade"/>
             <div class="post-meta-line"><span class="post-author"><a href="http://mabaoshan.top" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>马保山</a>
 </span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-04-18>2020-04-18</time>&nbsp;
-                <i class="fas fa-pencil-alt fa-fw"></i>约 8 字&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 210 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>预计阅读 1 分钟&nbsp;<span id="/2020/04/ubuntu/" class="leancloud_visitors" data-flag-title="ubuntu">
                         <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -111,10 +137,106 @@ sudo apt-get update &amp;&amp; sudo apt-get upgrade"/>
                             <span><i class="details icon fas fa-angle-down"></i></span>
                         </div>
                     </summary>
-                    <div class="toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+                    <div class="toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#部署collabora-officehttp">部署Collabora Office（http）</a></li>
+  </ul>
+</nav></div>
                 </details>
             </div><div class="content" id="content"><p>升级系统</p>
 <p>sudo apt-get update &amp;&amp; sudo apt-get upgrade</p>
+<p>或者</p>
+<p>sudo apt-get update &amp;&amp; sudo apt-get dist-upgrade</p>
+<p>升级版本update-manager</p>
+<p>1.开始ssh服务</p>
+<p>sudo ps -e | grep ssh（查看ssh服务是否开启）</p>
+<p>sudo apt-get install openssh-client（安装ssh客户端程序）</p>
+<p>sudo apt-get install openssh-server（安装ssh服务端程序）</p>
+<p>sudo systemctl start ssh（打开服务）</p>
+<p>sudo systemctl enable ssh（设置服务的开机自启动）</p>
+<p>2.设置开机自动启动</p>
+<p>systemctl命令是系统服务管理器指令，它实际上将 service 和 chkconfig 这两个命令组合到一起。</p>
+<p>设置服务的开机自启动:sudo systemctl enable ssh</p>
+<p>打开服务:sudo systemctl start foobar
+关闭服务:sudo systemctl stop foobar
+重启服务:sudo systemctl restart foobar
+不中断正常功能下重新加载服务:sudo systemctl reload foobar
+设置服务的开机自启动:sudo systemctl enable foobar
+关闭服务的开机自启动:sudo systemctl disable foobar
+查看活跃的单元:systemctl list-units
+查看某个服务的状态:systemctl status foobar
+查看已启动的服务列表： systemctl list-unit-files|grep enabled
+查看启动失败的服务列表：systemctl &ndash;failed</p>
+<p>3.onlyoffice 安装</p>
+<p>sudo docker run -i -t -d -p 80:80 onlyoffice/documentserver</p>
+<p>4.ssl 安装</p>
+<p>docker pull registry:2</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback"># 创建ssl相关目录
+mkdir ~/certs
+# 生成ssl密钥
+openssl req -newkey rsa:2048 -nodes -sha256 -keyout certs/test.registry.com.key -x509 -days 365 -out certs/test.registry.com.crt
+复制代码
+# 创建registry登陆用户文件夹
+mkdir ~/auth
+# 创建private用户
+docker run --entrypoint htpasswd registry:2 -Bbn admin admin &gt; ~/auth/htpasswd
+# 删除运行的容器
+docker stop [CONTAINER ID]
+docker rm [CONTAINER ID]
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="部署collabora-officehttp">部署Collabora Office（http）</h2>
+<p>参考：https://www.jianshu.com/p/4082f998a05b</p>
+<p>docker pull collabora/code</p>
+<p>2、运行collabora镜像</p>
+<p>docker run -t -d -p 0.0.0.0:9980:9980 -e &lsquo;domain=192\.168\.1\.110|192\.168\.33\.145&rsquo; -e &ldquo;username=admin&rdquo; -e &ldquo;password=123456&rdquo; &ndash;restart always &ndash;cap-add MKNOD collabora/code</p>
+<p>说明：</p>
+<p>镜像端口9980映射到宿主主机9980</p>
+<p>添加两台信任主机192.168.1.110、192.168.33.145</p>
+<p>为collabora创建用户admin，密码123456</p>
+<p>*<strong>注意：*</strong></p>
+<p>*<strong>后台运行，需耐心等待，可通过cpu利用率观察*</strong></p>
+<p>3、collabora登录测试（https）</p>
+<p>https://192.168.33.145:9980/loleaflet/dist/admin/adminSettings.html，显示输入用户名、密码</p>
+<p>4、修改loolwsd.xml</p>
+<p>查看collabora容器id：docker ps</p>
+<p>进入collabora容器：docker exec -it &lt;容器id&gt; /bin/bash</p>
+<p>编辑文件/etc/loolwsd/loolwsd.xml中ssl的值为false，如下</p>
+<blockquote>
+<ssl desc="SSL settings">
+<p>​    <enable type="bool" default="true">false</enable></p>
+</blockquote>
+<p>重启collabora容器：docker restart &lt;容器id&gt;</p>
+<p>5、collabora登录测试（http）</p>
+<p>http://192.168.33.145:9980/loleaflet/dist/admin/adminSettings.html，显示输入用户名、密码</p>
+<p>6、nextcloud连接collabora</p>
+<p>启动collabora插件，设置中输入collabora地址http://192.168.33.145:9980</p>
+<p>说明：nextcloud登录方式本身是http</p>
+<p><a href="javascript:void%280%29;" rel="noopener noreffer"><img
+        class="lazyload"
+        src="/svg/loading.small.min.svg"
+        data-sizes="auto"
+        data-srcset="https://common.cnblogs.com/images/copycode.gif,  1.5x,  2x"
+        data-src=""
+        alt="复制代码"
+        title="复制代码" /></a>
+</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">

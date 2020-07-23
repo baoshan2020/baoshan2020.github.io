@@ -103,3 +103,52 @@ sudo snap remove <snap name>
 # github地址
 
 https://github.com/nextcloud/nextcloud-snap
+
+
+
+
+
+# 插件离线安装
+
+本来呢，互联网可以直接在线安装，可我这时企业内部网，没有互联网连接，离线手动安装吧。
+
+https://apps.nextcloud.com/apps/richdocuments
+
+这里下载扩展APP。
+
+解压后放进 /var/www/html/apps
+
+离线更新snap  路径  /var/snap/nextcloud/22327/nextcloud/extra-apps/onlyoffice$
+
+
+
+
+
+# 补充
+
+1.数据库位置，使用Snap安装的Nextcloud，数据库文件在以下路径中/var/snap/nextcloud/xxxx(版本数字)/mysql，需要备份直接备份此文件夹即可。
+
+2.数据位置，NextCloud存储文件夹在/var/snap/nextcloud/common/nextcloud/data，可以通过修改/var/snap/nextcloud/current/nextcloud/config/config.php的datadirectory对应的参数来改变位置，在数据迁移的时候直接复制此文件夹过去。
+
+
+
+
+
+
+
+# 在线编辑onlyoffice的坑
+
+NextCloud使用onlyoffice，Docker安装OnlyOffice Server 后，使用本地服务器异常
+
+Error when trying to connect (Host violates local access rules)
+
+参照：https://github.com/ONLYOFFICE/onlyoffice-nextcloud/issues/293
+
+18以后的NextCloud版本有这个bug， 解决办法在config.php配置文件添加配置
+
+'allow_local_remote_servers' => true,
+
+
+
+
+

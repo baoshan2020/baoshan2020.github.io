@@ -77,7 +77,7 @@ sudo apt-get install snapcraft 安装此应用打开下载速度会快"/>
                 "url": "http:\/\/mabaoshan.top\/cover.png",
                 "width":  800 ,
                 "height":  600 
-            },"genre": "posts","keywords": "nextcloud","wordcount":  95 ,
+            },"genre": "posts","keywords": "nextcloud","wordcount":  127 ,
         "url": "http:\/\/mabaoshan.top\/2020\/04\/nextcloud\/","datePublished": "2020-04-05","dateModified": "2020-06-08","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
                 "@type": "Organization",
                 "name": "马保山",
@@ -136,7 +136,7 @@ sudo apt-get install snapcraft 安装此应用打开下载速度会快"/>
                                 <i class="far fa-folder fa-fw"></i>Soft
                             </a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2020-04-05>2020-04-05</time>&nbsp;
-                <i class="fas fa-pencil-alt fa-fw"></i>约 95 字&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 127 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>预计阅读 1 分钟&nbsp;<span id="/2020/04/nextcloud/" class="leancloud_visitors" data-flag-title="nextcloud">
                         <i class="far fa-eye fa-fw"></i><span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -211,6 +211,21 @@ sudo apt-get install snapcraft 安装此应用打开下载速度会快"/>
 <p>删除一个snap包</p>
 <h1 id="github地址">github地址</h1>
 <p><a href="https://github.com/nextcloud/nextcloud-snap">https://github.com/nextcloud/nextcloud-snap</a></p>
+<h1 id="插件离线安装">插件离线安装</h1>
+<p>本来呢，互联网可以直接在线安装，可我这时企业内部网，没有互联网连接，离线手动安装吧。</p>
+<p><a href="https://apps.nextcloud.com/apps/richdocuments">https://apps.nextcloud.com/apps/richdocuments</a></p>
+<p>这里下载扩展APP。</p>
+<p>解压后放进 /var/www/html/apps</p>
+<p>离线更新snap  路径  /var/snap/nextcloud/22327/nextcloud/extra-apps/onlyoffice$</p>
+<h1 id="补充">补充</h1>
+<p>1.数据库位置，使用Snap安装的Nextcloud，数据库文件在以下路径中/var/snap/nextcloud/xxxx(版本数字)/mysql，需要备份直接备份此文件夹即可。</p>
+<p>2.数据位置，NextCloud存储文件夹在/var/snap/nextcloud/common/nextcloud/data，可以通过修改/var/snap/nextcloud/current/nextcloud/config/config.php的datadirectory对应的参数来改变位置，在数据迁移的时候直接复制此文件夹过去。</p>
+<h1 id="在线编辑onlyoffice的坑">在线编辑onlyoffice的坑</h1>
+<p>NextCloud使用onlyoffice，Docker安装OnlyOffice Server 后，使用本地服务器异常</p>
+<p>Error when trying to connect (Host violates local access rules)</p>
+<p>参照：https://github.com/ONLYOFFICE/onlyoffice-nextcloud/issues/293</p>
+<p>18以后的NextCloud版本有这个bug， 解决办法在config.php配置文件添加配置</p>
+<p>&lsquo;allow_local_remote_servers&rsquo; =&gt; true,</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
