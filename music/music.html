@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>保山的音乐播放</title>
+</head>
+<body>
+<h1>音乐播放</h1>
+<!-- <p>测试下<a href="http://www.baidu.com">百度</a></p> -->
+<!-- <p id="demo">地址</p> -->
+<input id="btn" type="button" onclick="playmp3()" value="开始"/>
+<audio id="audio1" controls="controls">
+    <!--    <source src="生日快乐音乐.mp3" type="audio/ogg">-->
+    <source src="生日快乐音乐.mp3" type="audio/ogg">
+    Your browser does not support the audio tag.
+</audio>
+</body>
+</html>
+<script>
+    var audio = document.getElementById('audio1');
+    var btn1 = document.getElementById('btn');
+    playmp3 = function () {
+
+        if (audio !== null) {
+            //检测播放是否已暂停.audio.paused 在播放器播放时返回false.
+            // alert(audio.paused);
+            if (audio.paused) {
+                btn1.value = "暂停";
+                audio.play();//audio.play();// 这个就是播放
+
+            } else {
+                btn1.value = "开始";
+                audio.pause();// 这个就是暂停
+            }
+        }
+    }
+
+</script>
