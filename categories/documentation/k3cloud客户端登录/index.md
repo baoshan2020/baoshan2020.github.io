@@ -1,7 +1,11 @@
 # k3cloud客户端登录
 
 
-[1.下载安装文件](http://it.tusenergy.com/wordpress/wp-content/uploads/2020/01/K3CloudClientPortal.exe)
+<p  style="border:5px solid red;">123</p>
+
+
+
+# [1.单击(下载)安装文件](http://it.tusenergy.com/wordpress/wp-content/uploads/2020/01/K3CloudClientPortal.exe)
 
 ![img](http://it.tusenergy.com/wordpress/wp-content/uploads/2020/01/图片-5.png)
 
