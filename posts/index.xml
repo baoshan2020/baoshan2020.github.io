@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 10 Aug 2020 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2020 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="http://mabaoshan.top/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -104,6 +104,19 @@ http://www.writage.com/#download</description>
       <guid>http://mabaoshan.top/2020/03/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</guid>
       <description>软件下载 装机必备软件 企业版win10下载地址 ed2k://|file|cn_windows_10_enterprise_ltsc_2019_x64_dvd_9c09ff24.iso|4478906368|E7C526499308841A4A6D116C857DB669|/
    名称 地址 操作说明 激活文件     操作系统 https://msdn.itellyou.cn/     office 下载  激活1激活2   pdf      7-zip             公司软件    名称 地址 操作说明     k3cloud     OA     263          nextcloud      其他软件           向日葵远程控制8.</description>
+    </item>
+    
+    <item>
+      <title>js</title>
+      <link>http://mabaoshan.top/2020/08/js/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/2020/08/js/</guid>
+      <description>度以 学习 小头峰原则 （首个单词小写，第二个单词首字母大写）
+表达式忽略名字 函数声明整体提升 变量 声明提升
+大驼峰命名规则（是命名函数）
+javaScript 基础教程(第8版) window.onload = initAll; // 开始加载的函数
+Math.floor(Math.random()* 15) //这行代码计算一个0～14 的随机</description>
     </item>
     
     <item>

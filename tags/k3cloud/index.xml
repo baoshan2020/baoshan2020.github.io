@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 22 May 2020 15:58:26 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2020 15:58:26 +0800</lastBuildDate>
     
 	<atom:link href="http://mabaoshan.top/tags/k3cloud/index.xml" rel="self" type="application/rss+xml" />
     
@@ -22,6 +22,15 @@
 1.单击(下载)安装文件 2.设置服务器地址：http://cloud.tusenergy.com/K3Cloud
 3.输入用户名和密码登陆：
 4.win7 安装报错解决 。请下载.net 4.6解决</description>
+    </item>
+    
+    <item>
+      <title>k3cloud手工日记账没有对应的应付组织</title>
+      <link>http://mabaoshan.top/categories/documentation/k3cloud%E6%89%8B%E5%B7%A5%E6%97%A5%E8%AE%B0%E8%B4%A6%E6%B2%A1%E6%9C%89%E5%AF%B9%E5%BA%94%E7%9A%84%E5%BA%94%E4%BB%98%E7%BB%84%E7%BB%87/</link>
+      <pubDate>Thu, 13 Aug 2020 15:58:26 +0800</pubDate>
+      
+      <guid>http://mabaoshan.top/categories/documentation/k3cloud%E6%89%8B%E5%B7%A5%E6%97%A5%E8%AE%B0%E8%B4%A6%E6%B2%A1%E6%9C%89%E5%AF%B9%E5%BA%94%E7%9A%84%E5%BA%94%E4%BB%98%E7%BB%84%E7%BB%87/</guid>
+      <description></description>
     </item>
     
     <item>
