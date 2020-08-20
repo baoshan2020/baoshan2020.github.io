@@ -18,3 +18,12 @@
 window.onload = initAll; // 开始加载的函数
 
 Math.floor(Math.random()* 15)  //这行代码计算一个0～14 的随机
+
+
+
+
+
+浏览器检查
+
+if (typeof document.oncontextmenu == "object") //检查是不是火狐浏览器
+if (document.all) //检查是不是IE浏览器
