@@ -1,38 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>docker on 马保山的学习笔记</title>
-    <link>http://mabaoshan.top/tags/docker/</link>
-    <description>Recent content in docker on 马保山的学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 23 Jul 2020 15:58:26 +0800</lastBuildDate>
-    
-	<atom:link href="http://mabaoshan.top/tags/docker/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>docker安装onlyoffice</title>
-      <link>http://mabaoshan.top/2020/07/docker%E5%AE%89%E8%A3%85onlyoffice/</link>
-      <pubDate>Thu, 23 Jul 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/07/docker%E5%AE%89%E8%A3%85onlyoffice/</guid>
-      <description>1.安装curl $ which curl
-$sudo apt-get update $ sudo apt-get install curl
-2.安装最新版本 $curl -SSL https://get.docker.com/ | sh
-3.测试是否安装成功 $sudo docker run hello-world
-4.拉取ONLYOFFICE Document Server 的Docker镜像 sudo docker pull onlyoffice/documentserver
-5.启动Document Server镜像，并映射80端口至本地。 sudo docker run -i -t -d -p 80:80 onlyoffice/documentserver
-6.启动后，访问http://服务器地址:80， 刚开始看到的可能是是502 Bad Gateway，稍等一会，刷新浏览器页面即可。
-7.其他配置 将Document Server映射至其它端口：例如映射至9000端口：
-sudo docker run -i -t -d -p 9000:80 onlyoffice/documentserver
-8.Document Server的数据在容器中的储存位置如下：
-/var/log/onlyoffice 存放ONLYOFFICE Document Server日志
-/var/www/onlyoffice/Data 存放证书文件
-你可以用
-sudo docker -exec -it onlyoffice/documentserver /bin/bash</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>docker - 标签 - 马保山的学习笔记</title>
+        <link>https://mabaoshan.top/tags/docker/</link>
+        <description>docker - 标签 - 马保山的学习笔记</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 23 Jul 2020 15:58:26 &#43;0800</lastBuildDate><atom:link href="https://mabaoshan.top/tags/docker/" rel="self" type="application/rss+xml" /><item>
+    <title>docker安装onlyoffice</title>
+    <link>https://mabaoshan.top/docker%E5%AE%89%E8%A3%85onlyoffice/</link>
+    <pubDate>Thu, 23 Jul 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/docker%E5%AE%89%E8%A3%85onlyoffice/</guid>
+    <description><![CDATA[1.安装curl $ which curl $sudo apt-get update $ sudo apt-get install curl 2.安装最新版本 $curl -SSL https://get.docker.com/ | sh 3.测试是否安装成功 $sudo docker run hello-world 4.拉取ONLYOFFICE Document Server 的Docker镜]]></description>
+</item></channel>
 </rss>

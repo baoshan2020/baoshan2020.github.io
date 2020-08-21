@@ -1,106 +1,79 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>马保山的学习笔记 | 马保山的学习笔记</title>
-        <link>http://mabaoshan.top/</link>
-        <description>马保山的学习笔记 | 马保山的学习笔记</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 29 Mar 2020 15:38:52 &#43;0800</lastBuildDate><atom:link href="http://mabaoshan.top/" rel="self" type="application/rss+xml" /><item>
-                <title>About</title>
-                <link>http://mabaoshan.top/about/</link>
-                <pubDate>Sun, 29 Mar 2020 15:38:52 &#43;0800</pubDate><guid>http://mabaoshan.top/about/</guid>
-                <description>&lt;h1 id=&#34;近期要完成的工作&#34;&gt;近期要完成的工作&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;项目名称&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;日期&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;考勤软件（完成oa迁移工作）&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;2020年4月&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;oa操作手册&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;2020年5月&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;k3cloud操作手册整合&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;2020年5月&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;软件下载页面&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;2020年5月&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h1 id=&#34;未来要实现的工作&#34;&gt;未来要实现的工作&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;网页发布软件&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;wordpress改成hugo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;wsus&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;panabit&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h1 id=&#34;关于我&#34;&gt;关于我&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;th&gt;&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;机房建设&lt;/td&gt;
-&lt;td&gt;电话、网络&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;软件&lt;/td&gt;
-&lt;td&gt;OA、金蝶k3cloud、sqlserver、liunx、exsi、extmail&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;网页部署&lt;/td&gt;
-&lt;td&gt;nextcloud、blog（wordpress、hugo、hexo）&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-            </item><item>
-                <title>Categories</title>
-                <link>http://mabaoshan.top/categories/</link>
-                <pubDate>Thu, 20 Aug 2020 00:00:00 &#43;0800</pubDate><guid>http://mabaoshan.top/categories/</guid>
-                <description></description>
-            </item><item>
-                <title>Posts</title>
-                <link>http://mabaoshan.top/posts/</link>
-                <pubDate>Thu, 20 Aug 2020 00:00:00 &#43;0800</pubDate><guid>http://mabaoshan.top/posts/</guid>
-                <description></description>
-            </item></channel>
+        <title>马保山的学习笔记</title>
+        <link>https://mabaoshan.top/</link>
+        <description>马保山的学习笔记</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 29 Mar 2020 15:38:52 &#43;0800</lastBuildDate>
+            <atom:link href="https://mabaoshan.top/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>河马</title>
+    <link>https://mabaoshan.top/%E5%8A%A8%E7%89%A9-%E6%B2%B3%E9%A9%AC/</link>
+    <pubDate>Fri, 21 Aug 2020 00:00:00 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/%E5%8A%A8%E7%89%A9-%E6%B2%B3%E9%A9%AC/</guid>
+    <description><![CDATA[河马原产于非洲的某些地区， 栖息在 河中或河边的草地上。 河马名字的原文hippopornmus就是希腊文 ＇，河马 。 它们有庞大笨重的身躯，整日里优]]></description>
+</item><item>
+    <title>批量下载微信分享的图片</title>
+    <link>https://mabaoshan.top/%E6%89%B9%E9%87%8F%E4%B8%8B%E8%BD%BD%E5%BE%AE%E4%BF%A1%E5%88%86%E4%BA%AB%E7%9A%84%E5%9B%BE%E7%89%87/</link>
+    <pubDate>Mon, 10 Aug 2020 00:00:00 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/%E6%89%B9%E9%87%8F%E4%B8%8B%E8%BD%BD%E5%BE%AE%E4%BF%A1%E5%88%86%E4%BA%AB%E7%9A%84%E5%9B%BE%E7%89%87/</guid>
+    <description><![CDATA[下载图助手V23.0.1.1 点击下载 )]]></description>
+</item><item>
+    <title>nextcloud</title>
+    <link>https://mabaoshan.top/nextcloud/</link>
+    <pubDate>Sun, 05 Apr 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/nextcloud/</guid>
+    <description><![CDATA[https 域名过期了处理方式 nextcloud.enable-https lets-encrypt 并按照接下来的提示，输入解析到本机ip的域名和你的邮箱，即可完成ssl的申请并将证书安装到nextcloud。 直接访]]></description>
+</item><item>
+    <title>预防黑客的方法</title>
+    <link>https://mabaoshan.top/01mode/</link>
+    <pubDate>Wed, 01 Apr 2020 00:00:00 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/01mode/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>git</title>
+    <link>https://mabaoshan.top/git/</link>
+    <pubDate>Fri, 27 Mar 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/git/</guid>
+    <description><![CDATA[一、git 命令 1.git的区 工作区 unstage 暂存区 stage git rm &ndash;cached 对象区 commited 2.vi 命令 shift ZZ 提出 ：set number 设置行号 3.liunx 命令 rm -rf * (删除所有文件不把括隐藏文件) 4.git 基本命]]></description>
+</item><item>
+    <title>hugo</title>
+    <link>https://mabaoshan.top/hugo/</link>
+    <pubDate>Fri, 27 Mar 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/hugo/</guid>
+    <description><![CDATA[&mdash;启动服务 hugo server &ndash;buildDrafts &mdash;上传到github hugo &ndash;theme=jane &ndash;baseUrl=&quot;mabaoshan.top&rdquo; hugo &ndash;baseUrl=&quot;mabaoshan.top&rdquo; 目录含义 1 2 3 4 5 6 7 8 ├── archetypes │ └── default.md ├── config.toml ├── content ├── data ├─]]></description>
+</item><item>
+    <title>markdown</title>
+    <link>https://mabaoshan.top/markdown/</link>
+    <pubDate>Fri, 27 Mar 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/markdown/</guid>
+    <description><![CDATA[下载插件 http://www.writage.com/#download]]></description>
+</item><item>
+    <title>软件下载</title>
+    <link>https://mabaoshan.top/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</link>
+    <pubDate>Fri, 27 Mar 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</guid>
+    <description><![CDATA[软件下载 装机必备软件 企业版win10下载地址 ed2k://|file|cn_windows_10_enterprise_ltsc_2019_x64_dvd_9c09ff24.iso|4478906368|E7C526499308841A4A6D116C857DB669|/ 名称 地址 操作说明 激活文件 操作系统 https://msdn.itellyou.cn/ office 下载 激活1 激活2 pdf 7-zip 公司软件 名称 地址 操作说明 k3cloud OA 263 nextcloud 其他软]]></description>
+</item><item>
+    <title>js</title>
+    <link>https://mabaoshan.top/js/</link>
+    <pubDate>Thu, 20 Aug 2020 00:00:00 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/js/</guid>
+    <description><![CDATA[度以 学习 小头峰原则 （首个单词小写，第二个单词首字母大写） 表达式忽略名字 函数声明整体提升 变量 声明提升 大驼峰命名规则（是命名函数） javaScript 基础教程(第]]></description>
+</item><item>
+    <title>docker安装onlyoffice</title>
+    <link>https://mabaoshan.top/docker%E5%AE%89%E8%A3%85onlyoffice/</link>
+    <pubDate>Thu, 23 Jul 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/docker%E5%AE%89%E8%A3%85onlyoffice/</guid>
+    <description><![CDATA[1.安装curl $ which curl $sudo apt-get update $ sudo apt-get install curl 2.安装最新版本 $curl -SSL https://get.docker.com/ | sh 3.测试是否安装成功 $sudo docker run hello-world 4.拉取ONLYOFFICE Document Server 的Docker镜]]></description>
+</item></channel>
 </rss>

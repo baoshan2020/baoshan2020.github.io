@@ -1,154 +1,70 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>pc on 马保山的学习笔记</title>
-    <link>http://mabaoshan.top/tags/pc/</link>
-    <description>Recent content in pc on 马保山的学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 09 Jul 2020 15:58:26 +0800</lastBuildDate>
-    
-	<atom:link href="http://mabaoshan.top/tags/pc/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>录屏软件使用说明</title>
-      <link>http://mabaoshan.top/categories/documentation/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</link>
-      <pubDate>Fri, 10 Apr 2020 00:00:00 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/categories/documentation/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</guid>
-      <description>下载录屏软件.zip解压录屏软件-&amp;gt;双击 （FSCapture.exe ）打开录屏软件-&amp;gt;点击屏幕录像机-&amp;gt;录制-&amp;gt;开始-&amp;gt; ctrl+10 保存录制的文件</description>
-    </item>
-    
-    <item>
-      <title>VISIO拓扑图标.vsd</title>
-      <link>http://mabaoshan.top/2020/04/visio%E6%8B%93%E6%89%91%E5%9B%BE%E6%A0%87%E4%B8%8B%E8%BD%BD/</link>
-      <pubDate>Tue, 14 Apr 2020 00:00:00 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/04/visio%E6%8B%93%E6%89%91%E5%9B%BE%E6%A0%87%E4%B8%8B%E8%BD%BD/</guid>
-      <description>VISIO拓扑图标.vsd</description>
-    </item>
-    
-    <item>
-      <title>预防黑客的方法</title>
-      <link>http://mabaoshan.top/2020/03/%E9%A2%84%E9%98%B2%E9%BB%91%E5%AE%A2%E7%9A%84%E6%96%B9%E6%B3%95/</link>
-      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/03/%E9%A2%84%E9%98%B2%E9%BB%91%E5%AE%A2%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
-      <description>预防黑客的方法   服务器     数据库服务器去除dns不允许访问外网
-  web服务器只打开80端口
-  服务器设置复杂的密码并且加特殊字符如：（@(){}.[]])，并定期更换密码
-  定期备份数据
-   应急处理方案 1.发现某员工有非正常流量时，首先要在交换机或者ac上禁止上网。
-个人电脑 黑客攻击的方法  DDoS攻击 SQL注入 XSS跨站 网站程序0day 服务器漏洞 恶意扫描 恶意采集  </description>
-    </item>
-    
-    <item>
-      <title>新员工手册</title>
-      <link>http://mabaoshan.top/categories/documentation/%E6%96%B0%E5%91%98%E5%B7%A5%E6%89%8B%E5%86%8C/</link>
-      <pubDate>Thu, 09 Jul 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/categories/documentation/%E6%96%B0%E5%91%98%E5%B7%A5%E6%89%8B%E5%86%8C/</guid>
-      <description>1.OA登录 登录地址：http://oa.tusenergy.com 用户名：张三 默认密码：Aa1122 操作指导书:http://it.tusenergy.com/wordpress/?p=2772.k3cloud登录 用户名：张三 默认密码：888888 操作指导书:http://it.tusenergy.com/wordpress/?p=3923.企业微信 4.邮箱 登录地址：http://mail.tusenergy.com用户名：zhangsan 默认密码：Aa1122
-5.WIFI 用户名：tusenergy 密码：82151300
-6.打印机安装 http://it.tusenergy.com/wordpress/?p=374</description>
-    </item>
-    
-    <item>
-      <title>E470笔记本没有声音</title>
-      <link>http://mabaoshan.top/categories/documentation/e470%E7%AC%94%E8%AE%B0%E6%9C%AC%E6%B2%A1%E6%9C%89%E5%A3%B0%E9%9F%B3/</link>
-      <pubDate>Tue, 30 Jun 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/categories/documentation/e470%E7%AC%94%E8%AE%B0%E6%9C%AC%E6%B2%A1%E6%9C%89%E5%A3%B0%E9%9F%B3/</guid>
-      <description>下载地址：
-https://think.lenovo.com.cn/support/driver/newdriversdownlist.aspx?categoryid=3110284&amp;amp;CODEName=&amp;amp;SearchType=1&amp;amp;wherePage=1&amp;amp;SearchNodeCC=&amp;amp;needmt=20H3A004cd
-安装显卡驱动和hotkey 热键驱动程序解决</description>
-    </item>
-    
-    <item>
-      <title>重新安装 macOS</title>
-      <link>http://mabaoshan.top/categories/documentation/mac-os%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
-      <pubDate>Tue, 30 Jun 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/categories/documentation/mac-os%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
-      <description>重新安装 macOS 当您需要在 Mac 上重新安装 macOS 时，您可以使用互联网从 Apple 安装或者从每台 Mac 上的硬盘驱动器或闪存上的恢复分区中安装。这两种重新安装的方式都将保留您的文件和用户设置不变。
-**【重要事项】**您的电脑必须接入互联网，才能重新安装 macOS。
-  在 Mac 上，选取苹果菜单 &amp;gt;“重新启动”。
-  在 Mac 重新启动时立即执行以下一项操作：
-  *从互联网安装最新版本的 macOS：*按住 Option-Command-R 直到旋转地球出现，然后松开按键。
-此选项将安装与您电脑兼容的 macOS 最新版本。
-  *从互联网重新安装您电脑原始版本的 macOS：*按住 Shift-Option-Command-R 直到旋转地球出现，然后松开按键。
-此选项将重新安装您电脑自带的最新版本的 macOS 以及该版本的任何可用更新。
-  *从电脑上的内建恢复磁盘中重新安装 macOS：*按住 Command-R 直到“实用工具”窗口出现。
-此选项将重新安装储存在您电脑内建恢复磁盘中的 macOS 版本以及您已安装的任何更新。
-    选择“重新安装 macOS”，然后点按“继续”。
-  请按照屏幕指示进行操作。在您选择磁盘的面板中，选择您当前的 macOS 磁盘（大多数情况下，它是唯一可用的磁盘）。
-  </description>
-    </item>
-    
-    <item>
-      <title>office安装激活</title>
-      <link>http://mabaoshan.top/categories/documentation/office%E5%AE%89%E8%A3%85/</link>
-      <pubDate>Mon, 30 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/categories/documentation/office%E5%AE%89%E8%A3%85/</guid>
-      <description>一、安装 1.下载office tool
-Office-Tool-Plus下载 2.部署
-3.参照图片选择 添加产品、语言、安装设置后，点击开始部署
-二、激活 1.点击安装许可证，右面的下拉箭头
-2.清楚所有许可
-3.安装office2016mondo证书
-4.设定服务器为 kms.loli.beer 端口填写1688
-点击设定服务器按钮
-5.点击激活按钮
-6.其他说明 2019proplusvl mark 密钥 TPCXN-J87D4-BPYVQ-3YWVC-BTFXQ
-2019visiopro retail 008 密钥 XDQJB-HXNXG-8HBP3-CR879-P39H9
-如果你在访问 Office Tool Plus 官方网站的时候出现了问题，可以尝试将 DNS 切换成阿里云的 DNS，具体原因正在调查中： 阿里 AliDNS 223.5.5.5 223.6.6.6
-三、备用激活 1.点击下载激活文件 2.右键，以管理员身份运行 单击激活office2010 -2019 ProPlus
-1.备用激活2 四、office 所有工具下载 下载 Office软件完全卸载工具.rar
-Office插件相关工具.rar
-Office VOL-Retail互转工具-证书安装工具.zip</description>
-    </item>
-    
-    <item>
-      <title>创新大厦B1001打印机驱动安装(windows)</title>
-      <link>http://mabaoshan.top/categories/documentation/%E5%88%9B%E6%96%B0%E5%A4%A7%E5%8E%A6b1001%E6%89%93%E5%8D%B0%E6%9C%BA%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85windows/</link>
-      <pubDate>Mon, 30 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/categories/documentation/%E5%88%9B%E6%96%B0%E5%A4%A7%E5%8E%A6b1001%E6%89%93%E5%8D%B0%E6%9C%BA%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85windows/</guid>
-      <description>打印机使用说明书
-下载驱动程序
-第一步：右键点击开始-&amp;gt;运行或win+R键
-第二步：点击运行，输入 \\192.168.2.99用户名：guest 密码：空 并选择记住密码
-第三步：进入安装界面后
-双击安装
- 安装打印机  第一步：选择——打印机-&amp;gt;“设置默认打印机
-第二步：选择——打印机-&amp;gt;“属性”
-第三步：配置-&amp;gt;用户信息的设定-&amp;gt;用户识别符选项中选择：输入所有者名称，用户识别符为：本人小写姓名全拼；
-第四步：点击确定按钮完成安装。
-  使用打印机
-  打印：正常打印文档后，刷卡，屏幕上选择打印个人文件，即可完成打印。
-  复印：刷卡后按正常步骤即可完成复印。
-  扫描：刷卡后将待扫描的文件放入送纸器（正面朝前放），选择屏幕上的扫描按钮，无须再次选择自己的邮箱，屏幕上自动显示本人邮箱，点击确认即可。
-  操作完成后，打印机上按“登录”键，退出个人登录。
-  苹果打印机驱动下载pdf</description>
-    </item>
-    
-    <item>
-      <title>腾讯会议使用说明</title>
-      <link>http://mabaoshan.top/categories/documentation/%E8%85%BE%E8%AE%AF%E4%BC%9A%E8%AE%AE%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</link>
-      <pubDate>Mon, 30 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/categories/documentation/%E8%85%BE%E8%AE%AF%E4%BC%9A%E8%AE%AE%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</guid>
-      <description>1.安装腾讯会议
-电脑下载地址：
-https://7205de1e8107aa3019ddb928733b76c5.dlied1.cdntips.com/dlied1.qq.com/download/1.1.8.402.publish_release.exe?mkey=5e4f734c6fc56b91&amp;amp;f=17c5&amp;amp;cip=111.197.77.100&amp;amp;proto=https
-2.加入会议：会议ID：371 779 629
-点击链接直接加入会议：https://meeting.tencent.com/s/5eF3Feg5962b1
-3.参会人提问：
-4.主讲人：解除静音-&amp;gt;共享屏幕-&amp;gt;桌面-&amp;gt;确认共享</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>pc - 标签 - 马保山的学习笔记</title>
+        <link>https://mabaoshan.top/tags/pc/</link>
+        <description>pc - 标签 - 马保山的学习笔记</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 09 Jul 2020 15:58:26 &#43;0800</lastBuildDate><atom:link href="https://mabaoshan.top/tags/pc/" rel="self" type="application/rss+xml" /><item>
+    <title>录屏软件使用说明</title>
+    <link>https://mabaoshan.top/categories/documentation/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</link>
+    <pubDate>Fri, 10 Apr 2020 00:00:00 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/categories/documentation/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</guid>
+    <description><![CDATA[下载录屏软件.zip 解压录屏软件-&gt;双击 （FSCapture.exe ）打开录屏软件-&gt;点击屏幕录像机-&gt;录制-&gt;开始]]></description>
+</item><item>
+    <title>VISIO拓扑图标.vsd</title>
+    <link>https://mabaoshan.top/visio%E6%8B%93%E6%89%91%E5%9B%BE%E6%A0%87%E4%B8%8B%E8%BD%BD/</link>
+    <pubDate>Tue, 14 Apr 2020 00:00:00 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/visio%E6%8B%93%E6%89%91%E5%9B%BE%E6%A0%87%E4%B8%8B%E8%BD%BD/</guid>
+    <description><![CDATA[VISIO拓扑图标.vsd]]></description>
+</item><item>
+    <title>预防黑客的方法</title>
+    <link>https://mabaoshan.top/%E9%A2%84%E9%98%B2%E9%BB%91%E5%AE%A2%E7%9A%84%E6%96%B9%E6%B3%95/</link>
+    <pubDate>Fri, 27 Mar 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/%E9%A2%84%E9%98%B2%E9%BB%91%E5%AE%A2%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
+    <description><![CDATA[预防黑客的方法 服务器 数据库服务器去除dns不允许访问外网 web服务器只打开80端口 服务器设置复杂的密码并且加特殊字符如：（@(){}.[]]]]></description>
+</item><item>
+    <title>新员工手册</title>
+    <link>https://mabaoshan.top/categories/documentation/%E6%96%B0%E5%91%98%E5%B7%A5%E6%89%8B%E5%86%8C/</link>
+    <pubDate>Thu, 09 Jul 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/categories/documentation/%E6%96%B0%E5%91%98%E5%B7%A5%E6%89%8B%E5%86%8C/</guid>
+    <description><![CDATA[1.OA登录 登录地址：http://oa.tusenergy.com 用户名：张三 默认密码：Aa1122 操作指导书:http://it.tus]]></description>
+</item><item>
+    <title>E470笔记本没有声音</title>
+    <link>https://mabaoshan.top/categories/documentation/e470%E7%AC%94%E8%AE%B0%E6%9C%AC%E6%B2%A1%E6%9C%89%E5%A3%B0%E9%9F%B3/</link>
+    <pubDate>Tue, 30 Jun 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/categories/documentation/e470%E7%AC%94%E8%AE%B0%E6%9C%AC%E6%B2%A1%E6%9C%89%E5%A3%B0%E9%9F%B3/</guid>
+    <description><![CDATA[下载地址： https://think.lenovo.com.cn/support/driver/newdriversdownlist.aspx?categoryid=3110284&amp;CODEName=&amp;SearchType=1&amp;wherePage=1&amp;SearchNodeCC=&amp;needmt=20H3A004cd 安装显卡驱动和hotkey 热键驱动程序解决]]></description>
+</item><item>
+    <title>重新安装 macOS</title>
+    <link>https://mabaoshan.top/categories/documentation/mac-os%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
+    <pubDate>Tue, 30 Jun 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/categories/documentation/mac-os%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
+    <description><![CDATA[重新安装 macOS 当您需要在 Mac 上重新安装 macOS 时，您可以使用互联网从 Apple 安装或者从每台 Mac 上的硬盘驱动器或闪存上的恢复分区中安装。这两种重新安装的方式都将保]]></description>
+</item><item>
+    <title>office安装激活</title>
+    <link>https://mabaoshan.top/categories/documentation/office%E5%AE%89%E8%A3%85/</link>
+    <pubDate>Mon, 30 Mar 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/categories/documentation/office%E5%AE%89%E8%A3%85/</guid>
+    <description><![CDATA[一、安装 1.下载office tool Office-Tool-Plus下载 2.部署 3.参照图片选择 添加产品、语言、安装设置后，点击开始部署 二、激活 1]]></description>
+</item><item>
+    <title>创新大厦B1001打印机驱动安装(windows)</title>
+    <link>https://mabaoshan.top/categories/documentation/%E5%88%9B%E6%96%B0%E5%A4%A7%E5%8E%A6b1001%E6%89%93%E5%8D%B0%E6%9C%BA%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85windows/</link>
+    <pubDate>Mon, 30 Mar 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/categories/documentation/%E5%88%9B%E6%96%B0%E5%A4%A7%E5%8E%A6b1001%E6%89%93%E5%8D%B0%E6%9C%BA%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85windows/</guid>
+    <description><![CDATA[打印机使用说明书 下载驱动程序 第一步：右键点击开始-&gt;运行或win+R键 第二步：点击运行，输入 \\192.168.2.99 用户名：guest 密码：空 并选择记住密码]]></description>
+</item><item>
+    <title>腾讯会议使用说明</title>
+    <link>https://mabaoshan.top/categories/documentation/%E8%85%BE%E8%AE%AF%E4%BC%9A%E8%AE%AE%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</link>
+    <pubDate>Mon, 30 Mar 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/categories/documentation/%E8%85%BE%E8%AE%AF%E4%BC%9A%E8%AE%AE%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</guid>
+    <description><![CDATA[1.安装腾讯会议 电脑下载地址： https://7205de1e8107aa3019ddb928733b76c5.dlied1.cdntips.com/dlied1.qq.com/download/1.1.8.402.publish_release.exe?mkey=5e4f734c6fc56b91&amp;f=17c5&amp;cip=111.197.77.100&amp;proto=https 2.加入会议：会议ID：371 779 629 点击链接直接加入会议：https://meeting.tencent.co]]></description>
+</item></channel>
 </rss>

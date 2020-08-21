@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>win10安装liunx - 马保山的学习笔记</title><meta name="Description" content="马保山的学习笔记"><meta property="og:title" content="win10安装liunx" />
+<meta property="og:description" content="WSL 是什么？ WSL 是 Windows Subsystem for Linux 的简称, 可让开发人员在Windows 10下按原样运行 GNU/Linux 环境 - 包括大多数命令行工具、实用工具和应用程序 - 且不会产生虚拟机" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mabaoshan.top/win10%E5%AE%89%E8%A3%85liunx/" />
+<meta property="og:image" content="https://mabaoshan.top/logo.png"/>
+<meta property="article:published_time" content="2020-04-01T08:58:26+08:00" />
+<meta property="article:modified_time" content="2020-04-01T08:58:26+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://mabaoshan.top/logo.png"/>
+
+<meta name="twitter:title" content="win10安装liunx"/>
+<meta name="twitter:description" content="WSL 是什么？ WSL 是 Windows Subsystem for Linux 的简称, 可让开发人员在Windows 10下按原样运行 GNU/Linux 环境 - 包括大多数命令行工具、实用工具和应用程序 - 且不会产生虚拟机"/>
+<meta name="application-name" content="马保山的学习笔记">
+<meta name="apple-mobile-web-app-title" content="马保山的学习笔记"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://mabaoshan.top/win10%E5%AE%89%E8%A3%85liunx/" /><link rel="prev" href="https://mabaoshan.top/%E5%9B%BE%E5%BA%8A/" /><link rel="next" href="https://mabaoshan.top/typora%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E5%88%B0picgo%E5%9B%BE%E5%BA%8A%E6%8E%92%E9%94%99/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "win10安装liunx",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/mabaoshan.top\/win10%E5%AE%89%E8%A3%85liunx\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/mabaoshan.top\/images\/Apple-Devices-Preview.png",
+                            "width":  3200 ,
+                            "height":  2048 
+                        }],"genre": "posts","wordcount":  826 ,
+        "url": "https:\/\/mabaoshan.top\/win10%E5%AE%89%E8%A3%85liunx\/","datePublished": "2020-04-01T08:58:26+08:00","dateModified": "2020-04-01T08:58:26+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/mabaoshan.top\/images\/avatar.png",
+                    "width":  528 ,
+                    "height":  560 
+                }},"author": {
+                "@type": "Person",
+                "name": "马保山"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="马保山的学习笔记"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>LoveIt</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/" title="About"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="马保山的学习笔记"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>LoveIt</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="About">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">win10安装liunx</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="http://mabaoshan.top" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>马保山</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-04-01">2020-04-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 826 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#wsl-是什么">WSL 是什么？</a>
+      <ul>
+        <li><a href="#启用-windows-子系统支持">启用 Windows 子系统支持</a></li>
+        <li><a href="#下载-linux-系统">下载 Linux 系统</a></li>
+        <li><a href="#安装-linux-系统">安装 Linux 系统</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="wsl-是什么">WSL 是什么？</h2>
+<p>WSL 是 <strong>Windows Subsystem for Linux</strong> 的简称, 可让开发人员在Windows 10下按原样运行 GNU/Linux 环境 - 包括大多数命令行工具、实用工具和应用程序 - 且不会产生虚拟机开销。说白一点，就是在windows 10 下安装 linux 系统，不需要借助虚拟机！</p>
+<h3 id="启用-windows-子系统支持">启用 Windows 子系统支持</h3>
+<p>在安装适用于 WSL 的任何 Linux 分发版之前，必须确保已启用“适用于 Linux 的 Windows 子系统”可选功能：</p>
+<p>以管理员身份打开 PowerShell 并运行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="n">Enable</span><span class="p">-</span><span class="n">WindowsOptionalFeature</span> <span class="p">-</span><span class="n">Online</span> <span class="p">-</span><span class="n">FeatureName</span> <span class="n">Microsoft</span><span class="p">-</span><span class="n">Windows</span><span class="p">-</span><span class="n">Subsystem</span><span class="p">-</span><span class="n">Linux</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>出现提示时，重启计算机。</p>
+<p>**或者：**控制面板-&gt;程序和功能-&gt;启用或关闭Windows功能-&gt;勾选 适用于Linux的Windows子系统</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://images2017.cnblogs.com/blog/723701/201801/723701-20180103223038768-1629438015.png"
+        data-srcset="https://images2017.cnblogs.com/blog/723701/201801/723701-20180103223038768-1629438015.png, https://images2017.cnblogs.com/blog/723701/201801/723701-20180103223038768-1629438015.png 1.5x, https://images2017.cnblogs.com/blog/723701/201801/723701-20180103223038768-1629438015.png 2x"
+        data-sizes="auto"
+        alt="https://images2017.cnblogs.com/blog/723701/201801/723701-20180103223038768-1629438015.png"
+        title="img" /></p>
+<h3 id="下载-linux-系统">下载 Linux 系统</h3>
+<p>我们先通过单击以下链接来下载并手动安装 Linux 发行版：</p>
+<ul>
+<li><a href="https://aka.ms/wsl-ubuntu-1804" target="_blank" rel="noopener noreffer">Ubuntu 18.04</a>（推荐）</li>
+</ul>
+<p>建议下载 Ubuntu 18.04 ，后面的教程都是针对这个系统版本的。</p>
+<h3 id="安装-linux-系统">安装 Linux 系统</h3>
+<p>将下载下来的 Ubuntu 系统添加到任何一个磁盘的根目录，比如这里我下载到 D 根目录，并重命名为 Ubuntu18.04.Appx（为了方便下一步执行命令）：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://static.wpdaxue.com/img/2020/03/20200324221831_wpdaxue_com.jpg"
+        data-srcset="https://static.wpdaxue.com/img/2020/03/20200324221831_wpdaxue_com.jpg, https://static.wpdaxue.com/img/2020/03/20200324221831_wpdaxue_com.jpg 1.5x, https://static.wpdaxue.com/img/2020/03/20200324221831_wpdaxue_com.jpg 2x"
+        data-sizes="auto"
+        alt="https://static.wpdaxue.com/img/2020/03/20200324221831_wpdaxue_com.jpg"
+        title="img" /></p>
+<p>在开始菜单中，找到 PowerShell，然后右键，选择“以管理员身份运行”：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://static.wpdaxue.com/img/2020/03/20200324222003_wpdaxue_com.jpg"
+        data-srcset="https://static.wpdaxue.com/img/2020/03/20200324222003_wpdaxue_com.jpg, https://static.wpdaxue.com/img/2020/03/20200324222003_wpdaxue_com.jpg 1.5x, https://static.wpdaxue.com/img/2020/03/20200324222003_wpdaxue_com.jpg 2x"
+        data-sizes="auto"
+        alt="https://static.wpdaxue.com/img/2020/03/20200324222003_wpdaxue_com.jpg"
+        title="img" /></p>
+<p>在出现的界面中，输入下面的命令进入到安装包所在的磁盘，比如这里是 D盘：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="n">cd</span> <span class="n">D</span><span class="p">:</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>然后输入下面的代码进行安装（注意根据你的安装包名称修改下面的命令）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php">Add-AppxPackage .\Ubuntu18.04.Appx
+</code></pre></td></tr></table>
+</div>
+</div><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://static.wpdaxue.com/img/2020/03/20200324222158_wpdaxue_com.jpg"
+        data-srcset="https://static.wpdaxue.com/img/2020/03/20200324222158_wpdaxue_com.jpg, https://static.wpdaxue.com/img/2020/03/20200324222158_wpdaxue_com.jpg 1.5x, https://static.wpdaxue.com/img/2020/03/20200324222158_wpdaxue_com.jpg 2x"
+        data-sizes="auto"
+        alt="https://static.wpdaxue.com/img/2020/03/20200324222158_wpdaxue_com.jpg"
+        title="img" /></p>
+<p>执行完上面的步骤，就可以在开始菜单中，看到 Ubuntu 的图标，点击运行它：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://static.wpdaxue.com/img/2020/03/20200324222505_wpdaxue_com.jpg"
+        data-srcset="https://static.wpdaxue.com/img/2020/03/20200324222505_wpdaxue_com.jpg, https://static.wpdaxue.com/img/2020/03/20200324222505_wpdaxue_com.jpg 1.5x, https://static.wpdaxue.com/img/2020/03/20200324222505_wpdaxue_com.jpg 2x"
+        data-sizes="auto"
+        alt="https://static.wpdaxue.com/img/2020/03/20200324222505_wpdaxue_com.jpg"
+        title="img" /></p>
+<p>首次运行新安装的系统时，会打开一个控制台窗口，其中指出需要等待一两分钟时间来完成安装。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://static.wpdaxue.com/img/2020/03/20200324222808_wpdaxue_com.jpg"
+        data-srcset="https://static.wpdaxue.com/img/2020/03/20200324222808_wpdaxue_com.jpg, https://static.wpdaxue.com/img/2020/03/20200324222808_wpdaxue_com.jpg 1.5x, https://static.wpdaxue.com/img/2020/03/20200324222808_wpdaxue_com.jpg 2x"
+        data-sizes="auto"
+        alt="https://static.wpdaxue.com/img/2020/03/20200324222808_wpdaxue_com.jpg"
+        title="img" /></p>
+<blockquote>
+<p>在这最后一个安装阶段，系统的文件将会解压缩，并存储在电脑上供你使用。 这可能需要一分钟或更长时间，具体取决于电脑存储设备的性能。 仅当初次安装时，才需要执行此初始安装阶段 - 将来在不到一秒内即可启动子系统。</p>
+</blockquote>
+<p>如上图所示，等待一段时间就会出现提示你输入一个用户名，然后输入密码。</p>
+<blockquote>
+<p>运行系统实例时，系统不会提示你输入密码，但<strong>如果使用 <code>sudo</code> 提升了进程的权限，则需要输入密码</strong>，因此请确保选择一个容易记住的密码！</p>
+</blockquote>
+<p>到这里，我们就安装和初始化 Ubuntu 系统了。</p>
+<p>今天就先到这，下来我们将讲解 Ubuntu 系统优化和更新，然后就是配置 <a href="https://www.wpdaxue.com/tag/lnmp" target="_blank" rel="noopener noreffer">LNMP</a> 本地开发环境等。</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2020-04-01</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/win10%E5%AE%89%E8%A3%85liunx/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://mabaoshan.top/win10%E5%AE%89%E8%A3%85liunx/" data-title="win10安装liunx"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://mabaoshan.top/win10%E5%AE%89%E8%A3%85liunx/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://mabaoshan.top/win10%E5%AE%89%E8%A3%85liunx/" data-title="win10安装liunx"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://mabaoshan.top/win10%E5%AE%89%E8%A3%85liunx/" data-title="win10安装liunx"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://mabaoshan.top/win10%E5%AE%89%E8%A3%85liunx/" data-title="win10安装liunx"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/%E5%9B%BE%E5%BA%8A/" class="prev" rel="prev" title="vscode设置 pic go 七牛"><i class="fas fa-angle-left fa-fw"></i>vscode设置 pic go 七牛</a>
+            <a href="/typora%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E5%88%B0picgo%E5%9B%BE%E5%BA%8A%E6%8E%92%E9%94%99/" class="next" rel="next" title="Typora自动上传到picgo图床&amp;排错">Typora自动上传到picgo图床&amp;排错<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.67.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

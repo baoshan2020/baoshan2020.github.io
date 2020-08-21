@@ -1,459 +1,77 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on 马保山的学习笔记</title>
-    <link>http://mabaoshan.top/posts/</link>
-    <description>Recent content in Posts on 马保山的学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 20 Aug 2020 00:00:00 +0800</lastBuildDate>
-    
-	<atom:link href="http://mabaoshan.top/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>nextcloud</title>
-      <link>http://mabaoshan.top/2020/04/nextcloud/</link>
-      <pubDate>Sun, 05 Apr 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/04/nextcloud/</guid>
-      <description>https 域名过期了处理方式      nextcloud.enable-https lets-encrypt 并按照接下来的提示，输入解析到本机ip的域名和你的邮箱，即可完成ssl的申请并将证书安装到nextcloud。      直接访问域名
-$ sudo nextcloud.occ config:system:set overwritehost &amp;ndash;value=&amp;quot;example.com:81&amp;rdquo;
-vm下载 https://www.hanssonit.se/nextcloud-vm/
-错误:Run pre-refresh hook of &amp;ldquo;nextcloud&amp;rdquo; snap if present
-首先查看一下正在进行的change
-snap change
-查询最近做的操作
-$ snap changes
-关于snap更多信息，查看man手册： $ man snap
-snap 版本 版本规定
-stable，稳定版；
-candidate，正式候选版；
-beta，测试版；
-edge，可能不稳定的尝鲜版。
-查看软件版本
-sudo snap info nextcloud
-切换标准版
-sudo snap refresh &amp;ndash;channel=latest/stable nextcloud
-切换最新测试版
-sudo snap refresh &amp;ndash;channel=18/edge nextcloud
-sudo apt-get install snapcraft 安装此应用打开下载速度会快</description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>http://mabaoshan.top/2020/03/git/</link>
-      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/03/git/</guid>
-      <description>一、git 命令 1.git的区 工作区 unstage
-暂存区 stage git rm &amp;ndash;cached
-对象区 commited
-2.vi 命令 shift ZZ 提出
-：set number 设置行号
-3.liunx 命令 rm -rf * (删除所有文件不把括隐藏文件)
-4.git 基本命令 git stuts 查看状态
-git add . 添加所有文件到本地仓库
-git commit 上传所有文件到本地仓库
-git commit -m ‘备注名称’
-.gitignore 需要忽略的文件
-git remote 查看需要上传的
-&amp;mdash;分支建立
-git branch login 创建分支
-git checkout login 切换分支
-git checkout login
-2.git 官网上传命令 1 2  git remote add origin https://github.com/baoshan2020/baoshan2020.github.io.gitgit push -u origin master  ​</description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>http://mabaoshan.top/2020/03/hugo/</link>
-      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/03/hugo/</guid>
-      <description>&amp;mdash;启动服务
-hugo server &amp;ndash;buildDrafts
-&amp;mdash;上传到github
-hugo &amp;ndash;theme=jane &amp;ndash;baseUrl=&amp;quot;mabaoshan.top&amp;rdquo;
-hugo &amp;ndash;baseUrl=&amp;quot;mabaoshan.top&amp;rdquo;
-目录含义 1 2 3 4 5 6 7 8  ├── archetypes│ └── default.md├── config.toml├── content├── data├── layouts├── static└── themes  config.toml 是整个网站的配置文档
-archetypes：包括内容类型，在创建新内容时自动生成内容的配置。
-content：包括网站内容，全部使用 markdown 格式。
-layouts：包括了网站的模版，决定内容如何呈现，目录下模板优先级高于 /themes//layouts/，可以用来小规模的定制主题。
-static：包括了 css, js, fonts, media 等，决定网站的外观。
-文档系统里 markdown 文档路径和最后站点 url 的对应关系一般如下：
-1 2 3 4 5 6 7 8  └── content└── about| └── _index.</description>
-    </item>
-    
-    <item>
-      <title>markdown</title>
-      <link>http://mabaoshan.top/2020/03/markdown/</link>
-      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/03/markdown/</guid>
-      <description>下载插件
-http://www.writage.com/#download</description>
-    </item>
-    
-    <item>
-      <title>软件下载</title>
-      <link>http://mabaoshan.top/2020/03/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</link>
-      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/03/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</guid>
-      <description>软件下载 装机必备软件 企业版win10下载地址 ed2k://|file|cn_windows_10_enterprise_ltsc_2019_x64_dvd_9c09ff24.iso|4478906368|E7C526499308841A4A6D116C857DB669|/
-   名称 地址 操作说明 激活文件     操作系统 https://msdn.itellyou.cn/     office 下载  激活1激活2   pdf      7-zip             公司软件    名称 地址 操作说明     k3cloud     OA     263          nextcloud      其他软件           向日葵远程控制8.</description>
-    </item>
-    
-    <item>
-      <title>js</title>
-      <link>http://mabaoshan.top/2020/08/js/</link>
-      <pubDate>Thu, 20 Aug 2020 00:00:00 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/08/js/</guid>
-      <description>度以 学习 小头峰原则 （首个单词小写，第二个单词首字母大写）
-表达式忽略名字 函数声明整体提升 变量 声明提升
-大驼峰命名规则（是命名函数）
-javaScript 基础教程(第8版) window.onload = initAll; // 开始加载的函数
-Math.floor(Math.random()* 15) //这行代码计算一个0～14 的随机
-浏览器检查
-if (typeof document.oncontextmenu == &amp;ldquo;object&amp;rdquo;) //检查是不是火狐浏览器 if (document.all) //检查是不是IE浏览器</description>
-    </item>
-    
-    <item>
-      <title>批量下载微信分享的图片</title>
-      <link>http://mabaoshan.top/2020/08/%E6%89%B9%E9%87%8F%E4%B8%8B%E8%BD%BD%E5%BE%AE%E4%BF%A1%E5%88%86%E4%BA%AB%E7%9A%84%E5%9B%BE%E7%89%87/</link>
-      <pubDate>Mon, 10 Aug 2020 00:00:00 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/08/%E6%89%B9%E9%87%8F%E4%B8%8B%E8%BD%BD%E5%BE%AE%E4%BF%A1%E5%88%86%E4%BA%AB%E7%9A%84%E5%9B%BE%E7%89%87/</guid>
-      <description>下载图助手V23.0.1.1
-点击下载)</description>
-    </item>
-    
-    <item>
-      <title>docker安装onlyoffice</title>
-      <link>http://mabaoshan.top/2020/07/docker%E5%AE%89%E8%A3%85onlyoffice/</link>
-      <pubDate>Thu, 23 Jul 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/07/docker%E5%AE%89%E8%A3%85onlyoffice/</guid>
-      <description>1.安装curl $ which curl
-$sudo apt-get update $ sudo apt-get install curl
-2.安装最新版本 $curl -SSL https://get.docker.com/ | sh
-3.测试是否安装成功 $sudo docker run hello-world
-4.拉取ONLYOFFICE Document Server 的Docker镜像 sudo docker pull onlyoffice/documentserver
-5.启动Document Server镜像，并映射80端口至本地。 sudo docker run -i -t -d -p 80:80 onlyoffice/documentserver
-6.启动后，访问http://服务器地址:80， 刚开始看到的可能是是502 Bad Gateway，稍等一会，刷新浏览器页面即可。
-7.其他配置 将Document Server映射至其它端口：例如映射至9000端口：
-sudo docker run -i -t -d -p 9000:80 onlyoffice/documentserver
-8.Document Server的数据在容器中的储存位置如下：
-/var/log/onlyoffice 存放ONLYOFFICE Document Server日志
-/var/www/onlyoffice/Data 存放证书文件
-你可以用
-sudo docker -exec -it onlyoffice/documentserver /bin/bash</description>
-    </item>
-    
-    <item>
-      <title>阿里云-DNS解析平滑迁移</title>
-      <link>http://mabaoshan.top/2020/07/%E9%98%BF%E9%87%8C%E4%BA%91-dns%E8%A7%A3%E6%9E%90%E5%B9%B3%E6%BB%91%E8%BF%81%E7%A7%BB/</link>
-      <pubDate>Mon, 13 Jul 2020 00:00:00 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/07/%E9%98%BF%E9%87%8C%E4%BA%91-dns%E8%A7%A3%E6%9E%90%E5%B9%B3%E6%BB%91%E8%BF%81%E7%A7%BB/</guid>
-      <description>DNS解析平滑迁移的步骤概览：
-准备工作 将解析数据导入云解析 检查工作 修改DNS服务器 等待全球各地localdns同步更新 准备工作 域名解析转入的前提条件是完成如下准备工作：
-备案检查：如果只是DNS迁移到云解析DNS，不涉及服务器迁移，则不需要重新备案。
-实名认证：检查您的阿里云账号是否进行实名认证，如未实名请进行实名认证。
-解析数据准备：请在原DNS服务商处导出解析记录，导出格式优先选择ZONE文件，如果选择EXCEL的xls、xlsx文件格式，请按照 DNS解析模板 进行编辑。
-将解析数据导入云解析 1 . 添加域名
-登录 云解析DNS控制台，在域名解析页面，全部域名页签下，点击 添加域名 按钮。 您可以参阅 添加域名 的操作文档指南。
-注意：如果您的域名是阿里云注册域名，您可以跳过此步骤。
-2 . 导入解析记录
-添加域名完成后，点击域名进入解析设置页面，点击 导入/导出 按钮，将准备好的解析数据，导入到云解析DNS。 您可以参阅 导入/导出 的操作文档指南。
-检查工作 将解析数据导入云解析后，请按照如下指引进行检查。
-1 . 检查解析记录一致性
-主要检查在新旧DNS解析厂商中配置的解析记录数量是否一致，可避免出现漏配现象。
-2 . 检查CNAME记录指向的域名是否配置解析。（如果您未设置CNAME记录可忽略此项检查）
-此项检查主要是避免CNAME指向的域名未做配置导致的业务影响，可以dig CNAME指向的域名（下图CNAME值的域名仅为示例使用）来检测。
-CNAME域名
-在 Windows 电脑下左下角单击【开始】-【搜索】- 输入 CMD，进入命令提示符页面。
-输入命令 dig www.dnswork.top
-验证方法 CNAME指向的域名能够正常返回解析结果，则代表检查结果正常。
-DigCname检查
-3 . 验证解析是否生效
-这里是检查域名在云解析DNS上是否已经生效。
-输入命令 dig www.dns-example.com @vip3.alidns.com
-注意：您可以在解析设置页面，查看到分配给您的DNS服务器名称
-验证方法 对比dig命令查询返回的解析结果和解析设置的解析结果是否一致，如一致则代表在云解析DNS上已经生效。例如下图示例的dig命令和解析设置的结果是一致的，代表此域名在云解析DNS上已生效。
-dig命令解析生效 验证解析设置配置</description>
-    </item>
-    
-    <item>
-      <title>把代码同时同步到coding</title>
-      <link>http://mabaoshan.top/2020/06/coding/</link>
-      <pubDate>Sat, 13 Jun 2020 00:00:00 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/06/coding/</guid>
-      <description>添加coding 代码 git remote -v //查看列表 git remote add coding https://e.coding.net/mabaoshan/www.git git remote set-url origin https://e.coding.net/mabaoshan/www.git git push &amp;ndash;all
-百度收录提交地址
-https://ziyuan.baidu.com/linksubmit/url
-sitemap 生成工具
-http://www.sitemap-xml.org/
-百度提交
-https://ziyuan.baidu.com/linksubmit/index?site=http://www.mabaoshan.top/</description>
-    </item>
-    
-    <item>
-      <title>html代码mailto命令详解(cc&#43;bcc&#43;主题&#43;内容&#43;包含回车问号空格)</title>
-      <link>http://mabaoshan.top/2020/05/html%E4%BB%A3%E7%A0%81mailto%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3cc-bcc-%E4%B8%BB%E9%A2%98-%E5%86%85%E5%AE%B9-%E5%8C%85%E5%90%AB%E5%9B%9E%E8%BD%A6%E9%97%AE%E5%8F%B7%E7%A9%BA%E6%A0%BC/</link>
-      <pubDate>Tue, 26 May 2020 00:00:00 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/05/html%E4%BB%A3%E7%A0%81mailto%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3cc-bcc-%E4%B8%BB%E9%A2%98-%E5%86%85%E5%AE%B9-%E5%8C%85%E5%90%AB%E5%9B%9E%E8%BD%A6%E9%97%AE%E5%8F%B7%E7%A9%BA%E6%A0%BC/</guid>
-      <description>大家知道，mailto是网页设计制作中的一个非常实用的html标签，许多拥有个人网页的朋友都喜欢在网站的醒目位置处写上自己的电子邮件地址，这+样网页浏览者一旦用鼠标单击一下由mailto组成的超级连接后，就能自动打开当前计算机系统中默认的电子邮件客户端软件，例如OutLook+Express以及Foxmail等。当然有关mailto标签的使用，并不仅仅就象上面所说的那样简单，它还有其他方面的应用。为了能帮助各位用户对+mailto标签有一个全面的认识，笔者在此就对mailto标签的使用做一个详细的总结，希望能与大家共享交流！
-首先代码奉上，有码有真相对吧。
-mailto主题/CC/BCC/正文使用方法&amp;lt;A+HREF=&amp;quot;mailto:miyaxxx@yahoo.com?subject=Hello%20World主题&amp;amp;cc=aaa_ss@yahoo.com&amp;amp;bcc=bbb_X@yahoo.com&amp;amp;body=内容第一行%0D%0A内容第二行 你也可以回车，但是不会成功。%0D%0A内容第三行&amp;quot;&amp;gt;メール
-mailto代码中可以追加以下几个参数以实现想要的内容。
-suject是指出主题的位置。cc是指出抄送的mail地址。Bcc是秘密抄送mail地址。body位置指出mail的内容使用换行回车的话要加\n,&amp;lt;br/&amp;gt;,都是不好用的哦，这里要用专用的「%0D%0A」标记使用半角空格的时候，直接使用也是不好用的，要用「%20」代替。半角问号?使用「%3F」代替。 </description>
-    </item>
-    
-    <item>
-      <title>ubuntu</title>
-      <link>http://mabaoshan.top/2020/04/ubuntu/</link>
-      <pubDate>Sat, 18 Apr 2020 00:00:00 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/04/ubuntu/</guid>
-      <description>升级系统
-sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade
-或者
-sudo apt-get update &amp;amp;&amp;amp; sudo apt-get dist-upgrade
-升级版本update-manager
-1.开始ssh服务
-sudo ps -e | grep ssh（查看ssh服务是否开启）
-sudo apt-get install openssh-client（安装ssh客户端程序）
-sudo apt-get install openssh-server（安装ssh服务端程序）
-sudo systemctl start ssh（打开服务）
-sudo systemctl enable ssh（设置服务的开机自启动）
-2.设置开机自动启动
-systemctl命令是系统服务管理器指令，它实际上将 service 和 chkconfig 这两个命令组合到一起。
-设置服务的开机自启动:sudo systemctl enable ssh
-打开服务:sudo systemctl start foobar 关闭服务:sudo systemctl stop foobar 重启服务:sudo systemctl restart foobar 不中断正常功能下重新加载服务:sudo systemctl reload foobar 设置服务的开机自启动:sudo systemctl enable foobar 关闭服务的开机自启动:sudo systemctl disable foobar 查看活跃的单元:systemctl list-units 查看某个服务的状态:systemctl status foobar 查看已启动的服务列表： systemctl list-unit-files|grep enabled 查看启动失败的服务列表：systemctl &amp;ndash;failed</description>
-    </item>
-    
-    <item>
-      <title>VISIO拓扑图标.vsd</title>
-      <link>http://mabaoshan.top/2020/04/visio%E6%8B%93%E6%89%91%E5%9B%BE%E6%A0%87%E4%B8%8B%E8%BD%BD/</link>
-      <pubDate>Tue, 14 Apr 2020 00:00:00 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/04/visio%E6%8B%93%E6%89%91%E5%9B%BE%E6%A0%87%E4%B8%8B%E8%BD%BD/</guid>
-      <description>VISIO拓扑图标.vsd</description>
-    </item>
-    
-    <item>
-      <title>html&#43;css</title>
-      <link>http://mabaoshan.top/2020/04/html-css%E5%85%A5%E9%97%A8/</link>
-      <pubDate>Mon, 13 Apr 2020 00:00:00 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/04/html-css%E5%85%A5%E9%97%A8/</guid>
-      <description>html 一、基本设置 Hypertext Markup Language 超文本标记语言
-  根标签 设置浏览器的   里面放的是思想，设置浏览器用的，是人看不到的  是展示给用户看的  认识万国码  连接css 文件  抬头显示  7、告诉搜索引擎爬虫，我们的网站是关于什么内容的 en 代表是英文，zh 是中文，德语是 de 竞价排名费 1-999 元/点击一次，但是有 IP 段锁定 例这样是告诉搜索引擎的
-8、
-段落标签，让内容成段展示9、标题标签，成段展示，独占一行，加粗字体，更改字体大小（从 1 到 6 依次减小）10、加粗 斜体
-11、 独占一行   容器不独占 div 和 span 这两个标签是为了成块展示，规格化，这两个就是容器，功能如下： 功能 1：分块明确，让整个页面更加结构化； 功能 2：捆绑操作的作用（搬书架） 12、html 编码格式是&amp;amp;；常用就以下三个 1） 空格文本，写多少个就空几格 2）&amp;lt;左尖角号，小于的意思，less than，html 编码是&amp;lt; 3）&amp;gt;右尖角号，大于的意思，great than，html 编码是&amp;gt;</description>
-    </item>
-    
-    <item>
-      <title>wordpress</title>
-      <link>http://mabaoshan.top/2020/04/wordpress/</link>
-      <pubDate>Fri, 10 Apr 2020 08:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/04/wordpress/</guid>
-      <description>wordpress 升级5.4报错 因为我们不能复制一些文件，升级未被安装。这通常是因为存在不一致的文件权限。: xmlrpc.php, wp-load.php, wp-comments-post.php, index.php, wp-trackback.php, wp-activate.php, wp-settings.php, wp-mail.php, wp-blog-header.php, wp-signup.php, wp-links-opml.php
-解决方法：在wordpress目录下执行
-chmod -R 777 xmlrpc.php chmod -R 777 wp-load.php chmod -R 777 wp-comments-post.php chmod -R 777 index.php chmod -R 777 xmlrpc.php chmod -R 777 wp-trackback.php chmod -R 777 wp-activate.php chmod -R 777 wp-settings.php chmod -R 777 wp-mail.php chmod -R 777 wp-blog-header.php chmod -R 777 wp-signup.php chmod -R 777 wp-links-opml.php</description>
-    </item>
-    
-    <item>
-      <title>网络工程师的职责</title>
-      <link>http://mabaoshan.top/2020/04/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%E8%81%8C%E8%B4%A3/</link>
-      <pubDate>Tue, 07 Apr 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/04/%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%E8%81%8C%E8%B4%A3/</guid>
-      <description>在大型企业中，网络工程师的工作职责可能还包括要监管一个或多个位置的网络。
-此外，网络工程师可能还要帮助开发新的网络系统，以帮助推动公司或组织的发展。这种网络系统可包括本地网络、广域网、存储区域网络、虚拟LAN以及本地内部网或外部网服务器及资源。
-网络工程师的工作内容和工作职责各有不同，一定程度上取决于企业是否依赖于托管服务提供商。
-但总体来说，职责包括以下：
- 管理和维护网络，以及网络性能监控 发现、安装和维护网络更新 故障排除和修复 监管用户网络访问 制定备份/灾难恢复计划以应对网络紧急事件 为新应用和服务规划网络基础设施 培训网络人员来为最终用户提供支持 采购和维护网络设施及基础设施 整合移动设备到企业的网络，无论是企业还是个人设备（BYOD）  网络工程师的职责还包括定期与IT团队成员开会，了解一个或多个业务部门的IT需求，无论是从运营、利润还是服务角度。但是并不需要经常与最终用户直接联系，但他们可培训支持人员这样做。
-通常网络工程师需要计算机学士学位，多年网络系统工程师的工作经验。根据企业的情况，管理员/网络管理员认证会有所帮助，常见网络工程师认证包括思科、华为、Juniper Networks、VMware等供应商的认证。</description>
-    </item>
-    
-    <item>
-      <title>前端知识学习</title>
-      <link>http://mabaoshan.top/2020/04/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0/</link>
-      <pubDate>Sun, 05 Apr 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/04/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0/</guid>
-      <description>前端知识学习图片
-1.基础知识 1.1 HTML（超文本标记语言 [ Hyper Text Markup Language]）
- 语义化标签、属性 表单验证 data-* 属性 HTML多媒体  video(视频) audio(音频)   SVG Canvas HTML5 拖放 Web Worker 游览器缓存机制 H5存储 HTML5 离线缓存 HTML 渲染流程 重绘和回流 地图 websocket  1.2 CSS(指层叠样式表 [Cascading Style Sheets])
- 选择器 盒模型 定位、浮动 BFC 动画 过渡 弹性布局 2D、3D转换 边框、圆角 背景、渐变 文本效果、字体 CSS3 多列 CSS 伪类 CSS HACK 媒体查询 CSS 预处理语言  1.3 JavaScript: 是一种具有函数优先的轻量级，解释型或即时编译型的编程语言。
- 数据类型  基础类型 引用类型   流程控制语句 内置对象 变量、作用域 原型、原型链 函数 事件 this 指针 单线程与事件循环 DOM BOM 表单脚本 面向对象 正则 Ajax和跨站技术 ES6  let 和 const 命令 解构 Symbol Set 和 Map 数据结构 箭头函数 Proxy Promise Class 语法 module   错误处理及调试  错误处理 调试技术 常见的错误    1.</description>
-    </item>
-    
-    <item>
-      <title>Typora自动上传到picgo图床&amp;排错</title>
-      <link>http://mabaoshan.top/2020/04/typora%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E5%88%B0picgo%E5%9B%BE%E5%BA%8A%E6%8E%92%E9%94%99/</link>
-      <pubDate>Wed, 01 Apr 2020 08:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/04/typora%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E5%88%B0picgo%E5%9B%BE%E5%BA%8A%E6%8E%92%E9%94%99/</guid>
-      <description>Typora自动上传到picgo图床&amp;amp;排错 安装 Typora和picgo
-配置 配置picgo  配置typora
-  设置插入图片时为【上传图片】
-  勾选【对本地位置的图片应用上述规则】
-  在上传服务中选择“PicGo(app)”
-  在路径中选择picgo安装目录PicGo.exe
-  点击下面的验证图片上传选项，上传成功！
-上传的方法也很简单，将图片复制进去typora就会自动帮你上传了，你也可以右键点击上传图片。
-自动上传 可以在【格式】-&amp;gt;【图像】-&amp;gt;【上传所有图片】
-3.错误排查 3.1错误一：Failed to fetch 这个错误一般是由端口设置错误造成的，至于我为什么知道，你看看log文件就懂了。打开picgo的log文件
-错误提示是端口繁忙。
-解决方法：打开picgo设置，点击设置Server选项，将端口改为36677端口，这是picgo推荐的默认端口号，然后保存，成功。
-不过有的时候，我们的老朋友Failed to fetch还是如约而至，打开端口设置一看，怎么变成了366771？？？？
-问题在于端口冲突，如果你打开了多个picgo程序，就会端口冲突，picgo自动帮你把36677端口改为366771端口，导致错误。log文件里也写得很清楚。
-解决方法：先把picgo中的端口设置改回36677，然后退出所有picgo程序，再使用typora上传功能（会自动启动picgo程序）
-3.2错误二：{&amp;ldquo;success&amp;rdquo;,false} 这个错误相信也有很多小伙伴遇到了，原因是文件名冲突了，如果你上传过一张image1.jpg的图片，再上传名称一样的图片就会失败，康康log文件(感谢日志！)里也写到了。
-办法也很简单，打开picgo设置，将**【时间戳重命名】打开**。如图所示：
-再次上传文件，上传成功~
-授人以鱼不如授人以渔，上面的三种情况解决方法教给大家了，但是错误总是千奇百怪层出不穷的，如果下次出现上传错误的提示，请大家找到picgo的log文件，自己查看问题的原因嗷</description>
-    </item>
-    
-    <item>
-      <title>win10安装liunx</title>
-      <link>http://mabaoshan.top/2020/04/win10%E5%AE%89%E8%A3%85liunx/</link>
-      <pubDate>Wed, 01 Apr 2020 08:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/04/win10%E5%AE%89%E8%A3%85liunx/</guid>
-      <description>WSL 是什么？ WSL 是 Windows Subsystem for Linux 的简称, 可让开发人员在Windows 10下按原样运行 GNU/Linux 环境 - 包括大多数命令行工具、实用工具和应用程序 - 且不会产生虚拟机开销。说白一点，就是在windows 10 下安装 linux 系统，不需要借助虚拟机！
-启用 Windows 子系统支持 在安装适用于 WSL 的任何 Linux 分发版之前，必须确保已启用“适用于 Linux 的 Windows 子系统”可选功能：
-以管理员身份打开 PowerShell 并运行：
-1  Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux  出现提示时，重启计算机。
-**或者：**控制面板-&amp;gt;程序和功能-&amp;gt;启用或关闭Windows功能-&amp;gt;勾选 适用于Linux的Windows子系统
-下载 Linux 系统 我们先通过单击以下链接来下载并手动安装 Linux 发行版：
- Ubuntu 18.04（推荐）  建议下载 Ubuntu 18.04 ，后面的教程都是针对这个系统版本的。
-安装 Linux 系统 将下载下来的 Ubuntu 系统添加到任何一个磁盘的根目录，比如这里我下载到 D 根目录，并重命名为 Ubuntu18.</description>
-    </item>
-    
-    <item>
-      <title>vscode设置 pic go 七牛</title>
-      <link>http://mabaoshan.top/2020/04/%E5%9B%BE%E5%BA%8A/</link>
-      <pubDate>Wed, 01 Apr 2020 00:00:00 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/04/%E5%9B%BE%E5%BA%8A/</guid>
-      <description>http://des_tiny.coding.me/post/53597.html</description>
-    </item>
-    
-    <item>
-      <title>windows 10热键</title>
-      <link>http://mabaoshan.top/2020/04/windows-10%E7%83%AD%E9%94%AE/</link>
-      <pubDate>Wed, 01 Apr 2020 00:00:00 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/04/windows-10%E7%83%AD%E9%94%AE/</guid>
-      <description>win+”上”2分之一显示
-win+“上右” 四份之一显示</description>
-    </item>
-    
-    <item>
-      <title>谷歌浏览器插件</title>
-      <link>http://mabaoshan.top/2020/04/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/</link>
-      <pubDate>Wed, 01 Apr 2020 00:00:00 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/04/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/</guid>
-      <description>谷歌浏览器插件
-在线听音乐
-https://github.com/listen1/listen1
-油猴脚本 The Great Suspender
-积简插件
-https://chrome.zzzmh.cn/index#index
-https://chrome.zzzmh.cn/index#index</description>
-    </item>
-    
-    <item>
-      <title>预防黑客的方法</title>
-      <link>http://mabaoshan.top/2020/04/01mode/</link>
-      <pubDate>Wed, 01 Apr 2020 00:00:00 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/04/01mode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>预防黑客的方法</title>
-      <link>http://mabaoshan.top/2020/04/%E6%88%91%E5%96%9C%E6%AC%A2%E7%9A%84%E7%94%B5%E5%BD%B1/</link>
-      <pubDate>Wed, 01 Apr 2020 00:00:00 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/04/%E6%88%91%E5%96%9C%E6%AC%A2%E7%9A%84%E7%94%B5%E5%BD%B1/</guid>
-      <description>《好男当家》 徐峥</description>
-    </item>
-    
-    <item>
-      <title>sql</title>
-      <link>http://mabaoshan.top/2020/03/sql/</link>
-      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/03/sql/</guid>
-      <description>复制表结构
-select * into qidichuangxingongzhang &amp;ndash;new
-from ygyzspb2 &amp;ndash;old
-where 1=2
-复制表数据
-insert into qidichuangxingongzhang select * from ygyzspb2
-快速转换成日期
-select convert(char,列名,111) ，convert(char(10),列名,120) from tablename
-常用的方法
-Select CONVERT(varchar(100), GETDATE(), 8): 10:57:46 Select CONVERT(varchar(100), GETDATE(), 24): 10:57:47 Select CONVERT(varchar(100), GETDATE(), 108): 10:57:49 Select CONVERT(varchar(100), GETDATE(), 12): 110516 Select CONVERT(varchar(100), GETDATE(), 23): 2011-05-16
-查询60天之前的数据
-select dateadd(d,-60,getdate())
-&amp;ndash;统计单个表 占用空间的大小 exec sp_spaceused &amp;lsquo;CustomModule_2013117142926640&amp;rsquo;</description>
-    </item>
-    
-    <item>
-      <title>预防黑客的方法</title>
-      <link>http://mabaoshan.top/2020/03/%E9%A2%84%E9%98%B2%E9%BB%91%E5%AE%A2%E7%9A%84%E6%96%B9%E6%B3%95/</link>
-      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/03/%E9%A2%84%E9%98%B2%E9%BB%91%E5%AE%A2%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
-      <description>预防黑客的方法   服务器     数据库服务器去除dns不允许访问外网
-  web服务器只打开80端口
-  服务器设置复杂的密码并且加特殊字符如：（@(){}.[]])，并定期更换密码
-  定期备份数据
-   应急处理方案 1.发现某员工有非正常流量时，首先要在交换机或者ac上禁止上网。
-个人电脑 黑客攻击的方法  DDoS攻击 SQL注入 XSS跨站 网站程序0day 服务器漏洞 恶意扫描 恶意采集  </description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>http://mabaoshan.top/2020/07/git/</link>
-      <pubDate>Fri, 17 Jul 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/07/git/</guid>
-      <description>通过git stash将工作区恢复到上次提交的内容，同时备份本地所做的修改，之后就可以正常git pull了，git pull完成后，执行git stash pop将之前本地做的修改应用到当前工作区。 git stash git pull git stash pop
-看到这里有些人就懵逼了，我也一样，使用SourceTree的对于git命令的就是白痴的，下面我就介绍一下这三行代码代表什么意思吧；
-git stash: 备份当前的工作区的内容，从最近的一次提交中读取相关内容，让工作区保证和上次提交的内容一致。同时，将当前的工作区内容保存到Git栈中。
-git pull:拉取服务器上的代码；
-git stash pop: 从Git栈中读取最近一次保存的内容，恢复工作区的相关内容。由于可能存在多个Stash的内容，所以用栈来管理，pop会从最近的一个stash中读取内容并恢复。
-git stash list: 显示Git栈内的所有备份，可以利用这个列表来决定从那个地方恢复。
-git stash clear: 清空Git栈。此时使用gitg等图形化工具会发现，原来stash的哪些节点都消失了。
-希望能帮到大家</description>
-    </item>
-    
-    <item>
-      <title>网络制度</title>
-      <link>http://mabaoshan.top/2020/03/%E7%BD%91%E7%BB%9C%E5%88%B6%E5%BA%A6/</link>
-      <pubDate>Fri, 27 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/2020/03/%E7%BD%91%E7%BB%9C%E5%88%B6%E5%BA%A6/</guid>
-      <description>网络制度 系统软件
-   名称 地址 操作说明 激活文件     操作系统 https://msdn.itellyou.cn/ MediaCreatioTool(创建启动盘)    office 下载  激活1激活2   pdf      7-zip             公司软件
-   名称 地址 操作说明     k3cloud     OA     263                                    </description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>所有文章 - 马保山的学习笔记</title>
+        <link>https://mabaoshan.top/posts/</link>
+        <description>所有文章 | 马保山的学习笔记</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 21 Aug 2020 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://mabaoshan.top/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>河马</title>
+    <link>https://mabaoshan.top/%E5%8A%A8%E7%89%A9-%E6%B2%B3%E9%A9%AC/</link>
+    <pubDate>Fri, 21 Aug 2020 00:00:00 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/%E5%8A%A8%E7%89%A9-%E6%B2%B3%E9%A9%AC/</guid>
+    <description><![CDATA[河马原产于非洲的某些地区， 栖息在 河中或河边的草地上。 河马名字的原文hippopornmus就是希腊文 ＇，河马 。 它们有庞大笨重的身躯，整日里优]]></description>
+</item><item>
+    <title>批量下载微信分享的图片</title>
+    <link>https://mabaoshan.top/%E6%89%B9%E9%87%8F%E4%B8%8B%E8%BD%BD%E5%BE%AE%E4%BF%A1%E5%88%86%E4%BA%AB%E7%9A%84%E5%9B%BE%E7%89%87/</link>
+    <pubDate>Mon, 10 Aug 2020 00:00:00 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/%E6%89%B9%E9%87%8F%E4%B8%8B%E8%BD%BD%E5%BE%AE%E4%BF%A1%E5%88%86%E4%BA%AB%E7%9A%84%E5%9B%BE%E7%89%87/</guid>
+    <description><![CDATA[下载图助手V23.0.1.1 点击下载 )]]></description>
+</item><item>
+    <title>nextcloud</title>
+    <link>https://mabaoshan.top/nextcloud/</link>
+    <pubDate>Sun, 05 Apr 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/nextcloud/</guid>
+    <description><![CDATA[https 域名过期了处理方式 nextcloud.enable-https lets-encrypt 并按照接下来的提示，输入解析到本机ip的域名和你的邮箱，即可完成ssl的申请并将证书安装到nextcloud。 直接访]]></description>
+</item><item>
+    <title>预防黑客的方法</title>
+    <link>https://mabaoshan.top/01mode/</link>
+    <pubDate>Wed, 01 Apr 2020 00:00:00 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/01mode/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>git</title>
+    <link>https://mabaoshan.top/git/</link>
+    <pubDate>Fri, 27 Mar 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/git/</guid>
+    <description><![CDATA[一、git 命令 1.git的区 工作区 unstage 暂存区 stage git rm &ndash;cached 对象区 commited 2.vi 命令 shift ZZ 提出 ：set number 设置行号 3.liunx 命令 rm -rf * (删除所有文件不把括隐藏文件) 4.git 基本命]]></description>
+</item><item>
+    <title>hugo</title>
+    <link>https://mabaoshan.top/hugo/</link>
+    <pubDate>Fri, 27 Mar 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/hugo/</guid>
+    <description><![CDATA[&mdash;启动服务 hugo server &ndash;buildDrafts &mdash;上传到github hugo &ndash;theme=jane &ndash;baseUrl=&quot;mabaoshan.top&rdquo; hugo &ndash;baseUrl=&quot;mabaoshan.top&rdquo; 目录含义 1 2 3 4 5 6 7 8 ├── archetypes │ └── default.md ├── config.toml ├── content ├── data ├─]]></description>
+</item><item>
+    <title>markdown</title>
+    <link>https://mabaoshan.top/markdown/</link>
+    <pubDate>Fri, 27 Mar 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/markdown/</guid>
+    <description><![CDATA[下载插件 http://www.writage.com/#download]]></description>
+</item><item>
+    <title>软件下载</title>
+    <link>https://mabaoshan.top/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</link>
+    <pubDate>Fri, 27 Mar 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</guid>
+    <description><![CDATA[软件下载 装机必备软件 企业版win10下载地址 ed2k://|file|cn_windows_10_enterprise_ltsc_2019_x64_dvd_9c09ff24.iso|4478906368|E7C526499308841A4A6D116C857DB669|/ 名称 地址 操作说明 激活文件 操作系统 https://msdn.itellyou.cn/ office 下载 激活1 激活2 pdf 7-zip 公司软件 名称 地址 操作说明 k3cloud OA 263 nextcloud 其他软]]></description>
+</item><item>
+    <title>js</title>
+    <link>https://mabaoshan.top/js/</link>
+    <pubDate>Thu, 20 Aug 2020 00:00:00 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/js/</guid>
+    <description><![CDATA[度以 学习 小头峰原则 （首个单词小写，第二个单词首字母大写） 表达式忽略名字 函数声明整体提升 变量 声明提升 大驼峰命名规则（是命名函数） javaScript 基础教程(第]]></description>
+</item><item>
+    <title>docker安装onlyoffice</title>
+    <link>https://mabaoshan.top/docker%E5%AE%89%E8%A3%85onlyoffice/</link>
+    <pubDate>Thu, 23 Jul 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/docker%E5%AE%89%E8%A3%85onlyoffice/</guid>
+    <description><![CDATA[1.安装curl $ which curl $sudo apt-get update $ sudo apt-get install curl 2.安装最新版本 $curl -SSL https://get.docker.com/ | sh 3.测试是否安装成功 $sudo docker run hello-world 4.拉取ONLYOFFICE Document Server 的Docker镜]]></description>
+</item></channel>
 </rss>

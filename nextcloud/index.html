@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>nextcloud - 马保山的学习笔记</title><meta name="Description" content="马保山的学习笔记"><meta property="og:title" content="nextcloud" />
+<meta property="og:description" content="https 域名过期了处理方式 nextcloud.enable-https lets-encrypt 并按照接下来的提示，输入解析到本机ip的域名和你的邮箱，即可完成ssl的申请并将证书安装到nextcloud。 直接访" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mabaoshan.top/nextcloud/" />
+<meta property="og:image" content="https://mabaoshan.top/logo.png"/>
+<meta property="article:published_time" content="2020-04-05T15:58:26+08:00" />
+<meta property="article:modified_time" content="2020-07-23T17:05:41+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://mabaoshan.top/logo.png"/>
+
+<meta name="twitter:title" content="nextcloud"/>
+<meta name="twitter:description" content="https 域名过期了处理方式 nextcloud.enable-https lets-encrypt 并按照接下来的提示，输入解析到本机ip的域名和你的邮箱，即可完成ssl的申请并将证书安装到nextcloud。 直接访"/>
+<meta name="application-name" content="马保山的学习笔记">
+<meta name="apple-mobile-web-app-title" content="马保山的学习笔记"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://mabaoshan.top/nextcloud/" /><link rel="prev" href="https://mabaoshan.top/01mode/" /><link rel="next" href="https://mabaoshan.top/%E6%89%B9%E9%87%8F%E4%B8%8B%E8%BD%BD%E5%BE%AE%E4%BF%A1%E5%88%86%E4%BA%AB%E7%9A%84%E5%9B%BE%E7%89%87/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "nextcloud",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/mabaoshan.top\/nextcloud\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/mabaoshan.top\/images\/Apple-Devices-Preview.png",
+                            "width":  3200 ,
+                            "height":  2048 
+                        }],"genre": "posts","keywords": "nextcloud","wordcount":  1254 ,
+        "url": "https:\/\/mabaoshan.top\/nextcloud\/","datePublished": "2020-04-05T15:58:26+08:00","dateModified": "2020-07-23T17:05:41+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/mabaoshan.top\/images\/avatar.png",
+                    "width":  528 ,
+                    "height":  560 
+                }},"author": {
+                "@type": "Person",
+                "name": "马保山"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="马保山的学习笔记"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>LoveIt</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/" title="About"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="马保山的学习笔记"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>LoveIt</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="About">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">nextcloud</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="http://mabaoshan.top" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>马保山</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/soft/"><i class="far fa-folder fa-fw"></i>soft</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-04-05">2020-04-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1254 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><h1 id="https-域名过期了处理方式">https 域名过期了处理方式</h1>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>nextcloud.enable-https lets-encrypt</li>
+<li>并按照接下来的提示，输入解析到本机ip的域名和你的邮箱，即可完成ssl的申请并将证书安装到nextcloud。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>直接访问域名</p>
+<p>$ sudo nextcloud.occ config:system:set overwritehost &ndash;value=&quot;example.com:81&rdquo;</p>
+<h1 id="vm下载">vm下载</h1>
+<p><a href="https://www.hanssonit.se/nextcloud-vm/">https://www.hanssonit.se/nextcloud-vm/</a></p>
+<p>错误:Run pre-refresh hook of &ldquo;nextcloud&rdquo; snap if present</p>
+<p>首先查看一下正在进行的change</p>
+<p>snap change</p>
+<p>查询最近做的操作</p>
+<p>$ snap changes</p>
+<h1 id="关于snap更多信息查看man手册">关于snap更多信息，查看man手册：</h1>
+<p>$ man snap</p>
+<h1 id="snap-版本">snap 版本</h1>
+<p>版本规定</p>
+<p>stable，稳定版；</p>
+<p>candidate，正式候选版；</p>
+<p>beta，测试版；</p>
+<p>edge，可能不稳定的尝鲜版。</p>
+<p>查看软件版本</p>
+<p>sudo snap info  nextcloud</p>
+<p>切换标准版</p>
+<p>sudo snap refresh &ndash;channel=latest/stable nextcloud</p>
+<p>切换最新测试版</p>
+<p>sudo snap refresh &ndash;channel=18/edge nextcloud</p>
+<p>sudo apt-get install snapcraft  安装此应用打开下载速度会快</p>
+<p><a href="https://uappexplorer.com/snaps">https://uappexplorer.com/snaps</a>    软件下载查询</p>
+<p>什么是snap，snap是一种全新的软件包管理方式，它类似一个容器拥有一个应用程序所有的文件和库，各个应用程序之间完全独立。所以使用snap包的好处就是它解决了应用程序之间的依赖问题，使应用程序之间更容易管理。但是由此带来的问题就是它占用更多的磁盘空间</p>
+<p>Snap的安装包扩展名是.snap，类似于一个容器，它包含一个应用程序需要用到的所有文件和库（snap包包含一个私有的root文件系统，里面包含了依赖的软件包）。它们会被安装到单独的目录；各个应用程序之间相互隔离。使用snap有很多好处，首先它解决了软件包的依赖问题；其次，也使应用程序更容易管理。</p>
+<p>现在支持snap的应用并不多，snap软件包一般安装在/snap目录下</p>
+<p><strong>一些常用的命令</strong></p>
+<p>其实使用snap包很简单，下面我来介绍一下一些常用的命令</p>
+<p>sudo snap list</p>
+<p>列出已经安装的snap包</p>
+<p>sudo snap find <text to search></p>
+<p>搜索要安装的snap包</p>
+<p>sudo snap install <snap name></p>
+<p>安装一个snap包</p>
+<p>sudo snap refresh <snap name></p>
+<p>更新一个snap包，如果你后面不加包的名字的话那就是更新所有的snap包</p>
+<p>sudo snap revert <snap name></p>
+<p>把一个包还原到以前安装的版本</p>
+<p>sudo snap remove <snap name></p>
+<p>删除一个snap包</p>
+<h1 id="github地址">github地址</h1>
+<p><a href="https://github.com/nextcloud/nextcloud-snap">https://github.com/nextcloud/nextcloud-snap</a></p>
+<h1 id="插件离线安装">插件离线安装</h1>
+<p>本来呢，互联网可以直接在线安装，可我这时企业内部网，没有互联网连接，离线手动安装吧。</p>
+<p><a href="https://apps.nextcloud.com/apps/richdocuments">https://apps.nextcloud.com/apps/richdocuments</a></p>
+<p>这里下载扩展APP。</p>
+<p>解压后放进 /var/www/html/apps</p>
+<p>离线更新snap  路径  /var/snap/nextcloud/22327/nextcloud/extra-apps/onlyoffice$</p>
+<h1 id="补充">补充</h1>
+<p>1.数据库位置，使用Snap安装的Nextcloud，数据库文件在以下路径中/var/snap/nextcloud/xxxx(版本数字)/mysql，需要备份直接备份此文件夹即可。</p>
+<p>2.数据位置，NextCloud存储文件夹在/var/snap/nextcloud/common/nextcloud/data，可以通过修改/var/snap/nextcloud/current/nextcloud/config/config.php的datadirectory对应的参数来改变位置，在数据迁移的时候直接复制此文件夹过去。</p>
+<h1 id="在线编辑onlyoffice的坑">在线编辑onlyoffice的坑</h1>
+<p>NextCloud使用onlyoffice，Docker安装OnlyOffice Server 后，使用本地服务器异常</p>
+<p>Error when trying to connect (Host violates local access rules)</p>
+<p>参照：https://github.com/ONLYOFFICE/onlyoffice-nextcloud/issues/293</p>
+<p>18以后的NextCloud版本有这个bug， 解决办法在config.php配置文件添加配置</p>
+<p>&lsquo;allow_local_remote_servers&rsquo; =&gt; true,</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2020-07-23&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/7f39e7a7f1ddf438fc3413b8baccbbe1621d4cb4" target="_blank" title="commit by mabaoshan2020(398068229@qq.com) 7f39e7a7f1ddf438fc3413b8baccbbe1621d4cb4: 2020/07/23 周四">
+                                    <i class="fas fa-hashtag fa-fw"></i>7f39e7a</a></span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://mabaoshan.top/nextcloud/" data-title="nextcloud" data-hashtags="nextcloud"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://mabaoshan.top/nextcloud/" data-hashtag="nextcloud"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://mabaoshan.top/nextcloud/" data-title="nextcloud"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://mabaoshan.top/nextcloud/" data-title="nextcloud"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://mabaoshan.top/nextcloud/" data-title="nextcloud"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/nextcloud/">nextcloud</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/01mode/" class="prev" rel="prev" title="预防黑客的方法"><i class="fas fa-angle-left fa-fw"></i>预防黑客的方法</a>
+            <a href="/%E6%89%B9%E9%87%8F%E4%B8%8B%E8%BD%BD%E5%BE%AE%E4%BF%A1%E5%88%86%E4%BA%AB%E7%9A%84%E5%9B%BE%E7%89%87/" class="next" rel="next" title="批量下载微信分享的图片">批量下载微信分享的图片<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.67.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">xxxx</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

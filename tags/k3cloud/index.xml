@@ -1,104 +1,49 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>k3cloud on 马保山的学习笔记</title>
-    <link>http://mabaoshan.top/tags/k3cloud/</link>
-    <description>Recent content in k3cloud on 马保山的学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 13 Aug 2020 15:58:26 +0800</lastBuildDate>
-    
-	<atom:link href="http://mabaoshan.top/tags/k3cloud/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>k3cloud客户端登录</title>
-      <link>http://mabaoshan.top/categories/documentation/k3cloud%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%99%BB%E5%BD%95/</link>
-      <pubDate>Fri, 15 May 2020 00:00:00 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/categories/documentation/k3cloud%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%99%BB%E5%BD%95/</guid>
-      <description>&amp;lt;p style=&amp;quot;border:5px solid red;&amp;ldquo;&amp;gt;123
-1.单击(下载)安装文件 2.设置服务器地址：http://cloud.tusenergy.com/K3Cloud
-3.输入用户名和密码登陆：
-4.win7 安装报错解决 。请下载.net 4.6解决</description>
-    </item>
-    
-    <item>
-      <title>k3cloud手工日记账没有对应的应付组织</title>
-      <link>http://mabaoshan.top/categories/documentation/k3cloud%E6%89%8B%E5%B7%A5%E6%97%A5%E8%AE%B0%E8%B4%A6%E6%B2%A1%E6%9C%89%E5%AF%B9%E5%BA%94%E7%9A%84%E5%BA%94%E4%BB%98%E7%BB%84%E7%BB%87/</link>
-      <pubDate>Thu, 13 Aug 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/categories/documentation/k3cloud%E6%89%8B%E5%B7%A5%E6%97%A5%E8%AE%B0%E8%B4%A6%E6%B2%A1%E6%9C%89%E5%AF%B9%E5%BA%94%E7%9A%84%E5%BA%94%E4%BB%98%E7%BB%84%E7%BB%87/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>k3cloud上传附件的方法</title>
-      <link>http://mabaoshan.top/categories/documentation/k3cloud%E4%B8%8A%E4%BC%A0%E9%99%84%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95/</link>
-      <pubDate>Fri, 22 May 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/categories/documentation/k3cloud%E4%B8%8A%E4%BC%A0%E9%99%84%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>k3cloud预算管理-新部门（添加预算组织、方案、规则）</title>
-      <link>http://mabaoshan.top/categories/documentation/k3cloud%E9%A2%84%E7%AE%97%E7%AE%A1%E7%90%86-%E6%96%B0%E9%83%A8%E9%97%A8%E6%B7%BB%E5%8A%A0%E9%A2%84%E7%AE%97%E7%BB%84%E7%BB%87%E6%96%B9%E6%A1%88%E8%A7%84%E5%88%99/</link>
-      <pubDate>Fri, 22 May 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/categories/documentation/k3cloud%E9%A2%84%E7%AE%97%E7%AE%A1%E7%90%86-%E6%96%B0%E9%83%A8%E9%97%A8%E6%B7%BB%E5%8A%A0%E9%A2%84%E7%AE%97%E7%BB%84%E7%BB%87%E6%96%B9%E6%A1%88%E8%A7%84%E5%88%99/</guid>
-      <description>1.添加预算组织架构
-预算组织-&amp;gt; 选择需要加入的部门 -&amp;gt;仅刷入当前组织
-2.分配预算方案
-预算方案-&amp;gt;选择要分发的模板-&amp;gt;分发
-3.规则分配
-预算控制台-&amp;gt;规则分配</description>
-    </item>
-    
-    <item>
-      <title>费用报销.</title>
-      <link>http://mabaoshan.top/categories/documentation/k3cloud%E8%B4%B9%E7%94%A8%E6%8A%A5%E9%94%80/</link>
-      <pubDate>Fri, 22 May 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/categories/documentation/k3cloud%E8%B4%B9%E7%94%A8%E6%8A%A5%E9%94%80/</guid>
-      <description>第二章 财务管理借款与报销制度 第一条 差旅费的借款与报销
-1、境内差旅费报销制度
-1.1 我们出差是按离京之日起至回京之日止计算天数，离京当日及回京当日均按出差计算。
-1.2 出差期间遇公休日不再计算加班。
-1.3 报销标准如下
-1.4 报销方法及审批权限
-1.4.1 您应在回京两周内持有效并正确的单据报销出差费用。
-1.4.2 出差借款，每次借款金额不超过3000元。
-1.4.3 要注意了！所有人员出差借款实行“前款不清，后款不借”原则。
-1.5 金蝶k3cloud出差借款申请流程
-第一步：开始界面；
-第二步：出差借款前填写出差申请单；
-第三步：填写出差信息，全部填写完成后提交，启动审批流程。
-1.6 金蝶k3cloud出差报销流程（有出差借款时）
-第一步：选择差旅费报销单进行报销；
-第二步：选单；
-第三步：选择请款单据；
-第四步：填写报销单据。
-1.6 金蝶k3cloud出差报销流程（无出差借款时）
-第一步：选择差旅费报销单进行报销；
-第二步：填写报销单据。（同上）
-2、境外差旅费报销制度
-出差报销的基本要求和方法都类似的，在这里只着重说明一下境外出差的报销标准及有关汇率的问题。
-2.1 报销标准
-因公境外出差人员的住宿费、伙食费、公杂费等（合并一起）按照区域不同在相应标准范围内凭实际消费的单据实报实销。
-区域上限标准如下（美元/天）：
-| 区域 | 总裁 | 副总裁 | 其他人员 | | | 首席科学家 | 高级副总裁 | | |&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-|&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;|&amp;mdash;&amp;mdash;&amp;mdash;-| | 北美、欧洲、澳洲 | 实报实销 | 230 | 200 | | 南美 | 实报实销 | 180 | 150 | | 日本、韩国、港澳台地区、新加坡 | 实报实销 | 210 | 180 | | 亚洲（除上行所列国家地区）、非洲 | 实报实销 | 180 | 150 |</description>
-    </item>
-    
-    <item>
-      <title>k3cloud汇总.</title>
-      <link>http://mabaoshan.top/categories/documentation/k3cloud%E6%B1%87%E6%80%BB/</link>
-      <pubDate>Mon, 30 Mar 2020 15:58:26 +0800</pubDate>
-      
-      <guid>http://mabaoshan.top/categories/documentation/k3cloud%E6%B1%87%E6%80%BB/</guid>
-      <description>1.登录 k3cloud登录的三种方式启迪清洁能源k3cloud新增公司2.费用报销 k3cloud执行预算3.基础资料 员工任岗明细维护4.日常操作 单据已绑定流程实例，不能进行提交操作5.移动审批 金蝶云之家查询待办工作</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>k3cloud - 标签 - 马保山的学习笔记</title>
+        <link>https://mabaoshan.top/tags/k3cloud/</link>
+        <description>k3cloud - 标签 - 马保山的学习笔记</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 13 Aug 2020 15:58:26 &#43;0800</lastBuildDate><atom:link href="https://mabaoshan.top/tags/k3cloud/" rel="self" type="application/rss+xml" /><item>
+    <title>k3cloud客户端登录</title>
+    <link>https://mabaoshan.top/categories/documentation/k3cloud%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%99%BB%E5%BD%95/</link>
+    <pubDate>Fri, 15 May 2020 00:00:00 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/categories/documentation/k3cloud%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%99%BB%E5%BD%95/</guid>
+    <description><![CDATA[&lt;p style=&quot;border:5px solid red;&ldquo;&gt;123 1.单击(下载)安装文件 2.设置服务器地址：http://cloud.tusenergy.com/K3Cloud 3.输入用户名和密码]]></description>
+</item><item>
+    <title>k3cloud手工日记账没有对应的应付组织</title>
+    <link>https://mabaoshan.top/categories/documentation/k3cloud%E6%89%8B%E5%B7%A5%E6%97%A5%E8%AE%B0%E8%B4%A6%E6%B2%A1%E6%9C%89%E5%AF%B9%E5%BA%94%E7%9A%84%E5%BA%94%E4%BB%98%E7%BB%84%E7%BB%87/</link>
+    <pubDate>Thu, 13 Aug 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/categories/documentation/k3cloud%E6%89%8B%E5%B7%A5%E6%97%A5%E8%AE%B0%E8%B4%A6%E6%B2%A1%E6%9C%89%E5%AF%B9%E5%BA%94%E7%9A%84%E5%BA%94%E4%BB%98%E7%BB%84%E7%BB%87/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>k3cloud上传附件的方法</title>
+    <link>https://mabaoshan.top/categories/documentation/k3cloud%E4%B8%8A%E4%BC%A0%E9%99%84%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95/</link>
+    <pubDate>Fri, 22 May 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/categories/documentation/k3cloud%E4%B8%8A%E4%BC%A0%E9%99%84%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>k3cloud预算管理-新部门（添加预算组织、方案、规则）</title>
+    <link>https://mabaoshan.top/categories/documentation/k3cloud%E9%A2%84%E7%AE%97%E7%AE%A1%E7%90%86-%E6%96%B0%E9%83%A8%E9%97%A8%E6%B7%BB%E5%8A%A0%E9%A2%84%E7%AE%97%E7%BB%84%E7%BB%87%E6%96%B9%E6%A1%88%E8%A7%84%E5%88%99/</link>
+    <pubDate>Fri, 22 May 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/categories/documentation/k3cloud%E9%A2%84%E7%AE%97%E7%AE%A1%E7%90%86-%E6%96%B0%E9%83%A8%E9%97%A8%E6%B7%BB%E5%8A%A0%E9%A2%84%E7%AE%97%E7%BB%84%E7%BB%87%E6%96%B9%E6%A1%88%E8%A7%84%E5%88%99/</guid>
+    <description><![CDATA[1.添加预算组织架构 预算组织-&gt; 选择需要加入的部门 -&gt;仅刷入当前组织 2.分配预算方案 预算方案-&gt;选择要分发的模板-&gt;]]></description>
+</item><item>
+    <title>费用报销.</title>
+    <link>https://mabaoshan.top/categories/documentation/k3cloud%E8%B4%B9%E7%94%A8%E6%8A%A5%E9%94%80/</link>
+    <pubDate>Fri, 22 May 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/categories/documentation/k3cloud%E8%B4%B9%E7%94%A8%E6%8A%A5%E9%94%80/</guid>
+    <description><![CDATA[第二章 财务管理借款与报销制度 第一条 差旅费的借款与报销 1、境内差旅费报销制度 1.1 我们出差是按离京之日起至回京之日止计算天数，离京当日及回京当日均]]></description>
+</item><item>
+    <title>k3cloud汇总.</title>
+    <link>https://mabaoshan.top/categories/documentation/k3cloud%E6%B1%87%E6%80%BB/</link>
+    <pubDate>Mon, 30 Mar 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/categories/documentation/k3cloud%E6%B1%87%E6%80%BB/</guid>
+    <description><![CDATA[1.登录 k3cloud登录的三种方式 启迪清洁能源k3cloud新增公司 2.费用报销 k3cloud执行预算 3.基础资料 员工任岗明细维护 4.日常]]></description>
+</item></channel>
 </rss>
