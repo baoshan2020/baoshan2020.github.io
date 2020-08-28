@@ -3,7 +3,14 @@
         <title>所有文章 - 马保山的学习笔记</title>
         <link>https://mabaoshan.top/posts/</link>
         <description>所有文章 | 马保山的学习笔记</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 21 Aug 2020 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://mabaoshan.top/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Aug 2020 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://mabaoshan.top/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>zabbix 5.0.2</title>
+    <link>https://mabaoshan.top/zabbix/</link>
+    <pubDate>Mon, 24 Aug 2020 00:00:00 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/zabbix/</guid>
+    <description><![CDATA[1.官方网站 https://www.zabbix.com/cn iso 系统 centos 8.0 系统默认登录账号和密码： root :zabbix：网页默认登录名： Admin:zabbix（切记Admin ，A是大写） 安装查]]></description>
+</item><item>
     <title>河马</title>
     <link>https://mabaoshan.top/%E5%8A%A8%E7%89%A9-%E6%B2%B3%E9%A9%AC/</link>
     <pubDate>Fri, 21 Aug 2020 00:00:00 &#43;0800</pubDate>
@@ -66,12 +73,5 @@
     <author>作者</author>
     <guid>https://mabaoshan.top/js/</guid>
     <description><![CDATA[度以 学习 小头峰原则 （首个单词小写，第二个单词首字母大写） 表达式忽略名字 函数声明整体提升 变量 声明提升 大驼峰命名规则（是命名函数） javaScript 基础教程(第]]></description>
-</item><item>
-    <title>docker安装onlyoffice</title>
-    <link>https://mabaoshan.top/docker%E5%AE%89%E8%A3%85onlyoffice/</link>
-    <pubDate>Thu, 23 Jul 2020 15:58:26 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://mabaoshan.top/docker%E5%AE%89%E8%A3%85onlyoffice/</guid>
-    <description><![CDATA[1.安装curl $ which curl $sudo apt-get update $ sudo apt-get install curl 2.安装最新版本 $curl -SSL https://get.docker.com/ | sh 3.测试是否安装成功 $sudo docker run hello-world 4.拉取ONLYOFFICE Document Server 的Docker镜]]></description>
 </item></channel>
 </rss>
