@@ -35,7 +35,7 @@ zh_CN.gbk
 zh_CN.utf8
 ```
 
-
+###    1.1.4 重启服务 systemctl restart zabbix-server
 
 ### 1.2 客户端看着
 
@@ -63,7 +63,7 @@ vi /etc/zabbix/zabbix_agentd.conf
 
 #### 1.2.2.3、启动服务
 
- systemctl startzabbix-agent
+ systemctl start zabbix-agent
  systemctl enable zabbix-agent
 
 ## 1.3添加监控
@@ -120,5 +120,11 @@ https://blog.csdn.net/weixin_38652136/article/details/80484637
 #### 2.1.4.4查看端口号
 
 netstat -ntulp |grep 80   //查看所有80端口使用情况
+
+
+
+
+
+## 2.2  监控vmware 主机提示 Couldn't resolve host name
 
 
