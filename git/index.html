@@ -6,21 +6,21 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>git - 马保山的学习笔记</title><meta name="Description" content="马保山的学习笔记"><meta property="og:title" content="git" />
-<meta property="og:description" content="一、git 命令 1.git的区 工作区 unstage 暂存区 stage git rm &ndash;cached 对象区 commited 2.vi 命令 shift ZZ 提出 ：set number 设置行号 3.liunx 命令 rm -rf * (删除所有文件不把括隐藏文件) 4.git 基本命" />
+<meta property="og:description" content="通过git stash将工作区恢复到上次提交的内容，同时备份本地所做的修改，之后就可以正常git pull了，git pull完成后，执行git stash" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://mabaoshan.top/git/" />
 <meta property="og:image" content="https://mabaoshan.top/logo.png"/>
-<meta property="article:published_time" content="2020-03-27T15:58:26+08:00" />
-<meta property="article:modified_time" content="2020-06-08T14:39:31+08:00" />
+<meta property="article:published_time" content="2020-07-17T15:58:26+08:00" />
+<meta property="article:modified_time" content="2020-07-22T10:13:19+08:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://mabaoshan.top/logo.png"/>
 
 <meta name="twitter:title" content="git"/>
-<meta name="twitter:description" content="一、git 命令 1.git的区 工作区 unstage 暂存区 stage git rm &ndash;cached 对象区 commited 2.vi 命令 shift ZZ 提出 ：set number 设置行号 3.liunx 命令 rm -rf * (删除所有文件不把括隐藏文件) 4.git 基本命"/>
+<meta name="twitter:description" content="通过git stash将工作区恢复到上次提交的内容，同时备份本地所做的修改，之后就可以正常git pull了，git pull完成后，执行git stash"/>
 <meta name="application-name" content="马保山的学习笔记">
 <meta name="apple-mobile-web-app-title" content="马保山的学习笔记"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://mabaoshan.top/git/" /><link rel="prev" href="https://mabaoshan.top/hugo/" /><link rel="next" href="https://mabaoshan.top/01mode/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://mabaoshan.top/git/" /><link rel="prev" href="https://mabaoshan.top/%E7%BD%91%E7%BB%9C%E5%88%B6%E5%BA%A6/" /><link rel="next" href="https://mabaoshan.top/%E9%A2%84%E9%98%B2%E9%BB%91%E5%AE%A2%E7%9A%84%E6%96%B9%E6%B3%95/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -34,8 +34,8 @@
                             "url": "https:\/\/mabaoshan.top\/images\/Apple-Devices-Preview.png",
                             "width":  3200 ,
                             "height":  2048 
-                        }],"genre": "posts","keywords": "git","wordcount":  890 ,
-        "url": "https:\/\/mabaoshan.top\/git\/","datePublished": "2020-03-27T15:58:26+08:00","dateModified": "2020-06-08T14:39:31+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+                        }],"genre": "posts","wordcount":  415 ,
+        "url": "https:\/\/mabaoshan.top\/git\/","datePublished": "2020-07-17T15:58:26+08:00","dateModified": "2020-07-22T10:13:19+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "马保山的学习笔记","logo": {
                     "@type": "ImageObject",
@@ -115,178 +115,32 @@
             <h2 class="toc-title">目录</h2>
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">git</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="http://mabaoshan.top" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>马保山</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/blog/"><i class="far fa-folder fa-fw"></i>blog</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-03-27">2020-03-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 890 字&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
+            <div class="post-meta-line"><span class="post-author"><a href="http://mabaoshan.top" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>马保山</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-07-17">2020-07-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 415 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 1 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>目录</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
-  <ul>
-    <li><a href="#1git的区">1.git的区</a></li>
-    <li><a href="#2vi-命令">2.vi 命令</a></li>
-    <li><a href="#3liunx-命令">3.liunx 命令</a></li>
-    <li><a href="#4git-基本命令">4.git 基本命令</a></li>
-    <li><a href="#2git--官网上传命令">2.git  官网上传命令</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#1仓库建立">1.仓库建立</a></li>
-    <li><a href="#2git免输用户名和密码">2.Git免输用户名和密码</a>
-      <ul>
-        <li><a href="#1方法一">1.方法一</a></li>
-        <li><a href="#2方法二">2.方法二</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav></div>
-            </div><div class="content" id="content"><h1 id="一git-命令">一、git 命令</h1>
-<h2 id="1git的区">1.git的区</h2>
-<p>工作区 unstage</p>
-<p>暂存区  stage      git  rm &ndash;cached</p>
-<p>对象区  commited</p>
-<h2 id="2vi-命令">2.vi 命令</h2>
-<p>shift ZZ 提出</p>
-<p>：set number  设置行号</p>
-<h2 id="3liunx-命令">3.liunx 命令</h2>
-<p>rm -rf * (删除所有文件不把括隐藏文件)</p>
-<h2 id="4git-基本命令">4.git 基本命令</h2>
-<p>git stuts  查看状态</p>
-<p>git add .  添加所有文件到本地仓库</p>
-<p>git commit   上传所有文件到本地仓库</p>
-<p>git commit  -m ‘备注名称’</p>
-<p>.gitignore 需要忽略的文件</p>
-<p>git remote  查看需要上传的</p>
-<p>&mdash;分支建立</p>
-<p>git branch  login 创建分支</p>
-<p>git checkout login  切换分支</p>
-<p>git checkout  login</p>
-<h2 id="2git--官网上传命令">2.git  官网上传命令</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">git remote add origin https://github.com/baoshan2020/baoshan2020.github.io.git
-git push -u origin master
-</code></pre></td></tr></table>
-</div>
-</div><p>​</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">echo &#34;# puma&#34; &gt;&gt; README.md
-                  git init
-                  git add README.md
-                  git commit -m &#34;first commit&#34;
-                  git remote add origin https://github.com/baoshan2020/baoshan2020.github.io
-                  git push -u origin master
-</code></pre></td></tr></table>
-</div>
-</div><h1 id="二git-建立仓库">二、git 建立仓库</h1>
-<h2 id="1仓库建立">1.仓库建立</h2>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="https://raw.githubusercontent.com/baoshan2021/tc/master/github%e5%bb%ba%e7%ab%8b.png"
-        data-srcset="https://raw.githubusercontent.com/baoshan2021/tc/master/github%e5%bb%ba%e7%ab%8b.png, https://raw.githubusercontent.com/baoshan2021/tc/master/github%e5%bb%ba%e7%ab%8b.png 1.5x, https://raw.githubusercontent.com/baoshan2021/tc/master/github%e5%bb%ba%e7%ab%8b.png 2x"
-        data-sizes="auto"
-        alt="https://raw.githubusercontent.com/baoshan2021/tc/master/github建立.png"
-        title="github建立" /></p>
-<p>2 在仓库里添加CNAME文件并在文件中填写绑定的域名</p>
-<h2 id="2git免输用户名和密码">2.Git免输用户名和密码</h2>
-<p><strong>前言</strong></p>
-<p>在大家使用github的过程中，一定会碰到这样一种情况，就是每次要push  和pull时总是要输入github的账号和密码，这样不仅浪费了大量的时间且降低了工作效率。在此背景下，本文在网上找了两种方法来避免这种状况，这些成果也是先人提出来的，在此只是做个总结。</p>
-<h3 id="1方法一">1.方法一</h3>
-<p><strong>1.1 创建文件存储GIT用户名和密码</strong></p>
-<p>在%HOME%目录中，一般为C:\users\Administrator，也可以是你自己创建的系统用户名目录，反正都在C:\users\中。文件名为.git-credentials,由于在Window中不允许直接创建以&rdquo;.&ldquo;开头的文件，所以需要借助git bash进行，打开git bash客户端，进行%HOME%目录，然后用touch创建文件 .git-credentials,  用vim编辑此文件，输入内容格式：</p>
-<blockquote>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">touch .git-credentials
-vim .git-credentials
-</code></pre></td></tr></table>
-</div>
-</div></blockquote>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback"> `https://{username}:{password}@github.com`
-</code></pre></td></tr></table>
-</div>
-</div><p><strong>1.2 添加Git Config 内容</strong></p>
-<p>进入git bash终端， 输入如下命令：</p>
-<blockquote>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">git config --global credential.helper store
-</code></pre></td></tr></table>
-</div>
-</div></blockquote>
-<p>执行完后查看%HOME%目录下的.gitconfig文件，会多了一项：</p>
-<blockquote>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">[credential]
-</code></pre></td></tr></table>
-</div>
-</div></blockquote>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">helper=store
-</code></pre></td></tr></table>
-</div>
-</div><p>重新开启git bash会发现git push时不用再输入用户名和密码</p>
-<h3 id="2方法二">2.方法二</h3>
-<p><strong>2.1 添加环境变量</strong></p>
-<p>在windows中添加一个HOME环境变量，变量名:HOME,变量值：%USERPROFILE%</p>
-<p><a href="http://i.imgur.com/dG08KLU.jpg" target="_blank" rel="noopener noreffer">img</a></p>
-<p><strong>2.2 创建git用户名和密码存储文件</strong></p>
-<p>进入%HOME%目录，新建一个名为&rdquo;_netrc&quot;的文件，文件中内容格式如下：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">machine  github.com
-login your-usernmae
-password your-password
-</code></pre></td></tr></table>
-</div>
-</div><p>重新打开git bash即可，无需再输入用户名和密码</p>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p>通过git stash将工作区恢复到上次提交的内容，同时备份本地所做的修改，之后就可以正常git pull了，git pull完成后，执行git stash pop将之前本地做的修改应用到当前工作区。
+git stash
+git pull
+git stash pop</p>
+<p>看到这里有些人就懵逼了，我也一样，使用SourceTree的对于git命令的就是白痴的，下面我就介绍一下这三行代码代表什么意思吧；</p>
+<p>git stash: 备份当前的工作区的内容，从最近的一次提交中读取相关内容，让工作区保证和上次提交的内容一致。同时，将当前的工作区内容保存到Git栈中。</p>
+<p>git pull:拉取服务器上的代码；</p>
+<p>git stash pop: 从Git栈中读取最近一次保存的内容，恢复工作区的相关内容。由于可能存在多个Stash的内容，所以用栈来管理，pop会从最近的一个stash中读取内容并恢复。</p>
+<p>git stash list: 显示Git栈内的所有备份，可以利用这个列表来决定从那个地方恢复。</p>
+<p>git stash clear: 清空Git栈。此时使用gitg等图形化工具会发现，原来stash的哪些节点都消失了。</p>
+<p>希望能帮到大家</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>更新于 2020-06-08&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/90dcc7e124c583283719b0bc177441c871920f55" target="_blank" title="commit by mabaoshan2020(398068229@qq.com) 90dcc7e124c583283719b0bc177441c871920f55: 2020/06/08 周一">
-                                    <i class="fas fa-hashtag fa-fw"></i>90dcc7e</a></span>
+                <span>更新于 2020-07-22&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/53ec33e032cd6580cd58d2bd629be2af295b4b96" target="_blank" title="commit by mabaoshan2020(398068229@qq.com) 53ec33e032cd6580cd58d2bd629be2af295b4b96: 2020/07/22 周三">
+                                    <i class="fas fa-hashtag fa-fw"></i>53ec33e</a></span>
             </div>
             <div class="post-info-license"></div>
         </div>
@@ -295,20 +149,20 @@ password your-password
                             <a class="link-to-markdown" href="/git/index.md" target="_blank">阅读原始文档</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://mabaoshan.top/git/" data-title="git" data-hashtags="git"><i class="fab fa-twitter fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://mabaoshan.top/git/" data-title="git"><i class="fab fa-twitter fa-fw"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/git/">git</a></section>
+        <section class="post-tags"></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/hugo/" class="prev" rel="prev" title="hugo"><i class="fas fa-angle-left fa-fw"></i>hugo</a>
-            <a href="/01mode/" class="next" rel="next" title="预防黑客的方法">预防黑客的方法<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/%E7%BD%91%E7%BB%9C%E5%88%B6%E5%BA%A6/" class="prev" rel="prev" title="网络制度"><i class="fas fa-angle-left fa-fw"></i>网络制度</a>
+            <a href="/%E9%A2%84%E9%98%B2%E9%BB%91%E5%AE%A2%E7%9A%84%E6%96%B9%E6%B3%95/" class="next" rel="next" title="预防黑客的方法">预防黑客的方法<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
