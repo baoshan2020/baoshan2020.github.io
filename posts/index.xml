@@ -3,7 +3,7 @@
         <title>所有文章 - 马保山的学习笔记</title>
         <link>https://mabaoshan.top/posts/</link>
         <description>所有文章 | 马保山的学习笔记</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 24 Aug 2020 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://mabaoshan.top/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 11 Sep 2020 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://mabaoshan.top/posts/" rel="self" type="application/rss+xml" /><item>
     <title>zabbix 5.0.2</title>
     <link>https://mabaoshan.top/zabbix/</link>
     <pubDate>Mon, 24 Aug 2020 00:00:00 &#43;0800</pubDate>
@@ -31,13 +31,6 @@
     <author>作者</author>
     <guid>https://mabaoshan.top/nextcloud/</guid>
     <description><![CDATA[https 域名过期了处理方式 nextcloud.enable-https lets-encrypt 并按照接下来的提示，输入解析到本机ip的域名和你的邮箱，即可完成ssl的申请并将证书安装到nextcloud。 直接访]]></description>
-</item><item>
-    <title>预防黑客的方法</title>
-    <link>https://mabaoshan.top/01mode/</link>
-    <pubDate>Wed, 01 Apr 2020 00:00:00 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://mabaoshan.top/01mode/</guid>
-    <description><![CDATA[]]></description>
 </item><item>
     <title>git</title>
     <link>https://mabaoshan.top/git/</link>
@@ -67,11 +60,18 @@
     <guid>https://mabaoshan.top/%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD/</guid>
     <description><![CDATA[软件下载 装机必备软件 企业版win10下载地址 ed2k://|file|cn_windows_10_enterprise_ltsc_2019_x64_dvd_9c09ff24.iso|4478906368|E7C526499308841A4A6D116C857DB669|/ 名称 地址 操作说明 激活文件 操作系统 https://msdn.itellyou.cn/ office 下载 激活1 激活2 pdf 7-zip 公司软件 名称 地址 操作说明 k3cloud OA 263 nextcloud 其他软]]></description>
 </item><item>
-    <title>js</title>
-    <link>https://mabaoshan.top/js/</link>
-    <pubDate>Thu, 20 Aug 2020 00:00:00 &#43;0800</pubDate>
+    <title>无线路由器组网</title>
+    <link>https://mabaoshan.top/%E6%97%A0%E7%BA%BF%E8%B7%AF%E7%94%B1%E5%99%A8%E7%BB%84%E7%BD%91/</link>
+    <pubDate>Fri, 11 Sep 2020 00:00:00 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://mabaoshan.top/js/</guid>
-    <description><![CDATA[度以 学习 小头峰原则 （首个单词小写，第二个单词首字母大写） 表达式忽略名字 函数声明整体提升 变量 声明提升 大驼峰命名规则（是命名函数） javaScript 基础教程(第]]></description>
+    <guid>https://mabaoshan.top/%E6%97%A0%E7%BA%BF%E8%B7%AF%E7%94%B1%E5%99%A8%E7%BB%84%E7%BD%91/</guid>
+    <description><![CDATA[3台以上的 HiLink 智联路由器，如何组网 https://consumer.huawei.com/cn/support/content/zh-cn00772433/ 那无线Mesh网络到底是啥呢？▼ Mesh网络是一种无线局域网类型，也就是网状结构网络，也称为“多跳（mul]]></description>
+</item><item>
+    <title>网络安全宣传</title>
+    <link>https://mabaoshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0/</link>
+    <pubDate>Fri, 11 Sep 2020 00:00:00 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0/</guid>
+    <description><![CDATA[http://www.gjwlaqxcz.cn/]]></description>
 </item></channel>
 </rss>
