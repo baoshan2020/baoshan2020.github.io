@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>无线路由器组网 - 马保山的学习笔记</title><meta name="Description" content="马保山的学习笔记"><meta property="og:title" content="无线路由器组网" />
+<meta property="og:description" content="1.针对使用mesh组网的形式实现无线覆盖，虽然能解决无线漫游的问题，但是这样的方案对于单个AP的压力比较大，比如一个负责办公区的AP，它除" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mabaoshan.top/mesh%E7%BB%84%E7%BD%91%E4%B8%8Eac-ap%E7%BB%84%E7%BD%91-%E6%97%A0%E7%BA%BF%E8%B7%AF%E7%94%B1%E5%99%A8%E7%BB%84%E7%BD%91/" />
+<meta property="og:image" content="https://mabaoshan.top/logo.png"/>
+<meta property="article:published_time" content="2020-09-11T00:00:00+08:00" />
+<meta property="article:modified_time" content="2020-09-11T00:00:00+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://mabaoshan.top/logo.png"/>
+
+<meta name="twitter:title" content="无线路由器组网"/>
+<meta name="twitter:description" content="1.针对使用mesh组网的形式实现无线覆盖，虽然能解决无线漫游的问题，但是这样的方案对于单个AP的压力比较大，比如一个负责办公区的AP，它除"/>
+<meta name="application-name" content="马保山的学习笔记">
+<meta name="apple-mobile-web-app-title" content="马保山的学习笔记"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://mabaoshan.top/mesh%E7%BB%84%E7%BD%91%E4%B8%8Eac-ap%E7%BB%84%E7%BD%91-%E6%97%A0%E7%BA%BF%E8%B7%AF%E7%94%B1%E5%99%A8%E7%BB%84%E7%BD%91/" /><link rel="prev" href="https://mabaoshan.top/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0/" /><link rel="next" href="https://mabaoshan.top/centos-%E4%BF%AE%E6%94%B9%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%97%B4/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "无线路由器组网",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/mabaoshan.top\/mesh%E7%BB%84%E7%BD%91%E4%B8%8Eac-ap%E7%BB%84%E7%BD%91-%E6%97%A0%E7%BA%BF%E8%B7%AF%E7%94%B1%E5%99%A8%E7%BB%84%E7%BD%91\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/mabaoshan.top\/images\/Apple-Devices-Preview.png",
+                            "width":  3200 ,
+                            "height":  2048 
+                        }],"genre": "posts","wordcount":  1310 ,
+        "url": "https:\/\/mabaoshan.top\/mesh%E7%BB%84%E7%BD%91%E4%B8%8Eac-ap%E7%BB%84%E7%BD%91-%E6%97%A0%E7%BA%BF%E8%B7%AF%E7%94%B1%E5%99%A8%E7%BB%84%E7%BD%91\/","datePublished": "2020-09-11T00:00:00+08:00","dateModified": "2020-09-11T00:00:00+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "马保山的学习笔记","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/mabaoshan.top\/images\/avatar.png",
+                    "width":  528 ,
+                    "height":  560 
+                }},"author": {
+                "@type": "Person",
+                "name": "马保山"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="马保山的学习笔记">马保山的学习笔记</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/" title="About"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="马保山的学习笔记">马保山的学习笔记</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="About">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">无线路由器组网</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="http://mabaoshan.top" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>马保山</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-09-11">2020-09-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1310 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#wi-fi-中继hilink-无线智联组网">Wi-Fi 中继/HiLink 无线智联组网</a></li>
+    <li><a href="#hilink-有线智联组网网线直连">HiLink 有线智联组网（网线直连）</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>1.针对使用mesh组网的形式实现无线覆盖，虽然能解决无线漫游的问题，但是这样的方案对于单个AP的压力比较大，比如一个负责办公区的AP，它除了要承载原本接入终端的流量，还要承担传给下一个AP的流量，这样一来对那个AP的压力很大，稳定性也会受到影响。
+2.使用NAC控制器管理AP，可以实现全办公环境的无线覆盖以及漫游，每个AP的压力可以得到平衡的分配。</p>
+<p>那无线Mesh网络到底是啥呢？▼</p>
+<p>Mesh网络是一种无线局域网类型，也就是网状结构网络，也称为“多跳（multi-hop）”网络。在Mesh网络中，所有的节点都互相连接，每个节点拥有多条连接通道，所有的节点之间形成一个整体的网络。</p>
+<p>介绍</p>
+<p><a href="https://www.zhihu.com/question/330592258">https://www.zhihu.com/question/330592258</a></p>
+<p><a href="https://xw.qq.com/cmsid/20200806A0W78000?ADTAG=baidutw">https://xw.qq.com/cmsid/20200806A0W78000?ADTAG=baidutw</a></p>
+<p><a href="https://post.smzdm.com/p/a07nexg9/">https://post.smzdm.com/p/a07nexg9/</a></p>
+<h1 id="华为路由器组网">华为路由器组网</h1>
+<p>3台以上的 HiLink 智联路由器，如何组网</p>
+<p><a href="https://consumer.huawei.com/cn/support/content/zh-cn00772433/">https://consumer.huawei.com/cn/support/content/zh-cn00772433/</a></p>
+<p>HUAWEI HiLink 智联分为“无线智联”和“网线直连”两种方式，支持 HiLink 智联的路由器可以通过这两种方式组网。</p>
+<h2 id="wi-fi-中继hilink-无线智联组网">Wi-Fi 中继/HiLink 无线智联组网</h2>
+<p>路由器做主（母）路由，最多可以 Wi-Fi 中继/HiLink 无线智联5台副（子）路由。</p>
+<p><strong>情况一：支持2级级联</strong></p>
+<ol>
+<li>
+<p>将其中一台路由器作为唯一的主（母）路由器配置上网。</p>
+</li>
+<li>
+<p>将第2台路由器与主（母）路由 HiLink 智联。</p>
+</li>
+<li>
+<p>将第3台、第4台&hellip;路由器也分别与主（母）路由 HiLink 智联。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://consumer-tkbdownload.huawei.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD2PQW7DIBRE78I6iYDPN6ar4hAr3VRZpAegBidIKY5snKipevdCZFWazWieNDM_ZJ78ePy-evJCGFkRN9zjYiHbPlz8u_0qNnRDXMch-c10Oy3RwaZzjiSySggmauyFQHCq94ryHmqgrkKrMv0ZHm8uo3v9-jivu0iplFxA6ehGb1MY4jGUHoZK1QyQU1VVKzKFU7RpHssCmQMBtdHcUKaUYIaDbrcmVxrdtFkSVIGQYysblHKLlDJoMrmjpsy42UtwH_-X0zj757bl8l6T3z-wcfoZEwEAAA%3D%3D.svg"
+        data-srcset="https://consumer-tkbdownload.huawei.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD2PQW7DIBRE78I6iYDPN6ar4hAr3VRZpAegBidIKY5snKipevdCZFWazWieNDM_ZJ78ePy-evJCGFkRN9zjYiHbPlz8u_0qNnRDXMch-c10Oy3RwaZzjiSySggmauyFQHCq94ryHmqgrkKrMv0ZHm8uo3v9-jivu0iplFxA6ehGb1MY4jGUHoZK1QyQU1VVKzKFU7RpHssCmQMBtdHcUKaUYIaDbrcmVxrdtFkSVIGQYysblHKLlDJoMrmjpsy42UtwH_-X0zj757bl8l6T3z-wcfoZEwEAAA%3D%3D.svg, https://consumer-tkbdownload.huawei.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD2PQW7DIBRE78I6iYDPN6ar4hAr3VRZpAegBidIKY5snKipevdCZFWazWieNDM_ZJ78ePy-evJCGFkRN9zjYiHbPlz8u_0qNnRDXMch-c10Oy3RwaZzjiSySggmauyFQHCq94ryHmqgrkKrMv0ZHm8uo3v9-jivu0iplFxA6ehGb1MY4jGUHoZK1QyQU1VVKzKFU7RpHssCmQMBtdHcUKaUYIaDbrcmVxrdtFkSVIGQYysblHKLlDJoMrmjpsy42UtwH_-X0zj757bl8l6T3z-wcfoZEwEAAA%3D%3D.svg 1.5x, https://consumer-tkbdownload.huawei.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD2PQW7DIBRE78I6iYDPN6ar4hAr3VRZpAegBidIKY5snKipevdCZFWazWieNDM_ZJ78ePy-evJCGFkRN9zjYiHbPlz8u_0qNnRDXMch-c10Oy3RwaZzjiSySggmauyFQHCq94ryHmqgrkKrMv0ZHm8uo3v9-jivu0iplFxA6ehGb1MY4jGUHoZK1QyQU1VVKzKFU7RpHssCmQMBtdHcUKaUYIaDbrcmVxrdtFkSVIGQYysblHKLlDJoMrmjpsy42UtwH_-X0zj757bl8l6T3z-wcfoZEwEAAA%3D%3D.svg 2x"
+        data-sizes="auto"
+        alt="https://consumer-tkbdownload.huawei.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD2PQW7DIBRE78I6iYDPN6ar4hAr3VRZpAegBidIKY5snKipevdCZFWazWieNDM_ZJ78ePy-evJCGFkRN9zjYiHbPlz8u_0qNnRDXMch-c10Oy3RwaZzjiSySggmauyFQHCq94ryHmqgrkKrMv0ZHm8uo3v9-jivu0iplFxA6ehGb1MY4jGUHoZK1QyQU1VVKzKFU7RpHssCmQMBtdHcUKaUYIaDbrcmVxrdtFkSVIGQYysblHKLlDJoMrmjpsy42UtwH_-X0zj757bl8l6T3z-wcfoZEwEAAA%3D%3D.svg"
+        title="img" /></p>
+<p>适用于荣耀路由WS831、华为路由WS832、华为路由Q1、华为路由A1、华为路由A1 Lite、荣耀路由Pro、荣耀路由Pro 游戏版、华为路由A1 畅享版、荣耀路由X1、荣耀路由X1 增强版、荣耀路由3、荣耀路由3 Z6、华为路由WS318 增强版，华为路由WS5200、华为路由AX3、华为路由WS7103、华为路由AX3 Pro。</p>
+</li>
+</ol>
+<p><strong>情况二：支持3级级联</strong></p>
+<ol>
+<li>
+<p>将其中一台路由器作为唯一的主（母）路由器配置上网。</p>
+</li>
+<li>
+<p>先将第2台路由器 HiLink 连接第1台路由器，然后再分别将第3台、第4台&hellip;路由器 HiLink 连接第2台路由器。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://consumer-tkbdownload.huawei.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD2PQW7DIBRE78I6iYDPN6ar4hAr3VRZpAegBidIKY5snKipevdCZFWazWieNDM_ZJ78ePy-evJCGFkRN9zjYiHbPlz8u_0qNnRDXMch-c10Oy3RwaZzjiSySggmauyFQHCq94ryHmqgrkKrMv0ZHm8uo3v9-jivu0iplFxA6ehGb1MY4jGUHoZK1QyQU1VVKzKFU7RpHssCmQMBtdHcUKaUYIaDbrcmVxrdtFkSVIGQYysblHKLlDJoMrmjpsy42UtwH_-X0zj757bl8l6T3z-wcfoZEwEAAA%3D%3D.svg"
+        data-srcset="https://consumer-tkbdownload.huawei.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD2PQW7DIBRE78I6iYDPN6ar4hAr3VRZpAegBidIKY5snKipevdCZFWazWieNDM_ZJ78ePy-evJCGFkRN9zjYiHbPlz8u_0qNnRDXMch-c10Oy3RwaZzjiSySggmauyFQHCq94ryHmqgrkKrMv0ZHm8uo3v9-jivu0iplFxA6ehGb1MY4jGUHoZK1QyQU1VVKzKFU7RpHssCmQMBtdHcUKaUYIaDbrcmVxrdtFkSVIGQYysblHKLlDJoMrmjpsy42UtwH_-X0zj757bl8l6T3z-wcfoZEwEAAA%3D%3D.svg, https://consumer-tkbdownload.huawei.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD2PQW7DIBRE78I6iYDPN6ar4hAr3VRZpAegBidIKY5snKipevdCZFWazWieNDM_ZJ78ePy-evJCGFkRN9zjYiHbPlz8u_0qNnRDXMch-c10Oy3RwaZzjiSySggmauyFQHCq94ryHmqgrkKrMv0ZHm8uo3v9-jivu0iplFxA6ehGb1MY4jGUHoZK1QyQU1VVKzKFU7RpHssCmQMBtdHcUKaUYIaDbrcmVxrdtFkSVIGQYysblHKLlDJoMrmjpsy42UtwH_-X0zj757bl8l6T3z-wcfoZEwEAAA%3D%3D.svg 1.5x, https://consumer-tkbdownload.huawei.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD2PQW7DIBRE78I6iYDPN6ar4hAr3VRZpAegBidIKY5snKipevdCZFWazWieNDM_ZJ78ePy-evJCGFkRN9zjYiHbPlz8u_0qNnRDXMch-c10Oy3RwaZzjiSySggmauyFQHCq94ryHmqgrkKrMv0ZHm8uo3v9-jivu0iplFxA6ehGb1MY4jGUHoZK1QyQU1VVKzKFU7RpHssCmQMBtdHcUKaUYIaDbrcmVxrdtFkSVIGQYysblHKLlDJoMrmjpsy42UtwH_-X0zj757bl8l6T3z-wcfoZEwEAAA%3D%3D.svg 2x"
+        data-sizes="auto"
+        alt="https://consumer-tkbdownload.huawei.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD2PQW7DIBRE78I6iYDPN6ar4hAr3VRZpAegBidIKY5snKipevdCZFWazWieNDM_ZJ78ePy-evJCGFkRN9zjYiHbPlz8u_0qNnRDXMch-c10Oy3RwaZzjiSySggmauyFQHCq94ryHmqgrkKrMv0ZHm8uo3v9-jivu0iplFxA6ehGb1MY4jGUHoZK1QyQU1VVKzKFU7RpHssCmQMBtdHcUKaUYIaDbrcmVxrdtFkSVIGQYysblHKLlDJoMrmjpsy42UtwH_-X0zj757bl8l6T3z-wcfoZEwEAAA%3D%3D.svg"
+        title="img" /></p>
+<p>适用于荣耀路由2、荣耀路由2S、荣耀分布式路由、荣耀路由Pro 2、荣耀路由X2、荣耀路由X2 增强版、荣耀路由CD18、荣耀路由CD29、荣耀猎人游戏路由、华为路由WS5100、华为路由WS5102、华为路由WS6500、华为路由WS5106、华为路由WS5108、华为路由WS5200 增强版、华为路由WS6500 千兆版、华为路由WS5200 四核版、华为路由Q2、华为路由Q2 Pro、华为路由Q2S、华为路由A2、华为路由TC5200、华为路由WS5200 增强版 NEW、华为路由WS6506、荣耀路由X3、荣耀路由X3 Pro。</p>
+</li>
+</ol>
+<h2 id="hilink-有线智联组网网线直连">HiLink 有线智联组网（网线直连）</h2>
+<p>路由器做主（母）路由，有线智联副（子）路由数量没有明确限制，但推荐路由器总数不超过6台，推荐级联不超过3层。路由器组网数量超过6台或级联超过3层将无法保证正常使用。</p>
+<ol>
+<li>
+<p>将其中一台路由器作为唯一的主（母）路由器配置上网。</p>
+</li>
+<li>
+<p>将第2台路由器有线连接主（母）路由。</p>
+</li>
+<li>
+<p>将第3台、第4台&hellip;路由器也分别有线连接主（母）路由，</p>
+<p>或者先将第2台路由器有线连接第1台路由器，然后再分别将第3台、第4台&hellip;路由器有线连接第2台路由器。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://consumer-tkbdownload.huawei.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD2PQW7DIBRE78I6iYDPN6ar4hAr3VRZpAegBidIKY5snKipevdCZFWazWieNDM_ZJ78ePy-evJCGFkRN9zjYiHbPlz8u_0qNnRDXMch-c10Oy3RwaZzjiSySggmauyFQHCq94ryHmqgrkKrMv0ZHm8uo3v9-jivu0iplFxA6ehGb1MY4jGUHoZK1QyQU1VVKzKFU7RpHssCmQMBtdHcUKaUYIaDbrcmVxrdtFkSVIGQYysblHKLlDJoMrmjpsy42UtwH_-X0zj757bl8l6T3z-wcfoZEwEAAA%3D%3D.svg"
+        data-srcset="https://consumer-tkbdownload.huawei.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD2PQW7DIBRE78I6iYDPN6ar4hAr3VRZpAegBidIKY5snKipevdCZFWazWieNDM_ZJ78ePy-evJCGFkRN9zjYiHbPlz8u_0qNnRDXMch-c10Oy3RwaZzjiSySggmauyFQHCq94ryHmqgrkKrMv0ZHm8uo3v9-jivu0iplFxA6ehGb1MY4jGUHoZK1QyQU1VVKzKFU7RpHssCmQMBtdHcUKaUYIaDbrcmVxrdtFkSVIGQYysblHKLlDJoMrmjpsy42UtwH_-X0zj757bl8l6T3z-wcfoZEwEAAA%3D%3D.svg, https://consumer-tkbdownload.huawei.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD2PQW7DIBRE78I6iYDPN6ar4hAr3VRZpAegBidIKY5snKipevdCZFWazWieNDM_ZJ78ePy-evJCGFkRN9zjYiHbPlz8u_0qNnRDXMch-c10Oy3RwaZzjiSySggmauyFQHCq94ryHmqgrkKrMv0ZHm8uo3v9-jivu0iplFxA6ehGb1MY4jGUHoZK1QyQU1VVKzKFU7RpHssCmQMBtdHcUKaUYIaDbrcmVxrdtFkSVIGQYysblHKLlDJoMrmjpsy42UtwH_-X0zj757bl8l6T3z-wcfoZEwEAAA%3D%3D.svg 1.5x, https://consumer-tkbdownload.huawei.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD2PQW7DIBRE78I6iYDPN6ar4hAr3VRZpAegBidIKY5snKipevdCZFWazWieNDM_ZJ78ePy-evJCGFkRN9zjYiHbPlz8u_0qNnRDXMch-c10Oy3RwaZzjiSySggmauyFQHCq94ryHmqgrkKrMv0ZHm8uo3v9-jivu0iplFxA6ehGb1MY4jGUHoZK1QyQU1VVKzKFU7RpHssCmQMBtdHcUKaUYIaDbrcmVxrdtFkSVIGQYysblHKLlDJoMrmjpsy42UtwH_-X0zj757bl8l6T3z-wcfoZEwEAAA%3D%3D.svg 2x"
+        data-sizes="auto"
+        alt="https://consumer-tkbdownload.huawei.com/ctkbfm/servlet/download/downloadServlet/H4sIAAAAAAAAAD2PQW7DIBRE78I6iYDPN6ar4hAr3VRZpAegBidIKY5snKipevdCZFWazWieNDM_ZJ78ePy-evJCGFkRN9zjYiHbPlz8u_0qNnRDXMch-c10Oy3RwaZzjiSySggmauyFQHCq94ryHmqgrkKrMv0ZHm8uo3v9-jivu0iplFxA6ehGb1MY4jGUHoZK1QyQU1VVKzKFU7RpHssCmQMBtdHcUKaUYIaDbrcmVxrdtFkSVIGQYysblHKLlDJoMrmjpsy42UtwH_-X0zj757bl8l6T3z-wcfoZEwEAAA%3D%3D.svg"
+        title="img" /></p>
+<p>不同型号路由器的 LAN 接口数量不一样，当做主（母）路由时，最多可有线连接的副（子）路由数量不一样。如上有线组网方式仅供参考，具体请以实际为准。</p>
+</li>
+</ol>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2020-09-11</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://mabaoshan.top/mesh%E7%BB%84%E7%BD%91%E4%B8%8Eac-ap%E7%BB%84%E7%BD%91-%E6%97%A0%E7%BA%BF%E8%B7%AF%E7%94%B1%E5%99%A8%E7%BB%84%E7%BD%91/" data-title="无线路由器组网"><i class="fab fa-twitter fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%AE%A3%E4%BC%A0/" class="prev" rel="prev" title="网络安全宣传"><i class="fas fa-angle-left fa-fw"></i>网络安全宣传</a>
+            <a href="/centos-%E4%BF%AE%E6%94%B9%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%97%B4/" class="next" rel="next" title="centso系统鞥个系统时间">centso系统鞥个系统时间<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp">京ICP备20028510号</span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
