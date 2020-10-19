@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         a {
-            width: 40px;
+            width: 80px;
             height: 40px;
             padding: 0 10px;
             text-decoration: none;
@@ -15,7 +15,22 @@
             line-height: 30px;
             /* text-align: left;
             display: block; */
+/*
+					visible 可见 默认值
+					hidden  隐藏
+					scroll  滑动 不管有没有超出都有白条（滚动条）
+					auto    自动 超出的时候才有白条（滚动条）
+				 overflow: hidden; */
+                 /* display: inline-table; */
+                 overflow: hidden;
+                  /* //自动隐藏文字 */
+
+                text-overflow:ellipsis;
+                 /* 文字隐藏后添加省略号  */
+         white-space:nowrap;
+ /* nowrap:文本不会换行，文本会在在同一行上继续，直到遇到  标签为止。  */
         }
+
         
         a:hover {
             /* background-color: darkgrey;
@@ -30,16 +45,21 @@
         }
         
         h4 {
-             margin: 5px;
+             margin: 0px;
          color: #0c6ad4;
         }
         ul li{
+             margin-left:5px ;
             float: left;
             list-style-type: none;
             width: 120px;
             color: royalblue;
+            display:table;
         }
 
+        ul {
+            /* 保证ul是一行一行排列的。 */
+clear:both; }
         #search {
         text-align: center;
         }
@@ -62,7 +82,162 @@
     </form>
     <!-- <script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script> -->
 </div>
+
+    <!-- 网页导航链接 -->
+    <div>
+
+
+<ul>
+    <li><H4>搜索</H4></li>
+    <li><a href="http://www.baidu.com">百度</a> </li>
+    <li><a href="https://www.so.com/">360</a></li>
+    <li><a href="https://www.sogou.com/">搜狗</a></li>
+</ul>
+
+<ul>
+    <li><H4>链接</H4></li>
+    <li><a href="https://work.weixin.qq.com/">企业微信</a></li>
+    <li><a href="http://cloud.tusenergy.com/K3Cloud">k3coud</a></li>
+    <li><a href="http://oa.tusenergy.com/">oa</a></li>
+    <li><a href="http://mail.tusenergy.com">邮箱</a></li>
+    <li><a href="http://cloud.tusenergy.com/K3Cloud/false">代理商</a></li>
+</ul>
+
+<ul>
+    <li><H4>内网地址</H4></li>
+    <li><a href="https://192.168.2.120/ui/#/host">2.120</a></li>
+    <li><a href="https://192.168.2.130/ui/#/host">2.130</a></li>
+    <li><a href="https://192.168.2.140/">2.140</a></li>
+    <li><a href="https://111.204.175.170/ui/#/login">170</a></li>
+    <li><a href="https://111.204.175.169/ui/#/host">169</a></li>
+    <li><a href="https://61.148.203.254/login.html?name_jpgraph_antispam=30752263">12.253</a></li>
+    <li><a href="http://192.168.10.6/page.html"  title="王律师">10.6信锐王律师</a></li>
+    <li><a href="http://192.168.10.7/page.html" title="财务乐小梦">10.7信锐乐小梦</a></li>
+    <li><a href="http://192.168.5.100">孙斌无线</a></li>
+    <li><a href="http://192.168.2.4" >2.4pan </a> </li>
+    <li><a href="http://192.168.2.8">2.8</a></li>
+</ul>
+
+<ul>
+    <li><H4>常用链接</H4></li>
+    <li><a href="https://open.kingdee.com/K3Cloud/Open/home">金蝶补丁</a></li>
+    <li><a href="https://vip.kingdee.com/">金蝶社区</a></li>
+    <li><a href="https://cloud.kingdee.com/pt/">金蝶云平台</a></li>
+    <li><a href="ftp://download.jinher.com/">oa补丁</a></li>
+    <li><a href="http://apm.iuoooo.com/AppAssembly/Search?searchKey=c6&majorType=null">oa客户端</a></li>
+    <li><a href="https://www.263.net/263/helpcenter/client/">263帮助</a></li>
+    <li><a href="http://oa.tusenergy.com/c6/oaplus/view/login/signIn.html?appServer=c6">c6调试</a></li>
+    <li><a href="http://first.jinher.com:9999/c6">oa测试</a></li>
+</ul>
+
+<ul>
+    <li><H4>博客</H4></li>
+    <li><a href="https://github.com/">github</a></li>
+    <li><a href="http://ife.baidu.com/course/all">百度学院</a></li>
+    <li><a href="https://www.markdown.xyz/basic-syntax/">Markdown </a></li>
+    <li><a href="https://dalipan.com/">大力盘搜</a></li>
+    <li><a href="https://www.iconfont.cn/">iconfount</a></li>
+</ul>
+
+<ul>
+    <li><H4>css</H4></li>
+    <li><a href="http://css.doyoe.com/">css手册</a></li>
+    <li><a href="https://developer.mozilla.org/zh-CN/">火狐手册</a></li>
+    <li><a href="https://www.w3school.com.cn/">w3c</a></li>
+    <li><a href="https://www.bootcss.com/">bootstrap</a></li>
+    <li><a href="https://tongji.baidu.com/">百度统计</a></li>
+    <li><a href="https://tool.lu/">码农工具</a></li>
+    <li><a href="https://zyk.mingrisoft.com/Develop/view/id/1534/type/6/cid/45.html">程序员开发</a></li>
+    <li><a href="https://www.mingrisoft.com/">明日科技</a></li>
+    <li> <a href="https://xhr.spec.whatwg.org/">oa-xml</a>
+    </li>
+</ul>
+
+<ul>
+    <li><H4>js</H4></li>
+    <li><a href="https://jquery.com/">jquery</a></li>
+</ul>
+
+<ul>
+    <li><H4>我的网站</H4></li>
+    <li><a href="https://www.mabaoshan.top">主页</a></li>
+    <li><a href="http://blog.mabaoshan.top">博客</a></li>
+    <li><a href="http://code.mabaoshan.top">仿站</a></li>
+</ul>
+
+<ul>
+    <li><H4>office </H4></li>
+    <li><a href="http://www.yishimei.cn/computer.html">神龙激活</a></li>
+    <li><a href="http://cencrack.com/?post=18">在线工具包</a></li>
+    <li><a href="http://www.baofengjihuo.com/">暴风激活</a></li>
+    <li><a href="https://github.com/massgravel/Microsoft-Activation-Scripts">激活2</a></li>
+</ul>
+
+<ul>
+<li><h4>u盘启动</h4></li>
+<li><a href="https://www.ventoy.net/cn/index.html">ventoy</a></li>
+</ul>
+
+<ul>
+    <li><h4>github</h4></li>
+    <li><a href="https://github.com/gohugoio/hugo/releases">hugo</a></li>
+</ul>
+
+<ul>
+<li>  <h4>网络</h4></li>
+<li> <a href="http://www.gjwlaqxcz.cn/">网络安全学习</a></li>
+<li><a href="https://www.zabbix.com/forum/in-chinese">zabbix论坛</a></li>
+</ul>
+
+<ul>
+    <li><H4>政府网站</H4></li>
+    <li><a href="http://rsj.beijing.gov.cn/ywsite/jflh/">积分落户</a></li>
+    <li><a href="http://gjj.beijing.gov.cn">公积金</a></li>
+    </ul>
+    
+    <ul>
+        <li><h4></h4></li>
+        <li><a href="http://www.visiocafe.com/">品牌logo</a></li>
+    </ul>
+
+
+    <ul>
+        <!-- <li><a onclick="var StrHef=window.location.href;this.style.behavio='url(#defaul#homepage)';this.setHomePage('https://www.mabaoshan.top');" href="javescript:;">设置首页</a></li> -->
+        <li><a href="javascript:setHome(this,window.location)">
+            <span class="glyphicon glyphicon-home"></span> <b>设为首页</b></a>
+        </li> 
+        <li><a href="javascript:addFavorite()">
+            <span class="glyphicon glyphicon-heart"></span> <b>加入收藏</b></a>
+        </li>
+    </ul>
+
+</div>
     <script>
+ // 获取一个div，在div 的所有ul下面插入一个 br标签 2020年10月16日
+         var div1 = document.getElementsByTagName('div')[1];
+        var ul2 = document.getElementsByTagName('ul');
+        var b =1;//定义一个变量记录确定要插入ul的位置
+        for (var i = 1; i <= ul2.length-1; i++) {
+            div1.insertBefore(brCreate(),ulGet(b));
+           b ++;
+        }
+
+//获取ul
+function ulGet(){
+    var ul3 = document.getElementsByTagName('ul')[b];
+    return ul3;
+}
+// 创建br
+function brCreate(){
+     var e = document.createElement('br');
+return e;
+} 
+
+
+
+
+
+// 百度搜索函数2020年9月
         function checkHttps () {
             BaiduHttps.useHttps();    
         };
@@ -77,130 +252,6 @@
             }
         };
     </script>
-
-<!-- 网页导航链接 -->
-<ul>
-    <li><H4>搜索</H4></li>
-    <li><a href="http://www.baidu.com">百度</a> </li>
-    <li><a href="https://www.so.com/">360</a></li>
-    <li><a href="https://www.sogou.com/">搜狗</a></li>
-</ul>
-<br>
-<ul>
-    <li><H4>链接</H4></li>
-    <li><a href="https://work.weixin.qq.com/">企业微信</a></li>
-    <li><a href="http://cloud.tusenergy.com/K3Cloud">k3coud</a></li>
-    <li><a href="http://oa.tusenergy.com/">oa</a></li>
-    <li><a href="http://mail.tusenergy.com">邮箱</a></li>
-    <li><a href="http://cloud.tusenergy.com/K3Cloud/false">代理商</a></li>
-</ul>
-<br>
-<ul>
-    <li><H4>内网地址</H4></li>
-    <li><a href="https://192.168.2.120/ui/#/host">2.120</a></li>
-    <li><a href="https://192.168.2.130/ui/#/host">2.130</a></li>
-    <li><a href="https://192.168.2.140/">2.140</a></li>
-    <li><a href="https://111.204.175.170/ui/#/login">170</a></li>
-    <li><a href="https://111.204.175.169/ui/#/host">169</a></li>
-    <li><a href="https://61.148.203.254/login.html?name_jpgraph_antispam=30752263">12.253</a></li>
-    <li><a href="http://192.168.10.6/page.html">10.6信锐王律师</a></li>
-    <li><a href="http://192.168.10.7/page.html">10.7信锐乐小梦</a></li>
-    <li><a href="http://192.168.2.4" >2.4pan </a> </li>
-    <li><a href="http://192.168.2.8">2.8</a></li>
-</ul>
-<br>
-<ul>
-    <li><H4>常用链接</H4></li>
-    <li><a href="https://open.kingdee.com/K3Cloud/Open/home">金蝶补丁</a></li>
-    <li><a href="https://vip.kingdee.com/">金蝶社区</a></li>
-    <li><a href="https://cloud.kingdee.com/pt/">金蝶云平台</a></li>
-    <li><a href="ftp://download.jinher.com/">oa补丁</a></li>
-    <li><a href="http://apm.iuoooo.com/AppAssembly/Search?searchKey=c6&majorType=null">oa客户端</a></li>
-    <li><a href="https://www.263.net/263/helpcenter/client/">263帮助</a></li>
-    <li><a href="http://oa.tusenergy.com/c6/oaplus/view/login/signIn.html?appServer=c6">c6调试</a></li>
-    <li><a href="http://first.jinher.com:9999/c6">oa测试</a></li>
-</ul>
-<br>
-<ul>
-    <li><H4>博客</H4></li>
-    <li><a href="https://github.com/">github</a></li>
-    <li><a href="http://ife.baidu.com/course/all">百度学院</a></li>
-    <li><a href="https://www.markdown.xyz/basic-syntax/">Markdown </a></li>
-    <li><a href="https://dalipan.com/">大力盘搜</a></li>
-    <li><a href="https://www.iconfont.cn/">iconfount</a></li>
-</ul>
-<br>
-<ul>
-    <li><H4>css</H4></li>
-    <li><a href="http://css.doyoe.com/">css手册</a></li>
-    <li><a href="https://developer.mozilla.org/zh-CN/">火狐手册</a></li>
-    <li><a href="https://www.w3school.com.cn/">w3c</a></li>
-    <li><a href="https://www.bootcss.com/">bootstrap</a></li>
-    <li><a href="https://tongji.baidu.com/">百度统计</a></li>
-    <li><a href="https://tool.lu/">码农工具</a></li>
-    <li><a href="https://zyk.mingrisoft.com/Develop/view/id/1534/type/6/cid/45.html">程序员开发</a></li>
-    <li><a href="https://www.mingrisoft.com/">明日科技</a></li>
-    <li> <a href="https://xhr.spec.whatwg.org/">oa-xml</a>
-    </li>
-</ul>
-<br>
-<ul>
-    <li><H4>js</H4></li>
-    <li><a href="https://jquery.com/">jquery</a></li>
-</ul>
-<br>
-<ul>
-    <li><H4>我的网站</H4></li>
-    <li><a href="https://www.mabaoshan.top">主页</a></li>
-    <li><a href="http://blog.mabaoshan.top">博客</a></li>
-    <li><a href="http://code.mabaoshan.top">仿站</a></li>
-</ul>
-<br>
-<ul>
-    <li><H4>office </H4></li>
-    <li><a href="http://www.yishimei.cn/computer.html">神龙激活</a></li>
-    <li><a href="http://cencrack.com/?post=18">在线工具包</a></li>
-    <li><a href="http://www.baofengjihuo.com/">暴风激活</a></li>
-    <li><a href="https://github.com/massgravel/Microsoft-Activation-Scripts">激活2</a></li>
-</ul>
-<br>
-<ul>
-<li><h4>u盘启动</h4></li>
-<li><a href="https://www.ventoy.net/cn/index.html">ventoy</a></li>
-</ul>
-<br>
-<ul>
-    <li><h4>github</h4></li>
-    <li><a href="https://github.com/gohugoio/hugo/releases">hugo</a></li>
-</ul>
-<br>
-<ul>
-<li>  <h4>网络</h4></li>
-<li> <a href="http://www.gjwlaqxcz.cn/">网络安全学习</a></li>
-<li><a href="https://www.zabbix.com/forum/in-chinese">zabbix论坛</a></li>
-</ul>
-<br>
-<ul>
-    <li><H4>政府网站</H4></li>
-    <li><a href="http://rsj.beijing.gov.cn/ywsite/jflh/">积分落户</a></li>
-    <li><a href="http://gjj.beijing.gov.cn">公积金</a></li>
-    </ul>
-    <br>
-    <ul>
-        <li><h4></h4></li>
-        <li><a href="http://www.visiocafe.com/">品牌logo</a></li>
-    </ul>
-<br>
-
-    <ul>
-        <!-- <li><a onclick="var StrHef=window.location.href;this.style.behavio='url(#defaul#homepage)';this.setHomePage('https://www.mabaoshan.top');" href="javescript:;">设置首页</a></li> -->
-        <li><a href="javascript:setHome(this,window.location)">
-            <span class="glyphicon glyphicon-home"></span> <b>设为首页</b></a>
-        </li> 
-        <li><a href="javascript:addFavorite()">
-            <span class="glyphicon glyphicon-heart"></span> <b>加入收藏</b></a>
-        </li>
-    </ul>
 </body>
 
 </html>
