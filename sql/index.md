@@ -39,3 +39,11 @@ select dateadd(d,-60,getdate())
 
 --统计单个表 占用空间的大小
 exec sp_spaceused 'CustomModule_2013117142926640'
+
+
+
+在视图里用 TOP (100) PERCENT 可以用order by 语句
+
+
+
+select  TOP (100) PERCENT name from gongsiweihu2020 where  subgroup='控股' and zt<>'禁用' order by name
