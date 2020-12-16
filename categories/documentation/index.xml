@@ -3,7 +3,7 @@
         <title>documentation - 分类 - 马保山的学习笔记</title>
         <link>https://mabaoshan.top/categories/documentation/</link>
         <description>documentation - 分类 - 马保山的学习笔记</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 08 Sep 2020 15:58:26 &#43;0800</lastBuildDate><atom:link href="https://mabaoshan.top/categories/documentation/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 15 Dec 2020 15:58:26 &#43;0800</lastBuildDate><atom:link href="https://mabaoshan.top/categories/documentation/" rel="self" type="application/rss+xml" /><item>
     <title>录屏软件使用说明</title>
     <link>https://mabaoshan.top/categories/documentation/%E5%BD%95%E5%B1%8F%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</link>
     <pubDate>Fri, 10 Apr 2020 00:00:00 &#43;0800</pubDate>
@@ -31,6 +31,13 @@
     <author>作者</author>
     <guid>https://mabaoshan.top/categories/documentation/k3cloud-%E6%89%8B%E6%9C%BA%E5%AE%A1%E6%89%B9%E4%BA%91%E4%B9%8B%E5%AE%B6/</guid>
     <description><![CDATA[在应用市场或APP下载云之家点击忘记密码或者验证码登陆 3.云之家-云之家-全部应用-业务审批 4.选择我的待办-输入金蝶账号和密码即可登陆 5.]]></description>
+</item><item>
+    <title>OA-电脑待办工作</title>
+    <link>https://mabaoshan.top/categories/documentation/oa-%E7%94%B5%E8%84%91-%E5%BE%85%E5%8A%9E%E5%B7%A5%E4%BD%9C/</link>
+    <pubDate>Tue, 15 Dec 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://mabaoshan.top/categories/documentation/oa-%E7%94%B5%E8%84%91-%E5%BE%85%E5%8A%9E%E5%B7%A5%E4%BD%9C/</guid>
+    <description><![CDATA[方法1.右上角工作台 -&gt;待办工作 方法2.右上角 快捷桌面 -&gt;待办工作]]></description>
 </item><item>
     <title>oa提交失败表单的数据库集合数据ID改成dataset1</title>
     <link>https://mabaoshan.top/categories/documentation/oa-%E6%8F%90%E4%BA%A4%E5%A4%B1%E8%B4%A5%E8%A1%A8%E5%8D%95%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E9%9B%86%E5%90%88%E6%95%B0%E6%8D%AEid%E6%94%B9%E6%88%90dataset1/</link>
@@ -66,12 +73,5 @@
     <author>作者</author>
     <guid>https://mabaoshan.top/categories/documentation/e470%E7%AC%94%E8%AE%B0%E6%9C%AC%E6%B2%A1%E6%9C%89%E5%A3%B0%E9%9F%B3/</guid>
     <description><![CDATA[下载地址： https://think.lenovo.com.cn/support/driver/newdriversdownlist.aspx?categoryid=3110284&amp;CODEName=&amp;SearchType=1&amp;wherePage=1&amp;SearchNodeCC=&amp;needmt=20H3A004cd 安装显卡驱动和hotkey 热键驱动程序解决]]></description>
-</item><item>
-    <title>重新安装 macOS</title>
-    <link>https://mabaoshan.top/categories/documentation/mac-os%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</link>
-    <pubDate>Tue, 30 Jun 2020 15:58:26 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://mabaoshan.top/categories/documentation/mac-os%E9%87%8D%E6%96%B0%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</guid>
-    <description><![CDATA[重新安装 macOS 当您需要在 Mac 上重新安装 macOS 时，您可以使用互联网从 Apple 安装或者从每台 Mac 上的硬盘驱动器或闪存上的恢复分区中安装。这两种重新安装的方式都将保]]></description>
 </item></channel>
 </rss>

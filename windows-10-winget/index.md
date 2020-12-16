@@ -27,4 +27,10 @@ winget install powertoys
 
 • winget source remove：移除已用的 Manifest
 
+3.还可以通过软件包管理工具Chocolatey，运行代码安装：
 
+choco install powertoys
+
+更新PowerToys通过以下代码实现：
+
+choco upgrade powertoys
