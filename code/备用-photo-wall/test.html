@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+<style>
+	:root, body{
+		height: 100%;
+	}
+	body{
+		/*若元素设置了perspective属性或者是transform-style属性，
+		那么该元素即使没有设置position属性也会变成定位的参照元素
+		若不给它设置高度值其子级若参照它的计算高度就不会起作用*/
+		perspective: 2000px;
+		transform-style: preserve-3d;
+	}
+
+@keyframes round{
+	0%{
+		transform: translate(-50%, -50%) rotateY(0deg);
+	}
+	100%{
+		transform: translate(-50%, -50%) rotateY(360deg);
+	}
+}
+
+div.wrapper{
+	position: absolute;
+	top: calc(50%); /*若top未起作用，可能是语法错误，或者是父级高度问题*/
+	left: calc(50%);
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 300px;
+	
+	transform-style: preserve-3d;
+	animation: round 10s linear infinite;
+}
+.wrapper img{
+	width: 200px;
+	position: absolute;
+	/* backface-visibility: hidden; *//*元素背面不可见，默认值为visible*/
+}
+.wrapper img:nth-of-type(1){
+	transform: rotateY(45deg) translateZ(100px);	
+}
+.wrapper img:nth-of-type(2){
+	transform: rotateY(90deg) translateZ(300px);	
+}
+.wrapper img:nth-of-type(3){
+	transform: rotateY(135deg) translateZ(300px);
+}
+.wrapper img:nth-of-type(4){
+	transform: rotateY(180deg) translateZ(100px);
+}
+.wrapper img:nth-of-type(5){
+	transform: rotateY(225deg) translateZ(500px);
+}
+.wrapper img:nth-of-type(6){
+	transform: rotateY(270deg) translateZ(500px);
+}
+.wrapper img:nth-of-type(7){
+	transform: rotateY(315deg) translateZ(100px);
+}
+.wrapper img:nth-of-type(8){
+	transform: rotateY(360deg) translateZ(500px);
+}
+/*
+1、8张图片组成一个八边形，中心每个角度为360/8 = 45deg，每张图片y轴旋转方向如图 desciption.png所示
+2、通过设置translatez，让每张图片与旋转中心拉开距离，translateZ不同增加层叠感
+3、让img的父级绕y轴旋转
+*/
+
+</style>
+</head>
+<body>
+<!-- 给图片加上border不会错位，原因未知 -->
+<div class="wrapper">
+	<img border="1" src="images/pic1.jpg" alt="">	
+	<img border="1" src="images/pic2.jpg" alt="">	
+	<img border="1" src="images/pic3.jpg" alt="">	
+	<img border="1" src="images/pic4.jpg" alt="">	
+	<img border="1" src="images/pic5.jpg" alt="">	
+	<img border="1" src="images/pic6.jpg" alt="">	
+	<img border="1"  src="images/pic7.jpg" alt="">	
+	<img border="1" src="images/pic8.jpg" alt="">	
+	
+</div>
+
+<script>
+	document.body.onmousemove = function(e){
+		this.style.perspectiveOrigin = "" + e.pageX + "px " + e.pageY + "px";
+	}
+</script>
+</body>
+</html>

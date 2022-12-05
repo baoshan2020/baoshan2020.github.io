@@ -1,0 +1,168 @@
+#main {
+    margin: 50px auto;
+}
+/* #active{
+    background-color: blue;
+    color: red; 
+} */
+.level .active {
+    background-color: darkcyan;
+    color: red;
+}
+.level{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.level button{
+    padding: 5px 15px;
+    background-color: #02a4ad;
+    color:#fff;
+    border-radius: 3px;
+    outline: none;
+    cursor:pointer;
+
+}
+.level button.active{
+    background: 00abff;
+}
+.info{
+    margin-top: 10px;
+    text-align: center;
+}
+
+table{
+    border-spacing: 1px;
+    background: #929196;
+    margin: 0 auto;
+}
+td{
+    text-align: center;
+line-height: 20px;
+font-weight: bold;
+
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: #ccc;
+    border: 2px solid;
+    border-color: #fff #a1a1a1 #a1a1a1 #fff ;
+
+
+}
+.mine{
+    background: #d9d9d9 url(/images/mine2.png) no-repeat center;
+    background-size: cover;
+}
+
+/* .mineRed{
+    background: red url url(&quot;data:img/gif;base64,R0lGODlhGQAZAJEAAP///8DAwICAgAAAACH5BAQUAP8ALAAAAAAZABkAAAJKhI+pFrH/GpwnCFGb3nxfzHQi92XjWYbnmAIrepkvGauzV7s3Deq71vrhekJgrtgIIpVFptD5g+6kN+osZflot9xPsgvufsPkSwEAOw==&quot;) no-repeat center;
+    background-size: cover;
+} */
+
+
+.flag{
+
+    background: #ccc url(/images/flag.png) no-repeat center;
+    background-size: cover;}
+
+
+    td.zero{
+        background-color: #d9d9d9;
+        background: #d9d9d9;
+    }
+    
+    td.one{
+        background-color: #d9d9d9;
+        background: #d9d9d9;
+        color:blue;
+    }
+    td.two{
+        background-color: #d9d9d9;
+        background: #d9d9d9;
+        color:red;
+    }
+    td.three{
+        background-color: #d9d9d9;
+        background: #d9d9d9;
+        color:blueviolet;
+    }
+    td.four{
+        background-color: #d9d9d9;
+        background: #d9d9d9;
+        color:yellow;
+    }
+
+
+
+    element.style {
+    }
+    .main .part2 .con .btn02 {
+        margin-left: 142px;
+        background: url(//pc1.gtimg.com/act/brand/sem/images/btn02-4cf64cbf7d.png);
+        transition: all .5s;
+        -webkit-transition: all .5s;
+    }
+    .main .part2 .con .btn01, .main .part2 .con .btn02 {
+        position: absolute;
+        top: 258px;
+        width: 184px;
+        height: 48px;
+        left: 50%;
+    }
+    a {
+        color: #434343;
+    }
+    a, a:hover {
+        text-decoration: none;
+    }
+    a, button {
+        cursor: pointer;
+    }
+    a, a:active, a:hover, ins {
+        text-decoration: none;
+    }
+    html * {
+        outline: 0;
+        -webkit-text-size-adjust: none;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    * {
+        outline: 0;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-focus-ring-color: transparent;
+    }
+
+    a:-webkit-any-link {
+        color: -webkit-link;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    body, html {
+        font-family: 'Microsoft Yahei';
+    }
+    body {
+        opacity: 1;
+        -webkit-transition: opacity .5s ease-in;
+        transition: opacity .5s ease-in;
+        padding: 0;
+        background: #fff;
+        font-size: 12px;
+    }
+    body, html {
+        font-weight: 400;
+    }
+    body, html {
+        font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","Heiti SC","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+    }
+    html {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+    }
+    html {
+        color: #000;
+        overflow-y: scroll;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        background: #edf1f7;
+    }

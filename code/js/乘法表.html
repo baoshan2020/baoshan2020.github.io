@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<a href="javascript:multiplicationTable();">99乘法表（单击查看）</a>
+<script>
+    function multiplicationTable(){
+        var  row = "";
+        for(var i = 1; i <=9; i++){
+            for(var j = 1; j <= i ;j++) {                
+                row = row+j+"×"+i+"="+i*j+"  ";
+                }
+                row =row+"<br>";      
+        }
+        document.write(row);
+    }
+// function  清屏(){
+//     document.body.innerHTML = "";
+// }
+
+
+
+// multiplicationTable();
+</script>
+
+<!-- <a href="#" onclick="清屏()">返回</a> -->
+
+
+</body>
+</html>

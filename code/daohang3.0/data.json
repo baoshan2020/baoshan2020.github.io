@@ -1,0 +1,28 @@
+{
+    "连接": [{
+            "name": "企业微信",
+            "URL": "https://work.weixin.qq.com",
+            "text": "22",
+            "ico":"sougou.png"
+        },
+        {
+            "name": "k3cloud",
+            "URL": "https://cloud.tusenergy.com/k3cloud",
+            "text": "111",
+            "ico":"sougou.png"
+        }
+    ],
+ 
+    "常用": [{
+        "name": "金蝶补丁",
+        "URL": "https://cloud.tusenergy.com/k3cloud",
+        "text": "22",
+        "ico":"sougou.png"
+    }, {
+        "name": "金蝶社区",
+        "URL": "https://cloud.tusenergy.com/k3cloud",
+        "text": "111",
+        "ico":"sougou.png"
+    }]
+
+}

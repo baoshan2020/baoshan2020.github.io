@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .content {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        display: none;
+        display: ;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper">
+        <button>111</button>
+        <button>222</button>
+        <button>333</button>
+        <div class="content">
+            <p>123</p>
+        </div>
+        <div class="content">
+            <p>222</p>
+        </div>
+        <div class="content">
+            <p>333</p>
+        </div>
+    </div>
+
+
+    <script>
+        // <!-- dom 对象 -->
+        var button1 = document.getElementsByTagName('button')[0];
+        var button2 = document.getElementsByTagName('button')[1];
+        var button3 = document.getElementsByTagName('button')[2];
+        var div1 = document.getElementsByTagName('div')[1];
+        var div2 = document.getElementsByTagName('div')[2];
+        var div3 = document.getElementsByTagName('div')[3];
+        var num = 1;
+
+        button1.onclick = function() {
+            this.style.backgroundcolor = 'black';
+            div1.style.display = 'inline';
+            div2.style.display = 'none';
+            div3.style.display = 'none';
+        }
+        button2.onclick = function() {
+            this.style.backgroundcolor = 'red';
+            div1.style.display = 'none';
+            div2.style.display = 'inline';
+            div3.style.display = 'none';
+        }
+        button3.onclick = function() {
+            this.style.backgroundcolor = 'green';
+            div1.style.display = 'none';
+            div2.style.display = 'none';
+            div3.style.display = 'inline';
+        }
+
+
+        
+// function jiecheng(a){
+//     var result = 1;
+//         for ( var i = 1; i <= a; i++ ) {
+//             result *= i
+//         }
+//         console.log(result);
+  
+//     }
+
+
+
+// function jc(b) {
+//     if (b == 1) {return 1};
+
+// return b=b*(b-1);
+// }
+
+
+// jiecheng(4);
+
+// function scream(animal){
+//     switch(animal){
+//         case "dog":
+//         document.write('wang');
+//         return;
+//     case "cat":
+//     document.write('maio');
+//     return;
+//     case "fish":
+//     document.write('O~');
+//     return;
+//     }
+function fn(a) {
+    console.log(a);
+    var a =123;
+    console.log(a);
+   function a(){}
+    console.log(a);
+    var b = function () {}
+    console.log(b);
+
+}
+
+
+function a() {
+    var num = 100 ;
+    function b() {
+        num ++;
+        console.log(num);
+    }
+    return b;
+}
+var demo = a();
+demo();
+demo();
+
+    </script>
+</body>
+
+</html>

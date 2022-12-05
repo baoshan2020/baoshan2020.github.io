@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- 不是最好的方法 用@规则-- 在主css文件里 用 @import :reset.css -->
+        <!-- <link rel="stylesheet" href="reset.css"> -->
+
+        <!-- 设置基础URl -->
+        <base href="#">
+        <!-- 设置所有在新标签里打卡 -->
+        <!-- base 标签只能设置一个<base href="_blank">    -->
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>淘宝网，呸</title>
+        <link rel="stylesheet" href="./css/taobao.css">
+        <!-- 在这里关联iconfont 后期更改图标比在.css里方便 -->
+        <link rel="stylesheet" href="./font/iconfont.css">
+
+
+    </head>
+
+    <body>
+
+        
+        <!-- 头部信息开始 -->
+        <div id="headtop">
+        <!-- 头部左侧 -->
+        <div class="clearfix fl headtopleft ">
+            <ul>
+                <div >
+                <li><a href="#" class="mr7">中国大陆</a><span class="iconfont arrow">&#xe77b;</span></li>
+                <li><a href="#" class="login">亲，请登录</a></li>
+                <li><a href="#">免费注册</a></li> 
+                <li> <a href="#">手机逛淘宝</a></li>
+            </ul>
+        </div>
+        <!-- 头部左侧结束 -->
+        <!-- 头部右侧 -->
+        <div class="clearfix fr headtopright">
+            <ul class="">
+<li><a href="#">我的淘宝<span class="iconfont arrow ml7">&#xe77b;</span></a></li>
+<li><span class="iconfont c4 mr5">&#xe600;</span><a href="#">购物车</a><strong>0</strong></li>
+<li> <a><span class="iconfont mr5 store">&#xe601;</span>收藏夹</a></li>
+<li><a href="#">商品分类</a></li>
+<li class="line">|</li>
+<li><a href="#">千牛卖家中心</a> <span class="iconfont arrow ml7">&#xe77b;</span> </li>
+<li><a href="#">联系客服</a><span class="iconfont arrow ml7">&#xe77b;</span> </li>
+<li><a><span class="iconfont c4 mr5">&#xe62b;</span>网站导航<span class="iconfont ml7">&#xe77b;</span></a></li>
+</ul>
+        </div>
+    </div>
+<!-- 头部信息结束 -->
+        <!-- 头部广告 -->
+
+        <div id="headad">
+            <a href="#">
+                <img src="img/top.png" alt="">
+            </a>
+        </div>
+        <!-- 头部广告结束 -->
+        <!-- 头部搜索开始 -->
+
+        <div id="headsearch">
+            <div class="claerfix layer">
+                <H1 class="fl"><a href="#">淘宝网</a> </H1>
+            </div>
+
+
+            <div class="code fr">
+                <a href="#">
+                    <span class="iconfont close">&#xe603;</span>
+                    <span class="c5">手机淘宝</span>
+                    <img src="img/taobao.png" alt=""> </a>
+
+            </div>
+            <div class="search">
+                <ul class="clearfix searchtab">
+                    <li class="active">宝贝</li>
+                    <li>天猫</li>
+                    <li>店铺</li>
+                </ul>
+                <div class="searchcontent clearfix">
+                    <form action="">
+                        <div class="searchbox fl"> <input type="text" name="" id="">
+                            <div class="placeholder">
+                                <i class="iconfont">&#xe612;</i>
+                                <span> 帆布鞋女夏季薄款</span>
+                            </div>
+                            <span class="iconfont imgSearch">&#xe609;</span>
+                        </div>
+
+                        <div class="btn fl"> <button type="submit">搜索</button> </div>
+                </div>
+                </form>
+                <div class="hotkey">
+                    <a>新款连衣裙</a>
+                    <a>四件套</a>
+                    <a class="c5">潮流T恤</a>
+                    <a>时尚女鞋</a>
+                    <a>短裤</a>
+                    <a>半身裙</a>
+                    <a>男士外套</a>
+                    <a>墙纸</a>
+                    <a>行车记录仪</a>
+                    <a>新款男鞋</a>
+                    <a>耳机</a>
+                    <a>时尚女包</a>
+                    <a>沙发</a>
+                </div>
+            </div>
+        </div>
+        <!-- 搜索结束 -->
+        <div id="nav" class="layer clearfix">
+            <div class="navfl fl">
+                <H2>主体市场</H2>
+            </div>
+            <div class="navfr fl">
+                <ul>
+<li class="size"> <a href="#">天猫</a> </li>
+<li class="size"><a href="#">聚划算</a></li>
+<li class="size"><a href="#">天猫超市</a></li>
+<li class="line">|</li>
+<li><a href="#">淘抢购</a></li>
+<li><a href="#">电器城</a></li>
+<li><a href="#">司法拍卖</a></li>
+<li><a href="#">淘宝心选</a></li>
+<li><a href="#">兴农脱贫</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+<!-- 首屏内容 -->
+<div id="firstScreen" class="lyayer clearfix">
+    <!-- 左边内容 -->
+    <div class="firstLeft fl">
+        <!-- 侧边导航 -->
+        <div class="sideNav fl">
+            <ul><li><a href="#">女装</a> / <a href="#">男装</a> / <a href="#">内衣</a><span class="iconfont fr">&#xe773;</span></li>
+                <li><a href="#">鞋靴</a> / <a href="#">箱包</a> / <a href="#">配件</a><span class="iconfont fr">&#xe773;</span></li>
+            <li><a href="#">童装玩具</a> / <a href="#">孕产</a> / <a href="#">用品</a><span class="iconfont fr">&#xe773;</span></li>
+            <li><a href="#">家电</a> / <a href="#">数码</a> / <a href="#">手机</a><span class="iconfont fr">&#xe773;</span></li>
+            <li><a href="#">美妆</a> / <a href="#">洗护</a> / <a href="#">保健品</a><span class="iconfont fr">&#xe773;</span></li>
+            <li><a href="#">珠宝</a> / <a href="#">眼镜</a> / <a href="#">手表</a><span class="iconfont fr">&#xe773;</span></li>
+            <li><a href="#">运动</a> / <a href="#">户外</a> / <a href="#">乐器</a><span class="iconfont fr">&#xe773;</span></li>
+            <li><a href="#">游戏</a> / <a href="#">动漫</a> / <a href="#">影视</a><span class="iconfont fr">&#xe773;</span></li>
+            <li> <a href="#">美食</a> / <a href="#">生鲜</a> / <a href="#">零食</a><span class="iconfont fr">&#xe773;</span></li>
+            <li><a href="#">鲜花</a> / <a href="#">宠物</a> / <a href="#">农资</a><span class="iconfont fr">&#xe773;</span></li>
+            <li><a href="#">面料采集</a> / <a href="#">装修</a> / <a href="#">建材</a><span class="iconfont fr">&#xe773;</span></li>
+            <li> <a href="#">家具</a> / <a href="#">家饰</a> / <a href="#">家访</a><span class="iconfont fr">&#xe773;</span></li>
+            <li><a href="#">汽车</a> / <a href="#">二手车</a> / <a href="#">用品</a><span class="iconfont fr">&#xe773;</span></li>
+            <li><a href="#">办公</a> / <a href="#">DIY</a> / <a href="#">五金电子</a><span class="iconfont fr">&#xe773;</span></li>
+            <li><a href="#">百货</a> / <a href="#">餐厨</a> / <a href="#">家庭保健</a><span class="iconfont fr">&#xe773;</span></li>
+            <li><a href="#">学习</a> / <a href="#">卡券</a> / <a href="#">本地服务</a><span class="iconfont fr">&#xe773;</span></li>
+            </ul>
+        </div>
+        <!-- 图片1容器 -->
+        <div class="img1box fr">
+            <div class="pic">
+            <div class="fl ad"><img src="img/01.webp" alt="">
+            <button class="iconfont leftBtn">&#xe613;</button>
+            <button class="iconfont rightbtn">&#xe773;</button>
+            <div class="circle">
+                <span class="active"></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="fr"><a><img src="img/02.webp" alt=""></a></div>
+        </div>
+        </div>
+        <!-- 图片2容器 -->
+        <div class="img2box fr"></div>
+        <!-- 淘宝头条 -->
+        <div class="news fl">头条</div>
+    </div>
+    <!-- 右边内容 -->
+   <div class="firstRight fr"></div>
+
+</div>
+
+</div>
+    </body>
+
+</html>

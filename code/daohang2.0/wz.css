@@ -1,0 +1,136 @@
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p, th, td {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fafafa;
+}
+
+.search {
+    text-align: center;
+    width: 1190px;
+    height: 46px;
+}
+.search img {
+    width: 128px;
+    height: 41px;
+display: inline;
+}
+.search div .from {
+    width: 112px;
+    height: 44px;
+    height: 46px;
+    background-color: #4E6EF2;
+    border: 0;
+    border: 0 none;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 0 10px 10px 0;
+}
+
+.content{
+    width: 1188px;
+    height: 522px;
+        /* position: relative;  */
+    /* margin-bottom: 10px; */
+    margin: 0 auto;
+     padding: 9px 0 40px;
+    background-color: #fff;
+    border: 1px solid #DEE3EB;
+}
+
+a {
+    font-size: 14px;
+    text-align: left;
+
+    display: inline-block;
+    height: 16px; 
+    /* width: 100%;
+    height: 100%; */
+    text-decoration: none;
+
+    line-height: 16px;
+    /* text-align: left;
+
+display: block; */
+    /*
+        visible 可见 默认值
+        hidden  隐藏
+        scroll  滑动 不管有没有超出都有白条（滚动条）
+        auto    自动 超出的时候才有白条（滚动条）
+     overflow: hidden; */
+    /* display: inline-table; */
+    overflow: hidden;
+    /* //自动隐藏文字 */
+
+    text-overflow: ellipsis;
+    /* 文字隐藏后添加省略号  */
+    white-space: nowrap;
+    /* nowrap:文本不会换行，文本会在在同一行上继续，直到遇到  标签为止。  */
+}
+ 
+
+a:hover {
+    /* background-color: darkgrey;
+border-radius: 10px; */
+    color: red;
+    text-decoration: underline;
+    /* font-size: 20px; */
+}
+
+a:focus {
+    color: red;
+}
+
+ul li {
+    /* margin-left: 5px; */
+    float: left;
+    list-style-type: none;
+    width: 102px;
+     height: 18px;
+    line-height: 18px;
+    color: royalblue;
+    display: table;
+    font-size: 14px;
+    padding: 6px 0 3px;
+}
+
+ul {
+    width: 100%;
+    /* 保证ul是一行一行排列的。 */
+    clear: both;
+}
+.first {
+    width: 61px;
+    margin-left: 15px;
+}
+ul .first a{
+    color: #0AA770;
+}
+
+
+
+
+.new {
+    /* top: */
+text-align: center;
+/* height: 80px; */
+margin-right : 50%;
+margin: 0 auto;
+
+}
+
+/* .biankuang {
+width: 980px;
+margin: 0 auto;
+border-style: solid;
+border-width: 1px;
+border-color: #86D981;
+background: url("http://www.mabaoshan.top/img/search_box_index_bg.gif") repeat-x scroll 0 0 transparent;
+} */
+.main{
+    top: 70px;
+    position: absolute;
+
+}

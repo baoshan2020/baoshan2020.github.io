@@ -1,0 +1,1 @@
+import{_ as e,o as t,c,b as o}from"./app.dad05bb1.js";const _={},r=o("iframe",{style:{width:"100%","min-height":"700px"},id:"content",scrolling:"yes",frameborder:"0",src:"http://it.tusenergy.com/k3cloud/denglu/",__idm_frm__:"288"}," ",-1),s=[r];function n(l,d){return t(),c("div",null,s)}const a=e(_,[["render",n],["__file","k3cloud.html.vue"]]);export{a as default};

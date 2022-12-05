@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div>
+            <ul class="1"></ul>
+            <ul class="2"></ul>
+            <ul class="3"></ul>
+            <ul class="4"></ul>
+            <ul class="5"></ul>
+        </div>
+        <script>
+            // 从第二个ul  里插入br 
+            function brInsert() {
+
+                var dv = document.getElementsByTagName('div')[0];
+                var ulGet = document.getElementsByTagName('ul');
+                for (var i = 1; i <= ulGet.length - 1; i++) {
+                    var ulNum = ulGet[i];
+                    var brCreate = document.createElement('br');
+
+                    // 在div里插入（br，ul序号）
+                   dv.insertBefore(brCreate, ulNum)
+                }
+            }
+            brInsert()
+        </script>
+    </body>
+
+</html>

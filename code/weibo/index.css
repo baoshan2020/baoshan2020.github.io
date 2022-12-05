@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.fl {
+    float: left;
+    
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    border-top: 2px solid #fa7d3c;
+    /* background-position: 50% 40%; */
+}
+
+#head {
+    box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.3), 0 0 6px 2px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.94);
+    height: 48px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#head  .logo{
+    margin-left: 50px;
+    display: inline-block;
+    width: 100px;
+    height: 48px;
+text-align: center;
+vertical-align: middle;
+    background: url(./img/WB_logo.png) no-repeat 0 40%;
+}
+
+
+#head li {
+    
+   
+    line-height: 48px;
+float: left;
+    margin-left: 15px;
+}
+#head li a{
+    margin-right: 10px;
+}
+
+
+#head li span ,#head li a{
+    font-size: 14px;
+    height: 26px;
+    color: #333;
+}
+
+
+#head .headright {
+    float: right;
+}
+
+#head .headleft {
+    float: left;
+}
+#nav .list ul{
+    position: absolute;
+    top:66px;
+    bottom: auto;
+    width: 110px;
+    height: 473px;
+    
+}
+#nav {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+#nav .list ul li a {
+    display: inline-block;
+text-decoration: none;
+color: black; 
+width: 90px;
+height: 40px;
+line-height: 40px;
+font-size: 18px;
+text-align: center;
+padding:0 8px;
+}
+#nav .list ul li{
+    display: block;
+    width: 110px;
+  
+
+}
+
+#nav .list ul li:hover{
+    background-color: #eb7350;
+    color: #fff;
+   
+}
+
+#nav .list ul li a:hover{
+    color: #fff; 
+}
+#nav .img{
+position: relative;
+width: 690px;
+height: 2180px;
+top: 35px;
+left: 85px;
+}
+#nav .img .img-one{
+    margin-left: 15px;
+    margin-right: 10px;
+} 
+#nav .img .img-two{
+    margin-bottom: 10px;
+}
+#nav .img .left-img {
+    /* position: relative; */
+    /* width: 492px;
+    height: 44px; */
+}
+#nav .img .left-img h3{
+    width: 492px;
+    height: 20px;
+   display: block;
+    margin: 0;
+    padding: 10px;
+/* position: relative; */
+bottom: 0px;
+left: 0;
+right: 0;
+color: black;
+
+/* background-color: black; */
+text-align: left;
+}
+#nav .img .left-img h4{
+    /* position: relative; */
+    display: block;
+    width: 492px;
+    height: 20px;
+    bottom: 0px;
+left: 0;
+right: 0;
+padding: 15px 8px 5px;
+
+}
+
+

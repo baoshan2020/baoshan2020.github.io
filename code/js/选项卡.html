@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <style>
+            div {
+                height: 100px;
+                width: 100px;
+                border: 1px solid black;
+                display: none;
+            }
+
+            .active {
+                background-color: yellow;
+            }
+        </style>
+
+        <button class="active">1</button>
+        <button>2</button>
+        <button>3</button>
+        <div class="content" style="display: block;">1</div>
+        <div class="content">2</div>
+        <div class="content">3</div>
+        <script>
+
+          
+                var btn = document.getElementsByTagName('button');
+                var div = document.getElementsByClassName('content');
+
+                for (var i = 0; i <= btn.length; i++) {
+                    (function (i) {
+
+
+                        btn[i].onclick = function () {
+                            for (j = 0; j <= btn.length-1; j++) {
+                                btn[j].className = '';
+                                div[j].style.display = 'none';
+                                
+                            }
+                            this.className = "active";
+                            div[i].style.display = "block";
+                        }
+
+                    }(i))
+
+                }
+       
+
+        </script>
+
+
+
+    </body>
+
+</html>

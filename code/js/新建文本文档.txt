@@ -1,0 +1,45 @@
+        var test= function (){
+            var a=123;
+document.write('a');
+        }
+
+
+        function test1(a,b,c){
+            document.write(a+b+c);
+            //document.write('b');
+            //document.write('c');
+
+        }
+        function test2(){
+            test1(1,2,3);
+        }
+
+       // function sum() {
+        //var result = 0;
+          //  for (var i = 0; i < arguments.length; i++)
+          //  {
+                 // result += arguments[i];}
+                //  console.log(result);
+        
+      //  }
+      //  sum(1,2);
+
+function jiaosheng(a){
+  if( a == '狗' ){ document.write ('汪汪');}
+    else if ( a == '公鸡'){document.write('啊');}
+        else {document.write('a');}
+        }
+        jiaosheng('公鸡');
+
+
+function jiecheng(a){
+    var result = 1;
+        for ( var i = 1; i <= a; i++ ) {
+            result *= i
+        }
+        console.log(result);
+  
+    }
+
+
+jiecheng(4);

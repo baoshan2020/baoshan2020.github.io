@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-5c219d70","path":"/soft/github/jumpserver.html","title":"jumpServer","lang":"zh-CN","frontmatter":{"title":"jumpServer"},"excerpt":"","headers":[],"git":{},"filePathRelative":"soft/github/jumpserver.md"}');export{e as data};

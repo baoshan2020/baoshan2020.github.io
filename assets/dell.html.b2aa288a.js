@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-52fea184","path":"/network/dell.html","title":"网路设备","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[{"level":2,"title":"服务器","slug":"服务器","link":"#服务器","children":[]},{"level":2,"title":"交换路由","slug":"交换路由","link":"#交换路由","children":[]}],"git":{},"filePathRelative":"network/dell.md"}');export{e as data};

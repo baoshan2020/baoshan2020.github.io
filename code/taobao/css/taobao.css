@@ -1,0 +1,396 @@
+
+@import 'reset.css';
+#headtop  li{
+display: block;
+float: left;
+/* float: left; 设置列表 左对齐 */
+font-size: 0;
+/* font-size: 0; 设置列表左右字体的间距为0，确保在html录入的时候 */
+line-height: 35px;
+/* margin-right: 7px;
+cursor: pointer;
+font-size: 12px;
+color: #6c6c6c; */
+padding: 0 6px; 
+/* padding: 0 6px; 上下0像素 左右6像素 */
+}
+#headtop a{
+    color: #6c6c6c; 
+    font-size: 12px; 
+    /* margin-right: 7px; */
+}
+#headtop a.login{
+color: #f22e00;
+}
+#headtop span.arrow{
+    color: #3c3c3c;
+    font-size: 12px;
+    margin-top: -4px;
+    /* margin-right: 20px; */
+    /* padding: 0 6px; */
+}
+#headtop li strong{
+    font-size: 12px;
+    color:#F22e00 ;
+}
+#headtop a:hover{
+    color: #F40;}
+    #headtop .store{
+        color: #9c9c9c;
+    }
+#headtop span{
+font-size: 12px;
+/* padding: 0 6px; */
+margin-top: -4px;
+width: 12px;
+height: 6px;
+/* margin-right: 0px; */
+}
+#headtop .line{
+    font-size: 12px;
+    color: #ddd;
+    padding: 0 5px;
+}
+
+#headad div{
+    display: block;
+    /* width: 1400px; */
+    height: 70px;
+    /* color: #3c3c3c;
+    background-color: #f40d40;
+    overflow: hidden;
+    border: 1px solid red;
+    border-width: 10px;
+    border-color: red;
+    background-color: #f40d40;
+    background-color: transparent;   */
+    overflow: hidden;
+}
+#headad a{
+    display: block;
+    /* width: 1190px; */
+    height: 70px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    border: 0;
+    width: 100%;
+}
+#headsearch{
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 24px 0 10px 0;
+    /* padding-top: 24px;
+ height: 97px; */
+ /* position: block;; */
+}
+
+#headsearch h1 a{
+     margin-left: 22px;
+    /* padding-top: 58px;  */
+
+    display: block;
+    width: 142px;
+    height: 58px;
+    /* background: url(../img/www.png) center no-repeat; */
+    background: url(https://img.alicdn.com/tfs/TB1UDHOcwoQMeJjy0FoXXcShVXa-286-118.png) center no-repeat;
+    /* center no-repeat; 不让图片重播 */
+    background-size: 142px 58px;
+    text-indent: -9999px; 
+    /* 首航缩进 */
+    overflow: hidden;
+    /* 只要你出去就看不到你了 */
+    margin-top: 8px;
+} 
+/* 头部搜索 */
+
+#headsearch .code{
+    width: 72px;
+    height: 86px;
+    border: 1px solid #eee;
+    position: relative;
+    /* position: relative; 父级相对定位 */
+    text-align: center;
+    /* text-align: center;居中 */
+}
+#headsearch .code img{
+    width: 62px;
+    height: 62px;
+}
+#headsearch .close{
+    position: absolute;
+    left: -16px;
+    top: -1px;
+    width: 14px;
+    height: 14px;
+line-height: 14px;
+font-size: 14px;
+border:1px solid #eee;
+/* border:1px solid #eee;  边框1像素 实心 */
+color: #ddd;
+cursor: pointer;
+/* cursor: pointer;  鼠标放上去有个手 */
+}
+
+#headsearch .search{
+    width: 630px;
+    margin: 0  auto;
+}
+
+
+#headsearch .searchtab{ 
+    height: 22px;
+    padding-left: 17px;
+}
+
+#headsearch .searchtab li{
+            height: 22px;
+            float: left;
+            width: 36px;
+            line-height: 22px;
+            margin-right: 4px;
+            text-align: center;
+            color:#f40;
+            cursor: pointer;
+        }
+        #headsearch .searchtab li:hover{
+        background-color: #ffeee5;
+        }
+
+        /* :hover 鼠标放上去事件 */
+
+ #headsearch .searchtab li.active{
+     color: #fff;
+     font-weight: bold;
+background-image: linear-gradient(to right,#ff9000,#ff5000);
+/* css3渐变 */
+     border-radius: 6px 6px 0 0;
+     /* border-radius: css3 只是添加圆角 */
+
+ /* filter: ;ie浏览器滤镜 */
+    }
+
+
+    #headsearch .searchcontent{
+        height: 40px;
+    }
+    #headsearch .searchbox{
+        width: 554px;
+        height: 40px;
+        box-sizing: border-box;
+        border: 2px solid #ff5000; 
+        border-right: none;
+        border-radius: 20px 0px 0px  20px;
+        /* border-radius: 圆角，顺序 上右下左 顺时针 */
+        position: relative;
+        /* position: relative; 相对定位 */
+    }
+    #headsearch .searchbox input{ 
+        width: 490px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    /* outline: none; 设置无边框 */
+    border: none;
+    /* border: none; 本身无边框 */
+    text-indent: 10px;
+    /* text-indent: 10px;输入问题到边框10px */
+position: absolute;
+z-index: 2;
+background-color: transparent;
+
+/* background-color: transparent; 设置背景透明 为了可以看到后面的问题 */
+
+}
+#headsearch .searchbox  .placeholder{
+    position: absolute;
+    /* position: absolute; 绝对定位 */
+    top: 6px;
+    left: 14px;
+}
+
+#headsearch  .placeholder span{
+color:#9c9c9c;
+vertical-align: 1px;
+}
+
+#headsearch  .imgSearch{
+    position: absolute;
+    right: 28px;
+    color: #9c9c9c;
+    font-size: 28px;
+    top: -2px;
+cursor: pointer;
+}
+#headsearch  button{
+    width: 74px;
+    height: 40px;
+    text-align: center;
+    font: size 18px;
+    line-height: 40px;
+    color:#fff;
+    border: none;
+    background-image: linear-gradient(to right,#ff9000,#ff5000);
+    border-radius: 0px 20px 20px 0px;
+}
+
+#headsearch .hotkey{
+    height: 25px;
+    line-height: 25px;
+}
+
+/* 导航 */
+#nav H2{ 
+ width: 190px;
+ height: 30px;
+ line-height: 30px;
+ text-align: center;
+ font-size: 16px;
+ background-color: #f50;
+ /* display: block; */
+ color: #fff;
+}
+
+#nav  ul{
+margin-left: 190px;
+    /* width: 1000px;
+    width: calc(100% - 190px); */
+    float: left;
+    background-image: linear-gradient(to right,#ff9000,#ff5000);
+    padding: 0 5px;
+}
+#nav ul li{
+    float: left;
+    line-height: 30ox;
+    margin: 0 7px;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+}
+
+#nav li.size{
+    font-size: 16px;
+}
+#nav li a{
+    color: #fff;
+    font-weight: bold;
+   }
+#nav li.line{
+    margin: 0px;
+
+}
+#nav ul li:hover:before{
+    content: '';
+    position: absolute;
+    width: 23px;
+    height: 13px;
+    background-image: ;
+}
+
+
+
+/* 首屏内容 */
+/* 侧边导航 */
+#firstScreen .firstLeft{
+    width: 890px;
+}
+
+
+
+/* 侧边导航 */
+#firstScreen .sideNav{
+width: 190px;
+height: 522px;
+background: #fff;
+border: 1px solid #f50;
+box-sizing: border-box;
+border-top: none;
+padding-top: 5px;
+padding: 0;
+}
+#firstScreen .sideNav  li{
+    height: 32px;
+    line-height: 32px;
+    padding-right: 25px;
+    /* padding-inline-start: 0px; */
+    /* hover到下一个hover延时  过度  */
+    transition: background-color 0.3s;
+}
+
+
+#firstScreen .sideNav a{
+    font-size: 14px;
+    color:#666;
+
+}
+#firstScreen .sideNav li:hover{
+    background: #ffe4dc;
+    color:#f50;
+}
+#firstScreen .sideNav li:hover a{
+    color:#f50;
+}
+#firstScreen .sideNav a:hover{
+    /* 下划线 */
+text-decoration: underline;
+}
+
+#firstScreen .sideNav li span{
+    font-size: 12px;
+    color: #999;
+} 
+
+
+#firstScreen .img1box{
+    width: 690px;
+    height: 282px;
+    margin-top: 10px;
+}
+
+.firstLeft .pic{
+    width: 520px;
+    position: relative; 
+}
+.firstLeft .pic  button{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color:#fff;
+    cursor: pointer;
+    /* 边框 是border  */
+    border: none; 
+    background-color: rgba(0, 0,0,0.3);
+    /* 绝对定位 */
+    position: absolute;
+    top:50%;
+    margin-top: -15px;
+
+    /* 圆角 */
+}
+.leftbtn{
+    
+}
+.rightbtn{
+    right: 0;
+    border-radius: 0 15px 15px 0;
+}
+
+/* 图片1容器 */
+#firstScreen .img2box{
+    width: 690px;
+    height: 230px;
+}
+#firstScreen .news{
+    width: 290px;
+    height: 100px;
+    background: cyan;
+}
+/* 右侧内容 */
+#firstScreen .firstRight{
+    width: 290px;
+    height: 621px;
+    background-color:black;
+}

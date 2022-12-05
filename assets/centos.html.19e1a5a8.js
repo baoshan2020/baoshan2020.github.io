@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-29ce8a5b","path":"/os/centos.html","title":"centos","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{},"filePathRelative":"os/centos.md"}');export{t as data};

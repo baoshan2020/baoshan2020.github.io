@@ -1,0 +1,437 @@
+<!-- 
+开源工作台：
+创建时间：2020-05-14
+联系邮箱：zhurj0630@shglgf.com
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>广联系统导航</title>
+  <link rel="stylesheet" type="text/css" href="class.css" />
+</head>
+
+<body style="padding: 10px">
+  <div class="container">
+    <span class="container-header" style="width:100%;">办公系统导航
+      <div id="divSelWeb" style="display: none;">
+        <span style="width:20px"></span>环境选择：
+        <select style="width:100px" id="ChangeWeb" onchange="ChangeOutside()">
+          <option value="内网环境">内网环境</option>
+          <option value="外网环境">外网环境</option>
+        </select>
+      </div>
+
+      <span class="container-header" style="width: 70%;text-align: right;margin-left: 80px;">输入密码进入后台<input
+          type="password" id="pwd" onkeydown="keyup_submit(event);"
+          style="padding-left: 5px;margin-left: 5px;"></input><button onclick="CheckPwd()"
+          style="margin-left: 5px;">确定</button></span>
+    </span>
+    <div class="container-body" id="DivInside1">
+
+      <div class="item-block">
+        <a href="http://www.shglgf.com/" target="_blank">
+          <div class="item-top">
+            <div class="item-logo"><img src="img/glgf.png"></div>
+            <div class="item-body">
+              <span class="title">门户网站</span>
+              <span class="notice">广联门户网站</span>
+            </div>
+          </div>
+        </a>
+        <div class="item-bottom">
+          <div>广联门户网站</div>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="item-block">
+        <a href="http://work.shglgf.com:8010" target="_blank" id="linkFw">
+          <div class="item-top">
+            <div class="item-logo"><img src="img/fw.png"></div>
+            <div class="item-body">
+              <span class="title">OA办公系统</span>
+              <span class="notice">泛微OA</span>
+            </div>
+          </div>
+        </a>
+        <div class="item-bottom">
+          <div></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="item-block">
+        <a href="http://work.shglgf.com:9336/gl" target="_blank" id="linkHrc">
+          <div class="item-top">
+            <div class="item-logo"><img src="img/hcm.png"></div>
+            <div class="item-body">
+              <span class="title">HR系统</span>
+              <span class="notice">HR系统</span>
+            </div>
+          </div>
+        </a>
+        <div class="item-bottom">
+          <div></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="item-block">
+        <a href="http://work.shglgf.com:8060" target="_blank" id="linkEdoc2">
+          <div class="item-top">
+            <div class="item-logo"><img src="img/Edoc2.png"></div>
+            <div class="item-body">
+              <span class="title">云盘（VD）</span>
+              <span class="notice">文档管理系统(Edoc2)</span>
+            </div>
+          </div>
+        </a>
+        <div class="item-bottom">
+          <div>VD网站</div>
+        </div>
+      </div>
+
+      <div class="item-block">
+        <a href="http://10.1.6.10:8089/" target="_blank" id="linkU8">
+          <div class="item-top">
+            <div class="item-logo"><img src="img/U8Cloud.png"></div>
+            <div class="item-body">
+              <span class="title">U8Cloud</span>
+              <span class="notice">广联财务系统</span>
+            </div>
+          </div>
+        </a>
+        <div class="item-bottom">
+          <div></div>
+        </div>
+      </div>
+
+      <div class="item-block">
+        <a href="http://work.shglgf.com:6080" target="_blank" id="linkYcjk">
+          <div class="item-top">
+            <div class="item-logo"><img src="img/camare.jpg"></div>
+            <div class="item-body">
+              <span class="title">远程监控</span>
+              <span class="notice">广联远程监控系统</span>
+            </div>
+          </div>
+        </a>
+        <div class="item-bottom">
+          <div></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="item-block">
+        <a href="http://192.168.1.20/" target="_blank" id="linkDxs">
+          <div class="item-top">
+            <div class="item-logo"><img src="img/dxs.jpg"></div>
+            <div class="item-body">
+              <span class="title">地下水管理系统</span>
+              <span class="notice">广联地下水管理系统</span>
+            </div>
+          </div>
+        </a>
+        <div class="item-bottom">
+          <div></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="item-block">
+        <a href="http://mail.shglgf.com/" target="_blank" id="linkMail">
+          <div class="item-top">
+            <div class="item-logo"><img src="img/mail.jpg"></div>
+            <div class="item-body">
+              <span class="title">企业邮箱</span>
+              <span class="notice">广联企业邮箱</span>
+            </div>
+          </div>
+        </a>
+        <div class="item-bottom">
+          <div></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="item-block">
+        <a href="https://work.shglgf.com:334" target="_blank" id="linkDesk">
+          <div class="item-top">
+            <div class="item-logo"><img src="img/sangfor.jpg"></div>
+            <div class="item-body">
+              <span class="title">云桌面客户登录</span>
+              <span class="notice">广联云桌面</span>
+            </div>
+          </div>
+        </a>
+        <div class="item-bottom">
+          <div>云桌面入口网站</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="item-block">
+        <a href="http://work.shglgf.com:8824/SHGL/admin/index.html" target="_blank" id="linkJc">
+          <div class="item-top">
+            <div class="item-logo"><img src="img/jc.png"></div>
+            <div class="item-body">
+              <span class="title">监测监护系统</span>
+              <span class="notice">监测监护系统</span>
+            </div>
+          </div>
+        </a>
+        <div class="item-bottom">
+          <div></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="item-block">
+        <a href="http://work.shglgf.com:8090/C6" target="_blank" id="linkC6">
+          <div class="item-top">
+            <div class="item-logo"><img src="img/jh.png"></div>
+            <div class="item-body">
+              <span class="title">老OA系统</span>
+              <span class="notice">金和OA（C6）</span>
+            </div>
+          </div>
+        </a>
+        <div class="item-bottom">
+          <div>暂只提供固定资产领用及老数据查询服务</div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+  <div class="container" id="SystemDiv" style="display:none">
+    <div class="container-header">运维系统导航</div>
+    <div class="container-body">
+
+      <div class="item-block">
+        <a href="http://work.shglgf.com:8110" target="_blank" id="linkZabbix">
+          <div class="item-top">
+            <div class="item-logo"><img src="img/zabbix.png"></div>
+            <div class="item-body">
+              <span class="title">Zabbix</span>
+              <span class="notice">Zabbix平台</span>
+            </div>
+          </div>
+        </a>
+        <div class="item-bottom">
+          <div></div>
+        </div>
+      </div>
+
+      <div class="item-block">
+        <a href="http://work.shglgf.com:10080/" target="_blank" id="lingGogs">
+          <div class="item-top">
+            <div class="item-logo"><img src="img/gogs.png"></div>
+            <div class="item-body">
+              <span class="title">代码管理</span>
+              <span class="notice">广联代码管理</span>
+            </div>
+          </div>
+        </a>
+        <div class="item-bottom">
+          <div></div>
+        </div>
+      </div>
+
+      <div class="item-block">
+        <a href="https://192.168.1.28/" target="_blank" id="linkVM">
+          <div class="item-top">
+            <div class="item-logo"><img src="img/vm.jpg"></div>
+            <div class="item-body">
+              <span class="title">VM</span>
+              <span class="notice">云服务器控制台</span>
+            </div>
+          </div>
+        </a>
+        <div class="item-bottom">
+          <div></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="item-block">
+        <a href="https://192.168.1.101" target="_blank" id="linkSangfor">
+          <div class="item-top">
+            <div class="item-logo"><img src="img/sangfor.jpg"></div>
+            <div class="item-body">
+              <span class="title">云桌面控制台</span>
+              <span class="notice">广联云桌面系统控制台</span>
+            </div>
+          </div>
+        </a>
+        <div class="item-bottom">
+          <div></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="item-block">
+        <a href="http://192.168.1.9/" target="_blank" id="linkFtp">
+          <div class="item-top">
+            <div class="item-logo"><img src="img/ftp.jpg"></div>
+            <div class="item-body">
+              <span class="title">FTP管理平台</span>
+              <span class="notice">广联FTP管理平台</span>
+            </div>
+          </div>
+        </a>
+        <div class="item-bottom">
+          <div></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="item-block">
+        <a href="https://10.0.0.1/" target="_blank" id="linkHuawei">
+          <div class="item-top">
+            <div class="item-logo"><img src="img/huawei.jpg"></div>
+            <div class="item-body">
+              <span class="title">华为路由器</span>
+              <span class="notice">华为路由器</span>
+            </div>
+          </div>
+        </a>
+        <div class="item-bottom">
+          <div></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="item-block">
+        <a href="http://192.168.1.9:8010/" target="_blank" id="linkUps">
+          <div class="item-top">
+            <div class="item-logo"><img src="img/ups.png"></div>
+            <div class="item-body">
+              <span class="title">UPS电源管理系统</span>
+              <span class="notice">UPS电源管理系统</span>
+            </div>
+          </div>
+        </a>
+        <div class="item-bottom">
+          <div></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="item-block">
+        <a href="http://team.qq.com/" target="_blank" id="linkUps">
+          <div class="item-top">
+            <div class="item-logo"><img src="img/txgj.jpg"></div>
+            <div class="item-body">
+              <span class="title">腾讯管家后台</span>
+              <span class="notice">腾讯管家后台</span>
+            </div>
+          </div>
+        </a>
+        <div class="item-bottom">
+          <div></div>
+          </a>
+        </div>
+      </div>
+
+
+      <!--
+      <div class="item-block">
+        <a href="http://192.168.1.22:8001/" target="_blank" id="linkSeafile">
+          <div class="item-top">
+            <div class="item-logo"><img src="img/seafile.jpg"></div>
+            <div class="item-body">
+              <span class="title">Seafile测试</span>
+              <span class="notice">Seafile测试服务器</span>
+            </div>
+          </div>
+        </a>
+        <div class="item-bottom">
+          <div></div>
+          </a>
+        </div>
+      </div>
+      -->
+
+      <!--     <div class="item-block">
+      <div class="item-top">
+        <div class="item-logo"><img src="img/sky.png"></div>
+        <div class="item-body">
+          <span class="title">链路系统</span>
+          <span class="notice">Skywalking链路追踪系统</span>
+        </div>
+      </div>
+
+      <div class="item-bottom">
+        <div onclick="window.open('http://xxx/')">测试环境</div>
+        <div class="divider"></div>
+        <div onclick="window.open('http://xxx/')">正式环境</div>
+        <div class="divider"></div>
+        <div>帮助文档</div>
+      </div>
+    </div> 
+  
+  
+      <div class="item-block">
+        <a href="http://192.168.1.24" target="_blank">
+          <div class="item-top">
+            <div class="item-logo"><img src="img/zabbix.png"></div>
+            <div class="item-body">
+              <span class="title">Zabbix</span>
+              <span class="notice">Zabbix平台</span>
+            </div>
+          </div>
+        </a>
+        <div class="item-bottom">
+          <a href="https://github.com" target="_blank">
+            <div>源码地址</div>
+          </a>
+        </div>
+      </div>
+
+    -->
+
+
+    </div>
+  </div>
+  <div id='testdiv' style="display:none;">
+    <img src="http://192.168.1.22/img/AAA15CDD-D55B-4271-9E64-F359E234ECA6.png" onerror="warning()"
+      onload="IsInside()" />
+    <a id="a1" href="http://192.168.1.22/index.html" target="_blank">11</a>
+  </div>
+</body>
+
+<script src='js/index.js'></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/production.min.js"></script>
+<script src="js/md5.js"></script>
+
+<script type="text/javascript">
+  $.ajax({
+
+    url: 'http://192.168.1.33/index.html',//项目下的某张图片
+    type: 'GET',
+    complete: function (response) {
+      if (response.status == 200) {
+        alert(response.status);
+        //alert('succ');
+      } else {
+        alert(response.status);
+      }
+    }
+  });
+
+  window.onload = function () {
+    init();
+  }
+
+</script>
+
+</html>

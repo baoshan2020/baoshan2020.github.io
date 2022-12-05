@@ -1,0 +1,28 @@
+#one {
+    width: 0px;
+    height: 0px;
+    /* background-color:red ; */
+    border: 100px solid black;
+    border-top-color:green ;
+    border-left-color:transparent ;
+    border-right-color: yellow;
+    /* border-color:black ; */
+    /* border-width:1px ; */
+    border-style:solid ;
+ 
+
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #424242;
+    width: 190px;
+    height: 90px;
+    border: 1px solid black;
+    background-image: url(/img/www.png);
+    background-size: 190px 90px;
+
+    text-indent: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+}

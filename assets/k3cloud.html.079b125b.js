@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-5f92c6d8","path":"/soft/k3cloud.html","title":"k3cloud","lang":"zh-CN","frontmatter":{"title":"k3cloud"},"excerpt":"","headers":[],"git":{},"filePathRelative":"soft/k3cloud.md"}');export{t as data};

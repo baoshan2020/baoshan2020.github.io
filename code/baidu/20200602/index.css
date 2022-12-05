@@ -1,0 +1,145 @@
+* {
+    margin：0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.red {
+    color: red;
+}
+
+ul li {
+    list-style: none;
+}
+
+.top ul {
+    margin-left: 21px;
+}
+
+.top ul li {
+    float: left;
+    margin-right: 31px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+}
+
+.login {
+    background-color: blue;
+    border-radius: 6px;
+    color: #FFF;
+    height: 24px;
+    width: 48px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.loggin:hover {
+    color: #fff;
+}
+
+ul li:hover {
+    color: #315efb;
+}
+
+ul li:active {
+    color: #F60;
+}
+
+.top {
+    height: 60px;
+}
+
+.search {
+    position: relative;
+    left: 50%;
+    margin-left: -327px;
+    width: 654px;
+    height: 182px;
+}
+
+.search a {
+    position: relative;
+    left: 50%;
+    margin-left: -135px;
+    vertical-align: bottom;
+}
+
+.search a img {
+    width: 270px;
+}
+
+.search input {
+    position: relative;
+    margin: 0;
+    padding: 12px 48px 12px 16px;
+    width: 480px;
+    height: 16px;
+    font-size: 16px;
+    border-radius: 10px 0 0 10px;
+    font-size: 16px;
+    cursor: text;
+    border: 2px solid #c4c7ce;
+    background-color: #fff;
+    color: #222;
+}
+
+.search button {
+    width: 108px;
+    height: 44px;
+    background-color: #436Ef2;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+}
+
+.search div {
+    width: 666px;
+}
+
+.search div>div {
+    margin-top: 30px;
+}
+
+.nav {
+    position: relative;
+    left: 50%;
+    margin-left: -333px;
+    margin-top: 30px;
+    width: 666px;
+    height: 300px;
+}
+
+.nav>.fl li {
+    margin-left: -60px;
+    height: 34px;
+    line-height: 34px;
+}
+
+.nav>.fr li {
+    margin-right: -60px;
+    height: 34px;
+    line-height: 34px;
+}
+
+.one span {
+    width: 20px;
+    height: 20px;
+    background: url(https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/hot_search/top_1@1x-d1e660cf3b.png);
+    color: white;
+    margin: 0 8px 4px 0px;
+    font: size 12px;
+}

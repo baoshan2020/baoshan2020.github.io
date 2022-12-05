@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul></ul>
+        <ul></ul>
+        <ul></ul>
+        <ul></ul>
+        <ul></ul>
+    </div>
+    <script>
+
+
+// 获取一个div，在div 的所有ul下面插入一个 br标签 2020年10月16日
+        var div1 = document.getElementsByTagName('div')[0];
+        var ul2 = document.getElementsByTagName('ul');
+        var b =1;//定义一个变量记录确定要插入ul的位置
+        for (var i = 1; i <= ul2.length-1; i++) {
+            div1.insertBefore(brCreate(),ulGet(b));
+           b ++;
+           console.log(b);
+        }
+
+//获取ul
+function ulGet(){
+    var ul3 = document.getElementsByTagName('ul')[b];
+    return ul3;
+}
+// 创建br
+function brCreate(){
+     var e = document.createElement('br');
+return e;
+} 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-f8946c82","path":"/proson/%E6%91%A9%E6%89%98%E8%BD%A6D%E6%9C%AC%E8%80%83%E8%AF%95.html","title":"摩托车D本考试","lang":"zh-CN","frontmatter":{"title":"摩托车D本考试"},"excerpt":"","headers":[],"git":{},"filePathRelative":"proson/摩托车D本考试.md"}');export{t as data};

@@ -1,0 +1,1 @@
+import{_ as t,o as c,c as o,b as e,d as s}from"./app.dad05bb1.js";const n={},a=e("h1",{id:"centos",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#centos","aria-hidden":"true"},"#"),s(" centos")],-1),r=e("p",null,"centos",-1),_=[a,r];function d(i,l){return c(),o("div",null,_)}const f=t(n,[["render",d],["__file","centos.html.vue"]]);export{f as default};

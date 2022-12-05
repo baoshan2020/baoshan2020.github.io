@@ -1,0 +1,44 @@
+{
+  "id": "1879659",
+  "name": "weibo",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "429212",
+      "name": "搜索",
+      "font_class": "search",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "7100392",
+      "name": "发现",
+      "font_class": "faxian",
+      "unicode": "e726",
+      "unicode_decimal": 59174
+    },
+    {
+      "icon_id": "8361833",
+      "name": "视频",
+      "font_class": "shipin",
+      "unicode": "e6ca",
+      "unicode_decimal": 59082
+    },
+    {
+      "icon_id": "8817462",
+      "name": "主页",
+      "font_class": "zhuye",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "11802172",
+      "name": "游戏",
+      "font_class": "youxi",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    }
+  ]
+}
